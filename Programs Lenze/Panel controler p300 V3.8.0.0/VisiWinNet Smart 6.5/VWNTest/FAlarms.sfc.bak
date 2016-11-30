@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Forms.Commands;VisiWinNET.Forms.Alarm;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FAlarms" Locked="True" BackgroundImageLayout="Zoom" VariableActivationMode="ActivateOnShow" Location="0, 175" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 555" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <CommandButton wfml:ID="cmdAlarmHistory" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 270" ForeColor="White" BackColorDown="White" TabIndex="132">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdAlarmHistory" TextOn="caption" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowChildForm FormName="FAlarmHistory" OwnerForm="FSystem" FormChangeMode="ShowNewHideActive" Depth="0" />
+              <SetVariable Name="AlarmManagement.AlarmHistory.UpdateListTrigger" Value="1" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <CommandButton wfml:ID="cmdAcknowledgeSelect" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 234" ForeColor="White" BackColorDown="White" TabIndex="130">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdAcknowledgeSelect" TextOn="AckSelectedAlarm" />
+        <property.Events>
+          <ControlEventAgent Event="Click">
+            <property.Commands>
+              <AcknowledgeSelectedAlarm Provider="$AlarmList" Depth="0" />
+            </property.Commands>
+          </ControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <CommandButton wfml:ID="cmdAcknowledgeAll" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 198" ForeColor="White" BackColorDown="White" TabIndex="129">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdAcknowledgeAll" TextOn="AckAllAlarms" />
+        <property.Events>
+          <ControlEventAgent Event="Click">
+            <property.Commands>
+              <AcknowledgeAllAlarms Provider="$AlarmList" Depth="0" />
+            </property.Commands>
+          </ControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <AlarmList wfml:ID="AlarmList" BackColorSelected="SteelBlue" Size="590, 360" ForeColorSelected="White" ForeColor="SteelBlue" TabIndex="128" FontClass="Buttons" FocusRect="False" Location="20, 12">
+        <property.Border Style="None" Width="0" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+        <property.ScrollBarProperties BackColorButton="White" ForeColorButton="SteelBlue" ForeColorButtonDisabled="SteelBlue" BackColorThumb="White" Width="30" BackColor="White" Visibility="Vertical" />
+        <property.Header FontClass="Captions" Alignment="Left" UseHeaderAlignment="True" BackColor="White" ForeColor="SteelBlue" Height="30" Resizable="False" />
+        <property.Columns>
+          <AlarmColumn Width="135" AlarmProperty="ActivationTime" />
+          <AlarmColumn Width="135" AlarmProperty="AcknowledgeTime" />
+          <AlarmColumn Width="290" AlarmProperty="Text" />
+        </property.Columns>
+        <property.AlarmFilter DesiredGroups="ProcessAlarms;SystemAlarms" />
+      </AlarmList>
+      <CommandButton wfml:ID="cmdReturn" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 342" ForeColor="White" BackColorDown="White" TabIndex="126">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdReturn" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowForm FormName="FSystem" FormChangeMode="ShowNewCloseActive" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <GroupBox wfml:ID="GroupBox" BackColor="White" Size="800, 600" BackgroundImage="@SFCRes:GroupBox.BackgroundImage" TabIndex="133" Location="0, -175" BackgroundImageLayout="Center">
+        <property.Controls>
+          <Shape wfml:ID="Shape1" BorderWidth="0" Size="10, 400" Location="790, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape2" BorderWidth="0" Size="10, 400" Location="0, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape3" BorderWidth="0" Size="800, 45" Location="0, 557">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape4" BorderColor="SteelBlue" Size="780, 388" Location="10, 169">
+            <property.FillColors>
+              <Color wfml:argument="Transparent" />
+            </property.FillColors>
+          </Shape>
+        </property.Controls>
+        <property.Border Style="None" Width="0" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

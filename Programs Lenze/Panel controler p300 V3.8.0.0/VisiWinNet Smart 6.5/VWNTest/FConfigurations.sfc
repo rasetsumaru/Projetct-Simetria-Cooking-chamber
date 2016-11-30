@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Forms.Commands;VisiWinNET.Forms.LanguageSwitching;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FConfigurations" Locked="True" VariableActivationMode="ActivateOnShow" Location="0, 175" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 555" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox" BackColor="White" Size="800, 600" BackgroundImage="@SFCRes:GroupBox.BackgroundImage" TabIndex="129" Location="0, -175" BackgroundImageLayout="Center">
+        <property.Controls>
+          <CommandButton wfml:ID="cmdConfigTimers" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 373" ForeColor="White" BackColorDown="White" TabIndex="152">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdConfigTimers" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowChildForm FormName="FConfigTimers" OwnerForm="FSystem" FormChangeMode="ShowNewCloseActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <VarOut wfml:ID="VarOut2" BackColor="Transparent" RegionLayout="LabelLeft" Size="410, 19" FontClass="Captions" ForeColor="SteelBlue" Location="370, 208" DataBackColor="Transparent">
+            <property.DataBorder Style="None" Width="1" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label003" TextGroup="LabelForms.FConfigurations" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" Font="Tahoma, 8.25pt, style=Bold">
+              <property.Text Text="kb" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="__PROCESS.MEMORY.USED" />
+            <property.Border Style="None" Width="1" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+          </VarOut>
+          <Label wfml:ID="Label2" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="130, 19" FontClass="Captions" ForeColor="SteelBlue" Location="20, 367">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigurations" Text="Label002" />
+          </Label>
+          <LanguageComboBox wfml:ID="cboLanguage" ForeColorButton="SteelBlue" BackColorSelected="SteelBlue" Size="153, 19" ForeColorSelected="White" FontClass="Captions" BackColor="White" Location="173, 367" ForeColor="SteelBlue" TabIndex="143" BackColorButton="White">
+            <property.Border Style="None" Width="1" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.ScrollBarProperties Width="19" />
+          </LanguageComboBox>
+          <VarOut wfml:ID="VarOut1" BackColor="Transparent" RegionLayout="LabelLeft" Size="410, 19" FontClass="Captions" ForeColor="SteelBlue" Location="370, 183" DataBackColor="Transparent">
+            <property.DataBorder Style="None" Width="1" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label001" TextGroup="LabelForms.FConfigurations" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" Font="Tahoma, 8.25pt, style=Bold">
+              <property.Text Text="kb" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="__PROCESS.MEMORY.AVAILABLE" />
+            <property.Border Style="None" Width="1" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+          </VarOut>
+          <DateTimeIn wfml:ID="DateTimeIn1" ForeColorButton="SteelBlue" ShowEnter="True" ButtonWidth="1" BackColorButton="White" ButtonPosition="Bottom" Size="258, 42" ShowLeftRight="True" UpDownStyle="Horizontal" BackColor="White" Location="68, 283" ForeColor="SteelBlue" FontClass="Captions" TabIndex="131">
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.TimeSettings Delay1="1000" Delay2="3000" Delay3="3000" Interval1="500" Interval2="250" Interval3="100" />
+            <property.VWItem Name="__SYSTEM.TIME" />
+          </DateTimeIn>
+          <Label wfml:ID="Label1" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="106, 19" FontClass="Captions" ForeColor="SteelBlue" Location="20, 258">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigurations" Text="Label000" />
+          </Label>
+          <CommandButton wfml:ID="cmdConfigManual" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 445" ForeColor="White" BackColorDown="White" TabIndex="136">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdConfigManual" TextOn="FormSwitching" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdConfigSystem" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 409" ForeColor="White" BackColorDown="White" TabIndex="135">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdConfigSystem" TextOn="FormSwitching" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdConfigControl" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 337" ForeColor="White" BackColorDown="White" TabIndex="134">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdConfigControl" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowChildForm FormName="FConfigControl" OwnerForm="FSystem" FormChangeMode="ShowNewCloseActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <CommandButton wfml:ID="cmdConfigParameters" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 301" ForeColor="White" BackColorDown="White" TabIndex="133">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdConfigParameters" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowChildForm FormName="FConfigParameters" OwnerForm="FSystem" FormChangeMode="ShowNewCloseActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <Shape wfml:ID="Shape1" BorderWidth="0" Size="10, 400" Location="790, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape2" BorderWidth="0" Size="10, 400" Location="0, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape3" BorderWidth="0" Size="800, 45" Location="0, 557">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <CommandButton wfml:ID="cmdReturn" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 517" ForeColor="White" BackColorDown="White" TabIndex="128">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdReturn" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowForm FormName="FSystem" FormChangeMode="ShowNewCloseActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <Shape wfml:ID="Shape4" BorderColor="SteelBlue" Size="780, 388" Location="10, 169">
+            <property.FillColors>
+              <Color wfml:argument="Transparent" />
+            </property.FillColors>
+          </Shape>
+        </property.Controls>
+        <property.Border Style="None" Width="0" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

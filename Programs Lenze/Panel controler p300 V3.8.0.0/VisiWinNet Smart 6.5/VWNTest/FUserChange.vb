@@ -1,0 +1,384 @@
+Imports Microsoft.VisualBasic
+Imports System
+Imports System.Collections
+Imports System.Collections.Generic
+Imports System.Drawing
+Imports System.Windows.Forms
+Imports System.Xml
+
+Imports VisiWinNET.Forms
+Imports VisiWinNET.UserManagement
+Imports VisiWinNET.LanguageSwitching
+
+Public Class FUserChange
+    Inherits VisiWinNET.Forms.SmartForm
+
+	#Region "Scale To Screen Size"
+	' This region is required for the scaling of forms.
+	' Do not remove this lines.
+	
+	#Region "Enumerations"	
+	Public Enum m_eDisplayResolution
+		UNKOWN = 0
+		QVGA = 1  '320x240
+		WQVGA = 2 '480x272
+		VGA = 3   '640x480
+		WVGA = 4  '800x480
+		SVGA = 5  '800x600
+		XGA = 6   '1024x768
+		SXGA = 7  '1280x1024
+	End Enum
+	#End Region
+
+	#Region "Variables"
+	'Use of Scaling
+	Public m_bActivateScaleToScreenSize As Boolean = True
+	
+	'Display Resolution
+	Public m_iWidth As Integer = ReadResolution("width")
+	Public m_iHeight As Integer = ReadResolution("height")
+	Public m_iDisplayResolution As m_eDisplayResolution = m_eDisplayResolution.UNKOWN
+	
+	'ButtonLine
+	Public m_iNumberOfButtons As Integer = 8
+	Public m_iButtonWidth As Integer = 128
+	Public m_iButtonLineHeight As Integer = 80
+	
+	'Header
+	Public m_iHeaderHeight As Integer = 80
+	Public m_iPictureBoxHeaderWidth As Integer = 120
+	
+	'Emulator
+	Public m_iEmulatorFrame As Integer = 75
+	Public m_iFreeSpaceHeight As Integer = 40
+	 
+	#End Region
+	
+	#Region "Functions"
+	Public  Function SetFontClass() As String	
+			If ((m_iWidth = 320) And (m_iHeight = 240)) Then
+				m_iDisplayResolution = m_eDisplayResolution.QVGA
+				m_iButtonLineHeight = 40
+				Return "FontTahomaSmall"
+			ElseIf ((m_iWidth = 480) And (m_iHeight = 272)) Then
+				m_iDisplayResolution = m_eDisplayResolution.WQVGA
+				m_iButtonLineHeight = 60
+				Return "FontTahomaSmall"
+			ElseIf ((m_iWidth = 640) And (m_iHeight = 480)) Then
+				m_iDisplayResolution = m_eDisplayResolution.VGA
+				m_iButtonLineHeight = 60
+				Return "FontTahomaSmall"
+			ElseIf ((m_iWidth = 800) And (m_iHeight = 480)) Then
+				m_iDisplayResolution = m_eDisplayResolution.WVGA
+				Return "FontTahomaMedium"
+			ElseIf ((m_iWidth = 800) And (m_iHeight = 600)) Then
+				m_iDisplayResolution = m_eDisplayResolution.SVGA
+				Return "FontTahomaMedium"
+			ElseIf ((m_iWidth = 1024) And (m_iHeight = 768)) Then			
+				m_iDisplayResolution = m_eDisplayResolution.XGA
+				Return "FontTahomaMedium"
+			ElseIf ((m_iWidth = 1280) And (m_iHeight = 1024)) Then	
+				m_iDisplayResolution = m_eDisplayResolution.SXGA
+				Return "FontTahomaMedium"
+			Else
+				m_iDisplayResolution = m_eDisplayResolution.UNKOWN
+				'?!Emulator
+				Return "FontTahomaMedium"
+			End If	
+	End Function
+		
+	Public  Function ReadResolution(ByVal name As String) As Integer
+		If (System.Environment.OSVersion.Platform.ToString() = "WinCE")
+			'Runtime under Windows CE
+			If name = "width" Then
+				Return Screen.PrimaryScreen.Bounds.Width 
+			Else If name = "height" Then
+				Return Screen.PrimaryScreen.Bounds.Height 
+			End If
+		Else
+			'Running project in emulator under standard OS
+			Try		
+				Dim nIndex As Integer
+				Dim sPath As String = Trim(System.Reflection.Assembly.GetExecutingAssembly.ManifestModule.FullyQualifiedName)
+				Dim sProjectName As String = sPath.Substring(sPath.LastIndexOf("\"), sPath.Length - sPath.LastIndexOf("\") - 4)
+				
+				For i As Integer = 0 To 2
+					nIndex = sPath.LastIndexOf("\")
+					sPath = sPath.Substring(0, nIndex)
+				Next
+			
+				Dim m_xmld As XmlDocument
+				Dim m_nodelist As XmlNodeList
+				Dim m_node As XmlNode
+				Dim m_iValue As Integer = 0
+				
+				m_xmld = New XmlDocument()
+				m_xmld.Load(sPath + sProjectName + ".Device.config")
+				m_nodelist = m_xmld.SelectNodes("/DeviceSettings/Device/Display")
+				
+				For Each m_node In m_nodelist
+					m_iValue = m_node.Attributes.GetNamedItem(name).Value
+				Next
+			
+				Return m_iValue			
+			Catch ErrorException As Exception
+				Return 0	
+			End Try
+		End If
+    End Function
+
+	Public Sub ScaleButtonLineControls (ByVal m_GroupBox As VisiWinNET.Forms.GroupBox)
+		Dim iIndex As Integer = 0
+		'Calculation the number of button controls in button line (m_GroupBox.Controls.Count)
+		For Each ctrl As Control In m_GroupBox.Controls
+			If TypeOf ctrl Is VisiWinNET.Forms.CommandButton Or TypeOf ctrl Is VisiWinNET.Forms.Key Or TypeOf ctrl Is VisiWinNET.Forms.Switch Then
+				iIndex = iIndex + 1
+			End If
+		Next
+		'Recalculation the properties of the buttonline controls (width, height, fontclass)
+		m_iNumberOfButtons = iIndex 
+		m_GroupBox.FontClass = SetFontClass()
+		m_GroupBox.Height = m_iButtonLineHeight
+		m_iButtonWidth = m_iWidth / m_iNumberOfButtons  
+		For Each ctrl As Control In m_GroupBox.Controls	
+			If TypeOf ctrl Is VisiWinNET.Forms.CommandButton Or TypeOf ctrl Is VisiWinNET.Forms.Key Or TypeOf ctrl Is VisiWinNET.Forms.Switch Then
+				ctrl.Width = m_iButtonWidth
+			End If
+		Next
+	End Sub
+
+	#End Region
+	
+	#End Region
+	
+    #Region "Initialization"
+	
+    ''' <summary>
+    ''' This method is called, when the Form is initialized.
+    ''' </summary>
+    Public Sub New()
+
+        ' This call is required by the Windows Form Designer.
+        ' Do not remove this line.
+        InitializeComponent()
+		
+		InitDialog()
+        ' Add any initialization here:
+		
+		'--------------------
+		'ScaleToScreenSize
+		'--------------------
+		
+		'Display Resolution
+		'Me.Height = m_iHeight - m_iHeaderHeight - m_iButtonLineHeight
+		'Me.Width = m_iWidth
+    End Sub
+
+ #End Region
+
+	  Private Sub InitDialog()
+		Dim ActGroupName As String
+		ActGroupName=VisiWinNET.Services.AppService.VWGet("__CURRENT_USER.GROUPNAME")
+		
+        For Each userGroup As VisiWinNET.UserManagement.UserGroup In UserManager.Groups
+           
+            If ActGroupName = "Administrator" Then
+                Me.cboUserGroups.Items.Add(userGroup.Text, userGroup.Name)
+			Else If ActGroupName = "ShiftManager" Then
+                If userGroup.Name <> "Administrator" Then
+                    Me.cboUserGroups.Items.Add(userGroup.Text, userGroup.Name)
+                End If
+			Else
+				If userGroup.Name <> "Administrator" And userGroup.Name <> "ShiftManager" Then
+                    Me.cboUserGroups.Items.Add(userGroup.Text, userGroup.Name)
+                End If
+            End If
+        Next
+    End Sub
+
+    #Region "Dispose"
+	
+	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        If disposing Then
+            If components IsNot Nothing Then
+                components.Dispose()
+            End If
+        End If
+        MyBase.Dispose(disposing)
+    End Sub
+    
+    #End Region
+	
+	#Region "Events"
+
+    Private Sub Me_FormChanged(ByVal sender As System.Object, ByVal e As VisiWinNET.Forms.FormChangedEventArgs) Handles Me.FormChanged
+        VisiWinNET.Services.AppService.VWSet("__FORMS.LASTACTIVEFORM", VisiWinNET.Services.AppService.VWGet("__FORMS.ACTIVEFORM"))
+	    VisiWinNET.Services.AppService.VWSet("__FORMS.ACTIVEFORM", Me.Name)
+    End Sub
+
+    #End Region
+    
+	#Region "Declarations"
+
+    Private Enum DialogType
+        Add
+        Change
+    End Enum
+
+    Private _dialogType As DialogType
+    Private _user As User
+
+	#End Region
+
+    Public Shared Function ShowAddDialog() As User
+        Dim frm As FUserChange = New FUserChange
+
+        frm._dialogType = DialogType.Add
+
+        frm.cboState.Items.Add(Localization.GetText(TextTypes.ClientSystem, "Dialogs.UserManagement.UserStates.Deactivated"), 0)
+        frm.cboState.Items.Add(Localization.GetText(TextTypes.ClientSystem, "Dialogs.UserManagement.UserStates.Active"), 1)
+        frm.cboState.Items.Add(Localization.GetText(TextTypes.ClientSystem, "Dialogs.UserManagement.UserStates.PasswordExpired"), 3)
+        frm.cboState.SelectedIndex = 2 ' For new user preselect third entry.
+
+        frm.chkChangeMachineCode.VWItem.State = True
+        frm.chkChangeMachineCode.Visible = False
+        frm.chkChangePassword.VWItem.State = True
+        frm.chkChangePassword.Visible = False
+
+        If frm.ShowDialog <> System.Windows.Forms.DialogResult.OK Then
+            frm._user = Nothing
+        End If
+
+        frm.Dispose()
+        Return frm._user
+    End Function
+
+    Public Shared Function ShowChangeDialog(ByVal userName As String) As User
+        Dim frm As FUserChange = New FUserChange
+
+        frm._dialogType = DialogType.Change
+
+        frm.cboState.Items.Add(Localization.GetText(TextTypes.ClientSystem, "Dialogs.UserManagement.UserStates.Deactivated"), 0)
+        frm.cboState.Items.Add(Localization.GetText(TextTypes.ClientSystem, "Dialogs.UserManagement.UserStates.Active"), 1)
+        frm.cboState.Items.Add(Localization.GetText(TextTypes.ClientSystem, "Dialogs.UserManagement.UserStates.Invalidated"), 2)
+        frm.cboState.Items.Add(Localization.GetText(TextTypes.ClientSystem, "Dialogs.UserManagement.UserStates.PasswordExpired"), 3)
+
+		frm.chkChangeMachineCode.VWItem.State = True
+        frm.chkChangeMachineCode.Visible = False
+        frm.chkChangePassword.VWItem.State = True
+        frm.chkChangePassword.Visible = False
+		
+        frm._user = UserManager.Users.Item(userName)
+
+        If frm._user IsNot Nothing Then
+            frm.vinName.VWItem.EditableValue = frm._user.Name
+            frm.vinName.text = frm._user.Name
+			frm.vinName.Enabled = False
+            frm.vinFullName.VWItem.EditableValue = frm._user.FullName
+			frm.vinFullName.text = frm._user.FullName
+            frm.vinMachineCode.VWItem.EditableValue = frm._user.Code
+			frm.vinMachineCode.text = frm._user.Code
+            frm.vinFullName.Enabled = False
+
+            For Each item As ListItem In frm.cboUserGroups.Items
+                If item.Tag = frm._user.GroupName Then
+                    frm.cboUserGroups.Text = frm._user.Group.Text
+                    item.Selected = True
+                    Exit For
+                End If
+            Next item
+
+            frm.cboState.SelectedIndex = CInt(frm._user.State)
+
+            frm.vinComment.VWItem.EditableValue = frm._user.Comment
+            If frm.ShowDialog <> Windows.Forms.DialogResult.OK Then
+                frm._user = Nothing
+            End If
+        End If
+
+        frm.Dispose()
+        Return frm._user
+    End Function
+
+    Private Sub cmdCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdCancel.Click
+        Me.DialogResult = DialogResult.Cancel
+    End Sub
+
+    Private Sub cmdOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdOK.Click
+        If CheckInput() Then
+
+            If _dialogType = DialogType.Add Then
+                _user = New User
+            End If
+
+            _user.Name = vinName.VWItem.EditableValue
+            _user.FullName = vinFullName.VWItem.EditableValue
+            _user.GroupName = Me.cboUserGroups.Items.Item(cboUserGroups.SelectedIndex).Tag
+            If chkChangePassword.VWItem.State Then
+                _user.InitialPassword = vinPassword.VWItem.EditableValue
+            Else
+                _user.InitialPassword = vbNullString
+            End If
+            _user.Code = vinMachineCode.VWItem.EditableValue
+            _user.State = cboState.Items.Item(cboState.SelectedIndex).Tag
+            _user.Comment = vinComment.VWItem.EditableValue
+
+            Select Case _dialogType
+                Case DialogType.Add
+                    Dim enmAddUserSuccess As AddUserSuccess
+                    enmAddUserSuccess = UserManager.Users.Add(_user)
+                    If enmAddUserSuccess = AddUserSuccess.Succeeded Then
+                        Me.DialogResult = Windows.Forms.DialogResult.OK
+                    Else
+                    	FMessageBox.Show(Localization.GetText("@LabelForms.FMessageBox.Captions.Caption003"), _
+							Localization.GetText("@LabelForms.FMessageBox.Messages.Message015"), MessageBoxButtons.Ok)
+					End If
+
+                Case DialogType.Change
+                    Dim enmChangeUserSuccess As ChangeUserSuccess
+                    enmChangeUserSuccess = UserManager.Users.Change(_user)
+                    If enmChangeUserSuccess = ChangeUserSuccess.Succeeded Then
+                        Me.DialogResult = Windows.Forms.DialogResult.OK
+                    Else
+                    	FMessageBox.Show(Localization.GetText("@LabelForms.FMessageBox.Captions.Caption003"), _
+							Localization.GetText("@LabelForms.FMessageBox.Messages.Message016"), MessageBoxButtons.Ok)
+					End If
+
+            End Select
+        End If
+    End Sub
+
+    Private Sub chkChangeMachineCode_Change(ByVal sender As System.Object, ByVal e As VisiWinNET.DataAccess.DigitalChangeEventArgs) Handles chkChangeMachineCode.Change
+		vinMachineCode.Enabled = e.State
+        chkChangePassword.VWItem.State = e.State
+        chkChangePassword.Enabled = Not e.State
+    End Sub
+
+    Private Sub chkChangePassword_Change(ByVal sender As System.Object, ByVal e As VisiWinNET.DataAccess.DigitalChangeEventArgs) Handles chkChangePassword.Change
+		vinPassword.Enabled = e.State
+        vinRepeatPassword.Enabled = e.State
+    End Sub
+
+    Private Function CheckInput() As Boolean
+        If Me.vinName.VWItem.EditableValue = "" Then
+            FMessageBox.Show(Localization.GetText("@LabelForms.FMessageBox.Captions.Caption003"), _
+				Localization.GetText("@LabelForms.FMessageBox.Messages.Message017"), MessageBoxButtons.Ok)
+			vinName.Focus()
+            Return False
+        End If
+        If Me.cboUserGroups.SelectedIndex < 0 Then
+            FMessageBox.Show(Localization.GetText("@LabelForms.FMessageBox.Captions.Caption003"), _
+				Localization.GetText("@LabelForms.FMessageBox.Messages.Message018"), MessageBoxButtons.Ok)
+			cboUserGroups.Focus()
+            Return False
+        End If
+        If Me.vinPassword.VWItem.EditableValue <> Me.vinRepeatPassword.VWItem.EditableValue Then
+            FMessageBox.Show(Localization.GetText("@LabelForms.FMessageBox.Captions.Caption003"), _
+				Localization.GetText("@LabelForms.FMessageBox.Messages.Message019"), MessageBoxButtons.Ok)
+            Me.vinRepeatPassword.Focus()
+            Return False
+        End If
+        Return True
+    End Function
+
+End Class

@@ -1,0 +1,13 @@
+﻿<VisiWinNETUserManagementFile>
+	<!--1.1-->
+	<RuntimeConfig ProposedLastUser="" ProposedLastUserLogOnTime="00:00:00 01.01.0001" />
+	<UserGroups>
+		<UserGroup Name="Administration" ChangedDuringRuntime="0">
+			<Users>
+				<User Name="admin" Checksum="-1868131455" Fullname="Administration" Password="1913252059" State="1" LastLogon="00:08:52 17.11.2016">
+					<PwdHistory PasswordUsedSince="00:00:00 02.11.2016" />
+				</User>
+			</Users>
+		</UserGroup>
+	</UserGroups>
+</VisiWinNETUserManagementFile>

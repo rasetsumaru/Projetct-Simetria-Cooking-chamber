@@ -1,0 +1,6 @@
+[17/10/2016 16:02:52]
+Warning
+(Modulname='VisiWinNETDevelopment.Editors.FOptions', Sub='InitMe') Es gibt keine Konfigurationsspalte Information für folgende Datapagespalte = 'IgnoreBadQualityValues'
+[17/10/2016 16:02:52]
+Warning
+(Modulname='VisiWinNETDevelopment.Editors.FOptions', Sub='InitMe') Es gibt keine Konfigurationsspalte Information für folgende Datapagespalte = 'SampleInactiveItems'

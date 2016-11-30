@@ -1,0 +1,2691 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisiWinNETProjectFile>
+  <Configuration>
+    <Global DBVersion="6.5.0.0" VisiWinNETVersion="6.5" ProjectName="VWNTest" ProjectTemplate="SingleCE" ProductType="Smart" RuntimeType="Compact" ProjectType="SingleCE" DesignerType="Smart" DesignerProject="VWNTest.sln" LCID="1033" UserTemplate="SingleCE" DateCreated="11/10/2016 15:37:06" DateLastModified="20/11/2016 09:58:14" ProjectVersion="" Customer="" Developer="" Comment="" />
+    <Settings BlinkCycle="500" NewLimitEvents="-1" NewUnitConversion="-1" OptimizedItemActivation="-1" AdjustIncorrectFormSize="-1" OptimizedLineBreak="-1" />
+    <ServerComponents Alarm="1" Language="1" Recipe="1" UserManager="1" Kernel="1" Trend="1" Logbook="0" />
+    <PowerFailure SaveArchiveCache="0" SaveLoggingCache="0" CreateSystemLog="0" CreateWriteMutex="-1" />
+  </Configuration>
+  <ItemSystem>
+    <Intern>
+      <Items>
+        <Item Name="__CURRENT_USER.NAME" Type="VT_BSTR" Acc="R" Cmt="Client-interne Systemvariable: enthält den Namen des gerade angemeldeten Benutzers" />
+        <Item Name="__CURRENT_USER.FULLNAME" Type="VT_BSTR" Acc="R" Cmt="Client-interne Systemvariable: enthält den vollen Namen des gerade angemeldeten Benutzers" />
+        <Item Name="__CURRENT_USER.GROUPNAME" Type="VT_BSTR" Acc="R" Cmt="Client-interne Systemvariable: enthält den Namen des Benutzergruppenobjektes des gerade angemeldeten Benutzers" />
+        <Item Name="__CURRENT_USER.GROUPTEXT" Type="VT_BSTR" Acc="R" Cmt="Client-interne Systemvariable: enthält den sprachumschaltbaren Benutzergruppentext des gerade angemeldeten Benutzers" />
+        <Item Name="__CURRENT_USER.LEVEL" Type="VT_I4" Acc="R" Cmt="Client-interne Systemvariable: enthält die Berechtigungsebene des gerade angemeldeten Benutzers (gültig nur bei ebenenorientiertem Benutzersystem)" />
+        <Item Name="__CURRENT_USER.SECONDS_TO_AUTOLOGOFF" Type="VT_I4" Acc="R" Cmt="Client-interne Systemvariable: enthält dis Sekunden bis zum automatischen Abmelden des gerade angemeldeten Benutzers" />
+        <Item Name="__PROCESS.MEMORY.AVAILABLE" Type="VT_R8" Acc="R" Cmt="Client-interne Systemvariable: enthält die Größe des verfügbaren Speichers für diese Anwendung" />
+        <Item Name="__PROCESS.MEMORY.ESTIMATEDMANAGED" Type="VT_R8" Acc="R" Cmt="Client-interne Systemvariable: enthält die geschätzte Größe des verwalteten Speichers dieser Anwendung" />
+        <Item Name="__PROCESS.MEMORY.USED" Type="VT_R8" Acc="R" Cmt="Client-interne Systemvariable: enthält die Größe des von dieser Anwendung verwendeten Speichers" />
+        <Item Name="__SYSTEM.MEMORY.PERCENTLOAD" Type="VT_R8" Acc="R" Cmt="Client-interne Systemvariable: enthält die prozentuale Speicherauslastung" />
+        <Item Name="__SYSTEM.MEMORY.PHYSICAL" Type="VT_R8" Acc="R" Cmt="Client-interne Systemvariable: enthält die Größe des freien physikalischen Speichers" />
+        <Item Name="__SYSTEM.TIME" Type="VT_DATE" Cmt="Client-interne Systemvariable: enthält die aktuelle Systemzeit" />
+        <Item Name="__SYSTEM_ERRORS.COLLECTIVE" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt als Sammelmeldung, wenn mindestens ein Systemfehler gesetzt ist" />
+        <Item Name="__SYSTEM_ERRORS.DATA_ACCESS" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt, wenn im Variablensystem ein Fehler auftritt" />
+        <Item Name="__SYSTEM_ERRORS.LANGUAGE_SWITCHING" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt, wenn in der Sprachumschaltung ein Fehler auftritt" />
+        <Item Name="__SYSTEM_ERRORS.PROJECT" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt bei allgemeinen Projektfehlern" />
+        <Item Name="__SYSTEM_ERRORS.ALARM" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt, wenn in der Alarmverwaltung ein Fehler auftritt" />
+        <Item Name="__SYSTEM_ERRORS.RECIPE" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt, wenn in der Rezeptverwaltung ein Fehler auftritt" />
+        <Item Name="__SYSTEM_ERRORS.USER_MANAGEMENT" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt, wenn in der Benutzerverwaltung ein Fehler auftritt" />
+        <Item Name="__SYSTEM_ERRORS.TREND" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt, wenn im Trendsystem ein Fehler auftritt" />
+        <Item Name="__SYSTEM_ERRORS.LOGGING" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt, wenn im Protokollsystem ein Fehler auftritt" />
+        <Item Name="__SYSTEM_ERRORS.FORMS" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt, wenn in der Formularverwaltung ein Fehler auftritt" />
+        <Item Name="__SYSTEM_ERRORS.DRIVERS" Type="VT_BOOL" Cmt="Systemvariable: Gesetzt, wenn bei der Anbindung eines Treibers ein Fehler auftritt" />
+        <Item Name="__FORMS.ACTIVEFORM" Type="VT_BSTR" Cmt="Activated Form" />
+        <Item Name="__FORMS.LASTACTIVEFORM" Type="VT_BSTR" Cmt="Last Form in the Form History" />
+        <Item Name="__LANGUAGE.LANGUAGE_CLID" Type="VT_UI2" Cmt="Current Language ID" />
+        <Item Name="RecipeSystem.FileName" Type="VT_BSTR" />
+        <Item Name="RecipeSystem.Description" Type="VT_BSTR" />
+        <Item Name="RecipeSystem.LoadRecipeName" Type="VT_BSTR" />
+        <Item Name="RecipeSystem.LoadRecipeDescription" Type="VT_BSTR" />
+        <Item Name="RecipeSystem.RecipesInit" Type="VT_BOOL" />
+        <Item Name="RecipeSystem.RecipesChange" Type="VT_BOOL" />
+        <Item Name="ProcessSystem.ChamberIndex" />
+        <Item Name="AlarmManagement.AlarmHistory.UpdateListTrigger" Type="VT_BOOL" />
+        <Item Name="AlarmManagement.AlarmHistory.Filter.MinTime" Type="VT_DATE" />
+        <Item Name="AlarmManagement.AlarmHistory.Filter.MaxTime" Type="VT_DATE" />
+        <Item Name="AlarmManagement.AlarmHistory.Filter.Option" />
+        <Item Name="AlarmManagement.LogBook.Filter.MaxTime" Type="VT_DATE" />
+        <Item Name="AlarmManagement.LogBook.Filter.MinTime" Type="VT_DATE" />
+        <Item Name="AlarmManagement.LogBook.UpdateListTrigger" Type="VT_BOOL" />
+        <Item Name="AlarmManagement.InternalAlarm" />
+        <Item Name="AlarmManagement.InternalLogBook" />
+        <Item Name="TrendSystem.Max" />
+        <Item Name="TrendSystem.Min" />
+        <Item Name="TrendSystem.Zoom" Type="VT_BOOL" />
+        <Item Name="TrendSystem.ActivateTrend" Type="VT_BOOL" />
+        <Item Name="TrendSystem.Ticks" Type="VT_I4" />
+        <Item Name="TrendSystem.TrendTime" />
+        <Item Name="TrendSystem.ShowSettings" Type="VT_BOOL" />
+      </Items>
+    </Intern>
+    <Extern>
+      <Channels>
+        <Channel Name="Controller" Type="Driver" ProgID="LogicAndMotionV3" Description="Driver for Logic And Motion V3 runtimes over PLCHandler">
+          <Items>
+            <Item Name="Controller.Application.GLOBAL.Burner_activation" ID="L1.Application.GLOBAL.Burner_activation" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Burner_protection" ID="L1.Application.GLOBAL.Burner_protection" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Burner_reset" ID="L1.Application.GLOBAL.Burner_reset" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Chamber_humidity" ID="L1.Application.GLOBAL.Chamber_humidity" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Chamber_temperature" ID="L1.Application.GLOBAL.Chamber_temperature" Type="VT_R4" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Chamber_temperature_dry_sensor" ID="L1.Application.GLOBAL.Chamber_temperature_dry_sensor" Type="VT_UI2" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Chamber_temperature_wet_sensor" ID="L1.Application.GLOBAL.Chamber_temperature_wet_sensor" Type="VT_UI2" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Chimney_activation" ID="L1.Application.GLOBAL.Chimney_activation" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Core_temperature" ID="L1.Application.GLOBAL.Core_temperature" Type="VT_R4" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Core_temperature_sensor" ID="L1.Application.GLOBAL.Core_temperature_sensor" Type="VT_UI2" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Emergency_chamber" ID="L1.Application.GLOBAL.Emergency_chamber" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Higher_chimney_closed" ID="L1.Application.GLOBAL.Higher_chimney_closed" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Higher_chimney_open" ID="L1.Application.GLOBAL.Higher_chimney_open" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Humidification_valve_activation" ID="L1.Application.GLOBAL.Humidification_valve_activation" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Lower_chimney_closed" ID="L1.Application.GLOBAL.Lower_chimney_closed" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Lower_chimney_open" ID="L1.Application.GLOBAL.Lower_chimney_open" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,0]" ID="L1.Application.GLOBAL.Motor_activation[0,0]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,1]" ID="L1.Application.GLOBAL.Motor_activation[0,1]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,10]" ID="L1.Application.GLOBAL.Motor_activation[0,10]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,2]" ID="L1.Application.GLOBAL.Motor_activation[0,2]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,3]" ID="L1.Application.GLOBAL.Motor_activation[0,3]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,4]" ID="L1.Application.GLOBAL.Motor_activation[0,4]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,5]" ID="L1.Application.GLOBAL.Motor_activation[0,5]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,6]" ID="L1.Application.GLOBAL.Motor_activation[0,6]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,7]" ID="L1.Application.GLOBAL.Motor_activation[0,7]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,8]" ID="L1.Application.GLOBAL.Motor_activation[0,8]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[0,9]" ID="L1.Application.GLOBAL.Motor_activation[0,9]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,0]" ID="L1.Application.GLOBAL.Motor_activation[1,0]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,1]" ID="L1.Application.GLOBAL.Motor_activation[1,1]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,10]" ID="L1.Application.GLOBAL.Motor_activation[1,10]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,2]" ID="L1.Application.GLOBAL.Motor_activation[1,2]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,3]" ID="L1.Application.GLOBAL.Motor_activation[1,3]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,4]" ID="L1.Application.GLOBAL.Motor_activation[1,4]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,5]" ID="L1.Application.GLOBAL.Motor_activation[1,5]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,6]" ID="L1.Application.GLOBAL.Motor_activation[1,6]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,7]" ID="L1.Application.GLOBAL.Motor_activation[1,7]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,8]" ID="L1.Application.GLOBAL.Motor_activation[1,8]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[1,9]" ID="L1.Application.GLOBAL.Motor_activation[1,9]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,0]" ID="L1.Application.GLOBAL.Motor_activation[2,0]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,1]" ID="L1.Application.GLOBAL.Motor_activation[2,1]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,10]" ID="L1.Application.GLOBAL.Motor_activation[2,10]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,2]" ID="L1.Application.GLOBAL.Motor_activation[2,2]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,3]" ID="L1.Application.GLOBAL.Motor_activation[2,3]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,4]" ID="L1.Application.GLOBAL.Motor_activation[2,4]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,5]" ID="L1.Application.GLOBAL.Motor_activation[2,5]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,6]" ID="L1.Application.GLOBAL.Motor_activation[2,6]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,7]" ID="L1.Application.GLOBAL.Motor_activation[2,7]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,8]" ID="L1.Application.GLOBAL.Motor_activation[2,8]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_activation[2,9]" ID="L1.Application.GLOBAL.Motor_activation[2,9]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Motor_protection" ID="L1.Application.GLOBAL.Motor_protection" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Program_chamber" ID="L1.Application.GLOBAL.Program_chamber" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Program_chamber_status" ID="L1.Application.GLOBAL.Program_chamber_status" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Program_cycles" ID="L1.Application.GLOBAL.Program_cycles" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Program_elapsed" ID="L1.Application.GLOBAL.Program_elapsed" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Program_estimated" ID="L1.Application.GLOBAL.Program_estimated" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Program_estimated_time" ID="L1.Application.GLOBAL.Program_estimated_time" Type="VT_DATE" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Program_process_init" ID="L1.Application.GLOBAL.Program_process_init" Type="VT_DATE" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Program_recipe_chamber" ID="L1.Application.GLOBAL.Program_recipe_chamber" />
+            <Item Name="Controller.Application.GLOBAL.Program_steps" ID="L1.Application.GLOBAL.Program_steps" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Smokehouse_activation" ID="L1.Application.GLOBAL.Smokehouse_activation" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Sound_activation" ID="L1.Application.GLOBAL.Sound_activation" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Steam_valve_activation" ID="L1.Application.GLOBAL.Steam_valve_activation" Type="VT_BOOL" Cnt="3" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,0]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[0,0]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,1]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[0,1]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,2]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[0,2]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,3]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[0,3]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,4]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[0,4]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,5]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[0,5]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,6]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[0,6]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,7]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[0,7]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,8]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[0,8]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,9]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[0,9]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,0]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[1,0]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,1]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[1,1]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,2]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[1,2]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,3]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[1,3]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,4]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[1,4]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,5]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[1,5]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,6]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[1,6]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,7]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[1,7]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,8]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[1,8]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,9]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[1,9]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,0]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[2,0]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,1]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[2,1]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,2]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[2,2]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,3]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[2,3]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,4]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[2,4]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,5]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[2,5]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,6]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[2,6]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,7]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[2,7]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,8]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[2,8]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,9]" ID="L1.Application.RECIPES.Recipe_chamber_chimney[2,9]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,0]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[0,0]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,1]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[0,1]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,2]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[0,2]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,3]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[0,3]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,4]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[0,4]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,5]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[0,5]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,6]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[0,6]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,7]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[0,7]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,8]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[0,8]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,9]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[0,9]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,0]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[1,0]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,1]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[1,1]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,2]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[1,2]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,3]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[1,3]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,4]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[1,4]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,5]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[1,5]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,6]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[1,6]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,7]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[1,7]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,8]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[1,8]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,9]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[1,9]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,0]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[2,0]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,1]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[2,1]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,2]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[2,2]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,3]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[2,3]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,4]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[2,4]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,5]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[2,5]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,6]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[2,6]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,7]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[2,7]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,8]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[2,8]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,9]" ID="L1.Application.RECIPES.Recipe_chamber_humidity[2,9]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,0]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[0,0]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,1]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[0,1]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,2]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[0,2]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,3]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[0,3]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,4]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[0,4]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,5]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[0,5]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,6]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[0,6]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,7]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[0,7]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,8]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[0,8]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,9]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[0,9]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,0]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[1,0]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,1]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[1,1]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,2]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[1,2]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,3]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[1,3]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,4]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[1,4]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,5]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[1,5]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,6]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[1,6]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,7]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[1,7]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,8]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[1,8]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,9]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[1,9]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,0]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[2,0]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,1]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[2,1]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,2]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[2,2]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,3]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[2,3]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,4]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[2,4]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,5]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[2,5]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,6]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[2,6]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,7]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[2,7]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,8]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[2,8]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,9]" ID="L1.Application.RECIPES.Recipe_chamber_smokehouse[2,9]" Type="VT_BOOL" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,0]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[0,0]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,1]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[0,1]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,2]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[0,2]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,3]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[0,3]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,4]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[0,4]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,5]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[0,5]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,6]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[0,6]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,7]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[0,7]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,8]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[0,8]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,9]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[0,9]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,0]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[1,0]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,1]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[1,1]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,2]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[1,2]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,3]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[1,3]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,4]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[1,4]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,5]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[1,5]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,6]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[1,6]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,7]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[1,7]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,8]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[1,8]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,9]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[1,9]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,0]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[2,0]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,1]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[2,1]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,2]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[2,2]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,3]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[2,3]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,4]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[2,4]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,5]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[2,5]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,6]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[2,6]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,7]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[2,7]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,8]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[2,8]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,9]" ID="L1.Application.RECIPES.Recipe_chamber_temperature[2,9]" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Recipe_core_temperature" ID="L1.Application.RECIPES.Recipe_core_temperature" Type="VT_R4" Cnt="3" />
+            <Item Name="Controller.Application.RECIPES.Recipe_cycles" ID="L1.Application.RECIPES.Recipe_cycles" Cnt="3" />
+            <Item Name="Controller.Application.RECIPES.Recipe_description" ID="L1.Application.RECIPES.Recipe_description" Type="VT_BSTR" Cnt="3" />
+            <Item Name="Controller.Application.RECIPES.Recipe_name" ID="L1.Application.RECIPES.Recipe_name" Type="VT_BSTR" Cnt="3" />
+            <Item Name="Controller.Application.RECIPES.Recipe_steps" ID="L1.Application.RECIPES.Recipe_steps" Cnt="3" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[0,0]" ID="L1.Application.RECIPES.Recipe_timer_step[0,0]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[0,1]" ID="L1.Application.RECIPES.Recipe_timer_step[0,1]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[0,2]" ID="L1.Application.RECIPES.Recipe_timer_step[0,2]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[0,3]" ID="L1.Application.RECIPES.Recipe_timer_step[0,3]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[0,4]" ID="L1.Application.RECIPES.Recipe_timer_step[0,4]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[0,5]" ID="L1.Application.RECIPES.Recipe_timer_step[0,5]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[0,6]" ID="L1.Application.RECIPES.Recipe_timer_step[0,6]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[0,7]" ID="L1.Application.RECIPES.Recipe_timer_step[0,7]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[0,8]" ID="L1.Application.RECIPES.Recipe_timer_step[0,8]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[0,9]" ID="L1.Application.RECIPES.Recipe_timer_step[0,9]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[1,0]" ID="L1.Application.RECIPES.Recipe_timer_step[1,0]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[1,1]" ID="L1.Application.RECIPES.Recipe_timer_step[1,1]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[1,2]" ID="L1.Application.RECIPES.Recipe_timer_step[1,2]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[1,3]" ID="L1.Application.RECIPES.Recipe_timer_step[1,3]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[1,4]" ID="L1.Application.RECIPES.Recipe_timer_step[1,4]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[1,5]" ID="L1.Application.RECIPES.Recipe_timer_step[1,5]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[1,6]" ID="L1.Application.RECIPES.Recipe_timer_step[1,6]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[1,7]" ID="L1.Application.RECIPES.Recipe_timer_step[1,7]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[1,8]" ID="L1.Application.RECIPES.Recipe_timer_step[1,8]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[1,9]" ID="L1.Application.RECIPES.Recipe_timer_step[1,9]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[2,0]" ID="L1.Application.RECIPES.Recipe_timer_step[2,0]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[2,1]" ID="L1.Application.RECIPES.Recipe_timer_step[2,1]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[2,2]" ID="L1.Application.RECIPES.Recipe_timer_step[2,2]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[2,3]" ID="L1.Application.RECIPES.Recipe_timer_step[2,3]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[2,4]" ID="L1.Application.RECIPES.Recipe_timer_step[2,4]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[2,5]" ID="L1.Application.RECIPES.Recipe_timer_step[2,5]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[2,6]" ID="L1.Application.RECIPES.Recipe_timer_step[2,6]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[2,7]" ID="L1.Application.RECIPES.Recipe_timer_step[2,7]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[2,8]" ID="L1.Application.RECIPES.Recipe_timer_step[2,8]" />
+            <Item Name="Controller.Application.RECIPES.Recipe_timer_step[2,9]" ID="L1.Application.RECIPES.Recipe_timer_step[2,9]" />
+            <Item Name="Controller.Application.RECIPES.Transfer_chamber_chimney" ID="L1.Application.RECIPES.Transfer_chamber_chimney" Type="VT_BOOL" Cnt="10" />
+            <Item Name="Controller.Application.RECIPES.Transfer_chamber_humidity" ID="L1.Application.RECIPES.Transfer_chamber_humidity" Cnt="10" />
+            <Item Name="Controller.Application.RECIPES.Transfer_chamber_smokehouse" ID="L1.Application.RECIPES.Transfer_chamber_smokehouse" Type="VT_BOOL" Cnt="10" />
+            <Item Name="Controller.Application.RECIPES.Transfer_chamber_temperature" ID="L1.Application.RECIPES.Transfer_chamber_temperature" Type="VT_R4" Cnt="10" />
+            <Item Name="Controller.Application.RECIPES.Transfer_core_temperature" ID="L1.Application.RECIPES.Transfer_core_temperature" Type="VT_R4" />
+            <Item Name="Controller.Application.RECIPES.Transfer_cycles" ID="L1.Application.RECIPES.Transfer_cycles" />
+            <Item Name="Controller.Application.RECIPES.Transfer_description" ID="L1.Application.RECIPES.Transfer_description" Type="VT_BSTR" />
+            <Item Name="Controller.Application.RECIPES.Transfer_name" ID="L1.Application.RECIPES.Transfer_name" Type="VT_BSTR" />
+            <Item Name="Controller.Application.RECIPES.Transfer_steps" ID="L1.Application.RECIPES.Transfer_steps" />
+            <Item Name="Controller.Application.RECIPES.Transfer_timer_step" ID="L1.Application.RECIPES.Transfer_timer_step" Cnt="10" />
+            <Item Name="Controller.Application.SETTINGS.Chamber_humidity_offset" ID="L1.Application.SETTINGS.Chamber_humidity_offset" Cnt="3" />
+            <Item Name="Controller.Application.SETTINGS.Chamber_temperature_offset" ID="L1.Application.SETTINGS.Chamber_temperature_offset" Type="VT_R4" Cnt="3" />
+            <Item Name="Controller.Application.SETTINGS.Core_temperature_offset" ID="L1.Application.SETTINGS.Core_temperature_offset" Type="VT_R4" Cnt="3" />
+            <Item Name="Controller.Application.SETTINGS.Enabled_chamber_cars" ID="L1.Application.SETTINGS.Enabled_chamber_cars" />
+            <Item Name="Controller.Application.SETTINGS.Enabled_chambers" ID="L1.Application.SETTINGS.Enabled_chambers" />
+            <Item Name="Controller.Application.SETTINGS.Humidity_lower_hysteresis" ID="L1.Application.SETTINGS.Humidity_lower_hysteresis" />
+            <Item Name="Controller.Application.SETTINGS.Humidity_upper_hysteresis" ID="L1.Application.SETTINGS.Humidity_upper_hysteresis" />
+            <Item Name="Controller.Application.SETTINGS.lower_limit_humidity" ID="L1.Application.SETTINGS.lower_limit_humidity" />
+            <Item Name="Controller.Application.SETTINGS.Lower_limit_temperature" ID="L1.Application.SETTINGS.Lower_limit_temperature" Type="VT_R4" />
+            <Item Name="Controller.Application.SETTINGS.Lower_limit_timer_cycle" ID="L1.Application.SETTINGS.Lower_limit_timer_cycle" />
+            <Item Name="Controller.Application.SETTINGS.Temperature_control_system" ID="L1.Application.SETTINGS.Temperature_control_system" Type="VT_BOOL" />
+            <Item Name="Controller.Application.SETTINGS.Temperature_lower_hysteresis" ID="L1.Application.SETTINGS.Temperature_lower_hysteresis" Type="VT_R4" />
+            <Item Name="Controller.Application.SETTINGS.Temperature_maximum" ID="L1.Application.SETTINGS.Temperature_maximum" Type="VT_R4" />
+            <Item Name="Controller.Application.SETTINGS.Temperature_upper_hysteresis" ID="L1.Application.SETTINGS.Temperature_upper_hysteresis" Type="VT_R4" />
+            <Item Name="Controller.Application.SETTINGS.Timer_activation_humidification_valve" ID="L1.Application.SETTINGS.Timer_activation_humidification_valve" />
+            <Item Name="Controller.Application.SETTINGS.Timer_activation_motors" ID="L1.Application.SETTINGS.Timer_activation_motors" />
+            <Item Name="Controller.Application.SETTINGS.timer_response_humidification_valve" ID="L1.Application.SETTINGS.timer_response_humidification_valve" />
+            <Item Name="Controller.Application.SETTINGS.Upper_limit_humidity" ID="L1.Application.SETTINGS.Upper_limit_humidity" />
+            <Item Name="Controller.Application.SETTINGS.Upper_limit_temperature" ID="L1.Application.SETTINGS.Upper_limit_temperature" Type="VT_R4" />
+            <Item Name="Controller.Application.SETTINGS.Upper_limit_timer_cycle" ID="L1.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <Item Name="Controller.Application.GLOBAL.Alarms_chambers_status" ID="L1.Application.GLOBAL.Alarms_chambers_status" Cnt="3" />
+            <Item Name="Controller.Application.GLOBAL.Beeb_activation" ID="L1.Application.GLOBAL.Beeb_activation" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Alamrs_acknowledge" ID="L1.Application.GLOBAL.Alamrs_acknowledge" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Alarms_activation" ID="L1.Application.GLOBAL.Alarms_activation" Type="VT_BOOL" />
+            <Item Name="Controller.Application.GLOBAL.Smokehouse_protection" ID="L1.Application.GLOBAL.Smokehouse_protection" Type="VT_BOOL" Cnt="3" />
+          </Items>
+          <Configuration>
+            <Global ShowDiagnosticDialog="0" />
+            <CoDeSys>
+              <Line1 Active="1" Interface="Gateway3" PLCisLocal="1" InitTimeOut="10000" PLCHandlerLog="0" LogFile="C:\Temp\PLCHandlerLog.txt">
+                <Gateway GatewayIP="192.168.5.99" GatewayPort="1217" PlcAddress="0063" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </Gateway>
+                <ARTI3 PlcAddress="p300 (192.168.5.99)" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </ARTI3>
+              </Line1>
+              <Line2 Active="0" Interface="Gateway3" PLCisLocal="1" InitTimeOut="10000" PLCHandlerLog="0" LogFile="C:\Temp\PLCHandlerLog.txt">
+                <Gateway GatewayIP="192.168.5.99" GatewayPort="1217" PlcAddress="0063" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </Gateway>
+                <ARTI3 PlcAddress="p300 (192.168.5.99)" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </ARTI3>
+              </Line2>
+              <Line3 Active="0" Interface="Gateway3" PLCisLocal="1" InitTimeOut="10000" PLCHandlerLog="0" LogFile="C:\Temp\PLCHandlerLog.txt">
+                <Gateway GatewayIP="192.168.5.99" GatewayPort="1217" PlcAddress="0063" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </Gateway>
+                <ARTI3 PlcAddress="p300 (192.168.5.99)" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </ARTI3>
+              </Line3>
+              <Line4 Active="0" Interface="Gateway3" PLCisLocal="1" InitTimeOut="10000" PLCHandlerLog="0" LogFile="C:\Temp\PLCHandlerLog.txt">
+                <Gateway GatewayIP="192.168.5.99" GatewayPort="1217" PlcAddress="0063" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </Gateway>
+                <ARTI3 PlcAddress="p300 (192.168.5.99)" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </ARTI3>
+              </Line4>
+              <Line5 Active="0" Interface="Gateway3" PLCisLocal="1" InitTimeOut="10000" PLCHandlerLog="0" LogFile="C:\Temp\PLCHandlerLog.txt">
+                <Gateway GatewayIP="192.168.5.99" GatewayPort="1217" PlcAddress="0063" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </Gateway>
+                <ARTI3 PlcAddress="p300 (192.168.5.99)" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </ARTI3>
+              </Line5>
+              <Line6 Active="0" Interface="Gateway3" PLCisLocal="1" InitTimeOut="10000" PLCHandlerLog="0" LogFile="C:\Temp\PLCHandlerLog.txt">
+                <Gateway GatewayIP="192.168.5.99" GatewayPort="1217" PlcAddress="0063" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </Gateway>
+                <ARTI3 PlcAddress="p300 (192.168.5.99)" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </ARTI3>
+              </Line6>
+              <Line7 Active="0" Interface="Gateway3" PLCisLocal="1" InitTimeOut="10000" PLCHandlerLog="0" LogFile="C:\Temp\PLCHandlerLog.txt">
+                <Gateway GatewayIP="192.168.5.99" GatewayPort="1217" PlcAddress="0063" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </Gateway>
+                <ARTI3 PlcAddress="p300 (192.168.5.99)" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </ARTI3>
+              </Line7>
+              <Line8 Active="0" Interface="Gateway3" PLCisLocal="1" InitTimeOut="10000" PLCHandlerLog="0" LogFile="C:\Temp\PLCHandlerLog.txt">
+                <Gateway GatewayIP="192.168.5.99" GatewayPort="1217" PlcAddress="0063" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </Gateway>
+                <ARTI3 PlcAddress="p300 (192.168.5.99)" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </ARTI3>
+              </Line8>
+              <Line9 Active="0" Interface="Gateway3" PLCisLocal="1" InitTimeOut="10000" PLCHandlerLog="0" LogFile="C:\Temp\PLCHandlerLog.txt">
+                <Gateway GatewayIP="192.168.5.99" GatewayPort="1217" PlcAddress="0063" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </Gateway>
+                <ARTI3 PlcAddress="p300 (192.168.5.99)" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </ARTI3>
+              </Line9>
+              <Line10 Active="0" Interface="Gateway3" PLCisLocal="1" InitTimeOut="10000" PLCHandlerLog="0" LogFile="C:\Temp\PLCHandlerLog.txt">
+                <Gateway GatewayIP="192.168.5.99" GatewayPort="1217" PlcAddress="0063" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </Gateway>
+                <ARTI3 PlcAddress="p300 (192.168.5.99)" TimeOut="5000" UseUserLogin="0">
+                  <UserLogin UserLoginUser="" UserLoginPassword="" />
+                </ARTI3>
+              </Line10>
+            </CoDeSys>
+            <Monitoring Groups="0" Items="0" />
+          </Configuration>
+        </Channel>
+      </Channels>
+    </Extern>
+    <Groups>
+      <Group Name="Standard" Cmt="Alle Variablen werden automatisch zuerst dieser Gruppe zugeordnet. Die Gruppe kann nicht gelöscht werden." UpdateRate="500" />
+    </Groups>
+    <UnitClasses>
+      <Process>
+        <UnitClass Name="LenzeFix32" Cmt="Prozessumrechnung für Integervariablen, Bsp.: 12345 (integer in SPS) wird konvertiert zu 12345 (double in VisiWinNET)">
+          <Units>
+            <Unit SwitchID="0" x2="10000" />
+          </Units>
+        </UnitClass>
+        <UnitClass Name="LenzeFix32_1Decpoints" Cmt="Prozessumrechnung für Integervariablen, Bsp.: 12345 (integer in SPS) wird konvertiert zu 1234,5 (double in VisiWinNET)">
+          <Units>
+            <Unit SwitchID="0" DecPoint="1" x2="1000" />
+          </Units>
+        </UnitClass>
+        <UnitClass Name="LenzeFix32_2Decpoints" Cmt="Prozessumrechnung für Integervariablen, Bsp.: 12345 (integer in SPS) wird konvertiert zu 123,45 (double in VisiWinNET)">
+          <Units>
+            <Unit SwitchID="0" DecPoint="2" x2="100" />
+          </Units>
+        </UnitClass>
+        <UnitClass Name="LenzeFix32_3Decpoints" Cmt="Prozessumrechnung für Integervariablen, Bsp.: 12345 (integer in SPS) wird konvertiert zu 12,345 (double in VisiWinNET)">
+          <Units>
+            <Unit SwitchID="0" DecPoint="3" x2="10" />
+          </Units>
+        </UnitClass>
+        <UnitClass Name="LenzeFix32_4Decpoints" Cmt="Prozessumrechnung für Integervariablen, Bsp.: 12345 (integer in SPS) wird konvertiert zu 1,2345 (double in VisiWinNET)">
+          <Units>
+            <Unit SwitchID="0" DecPoint="4" />
+          </Units>
+        </UnitClass>
+      </Process>
+      <Display />
+    </UnitClasses>
+    <Multiplexers />
+  </ItemSystem>
+  <AlarmSystem>
+    <Settings FlushMaxAlarms="100" FlushTime="5" Mode="1" Format="1" SaveStates="2" BufferSize="1000" />
+    <Classes>
+      <Class Name="SystemAlarm" Ack="0" Cmt="Nicht quittierpflichtger Alarm des VisiWinNET-Laufzeitsystems, zurücksetzbar" FrClrActiveAck="16777215" BkClrActiveAck="11829830" />
+      <Class Name="Alarm" Save="-1" Cmt="Selbstdefinierter quitttierpflichtiger Alarm" FrClrActiveAck="16777215" BkClrActiveAck="11829830" SngAck="-1" />
+      <Class Name="Message" SngAck="-1" Save="-1" Cmt="Selbstdefinierte quitttierpflichtige Meldung" FrClrActiveAck="16777215" BkClrActiveAck="11829830" />
+      <Class Name="Hint" Ack="3" Cmt="Selbstdefinierter nicht quitttierpflichtiger Hinweis, zurücksetzbar" FrClrActive="0" BkClrActive="65535" FrClrActiveAck="16777215" BkClrActiveAck="11829830" />
+      <Class Name="LogBook" BkClrActiveAck="11829830" Save="-1" FrClrActiveAck="16777215" Ack="3" />
+    </Classes>
+    <Types>
+      <ValueAlarms>
+        <Type Name="StatusChamber">
+          <Values>
+            <Value Name="Enabled" Value="2" Cls="LogBook" />
+            <Value Name="Stalled" Value="3" Cls="LogBook" />
+            <Value Name="CoreTemperature" Value="4" Cls="LogBook" />
+            <Value Name="ProgrammedTime" Value="5" Cls="LogBook" />
+            <Value Name="UserIntervention" Value="6" Cls="LogBook" />
+            <Value Name="ForFailure" Value="7" Cls="LogBook" />
+            <Value Name="Continuing" Value="8" Cls="LogBook" />
+          </Values>
+        </Type>
+      </ValueAlarms>
+      <BitBlockAlarms>
+        <Type Name="AlarmsChamber">
+          <Bits>
+            <Bit Name="Assignment1" />
+            <Bit Name="Assignment2" BitNo="1" />
+            <Bit Name="Assignment3" BitNo="2" />
+            <Bit Name="Assignment4" BitNo="3" />
+            <Bit Name="Assignment5" BitNo="4" />
+            <Bit Name="Assignment6" BitNo="5" />
+            <Bit Name="Assignment7" BitNo="6" />
+            <Bit Name="Assignment8" BitNo="7" />
+            <Bit Name="Assignment9" BitNo="8" />
+            <Bit Name="Assignment10" BitNo="9" />
+            <Bit Name="Assignment11" BitNo="10" />
+            <Bit Name="Assignment12" BitNo="11" />
+            <Bit Name="Assignment13" BitNo="12" />
+            <Bit Name="Assignment14" BitNo="13" />
+            <Bit Name="Assignment15" BitNo="14" />
+          </Bits>
+        </Type>
+      </BitBlockAlarms>
+    </Types>
+    <Groups>
+      <Group Name="SystemAlarms" Cmt="Alarme des VisiWinNET-Laufzeitsystems">
+        <Alarms>
+          <Alarm Name="Collective" ItmEvt="__SYSTEM_ERRORS.COLLECTIVE" Cls="SystemAlarm" Cmt="Sammelstörung VisiWinNET Laufzeitsystem" />
+          <Alarm Name="DataAccess" ItmEvt="__SYSTEM_ERRORS.DATA_ACCESS" Cls="SystemAlarm" Cmt="Fehler im OPC-Client, Treiberanbindung oder Variablenverwaltung" />
+          <Alarm Name="LanguageSwitching" ItmEvt="__SYSTEM_ERRORS.LANGUAGE_SWITCHING" Cls="SystemAlarm" Cmt="Fehler im Sprachumschaltungs-System" />
+          <Alarm Name="Project" ItmEvt="__SYSTEM_ERRORS.PROJECT" Cls="SystemAlarm" Cmt="Fehler in der Projektverwaltung" />
+          <Alarm Name="Alarm" ItmEvt="__SYSTEM_ERRORS.ALARM" Cls="SystemAlarm" Cmt="Fehler in der Alarmverwaltung" />
+          <Alarm Name="Recipe" ItmEvt="__SYSTEM_ERRORS.RECIPE" Cls="SystemAlarm" Cmt="Fehler im Rezeptsystem" />
+          <Alarm Name="UserManagement" ItmEvt="__SYSTEM_ERRORS.USER_MANAGEMENT" Cls="SystemAlarm" Cmt="Fehler im Benutzersystem" />
+          <Alarm Name="Trend" ItmEvt="__SYSTEM_ERRORS.TREND" Cls="SystemAlarm" Cmt="Fehler im Trendsystem" />
+          <Alarm Name="Logging" ItmEvt="__SYSTEM_ERRORS.LOGGING" Cls="SystemAlarm" Cmt="Fehler im Loggingsystem" />
+          <Alarm Name="Forms" ItmEvt="__SYSTEM_ERRORS.FORMS" Cls="SystemAlarm" Cmt="Fehler in der Formularverwaltung" />
+          <Alarm Name="Drivers" ItmEvt="__SYSTEM_ERRORS.DRIVERS" Cls="SystemAlarm" Cmt="Fehler in VisiWinNET Treiber" />
+        </Alarms>
+      </Group>
+      <Group Name="ProcessAlarms">
+        <Alarms>
+          <Alarm Name="Chamber00" ItmEvt="Controller.Controller.Application.GLOBAL.Alarms_chambers_status&lt;[0].0..15&gt;" AType="BitBlock" TypeName="AlarmsChamber" />
+          <Alarm Name="Chamber01" ItmEvt="Controller.Controller.Application.GLOBAL.Alarms_chambers_status&lt;[1].0..15&gt;" AType="BitBlock" TypeName="AlarmsChamber" />
+          <Alarm Name="Chamber02" ItmEvt="Controller.Controller.Application.GLOBAL.Alarms_chambers_status&lt;[2].0..15&gt;" AType="BitBlock" TypeName="AlarmsChamber" />
+        </Alarms>
+      </Group>
+      <Group Name="ProcessLogBook">
+        <Alarms>
+          <Alarm Name="Chamber00" ItmEvt="Controller.Controller.Application.GLOBAL.Program_chamber_status&lt;[2]&gt;" Cls="LogBook" AType="Numeric" TypeName="StatusChamber" />
+          <Alarm Name="Chamber01" ItmEvt="Controller.Controller.Application.GLOBAL.Program_chamber_status&lt;[1]&gt;" Cls="LogBook" AType="Numeric" TypeName="StatusChamber" />
+          <Alarm Name="Chamber02" ItmEvt="Controller.Controller.Application.GLOBAL.Program_chamber_status&lt;[2]&gt;" Cls="LogBook" AType="Numeric" TypeName="StatusChamber" />
+        </Alarms>
+      </Group>
+    </Groups>
+  </AlarmSystem>
+  <RecipeSystem>
+    <Recipes>
+      <Recipe Name="Recipes" MaxFiles="250" SaveSubRecipes="-1" ItmRecipeName="RecipeSystem.FileName" ItmDescription="RecipeSystem.FileDescription">
+        <Items>
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_core_temperature" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_cycles" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_steps" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[0]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[1]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[2]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[3]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[4]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[5]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[6]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[7]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[8]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[9]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[0]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[1]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[2]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[3]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[4]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[5]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[6]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[7]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[8]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[9]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[0]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[1]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[2]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[3]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[4]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[5]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[6]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[7]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[8]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[9]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[0]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[1]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[2]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[3]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[4]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[5]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[6]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[7]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[8]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[9]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[0]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[1]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[2]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[3]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[4]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[5]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[6]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[7]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[8]&gt;" />
+          <Item Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[9]&gt;" />
+        </Items>
+      </Recipe>
+    </Recipes>
+  </RecipeSystem>
+  <UserSystem>
+    <Settings />
+    <PasswordPolicies />
+    <UserPolicies />
+    <UserGroups>
+      <UserGroup Name="Administration" Checksum="-2120543293" AutoLogOffTime="5" InvalidateAfterFailedLogOns="5" PermitDelete="-1">
+        <Rights>
+          <Right Name="UserManagement" />
+        </Rights>
+        <Users>
+          <User Name="admin" Fullname="Administration" Checksum="739983664" Password="1913252059" State="1" />
+        </Users>
+      </UserGroup>
+      <UserGroup Name="Engineeriong" Checksum="1772610856" AutoLogOffTime="5" InvalidateAfterFailedLogOns="5" PermitDelete="-1">
+        <Rights>
+          <Right Name="UserManagement" />
+        </Rights>
+      </UserGroup>
+      <UserGroup Name="Operation" Checksum="696802346" AutoLogOffTime="5" InvalidateAfterFailedLogOns="5" PermitDelete="-1">
+        <Rights>
+          <Right Name="UserManagement" />
+        </Rights>
+      </UserGroup>
+    </UserGroups>
+    <Rights>
+      <Right Name="UserManagement" />
+    </Rights>
+    <BadPassWords />
+  </UserSystem>
+  <ArchiveSystem>
+    <Settings />
+    <Archives>
+      <Archive Name="Chamber00" FileName="Chamber00" CacheSize="50" MaxFiles="10">
+        <Trends>
+          <Trend Name="TemperatureChamber" HysteresisMode="3" TrendItm="Controller.Controller.Application.GLOBAL.Chamber_temperature&lt;[0]&gt;" />
+          <Trend Name="TemperatureCore" HysteresisMode="3" TrendItm="Controller.Controller.Application.GLOBAL.Core_temperature&lt;[0]&gt;" />
+        </Trends>
+      </Archive>
+      <Archive Name="Chamber01" FileName="Chamber01" CacheSize="50" MaxFiles="10">
+        <Trends>
+          <Trend Name="TemperatureChamber" HysteresisMode="3" TrendItm="Controller.Controller.Application.GLOBAL.Chamber_temperature&lt;[1]&gt;" />
+          <Trend Name="TemperatureCore" HysteresisMode="3" TrendItm="Controller.Controller.Application.GLOBAL.Core_temperature&lt;[1]&gt;" />
+        </Trends>
+      </Archive>
+      <Archive Name="Chamber02" FileName="Chamber02" CacheSize="50" MaxFiles="10">
+        <Trends>
+          <Trend Name="TemperatureChamber" HysteresisMode="3" TrendItm="Controller.Controller.Application.GLOBAL.Chamber_temperature&lt;[2]&gt;" />
+          <Trend Name="TemperatureCore" HysteresisMode="3" TrendItm="Controller.Controller.Application.GLOBAL.Core_temperature&lt;[2]&gt;" />
+        </Trends>
+      </Archive>
+    </Archives>
+  </ArchiveSystem>
+  <LoggingSystem>
+    <Settings />
+    <Categories>
+      <Category Name="Project" Cmt="Systemkategorie mit allgemeinen projektbezogenen Ereignissen">
+        <Events>
+          <Event Name="Start" Cmt="Systemereignis: Projekt gestartet">
+            <Params>
+              <Param Name="ProjectName" Idx="1" Cmt="Name des Projektes" />
+              <Param Name="Success" Idx="2" Cmt="Erfolg des Startvorgangs: 0 oder 1" />
+            </Params>
+          </Event>
+          <Event Name="Stop" Cmt="Systemereignis: Projekt beendet">
+            <Params>
+              <Param Name="ProjectName" Idx="1" Cmt="Name des Projektes" />
+            </Params>
+          </Event>
+        </Events>
+      </Category>
+      <Category Name="UserSystem" Cmt="Systemkategorie mit Ereignissen der Benutzerverwaltung">
+        <Events>
+          <Event Name="LogOn" Cmt="Systemereignis: Benutzer hat sich angemeldet">
+            <Params>
+              <Param Name="User" Idx="1" Cmt="Benutzername" />
+              <Param Name="FullName" Idx="2" Cmt="Vollständiger Benutzername" />
+              <Param Name="GroupName" Idx="3" Cmt="Name des Gruppenobjekts" />
+              <Param Name="GroupText" Idx="4" Cmt="Gruppenname" />
+            </Params>
+          </Event>
+          <Event Name="LogOff" Cmt="Systemereignis: Benutzer hat sich abgemeldet">
+            <Params>
+              <Param Name="User" Idx="1" Cmt="Benutzername" />
+              <Param Name="FullName" Idx="2" Cmt="Vollständiger Benutzername" />
+            </Params>
+          </Event>
+          <Event Name="AutoLogOff" Cmt="Systemereignis: Benutzer wurde automatisch vom System abgemeldet">
+            <Params>
+              <Param Name="User" Idx="1" Cmt="Benutzername" />
+              <Param Name="FullName" Idx="2" Cmt="Vollständiger Benutzername" />
+            </Params>
+          </Event>
+          <Event Name="VerifyUser" Cmt="Systemereignis: Benutzer wurde überprüft">
+            <Params>
+              <Param Name="User" Idx="1" Cmt="Benutzername" />
+              <Param Name="FullName" Idx="2" Cmt="Vollständiger Benutzername" />
+              <Param Name="GroupName" Idx="3" Cmt="Name des Gruppenobjekts" />
+              <Param Name="GroupText" Idx="4" Cmt="Gruppenname" />
+            </Params>
+          </Event>
+          <Event Name="AddUser" Cmt="Systemereignis: Neuer Benutzer wurde hinzugefügt">
+            <Params>
+              <Param Name="User" Idx="1" Cmt="Benutzername" />
+              <Param Name="FullName" Idx="2" Cmt="Vollständiger Benutzername" />
+              <Param Name="GroupName" Idx="3" Cmt="Name des Gruppenobjekts" />
+              <Param Name="GroupText" Idx="4" Cmt="Gruppenname" />
+            </Params>
+          </Event>
+          <Event Name="RemoveUser" Cmt="Systemereignis: Benutzer wurde gelöscht">
+            <Params>
+              <Param Name="User" Idx="1" Cmt="Benutzername" />
+              <Param Name="FullName" Idx="2" Cmt="Vollständiger Benutzername" />
+              <Param Name="GroupName" Idx="3" Cmt="Name des Gruppenobjekts" />
+              <Param Name="GroupText" Idx="4" Cmt="Gruppenname" />
+            </Params>
+          </Event>
+          <Event Name="ChangeUser" Cmt="Systemereignis: Benutzer wurde einer anderen Benutzergruppe zugeordnet">
+            <Params>
+              <Param Name="User" Idx="1" Cmt="Benutzername" />
+              <Param Name="FullName" Idx="2" Cmt="Vollständiger Benutzername" />
+              <Param Name="PrevGroupName" Idx="3" Cmt="Bisher: Name des Gruppenobjekts" />
+              <Param Name="PrevGroupText" Idx="4" Cmt="Bisher: Gruppenname" />
+              <Param Name="NewGroupName" Idx="5" Cmt="Neu: Name des Gruppenobjekts" />
+              <Param Name="NewGroupText" Idx="6" Cmt="Neu: Gruppenname" />
+            </Params>
+          </Event>
+          <Event Name="ChangeUserState" Cmt="Systemereignis: Benutzerstatus wurde geändert">
+            <Params>
+              <Param Name="User" Idx="1" Cmt="Benutzername" />
+              <Param Name="FullName" Idx="2" Cmt="Vollständiger Benutzername" />
+              <Param Name="PreviousState" Idx="3" Cmt="Bisher: Status (Kennung)" />
+              <Param Name="NewState" Idx="4" Cmt="Neu: Status (Kennung)" />
+              <Param Name="PreviousStateText" Idx="5" Source="Dialogs.UserManagement.UserStates" Type="3" Cmt="Bisher: Status (Text)" />
+              <Param Name="NewStateText" Idx="6" Source="Dialogs.UserManagement.UserStates" Type="3" Cmt="Neu: Status (Text)" />
+            </Params>
+          </Event>
+          <Event Name="ChangeUserPolicy" Cmt="Systemereignis: Benutzerrichtlinien wurden geändert">
+            <Params>
+              <Param Name="PrevMinimumLength" Idx="1" Cmt="Bisher: Minimale Länge" />
+              <Param Name="NewMinimumLength" Idx="2" Cmt="Neu: Minimale Länge" />
+              <Param Name="PrevMaximumLength" Idx="3" Cmt="Bisher: Maximale Länge" />
+              <Param Name="NewMaximumLength" Idx="4" Cmt="Neu: Maximale Länge" />
+            </Params>
+          </Event>
+          <Event Name="ChangePassword" Cmt="Systemereignis: Passwort wurde geändert">
+            <Params>
+              <Param Name="User" Idx="1" Cmt="Benutzername" />
+              <Param Name="FullName" Idx="2" Cmt="Vollständiger Benutzername" />
+            </Params>
+          </Event>
+          <Event Name="ChangePasswordPolicy" Cmt="Systemereignis: Passwortrichtlinien wurden geändert">
+            <Params>
+              <Param Name="PrevMinimumLength" Idx="1" Cmt="Bisher: Minimale Länge" />
+              <Param Name="NewMinimumLength" Idx="2" Cmt="Neu: Minimale Länge" />
+              <Param Name="PrevMaximumLength" Idx="3" Cmt="Bisher: Maximale Länge" />
+              <Param Name="NewMaximumLength" Idx="4" Cmt="Neu: Maximale Länge" />
+              <Param Name="NewMustContainLetters" Idx="5" Cmt="Neu: Muss Buchstaben enthalten" />
+              <Param Name="NewMustContainDigits" Idx="6" Cmt="Neu: Muss Ziffern enthalten" />
+              <Param Name="NewMustContainSpecialCharacters" Idx="7" Cmt="Neu: Muss Sonderzeichen enthalten" />
+              <Param Name="NewMustContainUpperandLowerCase" Idx="8" Cmt="Neu: Muss Groß- und Kleinschreibung enthalten" />
+              <Param Name="PrevMaximumSubsequentEqualChars" Idx="9" Cmt="Bisher: Maximal gleiche aufeinanderfolgende Zeichen" />
+              <Param Name="NewMaximumSubsequentEqualChars" Idx="10" Cmt="Neu: Maximal gleiche aufeinanderfolgende Zeichen" />
+              <Param Name="PrevMinimumDifferentChars" Idx="11" Cmt="Bisher: Minimal unterschiedliche Zeichen" />
+              <Param Name="NewMinimumDifferentChars" Idx="12" Cmt="Neu: Minimal unterschiedliche Zeichen" />
+              <Param Name="PrevMinimumDiffCharsToPriorPW" Idx="13" Cmt="Bisher: Minimal unterschiedliche Zeichen zum alten Passwort" />
+              <Param Name="NewMinimumDiffCharsToPriorPW" Idx="14" Cmt="Neu: Minimal unterschiedliche Zeichen zum alten Passwort" />
+              <Param Name="PrevPasswordAgingCount" Idx="15" Cmt="Bisher: Anzahl Wechsel bis Passwort wiederverwendbar" />
+              <Param Name="NewPasswordAgingCount" Idx="16" Cmt="Neu: Anzahl Wechsel bis Passwort wiederverwendbar" />
+              <Param Name="PrevPasswordAgingTime" Idx="17" Cmt="Bisher: Zeit bis Passwort wiederverwendbar" />
+              <Param Name="NewPasswordAgingTime" Idx="18" Cmt="New: Zeit bis Passwort wiederverwendbar" />
+              <Param Name="PrevForbiddenPasswords" Idx="19" Cmt="Bisher: Verbotene Passwörter" />
+              <Param Name="NewForbiddenPasswords" Idx="20" Cmt="Neu: Verbotene Passwörter" />
+              <Param Name="NewUserNameUnequalPassword" Idx="21" Cmt="Neu: Passwort ungleich Benutzername" />
+            </Params>
+          </Event>
+          <Event Name="AddGroup" Cmt="Systemereignis: Neue Benutzergruppe wurde hinzugefügt">
+            <Params>
+              <Param Name="GroupName" Idx="1" Cmt="Name des Gruppenobjekts" />
+              <Param Name="GroupText" Idx="2" Cmt="Gruppenname" />
+              <Param Name="Rights" Idx="3" Cmt="Rechte" />
+              <Param Name="UsersRemovable" Idx="4" Cmt="Benutzer löschbar" />
+              <Param Name="AutoLogOffTime" Idx="5" Cmt="Zeit bis zur automatischen Abmeldung" />
+              <Param Name="RenewPasswordInterval" Idx="6" Cmt="Gültigkeitsdauer für Passwort" />
+              <Param Name="RenewPasswordHintTime" Idx="7" Cmt="Hinweiszeit bevor Passwort ungültig wird" />
+              <Param Name="MaxFailedLogOns" Idx="8" Cmt="Maximale Anmeldefehlversuche" />
+              <Param Name="UserExclusionTime" Idx="9" Cmt="Zeit für Benutzersperre" />
+              <Param Name="ExcludeInactiveUserTime" Idx="10" Cmt="Zeit bis zum Ausschluss eines nicht verwendeten Benutzers" />
+              <Param Name="ProposeLastUserTime" Idx="11" Cmt="Zeit für Vorschlag des letzten Benutzers" />
+              <Param Name="MinimumPasswordAge" Idx="12" Cmt="Minimales Passwortalter" />
+            </Params>
+          </Event>
+          <Event Name="ChangeGroup" Cmt="Systemereignis: Benutzergruppeneinstellungen wurden geändert">
+            <Params>
+              <Param Name="GroupName" Idx="1" Cmt="Name des Gruppenobjekts" />
+              <Param Name="GroupText" Idx="2" Cmt="Gruppenname" />
+              <Param Name="PrevRights" Idx="3" Cmt="Bisher: Rechte" />
+              <Param Name="NewRights" Idx="4" Cmt="Neu: Rechte" />
+              <Param Name="NewUsersRemovable" Idx="5" Cmt="Neu: Benutzer löschbar" />
+              <Param Name="PrevAutoLogOffTime" Idx="6" Cmt="Bisher: Zeit bis zur automatischen Abmeldung" />
+              <Param Name="NewAutoLogOffTime" Idx="7" Cmt="Neu: Zeit bis zur automatischen Abmeldung" />
+              <Param Name="PrevRenewPasswordInterval" Idx="8" Cmt="Bisher: Gültigkeitsdauer für Passwort" />
+              <Param Name="NewRenewPasswordInterval" Idx="9" Cmt="Neu: Gültigkeitsdauer für Passwort" />
+              <Param Name="PrevRenewPasswordHintTime" Idx="10" Cmt="Bisher: Hinweiszeit bevor Passwort ungültig wird" />
+              <Param Name="NewRenewPasswordHintTime" Idx="11" Cmt="Neu: Hinweiszeit bevor Passwort ungültig wird" />
+              <Param Name="PrevMaxFailedLogOns" Idx="12" Cmt="Bisher: Maximale Anmeldefehlversuche" />
+              <Param Name="NewMaxFailedLogOns" Idx="13" Cmt="Neu: Maximale Anmeldefehlversuche" />
+              <Param Name="PrevUserExclusionTime" Idx="14" Cmt="Bisher: Zeit für Benutzersperre" />
+              <Param Name="NewUserExclusionTime" Idx="15" Cmt="Neu: Zeit für Benutzersperre" />
+              <Param Name="PrevExcludeInactiveUserTime" Idx="16" Cmt="Bisher: Zeit bis zum Ausschluss eines nicht verwendeten Benutzers" />
+              <Param Name="NewExcludeInactiveUserTime" Idx="17" Cmt="Neu: Zeit bis zum Ausschluss eines nicht verwendeten Benutzers" />
+              <Param Name="PrevProposeLastUserTime" Idx="18" Cmt="Bisher: Zeit für Vorschlag des letzten Benutzers" />
+              <Param Name="NewProposeLastUserTime" Idx="19" Cmt="Neu: Zeit für Vorschlag des letzten Benutzers" />
+              <Param Name="PrevMinimumPasswordAge" Idx="20" Cmt="Bisher: Minimales Passwortalter" />
+              <Param Name="NewMinimumPasswordAge" Idx="21" Cmt="Neu: Minimales Passwortalter" />
+            </Params>
+          </Event>
+          <Event Name="RemoveGroup" Cmt="Systemereignis: Benutzergruppe wurde gelöscht">
+            <Params>
+              <Param Name="GroupName" Idx="1" Cmt="Name des Gruppenobjekts" />
+              <Param Name="GroupText" Idx="2" Cmt="Gruppenname" />
+            </Params>
+          </Event>
+          <Event Name="AddRight" Cmt="Systemereignis: Neues Recht wurde hinzugefügt">
+            <Params>
+              <Param Name="RightName" Idx="1" Cmt="Name des Rechteobjekts" />
+              <Param Name="RightText" Idx="2" Cmt="Rechtname" />
+            </Params>
+          </Event>
+          <Event Name="RemoveRight" Cmt="Systemereignis: Recht wurde gelöscht">
+            <Params>
+              <Param Name="RightName" Idx="1" Cmt="Name des Rechteobjekts" />
+              <Param Name="RightText" Idx="2" Cmt="Rechtname" />
+            </Params>
+          </Event>
+          <Event Name="ActivateRight" Cmt="Systemereignis: Recht wurde aktiviert">
+            <Params>
+              <Param Name="RightName" Idx="1" Cmt="Name des Rechteobjekts" />
+              <Param Name="RightText" Idx="2" Cmt="Rechtname" />
+            </Params>
+          </Event>
+          <Event Name="DeactivateRight" Cmt="Systemereignis: Recht wurde deaktiviert">
+            <Params>
+              <Param Name="RightName" Idx="1" Cmt="Name des Rechteobjekts" />
+              <Param Name="RightText" Idx="2" Cmt="Rechtname" />
+            </Params>
+          </Event>
+        </Events>
+      </Category>
+    </Categories>
+  </LoggingSystem>
+  <LanguageSwitching>
+    <Configuration>
+      <Languages>
+        <Language LCID="1046" Name="Português (Brasil)" />
+        <Language LCID="1033" Name="English (United States)" />
+      </Languages>
+    </Configuration>
+    <TextSystem>
+      <Group Name="Application">
+        <Groups>
+          <Group Name="ButtonTexts">
+            <Texts>
+              <Text Name="cmdContinue" />
+              <Text Name="cmdLogOn" />
+              <Text Name="cmdLogOff" />
+              <Text Name="cmdCancel" />
+              <Text Name="cmdClose" />
+              <Text Name="cmdChangePassword" />
+              <Text Name="cmdAlarms" />
+              <Text Name="cmdRecipes" />
+              <Text Name="cmdProcess" />
+              <Text Name="cmdSynoptic" />
+              <Text Name="cmdGrafic" />
+              <Text Name="cmdUsers" />
+              <Text Name="cmdHistoric" />
+              <Text Name="cmdConfigurations" />
+              <Text Name="cmdReturn" />
+              <Text Name="cmdOk" />
+              <Text Name="cmdAdd" />
+              <Text Name="cmdChange" />
+              <Text Name="cmdActivate" />
+              <Text Name="cmdDeactivate" />
+              <Text Name="cmdRemove" />
+              <Text Name="cmdOpenRecipe" />
+              <Text Name="cmdSaveRecipe" />
+              <Text Name="cmdWriteRecipe" />
+              <Text Name="cmdDeleteRecie" />
+              <Text Name="cmdLoadRecipe" />
+              <Text Name="cmdStart" />
+              <Text Name="cmdPause" />
+              <Text Name="cmdStop" />
+              <Text Name="cmdAcknowledgeAll" />
+              <Text Name="cmdAcknowledgeSelect" />
+              <Text Name="cmdAlarmHistory" />
+              <Text Name="cmdUpdate" />
+              <Text Name="cmdFilterAlarmHistory" />
+              <Text Name="cmdConfigParameters" />
+              <Text Name="cmdConfigControl" />
+              <Text Name="cmdConfigSystem" />
+              <Text Name="cmdConfigManual" />
+              <Text Name="cmdConfigTimers" />
+              <Text Name="cmdOptions" />
+              <Text Name="cmdAddAll" />
+              <Text Name="cmdRemoveAll" />
+              <Text Name="cmdChangeColor" />
+              <Text Name="cmd1minute" />
+              <Text Name="cmd5minutes" />
+              <Text Name="cmd1hour" />
+              <Text Name="cmd1day" />
+            </Texts>
+          </Group>
+          <Group Name="NameForms">
+            <Texts>
+              <Text Name="FCentral" />
+              <Text Name="FAlarms" />
+              <Text Name="FRecipes" />
+              <Text Name="FSystem" />
+              <Text Name="FLogOn" />
+              <Text Name="FLogOnChangePassword" />
+              <Text Name="FUsers" />
+              <Text Name="FUserChange" />
+              <Text Name="FRecipeFile" />
+              <Text Name="FProcess" />
+              <Text Name="FSynoptic" />
+              <Text Name="FGraphic" />
+              <Text Name="FHistoric" />
+              <Text Name="FConfigurations" />
+              <Text Name="FAlarmHistory" />
+              <Text Name="FAlarmHistoryFilter" />
+              <Text Name="FConfigManual" />
+              <Text Name="FConfigControl" />
+              <Text Name="FConfigSystem" />
+              <Text Name="FConfigParameters" />
+              <Text Name="FConfigTimers" />
+              <Text Name="FColorSelect" />
+              <Text Name="FGraphicSelect" />
+            </Texts>
+          </Group>
+          <Group Name="LabelForms">
+            <Groups>
+              <Group Name="FCentral">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                </Texts>
+              </Group>
+              <Group Name="FLogOn">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                </Texts>
+              </Group>
+              <Group Name="FMessageBox">
+                <Groups>
+                  <Group Name="ButtonTexts">
+                    <Texts>
+                      <Text Name="cmdAbort" />
+                      <Text Name="cmdRetry" />
+                      <Text Name="cmdIgnore" />
+                      <Text Name="cmdOK" />
+                      <Text Name="cmdCancel" />
+                      <Text Name="cmdYes" />
+                      <Text Name="cmdNo" />
+                    </Texts>
+                  </Group>
+                  <Group Name="Captions">
+                    <Texts>
+                      <Text Name="Caption000" />
+                      <Text Name="Caption001" />
+                      <Text Name="Caption002" />
+                      <Text Name="Caption003" />
+                    </Texts>
+                  </Group>
+                  <Group Name="Messages">
+                    <Texts>
+                      <Text Name="Message000" />
+                      <Text Name="Message001" />
+                      <Text Name="Message002" />
+                      <Text Name="Message003" />
+                      <Text Name="Message004" />
+                      <Text Name="Message005" />
+                      <Text Name="Message006" />
+                      <Text Name="Message007" />
+                      <Text Name="Message008" />
+                      <Text Name="Message009" />
+                      <Text Name="Message010" />
+                      <Text Name="Message011" />
+                      <Text Name="Message012" />
+                      <Text Name="Message013" />
+                      <Text Name="Message014" />
+                      <Text Name="Message015" />
+                      <Text Name="Message016" />
+                      <Text Name="Message017" />
+                      <Text Name="Message018" />
+                      <Text Name="Message019" />
+                      <Text Name="Message020" />
+                      <Text Name="Message021" />
+                      <Text Name="Message022" />
+                      <Text Name="Message023" />
+                      <Text Name="Message024" />
+                      <Text Name="Message025" />
+                      <Text Name="Message026" />
+                      <Text Name="Message027" />
+                      <Text Name="Message028" />
+                      <Text Name="Message029" />
+                      <Text Name="Message030" />
+                      <Text Name="Message031" />
+                      <Text Name="Message032" />
+                      <Text Name="Message033" />
+                      <Text Name="Message034" />
+                      <Text Name="Message035" />
+                      <Text Name="Message036" />
+                      <Text Name="Message037" />
+                      <Text Name="Message038" />
+                      <Text Name="Message039" />
+                      <Text Name="Message040" />
+                      <Text Name="Message041" />
+                      <Text Name="Message042" />
+                      <Text Name="Message043" />
+                      <Text Name="Message044" />
+                      <Text Name="Message045" />
+                      <Text Name="Message046" />
+                      <Text Name="Message047" />
+                      <Text Name="Message048" />
+                      <Text Name="Message049" />
+                      <Text Name="Message050" />
+                      <Text Name="Message051" />
+                      <Text Name="Message052" />
+                      <Text Name="Message053" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="FLogOnChangePassword">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                </Texts>
+              </Group>
+              <Group Name="FUsers">
+                <Groups>
+                  <Group Name="ListView">
+                    <Texts>
+                      <Text Name="Label000" />
+                      <Text Name="Label001" />
+                      <Text Name="Label002" />
+                      <Text Name="Label003" />
+                      <Text Name="Label004" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="FUserChange">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                  <Text Name="Label004" />
+                  <Text Name="Label005" />
+                  <Text Name="Label006" />
+                  <Text Name="Label007" />
+                  <Text Name="Label008" />
+                  <Text Name="Label009" />
+                </Texts>
+              </Group>
+              <Group Name="FRecipeFile">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                </Texts>
+              </Group>
+              <Group Name="FRecipes">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                  <Text Name="Label004" />
+                  <Text Name="Label005" />
+                  <Text Name="Label006" />
+                  <Text Name="Label007" />
+                  <Text Name="Label008" />
+                  <Text Name="Label009" />
+                  <Text Name="Label010" />
+                  <Text Name="Label011" />
+                  <Text Name="Label012" />
+                  <Text Name="Label013" />
+                  <Text Name="Label014" />
+                  <Text Name="Label015" />
+                  <Text Name="Label016" />
+                  <Text Name="Label017" />
+                  <Text Name="Label018" />
+                  <Text Name="Label019" />
+                  <Text Name="Label020" />
+                  <Text Name="Label021" />
+                  <Text Name="Label022" />
+                  <Text Name="Label023" />
+                </Texts>
+              </Group>
+              <Group Name="FSelectBox">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                </Texts>
+                <Groups>
+                  <Group Name="Labels">
+                    <Texts>
+                      <Text Name="Label000" />
+                      <Text Name="Label001" />
+                      <Text Name="Label002" />
+                      <Text Name="Label003" />
+                      <Text Name="Label004" />
+                      <Text Name="Label005" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="FProcess">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                  <Text Name="Label004" />
+                  <Text Name="Label005" />
+                  <Text Name="Label006" />
+                  <Text Name="Label007" />
+                  <Text Name="Label008" />
+                  <Text Name="Label009" />
+                  <Text Name="Label010" />
+                </Texts>
+                <Groups>
+                  <Group Name="Status">
+                    <Texts>
+                      <Text Name="Label000" />
+                      <Text Name="Label001" />
+                      <Text Name="Label002" />
+                      <Text Name="Label003" />
+                      <Text Name="Label004" />
+                      <Text Name="Label005" />
+                      <Text Name="Label006" />
+                      <Text Name="Label007" />
+                      <Text Name="Label008" />
+                      <Text Name="Label009" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="FAlarmHistoryFilter">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                  <Text Name="Label004" />
+                  <Text Name="Label005" />
+                  <Text Name="Label006" />
+                </Texts>
+              </Group>
+              <Group Name="FConfigParameters">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                  <Text Name="Label004" />
+                  <Text Name="Label005" />
+                  <Text Name="Label006" />
+                  <Text Name="Label007" />
+                  <Text Name="Label008" />
+                  <Text Name="Label009" />
+                  <Text Name="Label010" />
+                </Texts>
+                <Groups>
+                  <Group Name="ControlSystem">
+                    <Texts>
+                      <Text Name="Label000" />
+                      <Text Name="Label001" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="FConfigControl">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                  <Text Name="Label004" />
+                </Texts>
+              </Group>
+              <Group Name="FConfigurations">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                </Texts>
+              </Group>
+              <Group Name="FConfigSystem">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                </Texts>
+              </Group>
+              <Group Name="FConfigTimers">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                </Texts>
+              </Group>
+              <Group Name="FConfigManual">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                  <Text Name="Label004" />
+                  <Text Name="Label005" />
+                  <Text Name="Label006" />
+                  <Text Name="Label007" />
+                  <Text Name="Label008" />
+                  <Text Name="Label009" />
+                  <Text Name="Label010" />
+                </Texts>
+              </Group>
+              <Group Name="FGraphicSelect">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                  <Text Name="Label004" />
+                  <Text Name="Label005" />
+                </Texts>
+              </Group>
+              <Group Name="FGraphic">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                </Texts>
+              </Group>
+              <Group Name="FSystem">
+                <Texts>
+                  <Text Name="Label000" />
+                  <Text Name="Label001" />
+                  <Text Name="Label002" />
+                  <Text Name="Label003" />
+                  <Text Name="Label004" />
+                  <Text Name="Label005" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="TouchKeyboards">
+            <Groups>
+              <Group Name="AlphaPad">
+                <Texts>
+                  <Text Name="Caption" />
+                  <Text Name="cmd00" />
+                  <Text Name="cmd01" />
+                  <Text Name="cmd02" />
+                  <Text Name="cmd03" />
+                  <Text Name="cmd04" />
+                  <Text Name="cmd05" />
+                  <Text Name="cmd06" />
+                  <Text Name="cmd07" />
+                  <Text Name="cmd08" />
+                  <Text Name="cmd09" />
+                  <Text Name="cmd010" />
+                  <Text Name="cmd011" />
+                  <Text Name="cmd012" />
+                  <Text Name="cmd10" />
+                  <Text Name="cmd11" />
+                  <Text Name="cmd12" />
+                  <Text Name="cmd13" />
+                  <Text Name="cmd14" />
+                  <Text Name="cmd15" />
+                  <Text Name="cmd16" />
+                  <Text Name="cmd17" />
+                  <Text Name="cmd18" />
+                  <Text Name="cmd19" />
+                  <Text Name="cmd110" />
+                  <Text Name="cmd111" />
+                  <Text Name="cmd20" />
+                  <Text Name="cmd21" />
+                  <Text Name="cmd22" />
+                  <Text Name="cmd23" />
+                  <Text Name="cmd24" />
+                  <Text Name="cmd25" />
+                  <Text Name="cmd26" />
+                  <Text Name="cmd27" />
+                  <Text Name="cmd28" />
+                  <Text Name="cmd29" />
+                  <Text Name="cmd210" />
+                  <Text Name="cmd211" />
+                  <Text Name="cmd30" />
+                  <Text Name="cmd31" />
+                  <Text Name="cmd32" />
+                  <Text Name="cmd33" />
+                  <Text Name="cmd34" />
+                  <Text Name="cmd35" />
+                  <Text Name="cmd36" />
+                  <Text Name="cmd37" />
+                  <Text Name="cmd38" />
+                  <Text Name="cmd39" />
+                  <Text Name="cmd310" />
+                  <Text Name="cmdCtrl" />
+                  <Text Name="cmdAltGr" />
+                  <Text Name="cmdSpace" />
+                  <Text Name="keyEsc" Descr="Esc key" />
+                  <Text Name="keyDel" Descr="Del key" />
+                  <Text Name="keyCtrl" Descr="Ctrl key" />
+                  <Text Name="keyAltGr" Descr="Alt Gr key" />
+                  <Text Name="keyHome" Descr="Home key" />
+                  <Text Name="keyEnd" Descr="End key" />
+                  <Text Name="key00" Descr="1. row from top, 1. key from left" />
+                  <Text Name="key01" Descr="1. row from top, 2. key from left" />
+                  <Text Name="key02" Descr="1. row from top, 3. key from left" />
+                  <Text Name="key03" Descr="1. row from top, 4. key from left" />
+                  <Text Name="key04" Descr="1. row from top, 5. key from left" />
+                  <Text Name="key05" Descr="1. row from top, 6. key from left" />
+                  <Text Name="key06" Descr="1. row from top, 7. key from left" />
+                  <Text Name="key07" Descr="1. row from top, 8. key from left" />
+                  <Text Name="key08" Descr="1. row from top, 9. key from left" />
+                  <Text Name="key09" Descr="1. row from top, 10. key from left" />
+                  <Text Name="key010" Descr="1. row from top, 11. key from left" />
+                  <Text Name="key011" Descr="1. row from top, 12. key from left" />
+                  <Text Name="key012" Descr="1. row from top, 13. key from left" />
+                  <Text Name="key10" Descr="2. row from top, 1. key from left" />
+                  <Text Name="key11" Descr="2. row from top, 2. key from left" />
+                  <Text Name="key12" Descr="2. row from top, 3. key from left" />
+                  <Text Name="key13" Descr="2. row from top, 4. key from left" />
+                  <Text Name="key14" Descr="2. row from top, 5. key from left" />
+                  <Text Name="key15" Descr="2. row from top, 6. key from left" />
+                  <Text Name="key16" Descr="2. row from top, 7. key from left" />
+                  <Text Name="key17" Descr="2. row from top, 8. key from left" />
+                  <Text Name="key18" Descr="2. row from top, 9. key from left" />
+                  <Text Name="key19" Descr="2. row from top, 10. key from left" />
+                  <Text Name="key110" Descr="2. row from top, 11. key from left" />
+                  <Text Name="key111" Descr="2. row from top, 12. key from left" />
+                  <Text Name="key20" Descr="3. row from top, 1. key from left" />
+                  <Text Name="key21" Descr="3. row from top, 2. key from left" />
+                  <Text Name="key22" Descr="3. row from top, 3. key from left" />
+                  <Text Name="key23" Descr="3. row from top, 4. key from left" />
+                  <Text Name="key24" Descr="3. row from top, 5. key from left" />
+                  <Text Name="key25" Descr="3. row from top, 6. key from left" />
+                  <Text Name="key26" Descr="3. row from top, 7. key from left" />
+                  <Text Name="key27" Descr="3. row from top, 8. key from left" />
+                  <Text Name="key28" Descr="3. row from top, 9. key from left" />
+                  <Text Name="key29" Descr="3. row from top, 10. key from left" />
+                  <Text Name="key210" Descr="3. row from top, 11. key from left" />
+                  <Text Name="key211" Descr="3. row from top, 12. key from left" />
+                  <Text Name="key30" Descr="4. row from top, 1. key from left" />
+                  <Text Name="key31" Descr="4. row from top, 2. key from left" />
+                  <Text Name="key32" Descr="4. row from top, 3. key from left" />
+                  <Text Name="key33" Descr="4. row from top, 4. key from left" />
+                  <Text Name="key34" Descr="4. row from top, 5. key from left" />
+                  <Text Name="key35" Descr="4. row from top, 6. key from left" />
+                  <Text Name="key36" Descr="4. row from top, 7. key from left" />
+                  <Text Name="key37" Descr="4. row from top, 8. key from left" />
+                  <Text Name="key38" Descr="4. row from top, 9. key from left" />
+                  <Text Name="key39" Descr="4. row from top, 10. key from left" />
+                  <Text Name="key310" Descr="4. row from top, 11. key from left" />
+                </Texts>
+              </Group>
+              <Group Name="NumPad">
+                <Texts>
+                  <Text Name="Caption" />
+                  <Text Name="keyDel" />
+                  <Text Name="keyEnd" />
+                  <Text Name="keyEsc" />
+                  <Text Name="keyHome" />
+                </Texts>
+              </Group>
+            </Groups>
+            <Texts>
+              <Text Name="Unit" />
+            </Texts>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="Components">
+        <Groups>
+          <Group Name="AlarmLine">
+            <Texts>
+              <Text Name="AcknowledgeTime" Descr="Überschrift der Spalte &quot;AcknowledgeTime&quot; (Quittierungszeit)" />
+              <Text Name="ActivationCounter" Descr="Überschrift der Spalte &quot;ActivationCounter&quot; (Anzahl der Aktivierungen)" />
+              <Text Name="ActivationTime" Descr="Überschrift der Spalte &quot;ActivationTime&quot; (Aktivierungszeit)" />
+              <Text Name="Class" Descr="Überschrift der Spalte &quot;Class&quot; (Klasse)" />
+              <Text Name="Count" Descr="Überschrift der Spalte &quot;Count&quot; (Anzahl der Alarme)" />
+              <Text Name="DeactivationTime" Descr="Überschrift der Spalte &quot;DeactivationTime&quot; (Deaktivierungszeit)" />
+              <Text Name="Group" Descr="Überschrift der Spalte &quot;Group&quot; (Gruppe)" />
+              <Text Name="Param1" Descr="Überschrift der Spalte &quot;Param1&quot; (Parameter 1)" />
+              <Text Name="Param2" Descr="Überschrift der Spalte &quot;Param2&quot; (Parameter 2)" />
+              <Text Name="Priority" Descr="Überschrift der Spalte &quot;Priority&quot; (Priorität)" />
+              <Text Name="State" Descr="Überschrift der Spalte &quot;State&quot; (Status)" />
+              <Text Name="Symbol" Descr="Überschrift der Spalte &quot;Symbol&quot; (Symbol)" />
+              <Text Name="Text" Descr="Überschrift der Spalte &quot;Text&quot; (Alarmtext)" />
+              <Text Name="Machine" Descr="Überschrift der Spalte &quot;Machine&quot; (Maschine)" />
+              <Text Name="User" Descr="Überschrift der Spalte &quot;User&quot; (Benutzername)" />
+            </Texts>
+          </Group>
+          <Group Name="AlarmList">
+            <Texts>
+              <Text Name="AcknowledgeTime" Descr="Überschrift der Spalte &quot;AcknowledgeTime&quot; (Quittierungszeit)" />
+              <Text Name="ActivationCounter" Descr="Überschrift der Spalte &quot;ActivationCounter&quot; (Anzahl der Aktivierungen)" />
+              <Text Name="ActivationTime" Descr="Überschrift der Spalte &quot;ActivationTime&quot; (Aktivierungszeit)" />
+              <Text Name="Class" Descr="Überschrift der Spalte &quot;Class&quot; (Klasse)" />
+              <Text Name="Count" Descr="Überschrift der Spalte &quot;Count&quot; (Anzahl der Alarme)" />
+              <Text Name="DeactivationTime" Descr="Überschrift der Spalte &quot;DeactivationTime&quot; (Deaktivierungszeit)" />
+              <Text Name="Group" Descr="Überschrift der Spalte &quot;Group&quot; (Gruppe)" />
+              <Text Name="Param1" Descr="Überschrift der Spalte &quot;Param1&quot; (Parameter 1)" />
+              <Text Name="Param2" Descr="Überschrift der Spalte &quot;Param2&quot; (Parameter 2)" />
+              <Text Name="Priority" Descr="Überschrift der Spalte &quot;Priority&quot; (Priorität)" />
+              <Text Name="State" Descr="Überschrift der Spalte &quot;State&quot; (Status)" />
+              <Text Name="Symbol" Descr="Überschrift der Spalte &quot;Symbol&quot; (Symbol)" />
+              <Text Name="Text" Descr="Überschrift der Spalte &quot;Text&quot; (Alarmtext)" />
+              <Text Name="Machine" Descr="Überschrift der Spalte &quot;Machine&quot; (Maschine)" />
+              <Text Name="User" Descr="Überschrift der Spalte &quot;User&quot; (Benutzername)" />
+              <Text Name="NotesCount" Descr="Überschrift der Spalte &quot;NotesCount&quot; (Anzahl der Notizen)" />
+              <Text Name="FileName" Descr="Überschrift der Spalte &quot;FileName&quot; (Dateiname)" />
+            </Texts>
+          </Group>
+          <Group Name="PopupInfo">
+            <Texts>
+              <Text Name="Caption" Descr="Info zu @1s@" />
+              <Text Name="LimitMax" Descr="Obergrenze" />
+              <Text Name="LimitMin" Descr="Untergrenze" />
+              <Text Name="Default" Descr="Vorgabe" />
+              <Text Name="Alias" Descr="Alias" />
+              <Text Name="ID" Descr="ID" />
+            </Texts>
+          </Group>
+          <Group Name="RecipeList">
+            <Texts>
+              <Text Name="FileName" Descr="Überschrift der Spalte &quot;FileName&quot; (Rezeptname)" />
+              <Text Name="FileDescription" Descr="Überschrift der Spalte &quot;FileDescription&quot; (Beschreibung)" />
+              <Text Name="FileChangedBy" Descr="Überschrift der Spalte &quot;FileChangedBy&quot; (geändert von [Benutzername])" />
+              <Text Name="FileChangedAt" Descr="Überschrift der Spalte &quot;FileChangedAt&quot; (Änderungsdatum)" />
+              <Text Name="FileChangesCount" Descr="Überschrift der Spalte &quot;FileChangesCount&quot; (Anzahl Änderungen)" />
+              <Text Name="FileNotesCount" Descr="Überschrift der Spalte &quot;FileNotesCount&quot; (Anzahl Notizen)" />
+              <Text Name="ItemAlias" Descr="Überschrift der Spalte &quot;ItemAlias&quot; (Variablenalias)" />
+              <Text Name="ItemText" Descr="Überschrift der Spalte &quot;ItemText&quot; (Variablenbeschriftung)" />
+              <Text Name="ItemValue" Descr="Überschrift der Spalte &quot;ItemValue&quot; (Variablenwert)" />
+              <Text Name="ItemUnit" Descr="Überschrift der Spalte &quot;ItemUnit&quot; (Einheit)" />
+              <Text Name="ItemMinValue" Descr="Überschrift der Spalte &quot;ItemMinValue&quot; (Minimum)" />
+              <Text Name="ItemMaxValue" Descr="Überschrift der Spalte &quot;ItemMaxValue&quot; (Maximum)" />
+              <Text Name="ItemDefaultValue" Descr="Überschrift der Spalte &quot;ItemDefaultValue&quot; (Ersatzwert)" />
+            </Texts>
+          </Group>
+          <Group Name="Time">
+            <Groups>
+              <Group Name="DateFormats">
+                <Texts>
+                  <Text Name="LongDate" Descr="Formatierungsanweisung für vollständiges Datum (Tag zweistellig, Monat zweistellig, Jahr vierstellig)" />
+                  <Text Name="ShortDate" Descr="Formatierungsanweisung für verkürztes Datum (Tag zweistellig, Monat zweistellig, Jahr zweistellig)" />
+                  <Text Name="NamedLongDate" Descr="Formatierungsanweisung für vollständiges Datum (Tag mit vollständigem Namen und einstellig, Monat mit vollständigem Namen, Jahr vierstellig)" />
+                  <Text Name="NamedShortDate" Descr="Formatierungsanweisung für vollständiges Datum (Tag mit abgekürztem Namen und einstellig, Monat mit abgekürztem Namen, Jahr zweistellig)" />
+                  <Text Name="UserDefinedDate" Descr="Benutzerdefinierte Formatierungsanweisung" />
+                </Texts>
+              </Group>
+              <Group Name="MonthName">
+                <Texts>
+                  <Text Name="1" Descr="Beschriftung für den 1. Monat (Januar)" />
+                  <Text Name="2" Descr="Beschriftung für den 2. Monat (Februar)" />
+                  <Text Name="3" Descr="Beschriftung für den 3. Monat (März)" />
+                  <Text Name="4" Descr="Beschriftung für den 4. Monat (April)" />
+                  <Text Name="5" Descr="Beschriftung für den 5. Monat (Mai)" />
+                  <Text Name="6" Descr="Beschriftung für den 6. Monat (Juni)" />
+                  <Text Name="7" Descr="Beschriftung für den 7. Monat (Juli)" />
+                  <Text Name="8" Descr="Beschriftung für den 8. Monat (August)" />
+                  <Text Name="9" Descr="Beschriftung für den 9. Monat (September)" />
+                  <Text Name="10" Descr="Beschriftung für den 10. Monat (Oktober)" />
+                  <Text Name="11" Descr="Beschriftung für den 11. Monat (November)" />
+                  <Text Name="12" Descr="Beschriftung für den 12. Monat (Dezember)" />
+                </Texts>
+              </Group>
+              <Group Name="ShortMonthName">
+                <Texts>
+                  <Text Name="1" Descr="Kurzbeschriftung für den 1. Monat (Januar)" />
+                  <Text Name="2" Descr="Kurzbeschriftung für den 2. Monat (Februar)" />
+                  <Text Name="3" Descr="Kurzbeschriftung für den 3. Monat (März)" />
+                  <Text Name="4" Descr="Kurzbeschriftung für den 4. Monat (April)" />
+                  <Text Name="5" Descr="Kurzbeschriftung für den 5. Monat (Mai)" />
+                  <Text Name="6" Descr="Kurzbeschriftung für den 6. Monat (Juni)" />
+                  <Text Name="7" Descr="Kurzbeschriftung für den 7. Monat (Juli)" />
+                  <Text Name="8" Descr="Kurzbeschriftung für den 8. Monat (August)" />
+                  <Text Name="9" Descr="Kurzbeschriftung für den 9. Monat (September)" />
+                  <Text Name="10" Descr="Kurzbeschriftung für den 10. Monat (Oktober)" />
+                  <Text Name="11" Descr="Kurzbeschriftung für den 11. Monat (November)" />
+                  <Text Name="12" Descr="Kurzbeschriftung für den 12. Monat (Dezember)" />
+                </Texts>
+              </Group>
+              <Group Name="ShortWeekdayName">
+                <Texts>
+                  <Text Name="1" Descr="Kurzbeschriftung des 1. Wochentages (Sonntag)" />
+                  <Text Name="2" Descr="Kurzbeschriftung des 2. Wochentages (Montag)" />
+                  <Text Name="3" Descr="Kurzbeschriftung des 3. Wochentages (Dienstag)" />
+                  <Text Name="4" Descr="Kurzbeschriftung des 4. Wochentages (Mittwoch)" />
+                  <Text Name="5" Descr="Kurzbeschriftung des 5. Wochentages (Donnerstag)" />
+                  <Text Name="6" Descr="Kurzbeschriftung des 6. Wochentages (Freitag)" />
+                  <Text Name="7" Descr="Kurzbeschriftung des 7. Wochentages (Samstag)" />
+                </Texts>
+              </Group>
+              <Group Name="TimeFormats">
+                <Texts>
+                  <Text Name="LongTime" Descr="HH:mm:ss" />
+                  <Text Name="ShortTime" Descr="HH:mm" />
+                  <Text Name="UserDefinedTime" Descr="H:m" />
+                </Texts>
+              </Group>
+              <Group Name="WeekdayName">
+                <Texts>
+                  <Text Name="1" Descr="Beschriftung des 1. Wochentages (Sonntag)" />
+                  <Text Name="2" Descr="Beschriftung des 2. Wochentages (Montag)" />
+                  <Text Name="3" Descr="Beschriftung des 3. Wochentages (Dienstag)" />
+                  <Text Name="4" Descr="Beschriftung des 4. Wochentages (Mittwoch)" />
+                  <Text Name="5" Descr="Beschriftung des 5. Wochentages (Donnerstag)" />
+                  <Text Name="6" Descr="Beschriftung des 6. Wochentages (Freitag)" />
+                  <Text Name="7" Descr="Beschriftung des 7. Wochentages (Samstag)" />
+                </Texts>
+              </Group>
+            </Groups>
+            <Texts>
+              <Text Name="FirstDayOfWeek" Descr="Nummer des ersten Tages der Woche (siehe Komponenten.Time.WeekdayName)" />
+              <Text Name="FirstWeekOfYear" Descr="Kennung, welche Woche als Nummer 1 gezählt wird: 1=Woche mit dem 1. Januar, 2=Woche mit mindestens 4 Januar-Tagen, 3=Woche mit nur Januar-Tagen" />
+              <Text Name="WeekNumberLong" Descr="Beschriftung für &quot;Kalenderwoche&quot; (vollständiges Wort)" />
+              <Text Name="WeekNumberShort" Descr="Beschriftung für &quot;Kalenderwoche&quot; (Abkürzung)" />
+            </Texts>
+          </Group>
+          <Group Name="TrendLegend">
+            <Texts>
+              <Text Name="ArchiveText" Descr="Überschrift der Spalte &quot;ArchiveText&quot; (Archivname)" />
+              <Text Name="Color" Descr="Überschrift der Spalte &quot;Color&quot; (Farbe)" />
+              <Text Name="ItemText" Descr="Überschrift der Spalte &quot;ItemText&quot; (Variablenbeschriftung)" />
+              <Text Name="MarkedValue" Descr="Überschrift der Spalte &quot;MarkedValue&quot; (Markierter Wert)" />
+              <Text Name="Maximum" Descr="Überschrift der Spalte &quot;Maximum&quot; (Maximum der Skala)" />
+              <Text Name="Minimum" Descr="Überschrift der Spalte &quot;Minimum&quot; (Minimum der Skala)" />
+              <Text Name="Style" Descr="Überschrift der Spalte &quot;Style&quot; (Linienstil)" />
+              <Text Name="TrendText" Descr="Überschrift der Spalte &quot;TrendText&quot; (Trendname)" />
+              <Text Name="Unit" Descr="Überschrift der Spalte &quot;Unit&quot; (Einheit)" />
+              <Text Name="ItemAlias" Descr="Überschrift der Spalte &quot;ItemAlias&quot; (Variablenalias)" />
+            </Texts>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="Dialogs">
+        <Groups>
+          <Group Name="Common">
+            <Texts>
+              <Text Name="cmdOK" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdCancel" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdClose" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdYes" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdNo" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdAdd" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdRemove" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdEdit" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdChange" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdAbort" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdRetry" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdIgnore" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdActivate" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdDeactivate" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdApply" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdOpen" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdSave" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdSaveAs" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdSearch" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdBack" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdForward" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdLoad" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdDelete" Descr="Schaltflächenbeschriftung" />
+            </Texts>
+          </Group>
+          <Group Name="Recipe">
+            <Texts>
+              <Text Name="capLoadRecipe" Descr="Überschrift des Dialoges &quot;Rezept laden&quot;" />
+              <Text Name="capSaveRecipe" Descr="Überschrift des Dialoges &quot;Rezept speichern&quot;" />
+              <Text Name="lblFileName" Descr="Beschriftung der Eingabe für den Rezeptnamen" />
+              <Text Name="lblFileDescription" Descr="Beschriftung der Eingabe für die Beschreibung" />
+              <Text Name="lblExistingFiles" Descr="Beschriftung der Liste mit den vorhandenen Rezepten" />
+              <Text Name="ConfirmOverwrite" Descr="Nachfragetext zum Ersetzen eines bereits vorhandenen Rezeptes" />
+              <Text Name="ConfirmDelete" Descr="Nachfragetext zum Löschen eines Rezeptes" />
+            </Texts>
+          </Group>
+          <Group Name="UserManagement">
+            <Groups>
+              <Group Name="AddGroupSuccess">
+                <Texts>
+                  <Text Name="GroupAlreadyDefined" Descr="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn diese bereits existiert" />
+                  <Text Name="MethodCallFailed" Descr="Fehlermeldung beim Hinzufügen einer Benutzergruppe wobei die Ursache aber nicht festgestellt werden kann" />
+                  <Text Name="WrongParam" Descr="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn ein falscher Parameter angegeben wurde" />
+                  <Text Name="NoName" Descr="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn der Name nicht angegeben wurde" />
+                  <Text Name="NoLevel" Descr="Fehlermeldung beim Hinzufügen einer Benutzergruppe wenn die Benutzerebene nicht angegeben wurde" />
+                </Texts>
+              </Group>
+              <Group Name="AddRightSuccess">
+                <Texts>
+                  <Text Name="MethodCallFailed" Descr="Fehlermeldung beim Hinzufügen einer Berechtigung wobei die Ursache aber nicht festgestellt werden kann" />
+                  <Text Name="WrongParam" Descr="Fehlermeldung beim Hinzufügen einer Berechtigung wenn ein falscher Parameter angegeben wurde" />
+                  <Text Name="NoName" Descr="Fehlermeldung beim Hinzufügen einer Berechtigung wenn der Name nicht angegeben wurde" />
+                  <Text Name="RightAlreadyDefined" Descr="Fehlermeldung beim Hinzufügen einer Berechtigung wenn diese bereits existiert" />
+                </Texts>
+              </Group>
+              <Group Name="AddUserSuccess">
+                <Texts>
+                  <Text Name="ForbiddenPassword" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort in der Liste der verbotenen Passwörter enthalten ist" />
+                  <Text Name="InvalidPassword" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wobei das Passwort ungültig ist" />
+                  <Text Name="InvalidPasswordLength" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort zu kurz ist" />
+                  <Text Name="MethodCallFailed" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wobei die Ursache aber nicht festgestellt werden kann" />
+                  <Text Name="NoCharactersInPassword" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort keine Buchstaben enthält" />
+                  <Text Name="NoNumbersInPassword" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort keine Ziffern enthält" />
+                  <Text Name="PasswordMustContainSpecialCharacters" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort keine Sonderzeichen enthält" />
+                  <Text Name="UnableToSaveUser" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn die Daten nicht gespeichert werden können" />
+                  <Text Name="UserExists" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn der Benutzername bereits existiert" />
+                  <Text Name="NoName" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn der Benutzername nicht angegeben wurde" />
+                  <Text Name="NoUserGroup" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn die Benutzergruppe nicht angegeben wurde" />
+                  <Text Name="PasswordsNotEqual" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort nicht mit der Wiederholung identisch ist" />
+                  <Text Name="FullUserExists" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn der volle Benutzername bereits existiert" />
+                  <Text Name="MachineCodeExists" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn der maschinelle Code bereits existiert" />
+                  <Text Name="NoFullName" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn der volle Benutzername nicht angegeben wurde" />
+                  <Text Name="LockedPassword" Descr="Fehlermeldung beim Hinzufügen eines Benutzers wenn das Passwort zurzeit nicht verwendet werden darf" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeGroupSuccess">
+                <Texts>
+                  <Text Name="MethodCallFailed" Descr="Fehlermeldung beim Ändern einer Benutzergruppe wobei die Ursache aber nicht festgestellt werden kann" />
+                  <Text Name="UnknownGroup" Descr="Fehlermeldung beim Ändern einer Benutzergruppe wenn die genannte Benutzergruppe nicht existiert" />
+                  <Text Name="DeleteNotPermitted" Descr="Fehlermeldung beim Löschen einer Benutzergruppe wenn das Löschen nicht erlaubt ist" />
+                </Texts>
+              </Group>
+              <Group Name="ChangePasswordSuccess">
+                <Texts>
+                  <Text Name="CantAccessDomainInfo" Descr="Fehlermeldung beim Ändern des Passwortes wenn die zentrale Benutzerverwaltung nicht erreichbar ist" />
+                  <Text Name="ForbiddenPassword" Descr="Fehlermeldung beim Ändern des Passwortes wenn es in der Liste der verbotenen Passwörter enthalten ist" />
+                  <Text Name="MethodCallFailed" Descr="Fehlermeldung beim Ändern des Passwortes wobei die Ursache aber nicht festgestellt werden kann" />
+                  <Text Name="NewPasswordInvalid" Descr="Fehlermeldung beim Ändern des Passwortes wenn es ungültig ist" />
+                  <Text Name="NewPasswordInvalidLength" Descr="Fehlermeldung beim Ändern des Passwortes wenn es zu kurz ist" />
+                  <Text Name="NoCharactersInPassword" Descr="Fehlermeldung beim Ändern des Passwortes wenn es keine Buchstaben enthält" />
+                  <Text Name="NoNumbersInPassword" Descr="Fehlermeldung beim Ändern des Passwortes wenn es keine Ziffern enthält" />
+                  <Text Name="OldPasswordInvalid" Descr="Fehlermeldung beim Ändern des Passwortes wenn das bisherige Passwort falsch eingegeben wurde" />
+                  <Text Name="PasswordMustContainSpecialCharacters" Descr="Fehlermeldung beim Ändern des Passwortes wenn es keine Sonderzeichen enthält" />
+                  <Text Name="UnableToSavePassword" Descr="Fehlermeldung beim Ändern des Passwortes wenn die Daten nicht gespeichert werden können" />
+                  <Text Name="UnknownUser" Descr="Fehlermeldung beim Ändern des Passwortes wenn der angegebene Benutzer nicht existiert" />
+                  <Text Name="NewPasswordsNotEqual" Descr="Fehlermeldung beim Ändern des Passwortes wenn das Passwort nicht mit der Wiederholung identisch ist" />
+                  <Text Name="NoCurrentUser" Descr="Fehlermeldung beim Ändern des Passwortes wenn kein Benutzer angemeldet ist" />
+                  <Text Name="LockedPassword" Descr="Fehlermeldung beim Ändern des Passwortes weil es zurzeit nicht verwendet werden darf" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeRightSuccess">
+                <Texts>
+                  <Text Name="MethodCallFailed" Descr="Fehlermeldung beim Ändern einer Berechtigung wobei die Ursache aber nicht festgestellt werden kann" />
+                  <Text Name="UnableToSaveRight" Descr="Fehlermeldung beim Ändern einer Berechtigung wenn die Daten nicht gespeichert werden können" />
+                  <Text Name="UnknownRight" Descr="Fehlermeldung beim Ändern einer Berechtigung wenn sie nicht existiert" />
+                  <Text Name="WrongParam" Descr="Fehlermeldung beim Ändern einer Berechtigung wenn ein falscher Parameter angegeben wurde" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeUserSuccess">
+                <Texts>
+                  <Text Name="ForbiddenPassword" Descr="Fehlermeldung beim Ändern eines Benutzers wenn das Passwort in der Liste der verbotenen Passwörter enthalten ist" />
+                  <Text Name="InvalidPassword" Descr="Fehlermeldung beim Ändern eines Benutzers wenn das Passwort ungültig ist" />
+                  <Text Name="InvalidPasswordLength" Descr="Fehlermeldung beim Ändern eines Benutzers wenn das Passwort zu kurz ist" />
+                  <Text Name="MethodCallFailed" Descr="Fehlermeldung beim Ändern eines Benutzers wobei die Ursache aber nicht festgestellt werden kann" />
+                  <Text Name="NoCharactersInPassword" Descr="Fehlermeldung beim Ändern eines Benutzers wenn es keine Buchstaben enthält" />
+                  <Text Name="NoNumbersInPassword" Descr="Fehlermeldung beim Ändern eines Benutzers wenn es keine Ziffern enthält" />
+                  <Text Name="PasswordMustContainSpecialCharacters" Descr="Fehlermeldung beim Ändern eines Benutzers wenn es keine Sonderzeichen enthält" />
+                  <Text Name="UnableToSaveUser" Descr="Fehlermeldung beim Ändern eines Benutzers wenn die Daten nicht gespeichert werden können" />
+                  <Text Name="UnknownUser" Descr="Fehlermeldung beim Ändern eines Benutzers wenn der angegebene Benutzer nicht existiert" />
+                  <Text Name="UnknownUserClass" Descr="Fehlermeldung beim Ändern eines Benutzers wenn die angegebene Benutzergruppe nicht existiert" />
+                  <Text Name="FullUserExists" Descr="Fehlermeldung beim Ändern eines Benutzers wenn der volle Benutzername bereits existiert" />
+                  <Text Name="MachineCodeExists" Descr="Fehlermeldung beim Ändern eines Benutzers wenn der maschinelle Code bereits existiert" />
+                  <Text Name="InvalidUserClass" Descr="Fehlermeldung beim Ändern eines Benutzers wenn die angegebene Benutzergruppe für den Benutzer ungültig ist" />
+                  <Text Name="LockedPassword" Descr="Fehlermeldung beim Ändern eines Benutzers weil das Passwort zurzeit nicht verwendet werden darf" />
+                </Texts>
+              </Group>
+              <Group Name="LogOnSuccess">
+                <Texts>
+                  <Text Name="CantAccessDomainInfo" Descr="Fehlermeldung beim Anmelden eines Benutzers wenn die zentrale Benutzerverwaltung nicht erreichbar ist" />
+                  <Text Name="InvalidPassword" Descr="Fehlermeldung beim Anmelden eines Benutzers wenn das eingegebene Passwort falsch ist" />
+                  <Text Name="PasswordExpired" Descr="Fehlermeldung beim Anmelden eines Benutzers wenn das eingegebene Passwort abgelaufen ist" />
+                  <Text Name="RenewPassword" Descr="Fehlermeldung beim Anmelden eines Benutzers wenn das eingegebene Passwort geändert werden muss" />
+                  <Text Name="TooManyFailedLogOns" Descr="Fehlermeldung beim Anmelden eines Benutzers wenn der Benutzer aufgrund zu vieler Anmeldefehlversuche deaktiviert wurde" />
+                  <Text Name="UnknownUser" Descr="Fehlermeldung beim Anmelden eines Benutzers wenn der Benutzer unbekannt ist" />
+                  <Text Name="UserDeactivated" Descr="Fehlermeldung beim Anmelden eines Benutzers wenn der Benutzer deaktiviert ist" />
+                  <Text Name="MethodCallFailed" Descr="Fehlermeldung beim Anmelden eines Benutzers wobei die Ursache aber nicht festgestellt werden kann" />
+                  <Text Name="NoCorrespondingLocalUserClass" Descr="Fehlermeldung beim Anmelden eines Benutzers wenn die Benutzergruppe der zentralen Benutzerverwaltung lokal nicht definiert ist" />
+                </Texts>
+              </Group>
+              <Group Name="UserStates">
+                <Texts>
+                  <Text Name="Deactivated" Descr="Benutzerstatus" />
+                  <Text Name="Active" Descr="Benutzerstatus" />
+                  <Text Name="Invalidated" Descr="Benutzerstatus" />
+                  <Text Name="PasswordExpired" Descr="Benutzerstatus" />
+                </Texts>
+              </Group>
+            </Groups>
+            <Texts>
+              <Text Name="capAddRight" Descr="Überschrift des Dialoges &quot;Berechtigung hinzufügen&quot;" />
+              <Text Name="capAddUser" Descr="Überschrift des Dialoges &quot;Benutzer hinzufügen&quot;" />
+              <Text Name="capAddUserGroup" Descr="Überschrift des Dialoges &quot;Benutzergruppe hinzufügen&quot;" />
+              <Text Name="capChangePassword" Descr="Überschrift des Dialoges &quot;Passwort ändern&quot;" />
+              <Text Name="capChangeRight" Descr="Überschrift des Dialoges &quot;Berechtigung ändern&quot;" />
+              <Text Name="capChangeUser" Descr="Überschrift des Dialoges &quot;Benutzer ändern&quot;" />
+              <Text Name="capChangeUserGroup" Descr="Überschrift des Dialoges &quot;Benutzergruppe ändern&quot;" />
+              <Text Name="capLogOn" Descr="Überschrift des Dialoges &quot;Benutzer anmelden&quot;" />
+              <Text Name="capRightsOverview" Descr="Überschrift des Dialoges &quot;Übersicht Berechtigungen&quot;" />
+              <Text Name="capUserGroupsOverview" Descr="Überschrift des Dialoges &quot;Übersicht Benutzergruppen&quot;" />
+              <Text Name="capUsersOverview" Descr="Überschrift des Dialoges &quot;Übersicht Benutzer&quot;" />
+              <Text Name="capVerify" Descr="Überschrift des Dialoges &quot;Benutzer verifizieren&quot;" />
+              <Text Name="chkDeactivationTimeActive" Descr="Beschriftung für Auswahlmöglichkeit" />
+              <Text Name="chkRightActive" Descr="Beschriftung für Auswahlmöglichkeit" />
+              <Text Name="chkUsersRemovable" Descr="Beschriftung für Auswahlmöglichkeit" />
+              <Text Name="cmdLogOff" Descr="Schaltflächenbeschriftung" />
+              <Text Name="cmdLogOn" Descr="Schaltflächenbeschriftung" />
+              <Text Name="hdrActive" Descr="Spaltenüberschrift" />
+              <Text Name="hdrAutoLogOffTime" Descr="Spaltenüberschrift" />
+              <Text Name="hdrCode" Descr="Spaltenüberschrift" />
+              <Text Name="hdrComment" Descr="Spaltenüberschrift" />
+              <Text Name="hdrDeactivationTime" Descr="Spaltenüberschrift" />
+              <Text Name="hdrFullName" Descr="Spaltenüberschrift" />
+              <Text Name="hdrMaxFailedLogOns" Descr="Spaltenüberschrift" />
+              <Text Name="hdrName" Descr="Spaltenüberschrift" />
+              <Text Name="hdrRemainingLogOns" Descr="Spaltenüberschrift" />
+              <Text Name="hdrRenewPassword" Descr="Spaltenüberschrift" />
+              <Text Name="hdrRenewPasswordInterval" Descr="Spaltenüberschrift" />
+              <Text Name="hdrRights" Descr="Spaltenüberschrift" />
+              <Text Name="hdrUserGroup" Descr="Spaltenüberschrift" />
+              <Text Name="hdrUserGroups" Descr="Spaltenüberschrift" />
+              <Text Name="hdrUserName" Descr="Spaltenüberschrift" />
+              <Text Name="hdrUsersCount" Descr="Spaltenüberschrift" />
+              <Text Name="hdrUsersRemovable" Descr="Spaltenüberschrift" />
+              <Text Name="hdrUserState" Descr="Spaltenüberschrift" />
+              <Text Name="lblAutoLogOffTime" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblComment" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblDeactivation" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblFullName" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblMachineCode" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblMaxFailedLogOns" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblName" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblNewPassword" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblPassword" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblRenewPasswordInterval" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblRepeatNewPassword" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblRepeatPassword" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblState" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblUserGroup" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="lblUserName" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="msgDeactivateUser" Descr="Nachfragetext zum Deaktivieren eines Benutzers" />
+              <Text Name="msgRemoveRight" Descr="Nachfragetext zum Entfernen einer Berechtigung" />
+              <Text Name="msgRemoveUser" Descr="Nachfragetext zum Entfernen eines Benutzers" />
+              <Text Name="msgRemoveUserGroup" Descr="Nachfragetext zum Entfernen einer Benutzergruppe inkl. aller Benutzer" />
+              <Text Name="rbtDeactivationDuration" Descr="Beschriftung für Auswahlalternative" />
+              <Text Name="rbtDeactivationTime" Descr="Beschriftung für Auswahlalternative" />
+              <Text Name="rbtNoDeactivation" Descr="Beschriftung für Auswahlalternative" />
+              <Text Name="untAutoLogOffTime" Descr="Einheitentext für Eingabeelement" />
+              <Text Name="untDays" Descr="Einheitentext für Eingabeelement" />
+              <Text Name="untHours" Descr="Einheitentext für Eingabeelement" />
+              <Text Name="untMinutes" Descr="Einheitentext für Eingabeelement" />
+              <Text Name="untRenewPasswordInterval" Descr="Einheitentext für Eingabeelement" />
+              <Text Name="chkChangePassword" Descr="Beschriftung für Auswahlmöglichkeit" />
+              <Text Name="chkChangeMachineCode" Descr="Beschriftung für Auswahlmöglichkeit" />
+              <Text Name="tpgStandard" Descr="Tabulatorbeschriftung" />
+              <Text Name="tpgExtended" Descr="Tabulatorbeschriftung" />
+              <Text Name="vinAuthorizationLevel" Descr="Beschriftung für Eingabeelement" />
+              <Text Name="hdrAuthorizationLevel" Descr="Spaltenüberschrift" />
+              <Text Name="capSelectRight" Descr="Überschrift des Dialoges &quot;Berechtigung auswählen&quot;" />
+            </Texts>
+          </Group>
+          <Group Name="TouchKeyboards">
+            <Groups>
+              <Group Name="AlphaPad">
+                <Texts>
+                  <Text Name="Caption" Descr="Überschrift des Tastaturformulars" />
+                  <Text Name="keyEsc" Descr="Esc-Taste" />
+                  <Text Name="keyDel" Descr="Entf-Taste" />
+                  <Text Name="keyCtrl" Descr="Strg-Taste" />
+                  <Text Name="keyAltGr" Descr="Alt Gr-Taste" />
+                  <Text Name="keyHome" Descr="Pos1-Taste" />
+                  <Text Name="keyEnd" Descr="Ende-Taste" />
+                  <Text Name="key00" Descr="1. Reihe von oben, 1. Taste von links" />
+                  <Text Name="key01" Descr="1. Reihe von oben, 2. Taste von links" />
+                  <Text Name="key02" Descr="1. Reihe von oben, 3. Taste von links" />
+                  <Text Name="key03" Descr="1. Reihe von oben, 4. Taste von links" />
+                  <Text Name="key04" Descr="1. Reihe von oben, 5. Taste von links" />
+                  <Text Name="key05" Descr="1. Reihe von oben, 6. Taste von links" />
+                  <Text Name="key06" Descr="1. Reihe von oben, 7. Taste von links" />
+                  <Text Name="key07" Descr="1. Reihe von oben, 8. Taste von links" />
+                  <Text Name="key08" Descr="1. Reihe von oben, 9. Taste von links" />
+                  <Text Name="key09" Descr="1. Reihe von oben, 10. Taste von links" />
+                  <Text Name="key010" Descr="1. Reihe von oben, 11. Taste von links" />
+                  <Text Name="key011" Descr="1. Reihe von oben, 12. Taste von links" />
+                  <Text Name="key012" Descr="1. Reihe von oben, 13. Taste von links" />
+                  <Text Name="key10" Descr="2. Reihe von oben, 1. Taste von links" />
+                  <Text Name="key11" Descr="2. Reihe von oben, 2. Taste von links" />
+                  <Text Name="key12" Descr="2. Reihe von oben, 3. Taste von links" />
+                  <Text Name="key13" Descr="2. Reihe von oben, 4. Taste von links" />
+                  <Text Name="key14" Descr="2. Reihe von oben, 5. Taste von links" />
+                  <Text Name="key15" Descr="2. Reihe von oben, 6. Taste von links" />
+                  <Text Name="key16" Descr="2. Reihe von oben, 7. Taste von links" />
+                  <Text Name="key17" Descr="2. Reihe von oben, 8. Taste von links" />
+                  <Text Name="key18" Descr="2. Reihe von oben, 9. Taste von links" />
+                  <Text Name="key19" Descr="2. Reihe von oben, 10. Taste von links" />
+                  <Text Name="key110" Descr="2. Reihe von oben, 11. Taste von links" />
+                  <Text Name="key111" Descr="2. Reihe von oben, 12. Taste von links" />
+                  <Text Name="key20" Descr="3. Reihe von oben, 1. Taste von links" />
+                  <Text Name="key21" Descr="3. Reihe von oben, 2. Taste von links" />
+                  <Text Name="key22" Descr="3. Reihe von oben, 3. Taste von links" />
+                  <Text Name="key23" Descr="3. Reihe von oben, 4. Taste von links" />
+                  <Text Name="key24" Descr="3. Reihe von oben, 5. Taste von links" />
+                  <Text Name="key25" Descr="3. Reihe von oben, 6. Taste von links" />
+                  <Text Name="key26" Descr="3. Reihe von oben, 7. Taste von links" />
+                  <Text Name="key27" Descr="3. Reihe von oben, 8. Taste von links" />
+                  <Text Name="key28" Descr="3. Reihe von oben, 9. Taste von links" />
+                  <Text Name="key29" Descr="3. Reihe von oben, 10. Taste von links" />
+                  <Text Name="key210" Descr="3. Reihe von oben, 11. Taste von links" />
+                  <Text Name="key211" Descr="3. Reihe von oben, 12. Taste von links" />
+                  <Text Name="key30" Descr="4. Reihe von oben, 1. Taste von links" />
+                  <Text Name="key31" Descr="4. Reihe von oben, 2. Taste von links" />
+                  <Text Name="key32" Descr="4. Reihe von oben, 3. Taste von links" />
+                  <Text Name="key33" Descr="4. Reihe von oben, 4. Taste von links" />
+                  <Text Name="key34" Descr="4. Reihe von oben, 5. Taste von links" />
+                  <Text Name="key35" Descr="4. Reihe von oben, 6. Taste von links" />
+                  <Text Name="key36" Descr="4. Reihe von oben, 7. Taste von links" />
+                  <Text Name="key37" Descr="4. Reihe von oben, 8. Taste von links" />
+                  <Text Name="key38" Descr="4. Reihe von oben, 9. Taste von links" />
+                  <Text Name="key39" Descr="4. Reihe von oben, 10. Taste von links" />
+                  <Text Name="key310" Descr="4. Reihe von oben, 11. Taste von links" />
+                </Texts>
+              </Group>
+              <Group Name="NumPad">
+                <Texts>
+                  <Text Name="Caption" />
+                  <Text Name="keyDel" />
+                  <Text Name="keyEnd" />
+                  <Text Name="keyEsc" />
+                  <Text Name="keyHome" />
+                </Texts>
+              </Group>
+              <Group Name="TinyAlphaPad">
+                <Texts>
+                  <Text Name="cmd01Caption" />
+                  <Text Name="cmd01Chars" />
+                  <Text Name="cmd01CaptionShift" />
+                  <Text Name="cmd01CharsShift" />
+                  <Text Name="cmd02Caption" />
+                  <Text Name="cmd02Chars" />
+                  <Text Name="cmd02CaptionShift" />
+                  <Text Name="cmd02CharsShift" />
+                  <Text Name="cmd03Caption" />
+                  <Text Name="cmd03Chars" />
+                  <Text Name="cmd03CaptionShift" />
+                  <Text Name="cmd03CharsShift" />
+                  <Text Name="cmd04Caption" />
+                  <Text Name="cmd04Chars" />
+                  <Text Name="cmd04CaptionShift" />
+                  <Text Name="cmd04CharsShift" />
+                  <Text Name="cmd05Caption" />
+                  <Text Name="cmd05Chars" />
+                  <Text Name="cmd05CaptionShift" />
+                  <Text Name="cmd05CharsShift" />
+                  <Text Name="cmd06Caption" />
+                  <Text Name="cmd06Chars" />
+                  <Text Name="cmd06CaptionShift" />
+                  <Text Name="cmd06CharsShift" />
+                  <Text Name="cmd07Caption" />
+                  <Text Name="cmd07Chars" />
+                  <Text Name="cmd07CaptionShift" />
+                  <Text Name="cmd07CharsShift" />
+                  <Text Name="cmd08Caption" />
+                  <Text Name="cmd08Chars" />
+                  <Text Name="cmd08CaptionShift" />
+                  <Text Name="cmd08CharsShift" />
+                  <Text Name="cmd09Caption" />
+                  <Text Name="cmd09Chars" />
+                  <Text Name="cmd09CaptionShift" />
+                  <Text Name="cmd09CharsShift" />
+                  <Text Name="cmd10Caption" />
+                  <Text Name="cmd10Chars" />
+                  <Text Name="cmd10CaptionShift" />
+                  <Text Name="cmd10CharsShift" />
+                  <Text Name="cmd11Caption" />
+                  <Text Name="cmd11Chars" />
+                  <Text Name="cmd11CaptionShift" />
+                  <Text Name="cmd11CharsShift" />
+                  <Text Name="cmd12Caption" />
+                  <Text Name="cmd12Chars" />
+                  <Text Name="cmd12CaptionShift" />
+                  <Text Name="cmd12CharsShift" />
+                  <Text Name="cmd13Caption" />
+                  <Text Name="cmd13Chars" />
+                  <Text Name="cmd13CaptionShift" />
+                  <Text Name="cmd13CharsShift" />
+                  <Text Name="cmd14Caption" />
+                  <Text Name="cmd14Chars" />
+                  <Text Name="cmd14CaptionShift" />
+                  <Text Name="cmd14CharsShift" />
+                  <Text Name="cmd15Caption" />
+                  <Text Name="cmd15Chars" />
+                  <Text Name="cmd15CaptionShift" />
+                  <Text Name="cmd15CharsShift" />
+                  <Text Name="cmd01Password" />
+                  <Text Name="cmd02Password" />
+                  <Text Name="cmd03Password" />
+                  <Text Name="cmd04Password" />
+                  <Text Name="cmd05Password" />
+                  <Text Name="cmd06Password" />
+                  <Text Name="cmd07Password" />
+                  <Text Name="cmd08Password" />
+                  <Text Name="cmd09Password" />
+                  <Text Name="cmd10Password" />
+                  <Text Name="cmd11Password" />
+                  <Text Name="cmd12Password" />
+                  <Text Name="cmd13Password" />
+                  <Text Name="cmd14Password" />
+                  <Text Name="cmd15Password" />
+                  <Text Name="cmdShift" Descr="Beschriftung der Shift-Taste, die die drei verschiedenen Eingabeebenen aktiviert" />
+                  <Text Name="cmdShiftPassword" Descr="Beschriftung der Shift-Taste im Passwortmodus, die die drei verschiedenen Eingabeebenen aktiviert" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="Printing">
+            <Groups>
+              <Group Name="Progress">
+                <Texts>
+                  <Text Name="Caption" Descr="Überschrift des &quot;Drucken&quot;-Fortschrittsdialogs" />
+                  <Text Name="Ready" Descr="Statustext &quot;Bereit&quot;" />
+                  <Text Name="PageNumber" Descr="Statustext für die aktuelle Seite" />
+                  <Text Name="Loading" Descr="Statustext &quot;Lade Dokument(e)&quot;" />
+                  <Text Name="Cancelling" Descr="Statustext  für Druckabbruch" />
+                  <Text Name="Printing" Descr="Statustext Drucke &quot;@1s@&quot;" />
+                  <Text Name="PrintScreen" Descr="Statustext für Bildschirmdruck" />
+                </Texts>
+              </Group>
+              <Group Name="Settings">
+                <Texts>
+                  <Text Name="Caption" Descr="Überschrift des &quot;Druckereinstellungen&quot;-Dialogs" />
+                  <Text Name="Printer" Descr="Beschriftung der Einstellungsseite für den Drucker" />
+                  <Text Name="Type" Descr="Beschriftung der Eingabe für den Druckertyp" />
+                  <Text Name="Port" Descr="Beschriftung der Eingabe für die Druckerschnittstelle bzw. den Netzwerkpfad" />
+                  <Text Name="Color" Descr="Option für Druck in Farbe" />
+                  <Text Name="PageSettings" Descr="Beschriftung der Einstellungsseite für die Seiteneinstellungen" />
+                  <Text Name="PaperSize" Descr="Beschriftung der Liste mit den Papierformaten" />
+                  <Text Name="Orientation" Descr="Beschriftung der Auswahlmöglichkeiten für die Papierausrichtung" />
+                  <Text Name="Portrait" Descr="Auswahlmöglichkeit Hochformat/hochkant" />
+                  <Text Name="Landscape" Descr="Auswahlmöglichkeit Querformat/quer" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="AlarmSystem">
+        <Groups>
+          <Group Name="Classes">
+            <Groups>
+              <Group Name="SystemAlarm">
+                <Texts>
+                  <Text Name="Active" />
+                  <Text Name="ActiveAck" />
+                  <Text Name="Inactive" />
+                  <Text Name="InactiveAck" />
+                </Texts>
+              </Group>
+              <Group Name="Alarm">
+                <Texts>
+                  <Text Name="Active" />
+                  <Text Name="ActiveAck" />
+                  <Text Name="Inactive" />
+                  <Text Name="InactiveAck" />
+                </Texts>
+              </Group>
+              <Group Name="Message">
+                <Texts>
+                  <Text Name="Active" />
+                  <Text Name="ActiveAck" />
+                  <Text Name="Inactive" />
+                  <Text Name="InactiveAck" />
+                </Texts>
+              </Group>
+              <Group Name="Hint">
+                <Texts>
+                  <Text Name="Active" />
+                  <Text Name="ActiveAck" />
+                  <Text Name="Inactive" />
+                  <Text Name="InactiveAck" />
+                </Texts>
+              </Group>
+              <Group Name="LogBook">
+                <Texts>
+                  <Text Name="Active" />
+                  <Text Name="ActiveAck" />
+                  <Text Name="Inactive" />
+                  <Text Name="InactiveAck" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="Types">
+            <Groups>
+              <Group Name="ValueAlarms">
+                <Groups>
+                  <Group Name="StatusChamber">
+                    <Texts>
+                      <Text Name="Enabled" />
+                      <Text Name="Stalled" />
+                      <Text Name="CoreTemperature" />
+                      <Text Name="ProgrammedTime" />
+                      <Text Name="UserIntervention" />
+                      <Text Name="ForFailure" />
+                      <Text Name="Continuing" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="BitBlockAlarms">
+                <Groups>
+                  <Group Name="AlarmsChamber">
+                    <Texts>
+                      <Text Name="Assignment1" />
+                      <Text Name="Assignment2" />
+                      <Text Name="Assignment3" />
+                      <Text Name="Assignment4" />
+                      <Text Name="Assignment5" />
+                      <Text Name="Assignment6" />
+                      <Text Name="Assignment7" />
+                      <Text Name="Assignment8" />
+                      <Text Name="Assignment9" />
+                      <Text Name="Assignment10" />
+                      <Text Name="Assignment11" />
+                      <Text Name="Assignment12" />
+                      <Text Name="Assignment13" />
+                      <Text Name="Assignment14" />
+                      <Text Name="Assignment15" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="Groups">
+            <Groups>
+              <Group Name="SystemAlarms">
+                <Texts>
+                  <Text Name="Collective" />
+                  <Text Name="Collective_Txt" />
+                  <Text Name="DataAccess" />
+                  <Text Name="DataAccess_Txt" />
+                  <Text Name="LanguageSwitching" />
+                  <Text Name="LanguageSwitching_Txt" />
+                  <Text Name="Project" />
+                  <Text Name="Project_Txt" />
+                  <Text Name="Alarm" />
+                  <Text Name="Alarm_Txt" />
+                  <Text Name="Recipe" />
+                  <Text Name="Recipe_Txt" />
+                  <Text Name="UserManagement" />
+                  <Text Name="UserManagement_Txt" />
+                  <Text Name="Trend" />
+                  <Text Name="Trend_Txt" />
+                  <Text Name="Logging" />
+                  <Text Name="Logging_Txt" />
+                  <Text Name="Forms" />
+                  <Text Name="Forms_Txt" />
+                  <Text Name="Drivers" />
+                  <Text Name="Drivers_Txt" />
+                </Texts>
+              </Group>
+              <Group Name="ProcessAlarms">
+                <Texts>
+                  <Text Name="Chamber00" />
+                  <Text Name="Chamber00_Txt" />
+                  <Text Name="Chamber01" />
+                  <Text Name="Chamber01_Txt" />
+                  <Text Name="Chamber02" />
+                  <Text Name="Chamber02_Txt" />
+                </Texts>
+              </Group>
+              <Group Name="ProcessLogBook">
+                <Texts>
+                  <Text Name="Chamber00" />
+                  <Text Name="Chamber00_Txt" />
+                  <Text Name="Chamber01" />
+                  <Text Name="Chamber01_Txt" />
+                  <Text Name="Chamber02" />
+                  <Text Name="Chamber02_Txt" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="ItemSystem">
+        <Groups>
+          <Group Name="Intern">
+            <Texts>
+              <Text Name="__CURRENT_USER.NAME" />
+              <Text Name="__CURRENT_USER.FULLNAME" />
+              <Text Name="__CURRENT_USER.GROUPNAME" />
+              <Text Name="__CURRENT_USER.GROUPTEXT" />
+              <Text Name="__CURRENT_USER.LEVEL" />
+              <Text Name="__CURRENT_USER.SECONDS_TO_AUTOLOGOFF" />
+              <Text Name="__PROCESS.MEMORY.AVAILABLE" />
+              <Text Name="__PROCESS.MEMORY.ESTIMATEDMANAGED" />
+              <Text Name="__PROCESS.MEMORY.USED" />
+              <Text Name="__SYSTEM.MEMORY.PERCENTLOAD" />
+              <Text Name="__SYSTEM.MEMORY.PHYSICAL" />
+              <Text Name="__SYSTEM.TIME" />
+              <Text Name="__SYSTEM_ERRORS.COLLECTIVE" />
+              <Text Name="__SYSTEM_ERRORS.DATA_ACCESS" />
+              <Text Name="__SYSTEM_ERRORS.LANGUAGE_SWITCHING" />
+              <Text Name="__SYSTEM_ERRORS.PROJECT" />
+              <Text Name="__SYSTEM_ERRORS.ALARM" />
+              <Text Name="__SYSTEM_ERRORS.RECIPE" />
+              <Text Name="__SYSTEM_ERRORS.USER_MANAGEMENT" />
+              <Text Name="__SYSTEM_ERRORS.TREND" />
+              <Text Name="__SYSTEM_ERRORS.LOGGING" />
+              <Text Name="__SYSTEM_ERRORS.FORMS" />
+              <Text Name="__SYSTEM_ERRORS.DRIVERS" />
+              <Text Name="__FORMS.ACTIVEFORM" />
+              <Text Name="__FORMS.LASTACTIVEFORM" />
+              <Text Name="__LANGUAGE.LANGUAGE_CLID" />
+              <Text Name="RecipeSystem.FileName" />
+              <Text Name="RecipeSystem.Description" />
+              <Text Name="RecipeSystem.LoadRecipeName" />
+              <Text Name="RecipeSystem.LoadRecipeDescription" />
+              <Text Name="RecipeSystem.RecipesInit" />
+              <Text Name="RecipeSystem.RecipesChange" />
+              <Text Name="ProcessSystem.ChamberIndex" />
+              <Text Name="AlarmManagement.AlarmHistory.UpdateListTrigger" />
+              <Text Name="AlarmManagement.AlarmHistory.Filter.MinTime" />
+              <Text Name="AlarmManagement.AlarmHistory.Filter.MaxTime" />
+              <Text Name="AlarmManagement.AlarmHistory.Filter.Option" />
+              <Text Name="AlarmManagement.LogBook.Filter.MaxTime" />
+              <Text Name="AlarmManagement.LogBook.Filter.MinTime" />
+              <Text Name="AlarmManagement.LogBook.UpdateListTrigger" />
+              <Text Name="AlarmManagement.InternalAlarm" />
+              <Text Name="AlarmManagement.InternalLogBook" />
+              <Text Name="TrendSystem.Max" />
+              <Text Name="TrendSystem.Min" />
+              <Text Name="TrendSystem.Zoom" />
+              <Text Name="TrendSystem.ActivateTrend" />
+              <Text Name="TrendSystem.Ticks" />
+              <Text Name="TrendSystem.TrendTime" />
+              <Text Name="TrendSystem.ShowSettings" />
+            </Texts>
+          </Group>
+          <Group Name="Structures">
+          </Group>
+          <Group Name="Controller">
+            <Texts>
+              <Text Name="Controller.Application.GLOBAL.Burner_activation" />
+              <Text Name="Controller.Application.GLOBAL.Burner_protection" />
+              <Text Name="Controller.Application.GLOBAL.Burner_reset" />
+              <Text Name="Controller.Application.GLOBAL.Chamber_humidity" />
+              <Text Name="Controller.Application.GLOBAL.Chamber_temperature" />
+              <Text Name="Controller.Application.GLOBAL.Chamber_temperature_dry_sensor" />
+              <Text Name="Controller.Application.GLOBAL.Chamber_temperature_wet_sensor" />
+              <Text Name="Controller.Application.GLOBAL.Chimney_activation" />
+              <Text Name="Controller.Application.GLOBAL.Core_temperature" />
+              <Text Name="Controller.Application.GLOBAL.Core_temperature_sensor" />
+              <Text Name="Controller.Application.GLOBAL.Emergency_chamber" />
+              <Text Name="Controller.Application.GLOBAL.Higher_chimney_closed" />
+              <Text Name="Controller.Application.GLOBAL.Higher_chimney_open" />
+              <Text Name="Controller.Application.GLOBAL.Humidification_valve_activation" />
+              <Text Name="Controller.Application.GLOBAL.Lower_chimney_closed" />
+              <Text Name="Controller.Application.GLOBAL.Lower_chimney_open" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,0]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,1]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,10]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,2]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,3]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,4]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,5]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,6]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,7]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,8]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[0,9]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,0]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,1]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,10]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,2]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,3]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,4]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,5]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,6]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,7]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,8]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[1,9]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,0]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,1]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,10]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,2]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,3]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,4]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,5]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,6]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,7]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,8]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_activation[2,9]" />
+              <Text Name="Controller.Application.GLOBAL.Motor_protection" />
+              <Text Name="Controller.Application.GLOBAL.Program_chamber" />
+              <Text Name="Controller.Application.GLOBAL.Program_chamber_status" />
+              <Text Name="Controller.Application.GLOBAL.Program_cycles" />
+              <Text Name="Controller.Application.GLOBAL.Program_elapsed" />
+              <Text Name="Controller.Application.GLOBAL.Program_estimated" />
+              <Text Name="Controller.Application.GLOBAL.Program_estimated_time" />
+              <Text Name="Controller.Application.GLOBAL.Program_process_init" />
+              <Text Name="Controller.Application.GLOBAL.Program_recipe_chamber" />
+              <Text Name="Controller.Application.GLOBAL.Program_steps" />
+              <Text Name="Controller.Application.GLOBAL.Smokehouse_activation" />
+              <Text Name="Controller.Application.GLOBAL.Sound_activation" />
+              <Text Name="Controller.Application.GLOBAL.Steam_valve_activation" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[0,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[1,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_chimney[2,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[0,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[1,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_humidity[2,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[0,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[1,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_smokehouse[2,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[0,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[1,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_chamber_temperature[2,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_core_temperature" />
+              <Text Name="Controller.Application.RECIPES.Recipe_cycles" />
+              <Text Name="Controller.Application.RECIPES.Recipe_description" />
+              <Text Name="Controller.Application.RECIPES.Recipe_name" />
+              <Text Name="Controller.Application.RECIPES.Recipe_steps" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[0,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[0,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[0,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[0,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[0,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[0,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[0,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[0,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[0,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[0,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[1,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[1,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[1,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[1,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[1,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[1,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[1,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[1,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[1,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[1,9]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[2,0]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[2,1]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[2,2]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[2,3]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[2,4]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[2,5]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[2,6]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[2,7]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[2,8]" />
+              <Text Name="Controller.Application.RECIPES.Recipe_timer_step[2,9]" />
+              <Text Name="Controller.Application.RECIPES.Transfer_chamber_chimney" />
+              <Text Name="Controller.Application.RECIPES.Transfer_chamber_humidity" />
+              <Text Name="Controller.Application.RECIPES.Transfer_chamber_smokehouse" />
+              <Text Name="Controller.Application.RECIPES.Transfer_chamber_temperature" />
+              <Text Name="Controller.Application.RECIPES.Transfer_core_temperature" />
+              <Text Name="Controller.Application.RECIPES.Transfer_cycles" />
+              <Text Name="Controller.Application.RECIPES.Transfer_description" />
+              <Text Name="Controller.Application.RECIPES.Transfer_name" />
+              <Text Name="Controller.Application.RECIPES.Transfer_steps" />
+              <Text Name="Controller.Application.RECIPES.Transfer_timer_step" />
+              <Text Name="Controller.Application.SETTINGS.Chamber_humidity_offset" />
+              <Text Name="Controller.Application.SETTINGS.Chamber_temperature_offset" />
+              <Text Name="Controller.Application.SETTINGS.Core_temperature_offset" />
+              <Text Name="Controller.Application.SETTINGS.Enabled_chamber_cars" />
+              <Text Name="Controller.Application.SETTINGS.Enabled_chambers" />
+              <Text Name="Controller.Application.SETTINGS.Humidity_lower_hysteresis" />
+              <Text Name="Controller.Application.SETTINGS.Humidity_upper_hysteresis" />
+              <Text Name="Controller.Application.SETTINGS.lower_limit_humidity" />
+              <Text Name="Controller.Application.SETTINGS.Lower_limit_temperature" />
+              <Text Name="Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+              <Text Name="Controller.Application.SETTINGS.Temperature_control_system" />
+              <Text Name="Controller.Application.SETTINGS.Temperature_lower_hysteresis" />
+              <Text Name="Controller.Application.SETTINGS.Temperature_maximum" />
+              <Text Name="Controller.Application.SETTINGS.Temperature_upper_hysteresis" />
+              <Text Name="Controller.Application.SETTINGS.Timer_activation_humidification_valve" />
+              <Text Name="Controller.Application.SETTINGS.Timer_activation_motors" />
+              <Text Name="Controller.Application.SETTINGS.timer_response_humidification_valve" />
+              <Text Name="Controller.Application.SETTINGS.Upper_limit_humidity" />
+              <Text Name="Controller.Application.SETTINGS.Upper_limit_temperature" />
+              <Text Name="Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+              <Text Name="Controller.Application.GLOBAL.Alarms_chambers_status" />
+              <Text Name="Controller.Application.GLOBAL.Beeb_activation" />
+              <Text Name="Controller.Application.GLOBAL.Alamrs_acknowledge" />
+              <Text Name="Controller.Application.GLOBAL.Alarms_activation" />
+              <Text Name="Controller.Application.GLOBAL.Smokehouse_protection" />
+            </Texts>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="UserSystem">
+        <Groups>
+          <Group Name="UserGroups">
+            <Texts>
+              <Text Name="Administration" />
+              <Text Name="Engineeriong" />
+              <Text Name="Operation" />
+            </Texts>
+          </Group>
+          <Group Name="Rights">
+            <Texts>
+              <Text Name="UserManagement" />
+            </Texts>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="ArchiveSystem">
+        <Groups>
+          <Group Name="Chamber00">
+            <Texts>
+              <Text Name="TemperatureChamber" />
+              <Text Name="TemperatureCore" />
+            </Texts>
+          </Group>
+          <Group Name="Chamber01">
+            <Texts>
+              <Text Name="TemperatureChamber" />
+              <Text Name="TemperatureCore" />
+            </Texts>
+          </Group>
+          <Group Name="Chamber02">
+            <Texts>
+              <Text Name="TemperatureChamber" />
+              <Text Name="TemperatureCore" />
+            </Texts>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="LoggingSystem">
+        <Groups>
+          <Group Name="Project">
+            <Groups>
+              <Group Name="Start">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="ProjectName" />
+                  <Text Name="Success" />
+                </Texts>
+              </Group>
+              <Group Name="Stop">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="ProjectName" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="UserSystem">
+            <Groups>
+              <Group Name="LogOn">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="User" />
+                  <Text Name="FullName" />
+                  <Text Name="GroupName" />
+                  <Text Name="GroupText" />
+                </Texts>
+              </Group>
+              <Group Name="LogOff">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="User" />
+                  <Text Name="FullName" />
+                </Texts>
+              </Group>
+              <Group Name="AutoLogOff">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="User" />
+                  <Text Name="FullName" />
+                </Texts>
+              </Group>
+              <Group Name="VerifyUser">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="User" />
+                  <Text Name="FullName" />
+                  <Text Name="GroupName" />
+                  <Text Name="GroupText" />
+                </Texts>
+              </Group>
+              <Group Name="AddUser">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="User" />
+                  <Text Name="FullName" />
+                  <Text Name="GroupName" />
+                  <Text Name="GroupText" />
+                </Texts>
+              </Group>
+              <Group Name="RemoveUser">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="User" />
+                  <Text Name="FullName" />
+                  <Text Name="GroupName" />
+                  <Text Name="GroupText" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeUser">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="User" />
+                  <Text Name="FullName" />
+                  <Text Name="PrevGroupName" />
+                  <Text Name="PrevGroupText" />
+                  <Text Name="NewGroupName" />
+                  <Text Name="NewGroupText" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeUserState">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="User" />
+                  <Text Name="FullName" />
+                  <Text Name="PreviousState" />
+                  <Text Name="NewState" />
+                  <Text Name="PreviousStateText" />
+                  <Text Name="NewStateText" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeUserPolicy">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="PrevMinimumLength" />
+                  <Text Name="NewMinimumLength" />
+                  <Text Name="PrevMaximumLength" />
+                  <Text Name="NewMaximumLength" />
+                </Texts>
+              </Group>
+              <Group Name="ChangePassword">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="User" />
+                  <Text Name="FullName" />
+                </Texts>
+              </Group>
+              <Group Name="ChangePasswordPolicy">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="PrevMinimumLength" />
+                  <Text Name="NewMinimumLength" />
+                  <Text Name="PrevMaximumLength" />
+                  <Text Name="NewMaximumLength" />
+                  <Text Name="NewMustContainLetters" />
+                  <Text Name="NewMustContainDigits" />
+                  <Text Name="NewMustContainSpecialCharacters" />
+                  <Text Name="NewMustContainUpperandLowerCase" />
+                  <Text Name="PrevMaximumSubsequentEqualChars" />
+                  <Text Name="NewMaximumSubsequentEqualChars" />
+                  <Text Name="PrevMinimumDifferentChars" />
+                  <Text Name="NewMinimumDifferentChars" />
+                  <Text Name="PrevMinimumDiffCharsToPriorPW" />
+                  <Text Name="NewMinimumDiffCharsToPriorPW" />
+                  <Text Name="PrevPasswordAgingCount" />
+                  <Text Name="NewPasswordAgingCount" />
+                  <Text Name="PrevPasswordAgingTime" />
+                  <Text Name="NewPasswordAgingTime" />
+                  <Text Name="PrevForbiddenPasswords" />
+                  <Text Name="NewForbiddenPasswords" />
+                  <Text Name="NewUserNameUnequalPassword" />
+                </Texts>
+              </Group>
+              <Group Name="AddGroup">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="GroupName" />
+                  <Text Name="GroupText" />
+                  <Text Name="Rights" />
+                  <Text Name="UsersRemovable" />
+                  <Text Name="AutoLogOffTime" />
+                  <Text Name="RenewPasswordInterval" />
+                  <Text Name="RenewPasswordHintTime" />
+                  <Text Name="MaxFailedLogOns" />
+                  <Text Name="UserExclusionTime" />
+                  <Text Name="ExcludeInactiveUserTime" />
+                  <Text Name="ProposeLastUserTime" />
+                  <Text Name="MinimumPasswordAge" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeGroup">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="GroupName" />
+                  <Text Name="GroupText" />
+                  <Text Name="PrevRights" />
+                  <Text Name="NewRights" />
+                  <Text Name="NewUsersRemovable" />
+                  <Text Name="PrevAutoLogOffTime" />
+                  <Text Name="NewAutoLogOffTime" />
+                  <Text Name="PrevRenewPasswordInterval" />
+                  <Text Name="NewRenewPasswordInterval" />
+                  <Text Name="PrevRenewPasswordHintTime" />
+                  <Text Name="NewRenewPasswordHintTime" />
+                  <Text Name="PrevMaxFailedLogOns" />
+                  <Text Name="NewMaxFailedLogOns" />
+                  <Text Name="PrevUserExclusionTime" />
+                  <Text Name="NewUserExclusionTime" />
+                  <Text Name="PrevExcludeInactiveUserTime" />
+                  <Text Name="NewExcludeInactiveUserTime" />
+                  <Text Name="PrevProposeLastUserTime" />
+                  <Text Name="NewProposeLastUserTime" />
+                  <Text Name="PrevMinimumPasswordAge" />
+                  <Text Name="NewMinimumPasswordAge" />
+                </Texts>
+              </Group>
+              <Group Name="RemoveGroup">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="GroupName" />
+                  <Text Name="GroupText" />
+                </Texts>
+              </Group>
+              <Group Name="AddRight">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="RightName" />
+                  <Text Name="RightText" />
+                </Texts>
+              </Group>
+              <Group Name="RemoveRight">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="RightName" />
+                  <Text Name="RightText" />
+                </Texts>
+              </Group>
+              <Group Name="ActivateRight">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="RightName" />
+                  <Text Name="RightText" />
+                </Texts>
+              </Group>
+              <Group Name="DeactivateRight">
+                <Texts>
+                  <Text Name="LogText" />
+                  <Text Name="RightName" />
+                  <Text Name="RightText" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+        </Groups>
+      </Group>
+    </TextSystem>
+    <FontSystem>
+      <Fonts>
+        <Font Name="Tahoma8" />
+        <Font Name="Tahoma8Bold" Bold="-1" />
+        <Font Name="Tahoma10" Size="9.75" />
+        <Font Name="Tahoma10Bold" Size="9.75" Bold="-1" />
+        <Font Name="Tahoma12" Size="12" />
+        <Font Name="Tahoma12Bold" Size="12" Bold="-1" />
+        <Font Name="Tahoma14Bold" Size="14.25" Bold="-1" />
+        <Font Name="Tahoma16" Size="15.75" />
+        <Font Name="Tahoma11Bold" Size="11.25" Bold="-1" />
+        <Font Name="Tahoma11" Size="11.25" />
+        <Font Name="Tahoma14" Size="14.25" />
+        <Font Name="Tahoma16Bold" Size="15.75" Bold="-1" />
+      </Fonts>
+      <FontClasses>
+        <FontClass Name="Captions" Def="1031" L1046="Tahoma8Bold" L1033="Tahoma8Bold" />
+        <FontClass Name="CaptionsLarge" Def="1031" L1046="Tahoma12" L1033="Tahoma12" />
+        <FontClass Name="Labels" Def="1031" L1046="Tahoma8" L1033="Tahoma8" />
+        <FontClass Name="Buttons" Def="1031" L1046="Tahoma8" L1033="Tahoma8" />
+        <FontClass Name="Inputs" Def="1031" L1046="Tahoma8" L1033="Tahoma8" />
+        <FontClass Name="InputsLarge" Def="1031" L1046="Tahoma10" L1033="Tahoma10" />
+        <FontClass Name="Lists" Def="1031" L1046="Tahoma8" L1033="Tahoma8" />
+        <FontClass Name="FontTahomaSmall" Def="1031" L1046="Tahoma8" L1033="Tahoma8" />
+        <FontClass Name="FontTahomaNormal" Def="1031" L1046="Tahoma10" L1033="Tahoma10" />
+        <FontClass Name="FontTahomaMedium" Def="1031" L1046="Tahoma12" L1033="Tahoma12" />
+        <FontClass Name="FontTahomaLarge" Def="1031" L1046="Tahoma14" L1033="Tahoma14" />
+        <FontClass Name="FontTahomaVeryLarge" Def="1031" L1046="Tahoma16" L1033="Tahoma16" />
+        <FontClass Name="FontTahomaSmallBold" Def="1031" L1046="Tahoma8Bold" L1033="Tahoma8Bold" />
+        <FontClass Name="FontTahomaNormalBold" Def="1031" L1046="Tahoma10Bold" L1033="Tahoma10Bold" />
+        <FontClass Name="FontTahomaMediumBold" Def="1031" L1046="Tahoma12Bold" L1033="Tahoma12Bold" />
+        <FontClass Name="FontTahomaLargeBold" Def="1031" L1046="Tahoma14Bold" L1033="Tahoma14Bold" />
+        <FontClass Name="FontTahomaVeryLargeBold" Def="1031" L1046="Tahoma16Bold" L1033="Tahoma16Bold" />
+      </FontClasses>
+    </FontSystem>
+  </LanguageSwitching>
+</VisiWinNETProjectFile>

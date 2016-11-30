@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;System.Drawing;VisiWinNET.Forms.Commands;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FCentral" Locked="True" BackgroundImageLayout="Center" TrayHeight="50" Text="Home" BackColor="White" ControlBox="False" Font="Tahoma, 12pt" StartPosition="Manual" BackgroundImage="@SFCRes:FCentral.BackgroundImage" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 600" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Components>
+      <TouchKeyboard wfml:ID="TouchKeyboard" TrayLocation="38, 16">
+        <property.NumericalPad ClassName="FNumPad" />
+        <property.AlphaNumericalPad ClassName="FAlphaPad" Position="CenterParent" />
+      </TouchKeyboard>
+    </property.Components>
+    <property.Controls>
+      <Shape wfml:ID="Shape1" BackColor="White" BorderColor="White" Size="794, 18" Location="3, 557">
+        <property.FillColors>
+          <Color wfml:argument="White" />
+        </property.FillColors>
+      </Shape>
+      <Shape wfml:ID="Shape2" BackColor="White" BorderColor="White" Size="794, 10" Location="3, 76">
+        <property.FillColors>
+          <Color wfml:argument="White" />
+        </property.FillColors>
+      </Shape>
+      <Shape wfml:ID="Shape3" BackColor="White" BorderColor="White" Size="10, 529" Location="790, 62">
+        <property.FillColors>
+          <Color wfml:argument="White" />
+        </property.FillColors>
+      </Shape>
+      <Shape wfml:ID="Shape4" BackColor="White" BorderColor="White" Size="10, 529" Location="0, 59">
+        <property.FillColors>
+          <Color wfml:argument="White" />
+        </property.FillColors>
+      </Shape>
+      <GroupBox wfml:ID="GroupBox1" BackColor="White" Locked="True" Dock="Top" Size="800, 80" TabIndex="142" ForeColor="ControlText" Location="0, 0">
+        <property.Controls>
+          <GroupBox wfml:ID="GroupBox2" BackColor="White" Size="356, 50" TabIndex="17" ForeColor="ControlText" Location="0, 0">
+            <property.Controls>
+              <PictureBox wfml:ID="PictureBox1" BackColor="Transparent" Size="203, 38" ImageSizeMode="StretchImage" Location="20, 12">
+                <property.Images>
+                  <Bitmap wfml:resource="PictureBox1.Images.0" />
+                </property.Images>
+              </PictureBox>
+            </property.Controls>
+            <property.Border Style="None" />
+          </GroupBox>
+          <Label wfml:ID="Label2" ForeColorOn="SteelBlue" TextAlign="BottomLeft" BackColorOn="White" Size="391, 25" FontClass="Captions" ForeColor="SteelBlue" Location="12, 45">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FCentral" Text="Label000" />
+          </Label>
+        </property.Controls>
+        <property.Border Style="UserDef" Width="0" Color1="45, 120, 177" Color2="45, 120, 177" Color3="45, 120, 177" />
+      </GroupBox>
+      <CommandButton wfml:ID="cmdContinue" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 517" ForeColor="White" BackColorDown="White" TabIndex="146">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdContinue" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowForm FormName="FSystem" FormChangeMode="ShowNewCloseActive" Depth="0" />
+              <ShowDialog FormName="FLogOn" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <GroupBox wfml:ID="GroupBox3" BackColor="White" Dock="Bottom" Size="800, 25" TabIndex="144" FontClass="FontTahomaMedium" Location="0, 575">
+        <property.Controls>
+          <DateTimeOut wfml:ID="DateTimeOut1" Size="223, 19" TabIndex="32" FontClass="Captions" ForeColor="SteelBlue" Location="566, 0">
+            <property.Border Style="None" />
+            <property.DateTimeFormat Mode="TimeDate" />
+          </DateTimeOut>
+          <Label wfml:ID="Label4" Size="223, 19" FontClass="Captions" ForeColor="SteelBlue" Location="12, 0">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FCentral" Text="Label001" />
+          </Label>
+        </property.Controls>
+        <property.Border Style="None" />
+      </GroupBox>
+      <PictureBox wfml:ID="PictureBox2" BackColor="Transparent" Size="780, 471" Location="10, 86" BackgroundImageLayout="Stretch">
+        <property.Border Style="UserDef" Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+      </PictureBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

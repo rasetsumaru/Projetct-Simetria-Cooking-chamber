@@ -1,0 +1,7 @@
+System information:
+Version                      | Smart 6.5
+Project                      | SingleCE
+VisiWinNET.LenzeVariables2.Brw.dll     | 2.0.1.3(Debug=False)
+VisiWinNET.Browser.Components.Shared.dll | 6.0.0.16(Debug=False)
+
+Messages:

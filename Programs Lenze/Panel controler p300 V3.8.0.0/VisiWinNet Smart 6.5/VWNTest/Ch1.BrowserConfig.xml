@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <SplitArrays>false</SplitArrays>
+  <SplitStructs>false</SplitStructs>
+  <Messages>true</Messages>
+  <Device>
+    <Alias>Variables</Alias>
+    <Filename>C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\PLC Designer 3.13.1\Cooking chamber.Device.Application.xml</Filename>
+    <Line>L1</Line>
+  </Device>
+</Config>

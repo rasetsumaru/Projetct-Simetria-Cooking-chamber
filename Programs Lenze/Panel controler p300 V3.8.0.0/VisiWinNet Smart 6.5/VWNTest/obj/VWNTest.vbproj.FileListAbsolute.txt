@@ -1,0 +1,75 @@
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\ResolveAssemblyReference.cache
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\HMI.Resources.resources
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\VWNTest.vbproj.GenerateResource.Cache
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VWNTest.exe
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VWNTest.pdb
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\LenzeAppSampleCE_BasisProject.xml
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.CF.dll
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.Compact.Forms.dll
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.Compact.Systems.dll
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.DriverCE.Shared.dll
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.Compact.Forms.xml
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.Compact.Systems.xml
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\VWNTest.exe
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\LenzeAppSampleCE_BasisProject.xml
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\VWNTest.pdb
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VWNTest.exe
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VWNTest.pdb
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\LenzeAppSampleCE_BasisProject.xml
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.CF.dll
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.Compact.Forms.dll
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.Compact.Systems.dll
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.DriverCE.Shared.dll
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.Compact.Forms.xml
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\bin\Release\VisiWinNET.Compact.Systems.xml
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\ResolveAssemblyReference.cache
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\HMI.Resources.resources
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\VWNTest.vbproj.GenerateResource.Cache
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\VWNTest.exe
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\LenzeAppSampleCE_BasisProject.xml
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\VWNTest\obj\Release\VWNTest.pdb
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\ResolveAssemblyReference.cache
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\HMI.Resources.resources
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\VWNTest.vbproj.GenerateResource.Cache
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\VWNTest.exe
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\LenzeAppSampleCE_BasisProject.xml
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\VWNTest.pdb
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VWNTest.exe
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VWNTest.pdb
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\LenzeAppSampleCE_BasisProject.xml
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.CF.dll
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Forms.dll
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Systems.dll
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.DriverCE.Shared.dll
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Forms.xml
+C:\Users\raset\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Systems.xml
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\ResolveAssemblyReference.cache
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\HMI.Resources.resources
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\VWNTest.vbproj.GenerateResource.Cache
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\VWNTest.exe
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\LenzeAppSampleCE_BasisProject.xml
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\VWNTest.pdb
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VWNTest.exe
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VWNTest.pdb
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\LenzeAppSampleCE_BasisProject.xml
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.CF.dll
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Forms.dll
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Systems.dll
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.DriverCE.Shared.dll
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Forms.xml
+C:\Users\joaoc\Desktop\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Systems.xml
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VWNTest.exe
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VWNTest.pdb
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\LenzeAppSampleCE_BasisProject.xml
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.CF.dll
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Forms.dll
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Systems.dll
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.DriverCE.Shared.dll
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Forms.xml
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\bin\Release\VisiWinNET.Compact.Systems.xml
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\ResolveAssemblyReference.cache
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\HMI.Resources.resources
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\VWNTest.vbproj.GenerateResource.Cache
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\VWNTest.exe
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\LenzeAppSampleCE_BasisProject.xml
+D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\obj\Release\VWNTest.pdb

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="ChildForm" Locked="True" VariableActivationMode="ActivateOnShow" Location="0, 80" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 600" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox1" BackColor="255, 240, 80" Locked="True" Size="456, 248" Visible="False" TabIndex="127" FontClass="FontTahomaMedium" ForeColor="Black" Location="12, 12">
+        <property.Controls>
+          <Label wfml:ID="Label3" TextAlign="MiddleLeft" Size="450, 46" ForeColor="Black" Location="3, 159">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="TextChildForm" TextGroup="TemplateInstructions.Project" Text="TextChildForm2" TextOn="TextChildForm2" />
+          </Label>
+          <Label wfml:ID="Label1" TextAlign="MiddleLeft" Size="450, 80" ForeColor="Black" Location="3, 73">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="TextChildForm" TextGroup="TemplateInstructions.Project" Text="TextChildForm1" TextOn="TextChildForm1" />
+          </Label>
+          <Label wfml:ID="Label2" TextAlign="MiddleLeft" Size="450, 46" ForeColor="Black" Location="3, 21">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="TextChildForm" TextGroup="TemplateInstructions.Project" Text="TextChildForm0" TextOn="TextChildForm0" />
+          </Label>
+        </property.Controls>
+        <property.Border Style="UserDef" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+        <property.LocalizedText Text="Info" TextGroup="TemplateInstructions" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

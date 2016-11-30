@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Forms.Commands;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FAlarmHistoryFilter" Locked="True" BackgroundImageLayout="Stretch" VariableActivationMode="ActivateOnShow" BackColor="White" Font="Tahoma, 12pt" StartPosition="CenterScreen" BackgroundImage="@SFCRes:FAlarmHistoryFilter.BackgroundImage" ForeColor="Black" FormBorderStyle="None" ClientSize="735, 310" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <RadioButton wfml:ID="RadioButton3" ButtonStyle="Flat" Size="213, 19" TextAlign="MiddleLeft" BackColorCheck="Transparent" BackColorCheckOn="Transparent" ForeColorCheckOn="SteelBlue" FontClass="Captions" FocusRect="False" BackColor="Transparent" Location="70, 196" ForeColor="SteelBlue" ForeColorChecking="SteelBlue" TabIndex="5">
+        <property.LocalizedText TextGroup="LabelForms.FAlarmHistoryFilter" Text="Label006" TextOn="Label006" />
+        <property.Events>
+          <InputControlEventAgent Event="Click">
+            <property.Commands>
+              <SetVariable Name="AlarmManagement.AlarmHistory.Filter.MaxTime" Value="@__SYSTEM.TIME" Depth="0" />
+              <SetVariable Name="AlarmManagement.AlarmHistory.Filter.MinTime" Value="@__SYSTEM.TIME" Depth="0" />
+              <Decrement Name="AlarmManagement.AlarmHistory.Filter.MinTime" Value="7.00:00:00" Depth="0" />
+            </property.Commands>
+          </InputControlEventAgent>
+        </property.Events>
+        <property.OptionGroup Number="1" />
+        <property.VWItem BitNumber="4" Name="AlarmManagement.AlarmHistory.Filter.Option" />
+      </RadioButton>
+      <RadioButton wfml:ID="RadioButton2" ButtonStyle="Flat" Size="213, 19" TextAlign="MiddleLeft" BackColorCheck="Transparent" BackColorCheckOn="Transparent" ForeColorCheckOn="SteelBlue" FontClass="Captions" FocusRect="False" BackColor="Transparent" Location="70, 121" ForeColor="SteelBlue" ForeColorChecking="SteelBlue" TabIndex="2">
+        <property.LocalizedText TextGroup="LabelForms.FAlarmHistoryFilter" Text="Label003" TextOn="Label003" />
+        <property.Events>
+          <InputControlEventAgent Event="Click">
+            <property.Commands>
+              <SetVariable Name="AlarmManagement.AlarmHistory.Filter.MaxTime" Value="@__SYSTEM.TIME" Depth="0" />
+              <SetVariable Name="AlarmManagement.AlarmHistory.Filter.MinTime" Value="@__SYSTEM.TIME" Depth="0" />
+              <Decrement Name="AlarmManagement.AlarmHistory.Filter.MinTime" Value="12:00:00" Depth="0" />
+            </property.Commands>
+          </InputControlEventAgent>
+        </property.Events>
+        <property.OptionGroup Number="1" />
+        <property.VWItem BitNumber="1" Name="AlarmManagement.AlarmHistory.Filter.Option" />
+      </RadioButton>
+      <DateTimeIn wfml:ID="DateTimeIn1" ForeColorButton="SteelBlue" ShowEnter="True" ButtonWidth="1" BackColorButton="White" ButtonPosition="Bottom" Size="258, 42" ShowLeftRight="True" UpDownStyle="Horizontal" BackColor="White" Location="465, 172" ForeColor="SteelBlue" FontClass="Captions" TabIndex="7">
+        <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+        <property.TimeSettings Delay1="1000" Delay2="3000" Delay3="3000" Interval1="500" Interval2="250" Interval3="100" />
+        <property.VWItem Name="AlarmManagement.AlarmHistory.Filter.MaxTime" />
+      </DateTimeIn>
+      <RadioButton wfml:ID="RadioButton4" ButtonStyle="Flat" Size="213, 19" TextAlign="MiddleLeft" BackColorCheck="Transparent" BackColorCheckOn="Transparent" ForeColorCheckOn="SteelBlue" FontClass="Captions" FocusRect="False" BackColor="Transparent" Location="70, 171" ForeColor="SteelBlue" ForeColorChecking="SteelBlue" TabIndex="4">
+        <property.LocalizedText TextGroup="LabelForms.FAlarmHistoryFilter" Text="Label005" TextOn="Label005" />
+        <property.Events>
+          <InputControlEventAgent Event="Click">
+            <property.Commands>
+              <SetVariable Name="AlarmManagement.AlarmHistory.Filter.MaxTime" Value="@__SYSTEM.TIME" Depth="0" />
+              <SetVariable Name="AlarmManagement.AlarmHistory.Filter.MinTime" Value="@__SYSTEM.TIME" Depth="0" />
+              <Decrement Name="AlarmManagement.AlarmHistory.Filter.MinTime" Value="2.00:00:00" Depth="0" />
+            </property.Commands>
+          </InputControlEventAgent>
+        </property.Events>
+        <property.OptionGroup Number="1" />
+        <property.VWItem BitNumber="3" Name="AlarmManagement.AlarmHistory.Filter.Option" />
+      </RadioButton>
+      <Label wfml:ID="Label001" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="75, 19" FontClass="Captions" ForeColor="SteelBlue" Location="417, 147">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="LabelForms.FAlarmHistoryFilter" Text="Label001" />
+      </Label>
+      <RadioButton wfml:ID="RadioButton1" ButtonStyle="Flat" Size="213, 19" TextAlign="MiddleLeft" BackColorCheck="Transparent" BackColorCheckOn="Transparent" ForeColorCheckOn="SteelBlue" FontClass="Captions" FocusRect="False" BackColor="Transparent" Location="70, 96" ForeColor="SteelBlue" ForeColorChecking="SteelBlue" TabIndex="1">
+        <property.LocalizedText TextGroup="LabelForms.FAlarmHistoryFilter" Text="Label002" TextOn="Label002" />
+        <property.Events>
+          <InputControlEventAgent Event="Click">
+            <property.Commands>
+              <SetVariable Name="AlarmManagement.AlarmHistory.Filter.MaxTime" Value="@__SYSTEM.TIME" Depth="0" />
+              <SetVariable Name="AlarmManagement.AlarmHistory.Filter.MinTime" Value="01/01/0001" Depth="0" />
+            </property.Commands>
+          </InputControlEventAgent>
+        </property.Events>
+        <property.OptionGroup Number="1" />
+        <property.VWItem Name="AlarmManagement.AlarmHistory.Filter.Option" />
+      </RadioButton>
+      <RadioButton wfml:ID="RadioButton5" ButtonStyle="Flat" Size="213, 19" TextAlign="MiddleLeft" BackColorCheck="Transparent" BackColorCheckOn="Transparent" ForeColorCheckOn="SteelBlue" FontClass="Captions" FocusRect="False" BackColor="Transparent" Location="70, 146" ForeColor="SteelBlue" ForeColorChecking="SteelBlue" TabIndex="3">
+        <property.LocalizedText TextGroup="LabelForms.FAlarmHistoryFilter" Text="Label004" TextOn="Label004" />
+        <property.Events>
+          <InputControlEventAgent Event="Click">
+            <property.Commands>
+              <SetVariable Name="AlarmManagement.AlarmHistory.Filter.MaxTime" Value="@__SYSTEM.TIME" Depth="0" />
+              <SetVariable Name="AlarmManagement.AlarmHistory.Filter.MinTime" Value="@__SYSTEM.TIME" Depth="0" />
+              <Decrement Name="AlarmManagement.AlarmHistory.Filter.MinTime" Value="1.00:00:00" Depth="0" />
+            </property.Commands>
+          </InputControlEventAgent>
+        </property.Events>
+        <property.OptionGroup Number="1" />
+        <property.VWItem BitNumber="2" Name="AlarmManagement.AlarmHistory.Filter.Option" />
+      </RadioButton>
+      <DateTimeIn wfml:ID="DateTimeIn2" ForeColorButton="SteelBlue" ShowEnter="True" ButtonWidth="1" BackColorButton="White" ButtonPosition="Bottom" Size="258, 42" ShowLeftRight="True" UpDownStyle="Horizontal" BackColor="White" Location="465, 96" ForeColor="SteelBlue" FontClass="Captions" TabIndex="6">
+        <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+        <property.TimeSettings Delay1="1000" Delay2="3000" Delay3="3000" Interval1="500" Interval2="250" Interval3="100" />
+        <property.VWItem Name="AlarmManagement.AlarmHistory.Filter.MinTime" />
+      </DateTimeIn>
+      <CommandButton wfml:ID="cmdOk" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="573, 268" ForeColor="White" BackColorDown="White" TabIndex="8">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdOk" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <SetVariable Name="AlarmManagement.AlarmHistory.UpdateListTrigger" Value="1" Depth="0" />
+              <CloseForm FormName="FAlarmHistoryFilter" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <Label wfml:ID="Label000" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="75, 19" FontClass="Captions" ForeColor="SteelBlue" Location="417, 71">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="LabelForms.FAlarmHistoryFilter" Text="Label000" />
+      </Label>
+      <Shape wfml:ID="Shape1" BorderColor="White" Size="273, 4" Location="10, 45">
+        <property.FillColors>
+          <Color wfml:argument="SteelBlue" />
+        </property.FillColors>
+      </Shape>
+      <Label wfml:ID="Label2" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="332, 37" FontClass="FontTahomaVeryLargeBold" ForeColor="SteelBlue" Location="12, 12">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="NameForms" Text="FAlarmHistoryFilter" TextOn="FLogOn" />
+      </Label>
+      <Shape wfml:ID="Shape2" BorderColor="SteelBlue" Size="735, 310" Location="0, 0">
+        <property.FillColors>
+          <Color wfml:argument="Transparent" />
+        </property.FillColors>
+      </Shape>
+    </property.Controls>
+  </SmartForm>
+</wfml>

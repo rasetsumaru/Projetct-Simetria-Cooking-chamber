@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Commands;VisiWinNET.Forms.Commands;VisiWinNET.Forms.Internals;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FAlphaPad" Locked="True" BackColor="White" ControlBox="False" Font="Tahoma, 10pt" StartPosition="Manual" FormBorderStyle="None" ClientSize="608, 288" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Components>
+      <ItemServer wfml:ID="ItemServerClose" TrayLocation="17, 17">
+        <property.Events>
+          <ItemEventAgent Event="Change">
+            <property.Commands>
+              <IfCondition LeftOperand="@__CURRENT_USER.SECONDS_TO_AUTOLOGOFF" RightOperand="250" Depth="0" />
+              <CloseForm FormName="FAlphaPad" Depth="1" />
+              <EndCondition Depth="0" />
+            </property.Commands>
+          </ItemEventAgent>
+        </property.Events>
+        <property.VWItem Name="__CURRENT_USER.SECONDS_TO_AUTOLOGOFF" />
+      </ItemServer>
+    </property.Components>
+    <property.Controls>
+      <GroupBox wfml:ID="grpBorder" BackColor="White" Locked="True" Size="608, 288" BackgroundImage="@SFCRes:grpBorder.BackgroundImage" TabIndex="73" FontClass="Captions" ForeColor="ControlText" Location="0, 0" BackgroundImageLayout="Stretch">
+        <property.Controls>
+          <CommandButton wfml:ID="cmd111" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd111" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="504, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="42">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdShiftRight" Locked="True" TransparentColor="White" Image="@SFCRes:cmdShiftRight.Image" Size="100, 40" TextAlign="MiddleLeft" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="504, 205" ImageAlign="TopLeft" ForeColor="White" BackColorDown="White" TabIndex="13">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd211" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd211" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="524, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="26">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdAltGr" Locked="True" Size="80, 40" TextAlign="MiddleLeft" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="444, 245" ForeColor="White" BackColorDown="White" TabIndex="73">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextPrefix="cmdAltGr" TextGroup="TouchKeyboards.AlphaPad" Text="cmdAltGr" TextOn="cmdAltGr" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdClear" Locked="True" Image="@SFCRes:cmdClear.Image" Size="40, 40" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="564, 45" ForeColor="White" BackColorDown="White" TabIndex="70">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdEnd" Locked="True" TransparentColor="White" Image="@SFCRes:cmdEnd.Image" Size="40, 40" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="364, 45" ForeColor="White" BackColorDown="White" TabIndex="0">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdHome" Locked="True" TransparentColor="White" Image="@SFCRes:cmdHome.Image" Size="40, 40" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="324, 45" ForeColor="White" BackColorDown="White" TabIndex="1">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <NumEdit wfml:ID="numEdit" Size="268, 20" BorderStyle="None" TabStop="False" Text="ABCDEFGHIJKLMNOPQRSTUVWXYZ" Font="Tahoma, 12pt, style=Bold" FontClass="FontTahomaMediumBold" Locked="True" ForeColor="SteelBlue" Location="50, 54" TabIndex="2">
+            <property.VWItem Name="__UNLINKED_BSTR" />
+          </NumEdit>
+          <CommandButton wfml:ID="cmdEsc" Locked="True" TransparentColor="White" Image="@SFCRes:cmdEsc.Image" Size="40, 40" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="4, 45" ForeColor="White" BackColorDown="White" TabIndex="4">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdDel" Locked="True" Image="@SFCRes:cmdDel.Image" Size="40, 40" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="524, 85" ForeColor="White" BackColorDown="White" TabIndex="5">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdUp" Locked="True" TransparentColor="White" Image="@SFCRes:cmdUp.Image" Size="40, 40" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="484, 45" ForeColor="White" BackColorDown="White" TabIndex="6">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdRight" TransparentColor="White" Image="@SFCRes:cmdRight.Image" Size="40, 40" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" Locked="True" BackColor="SteelBlue" Location="444, 45" ForeColor="White" BackColorDown="White" TabIndex="7">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdLeft" Locked="True" TransparentColor="White" Image="@SFCRes:cmdLeft.Image" Size="40, 40" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="404, 45" ForeColor="White" BackColorDown="White" TabIndex="8">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdSpace" Locked="True" Size="360, 40" TabStop="False" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" FocusRect="False" BackColor="White" Location="84, 245" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="9">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdCtrlLeft" Locked="True" Size="80, 40" TextAlign="MiddleLeft" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="4, 245" ForeColor="White" BackColorDown="White" TabIndex="11">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="TouchKeyboards.AlphaPad" Text="cmdCtrl" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdCtrlRight" Locked="True" Size="80, 40" TextAlign="MiddleLeft" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="524, 245" ForeColor="White" BackColorDown="White" TabIndex="12">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="TouchKeyboards.AlphaPad" Text="cmdCtrl" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdShiftLeft" Locked="True" TransparentColor="White" Image="@SFCRes:cmdShiftLeft.Image" Size="60, 40" TextAlign="MiddleLeft" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="4, 205" ImageAlign="TopLeft" ForeColor="White" BackColorDown="White" TabIndex="14">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd310" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd310" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="464, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="15">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd39" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd39" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="424, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="16">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd38" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd38" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="384, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="17">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd37" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd37" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="344, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="18">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd36" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd36" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="304, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="19">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd35" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd35" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="264, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="20">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd34" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd34" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="224, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="21">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd33" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd33" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="184, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="22">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd32" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd32" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" Locked="True" BackColor="White" Location="144, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="23">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd31" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd31" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="104, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="24">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd30" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd30" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="64, 205" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="25">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd210" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd210" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="484, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="27">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd29" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd29" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="444, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="28">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd28" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd28" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="404, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="29">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd27" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd27" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="364, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="30">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd26" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd26" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="324, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="31">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd25" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd25" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="284, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="32">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd24" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd24" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="244, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="33">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd23" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd23" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="204, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="34">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd22" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd22" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="164, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="35">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd21" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd21" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="124, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="36">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd20" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd20" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="84, 165" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="37">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdCapsLock" Locked="True" TransparentColor="White" Image="@SFCRes:cmdCapsLock.Image" Size="80, 40" TextAlign="MiddleLeft" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="4, 165" ImageAlign="TopLeft" ForeColor="White" BackColorDown="White" TabIndex="38">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdTab" Locked="True" TransparentColor="White" Image="@SFCRes:cmdTab.Image" Size="60, 40" TextAlign="MiddleLeft" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="4, 125" ImageAlign="MiddleLeft" ForeColor="White" BackColorDown="White" TabIndex="40">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdBack" Locked="True" Image="@SFCRes:cmdBack.Image" Size="40, 40" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="564, 85" ForeColor="White" BackColorDown="White" TabIndex="41">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd110" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd110" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="464, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="43">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd19" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd19" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="424, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="44">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd18" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd18" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="384, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="45">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd17" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd17" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="344, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="46">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd16" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd16" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="304, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="47">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd15" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd15" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="264, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="48">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd14" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd14" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="224, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="49">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd13" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd13" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="184, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="50">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd12" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd12" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="144, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="51">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd11" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd11" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="104, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="52">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd10" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd10" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="64, 125" ForeColor="SteelBlue" BackColorDown="SteelBlue" EventOnKeyRepeat="True" TabIndex="53">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd012" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd012" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="484, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="54">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd011" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd011" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="444, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="55">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd010" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd010" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="404, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="56">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd09" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd09" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="364, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="57">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd08" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd08" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="324, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="58">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd07" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd07" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="284, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="59">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd06" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd06" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="244, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="60">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd05" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd05" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="204, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="61">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd04" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd04" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="164, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="62">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd03" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd03" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="124, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="63">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd02" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd02" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="84, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="64">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd01" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd01" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="44, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="65">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd00" Locked="True" Size="40, 40" TextAlign="TopLeft" TabStop="False" Tag="cmd00" FontClass="Captions" ForeColorDown="White" FocusOnClick="False" BackColor="White" Location="4, 85" ForeColor="SteelBlue" BackColorDown="SteelBlue" TabIndex="66">
+            <property.Border Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+          </CommandButton>
+          <Label wfml:ID="lblCaption" BackColor="Transparent" ForeColorOn="SteelBlue" Locked="True" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="602, 40" FontClass="FontTahomaVeryLargeBold" ForeColor="SteelBlue" Location="2, 2">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Input" />
+          </Label>
+          <CommandButton wfml:ID="cmdDown" Locked="True" TransparentColor="White" Image="@SFCRes:cmdDown.Image" Size="40, 40" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="524, 45" ForeColor="White" BackColorDown="White" TabIndex="3">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdEnter" Locked="True" TransparentColor="White" Image="@SFCRes:cmdEnter.Image" Size="60, 80" TabStop="False" FontClass="Captions" ForeColorDown="SteelBlue" FocusOnClick="False" BackColor="SteelBlue" Location="544, 125" ForeColor="White" BackColorDown="White" TabIndex="39">
+            <property.Border Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <Label wfml:ID="lblInputBack" BackColor="White" BackColorOn="White" Size="280, 40" Visible="False" FontClass="FontTahomaLargeBold" Location="44, 45">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="180, 190, 200" Color3="180, 190, 200" />
+          </Label>
+        </property.Controls>
+        <property.Border Style="UserDef" Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

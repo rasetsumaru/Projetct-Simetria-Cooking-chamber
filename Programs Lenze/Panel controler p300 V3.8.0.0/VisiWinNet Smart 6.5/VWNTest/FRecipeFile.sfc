@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Forms.Recipe;VisiWinNET.Recipe.Commands;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FRecipeFile" Locked="True" BackgroundImageLayout="Stretch" VariableActivationMode="ActivateOnShow" BackColor="White" Font="Tahoma, 12pt" StartPosition="CenterScreen" BackgroundImage="@SFCRes:FRecipeFile.BackgroundImage" ForeColor="Black" FormBorderStyle="None" ClientSize="735, 372" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Components>
+      <RecipeClassHandler wfml:ID="RecipeClassHandler" TrayLocation="17, 17" RecipeClass="Recipes">
+        <property.PropertyBindings>
+          <VWItemBinding VWItem="RecipeSystem.FileName" PropertyName="RecipeFile.FileName" />
+        </property.PropertyBindings>
+        <property.RecipeFile ConfirmOverwrite="False" ConfirmDelete="False" />
+      </RecipeClassHandler>
+    </property.Components>
+    <property.Controls>
+      <CommandButton wfml:ID="cmdSaveOK" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="12, 332" ForeColor="White" BackColorDown="White" TabIndex="4">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdSaveRecipe" />
+      </CommandButton>
+      <CommandButton wfml:ID="cmdLoadOK" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="168, 332" ForeColor="White" BackColorDown="White" TabIndex="5">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdLoadRecipe" />
+      </CommandButton>
+      <CommandButton wfml:ID="cmdDelete" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="324, 332" ForeColor="White" BackColorDown="White" TabIndex="6">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdDeleteRecie" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <DeleteRecipe Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <VarIn wfml:ID="vinFileDescription" ForeColorDisabled="SteelBlue" Size="451, 19" TextAlign="Left" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="272, 100" RegionLayout="LabelLeft" ForeColor="White" TabIndex="2" DataBackColorDisabled="Transparent">
+        <property.Unit SizeRatio="0.25" ForeColor="WindowText" TextAlign="Left" Font="Microsoft Sans Serif, 8.25pt">
+          <property.Border Style="None" />
+        </property.Unit>
+        <property.DataBorder Style="None" Width="0" Color1="95, 105, 110" Color2="225, 225, 230" Color3="180, 190, 200" />
+        <property.Border Style="None" Width="0" />
+        <property.VWItem Name="__UNLINKED_BSTR" />
+        <property.Label SizeRatio="0.3" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+          <property.Text Text="Label001" TextGroup="LabelForms.FRecipeFile" />
+          <property.Border Style="None" />
+        </property.Label>
+      </VarIn>
+      <VarIn wfml:ID="vinFileName" ForeColorDisabled="SteelBlue" Size="451, 19" TextAlign="Left" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="272, 75" CharacterFilter="Filename" RegionLayout="LabelLeft" ForeColor="White" TabIndex="1" DataBackColorDisabled="Transparent">
+        <property.Unit SizeRatio="0.25" ForeColor="WindowText" TextAlign="Left" Font="Microsoft Sans Serif, 8.25pt">
+          <property.Border Style="None" />
+        </property.Unit>
+        <property.DataBorder Style="None" Width="0" Color1="95, 105, 110" Color2="225, 225, 230" Color3="180, 190, 200" />
+        <property.Border Style="None" Width="0" />
+        <property.VWItem Name="__UNLINKED_BSTR" />
+        <property.Label SizeRatio="0.3" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+          <property.Text Text="Label000" TextGroup="LabelForms.FRecipeFile" />
+          <property.Border Style="None" />
+        </property.Label>
+      </VarIn>
+      <RecipeList wfml:ID="lvFiles" Size="713, 188" RecipeClassHandler="$RecipeClassHandler" GridColor="SteelBlue" ForeColorItemEven="SteelBlue" ForeColorItemOdd="SteelBlue" Location="12, 138" ForeColor="SteelBlue" ForeColorSelected="White" FontClass="Buttons" BackColorItemOdd="White" BackColor="White" BackColorItemEven="White" DefaultSortMode="Up" BackColorSelected="SteelBlue" FocusRect="False" TabIndex="3">
+        <property.Columns>
+          <RecipeListColumn RecipeListProperty="FileName" Width="125" />
+          <RecipeListColumn RecipeListProperty="FileDescription" Width="241" />
+          <RecipeListColumn RecipeListProperty="FileChangedAt" Width="142" />
+          <RecipeListColumn RecipeListProperty="FileChangedBy" Width="175" />
+        </property.Columns>
+        <property.Border Style="None" Width="0" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+        <property.Header FontClass="Captions" BackColor="White" ForeColor="SteelBlue" Height="30" Resizable="False" />
+        <property.ScrollBarProperties BackColorButton="White" ForeColorButton="SteelBlue" ForeColorButtonDisabled="SteelBlue" BackColorThumb="White" Width="30" BackColor="White" Visibility="Vertical" />
+      </RecipeList>
+      <CommandButton wfml:ID="cmdCancel" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="575, 332" ForeColor="White" BackColorDown="White" TabIndex="7">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdCancel" TextOn="FormSwitching" />
+      </CommandButton>
+      <Shape wfml:ID="Shape1" BorderColor="White" Size="273, 4" Location="10, 45">
+        <property.FillColors>
+          <Color wfml:argument="SteelBlue" />
+        </property.FillColors>
+      </Shape>
+      <Label wfml:ID="Label1" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="332, 37" FontClass="FontTahomaVeryLargeBold" ForeColor="SteelBlue" Location="12, 12">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="NameForms" Text="FRecipeFile" TextOn="FLogOn" />
+      </Label>
+      <Shape wfml:ID="Shape2" BorderColor="SteelBlue" Size="735, 372" Location="0, 0">
+        <property.FillColors>
+          <Color wfml:argument="Transparent" />
+        </property.FillColors>
+      </Shape>
+    </property.Controls>
+  </SmartForm>
+</wfml>

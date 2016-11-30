@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FUserChange" Locked="True" BackgroundImageLayout="Center" VariableActivationMode="ActivateOnShow" BackColor="White" Font="Tahoma, 12pt" StartPosition="CenterScreen" BackgroundImage="@SFCRes:FUserChange.BackgroundImage" ForeColor="Black" FormBorderStyle="None" ClientSize="735, 372" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <CheckBox wfml:ID="chkChangeMachineCode" ButtonStyle="Flat" ForeColorCheckGrayed="SteelBlue" Size="212, 19" TextAlign="MiddleRight" BackColorCheck="Transparent" CheckAlign="Right" ForeColorCheckOn="SteelBlue" FontClass="Captions" FocusRect="False" BackColor="Transparent" Location="174, 141" BackColorCheckGrayed="SteelBlue" ForeColor="SteelBlue" ForeColorChecking="SteelBlue" TabIndex="3">
+        <property.LocalizedText TextGroup="LabelForms.FUserChange" Text="Label008" />
+        <property.VWItem Name="__UNLINKED_BOOL" />
+      </CheckBox>
+      <CheckBox wfml:ID="chkChangePassword" ButtonStyle="Flat" ForeColorCheckGrayed="SteelBlue" Size="212, 19" TextAlign="MiddleRight" BackColorCheck="Transparent" CheckAlign="Right" ForeColorCheckOn="SteelBlue" FontClass="Captions" FocusRect="False" BackColor="Transparent" Location="174, 191" BackColorCheckGrayed="SteelBlue" ForeColor="SteelBlue" ForeColorChecking="SteelBlue" TabIndex="6">
+        <property.LocalizedText TextGroup="LabelForms.FUserChange" Text="Label009" />
+        <property.VWItem Name="__UNLINKED_BOOL" />
+      </CheckBox>
+      <ComboBox wfml:ID="cboState" Editable="False" ForeColorButton="SteelBlue" BackColorSelected="SteelBlue" BackColorButton="White" Size="153, 19" ForeColorSelected="White" Anchor="Top, Left, Right" FontClass="Captions" BackColor="White" Location="570, 241" ForeColor="SteelBlue" TabIndex="9">
+        <property.Border Style="None" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+        <property.ScrollBarProperties BackColorButton="200, 200, 200" ForeColorButton="SteelBlue" ForeColorButtonDisabled="White" BackColorThumb="200, 200, 200" Width="19" BackColor="Window" />
+      </ComboBox>
+      <Label wfml:ID="Label1" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="130, 19" FontClass="Captions" ForeColor="SteelBlue" Location="417, 241">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="LabelForms.FUserChange" Text="Label006" />
+      </Label>
+      <VarIn wfml:ID="vinComment" Anchor="Top, Left, Right" FocusNext="True" ForeColorDisabled="SteelBlue" Size="306, 19" TextAlign="Left" RestoreOnLostFocus="False" FontClass="Captions" DataBackColor="SteelBlue" BackColor="Transparent" Location="417, 266" RegionLayout="LabelLeft" ForeColor="White" TabIndex="10" DataBackColorDisabled="Transparent">
+        <property.Unit Font="Microsoft Sans Serif, 8.25pt">
+          <property.Border Style="None" />
+        </property.Unit>
+        <property.DataBorder Style="None" Color1="95, 105, 110" Color2="225, 225, 230" Color3="180, 190, 200" />
+        <property.Border Style="None" />
+        <property.VWItem Name="__UNLINKED_BSTR" />
+        <property.Label ForeColor="SteelBlue" TextAlign="Left" Visibility="Always" FontClass="Captions">
+          <property.Text Text="Label007" TextGroup="LabelForms.FUserChange" />
+          <property.Border Style="None" />
+        </property.Label>
+      </VarIn>
+      <Label wfml:ID="Label3" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="130, 19" FontClass="Captions" ForeColor="SteelBlue" Location="417, 166">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="LabelForms.FUserChange" Text="Label003" />
+      </Label>
+      <VarIn wfml:ID="VinMachineCode" Anchor="Top, Left, Right" FocusNext="True" ForeColorDisabled="SteelBlue" Size="306, 19" TextAlign="Left" RestoreOnLostFocus="False" FontClass="Captions" DataBackColor="SteelBlue" BackColor="Transparent" Location="417, 141" RegionLayout="LabelLeft" ForeColor="White" TabIndex="4" DataBackColorDisabled="Transparent">
+        <property.Unit Font="Microsoft Sans Serif, 8.25pt">
+          <property.Border Style="None" />
+        </property.Unit>
+        <property.DataBorder Style="None" Color1="95, 105, 110" Color2="225, 225, 230" Color3="180, 190, 200" />
+        <property.Border Style="None" Width="0" />
+        <property.VWItem Name="__UNLINKED_BSTR" />
+        <property.Label ForeColor="SteelBlue" TextAlign="Left" Visibility="Always" FontClass="Captions">
+          <property.Text Text="Label002" TextGroup="LabelForms.FUserChange" />
+          <property.Border Style="None" />
+        </property.Label>
+      </VarIn>
+      <ComboBox wfml:ID="cboUserGroups" Editable="False" ForeColorButton="SteelBlue" BackColorSelected="SteelBlue" BackColorButton="White" Size="153, 19" ForeColorSelected="White" Anchor="Top, Left, Right" FontClass="Captions" BackColor="White" Location="570, 166" ForeColor="SteelBlue" TabIndex="5">
+        <property.Border Style="None" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+        <property.ScrollBarProperties BackColorButton="180, 190, 200" ForeColorButton="SteelBlue" ForeColorButtonDisabled="White" BackColorThumb="180, 190, 200" Width="19" BackColor="Window" />
+      </ComboBox>
+      <VarIn wfml:ID="vinRepeatPassword" Anchor="Top, Left, Right" FocusNext="True" PasswordChar="•" ForeColorDisabled="SteelBlue" Size="306, 19" TextAlign="Left" RestoreOnLostFocus="False" FontClass="Captions" DataBackColor="SteelBlue" BackColor="Transparent" Location="417, 216" RegionLayout="LabelLeft" ForeColor="White" TabIndex="8" DataBackColorDisabled="Transparent">
+        <property.Unit Font="Microsoft Sans Serif, 8.25pt">
+          <property.Border Style="None" />
+        </property.Unit>
+        <property.DataBorder Style="None" Color1="95, 105, 110" Color2="225, 225, 230" Color3="180, 190, 200" />
+        <property.Border Style="None" />
+        <property.VWItem Name="__UNLINKED_BSTR" />
+        <property.Label ForeColor="SteelBlue" TextAlign="Left" Visibility="Always" FontClass="Captions">
+          <property.Text Text="Label005" TextGroup="LabelForms.FUserChange" />
+          <property.Border Style="None" />
+        </property.Label>
+      </VarIn>
+      <VarIn wfml:ID="VinFullName" Anchor="Top, Left, Right" FocusNext="True" ForeColorDisabled="SteelBlue" Size="306, 19" TextAlign="Left" RestoreOnLostFocus="False" FontClass="Captions" DataBackColor="SteelBlue" BackColor="Transparent" Location="417, 116" RegionLayout="LabelLeft" ForeColor="White" TabIndex="2" DataBackColorDisabled="Transparent">
+        <property.Unit Font="Microsoft Sans Serif, 8.25pt">
+          <property.Border Style="None" />
+        </property.Unit>
+        <property.DataBorder Style="None" Color1="95, 105, 110" Color2="225, 225, 230" Color3="180, 190, 200" />
+        <property.Border Style="None" />
+        <property.VWItem Name="__UNLINKED_BSTR" />
+        <property.Label ForeColor="SteelBlue" TextAlign="Left" Visibility="Always" FontClass="Captions">
+          <property.Text Text="Label001" TextGroup="LabelForms.FUserChange" />
+          <property.Border Style="None" />
+        </property.Label>
+      </VarIn>
+      <CommandButton wfml:ID="cmdCancel" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="570, 332" ForeColor="White" BackColorDown="White" TabIndex="12">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdCancel" TextOn="FormSwitching" />
+      </CommandButton>
+      <CommandButton wfml:ID="cmdOk" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="414, 332" ForeColor="White" BackColorDown="White" TabIndex="11">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdOk" TextOn="FormSwitching" />
+      </CommandButton>
+      <VarIn wfml:ID="vinPassword" FocusNext="True" PasswordChar="•" ForeColorDisabled="SteelBlue" Size="306, 19" TextAlign="Left" RestoreOnLostFocus="False" FontClass="Captions" DataBackColor="SteelBlue" BackColor="Transparent" Location="417, 191" RegionLayout="LabelLeft" ForeColor="White" TabIndex="7" DataBackColorDisabled="Transparent">
+        <property.Unit SizeRatio="0.25" ForeColor="WindowText" TextAlign="Left" Font="Microsoft Sans Serif, 8.25pt">
+          <property.Border Style="None" />
+        </property.Unit>
+        <property.DataBorder Style="None" Color1="95, 105, 110" Color2="225, 225, 230" Color3="180, 190, 200" />
+        <property.Border Style="None" />
+        <property.VWItem Name="__UNLINKED_BSTR" />
+        <property.Label ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+          <property.Text Text="Label004" TextGroup="LabelForms.FUserChange" />
+          <property.Border Style="None" />
+        </property.Label>
+      </VarIn>
+      <VarIn wfml:ID="vinName" FocusNext="True" ForeColorDisabled="SteelBlue" Size="306, 19" TextAlign="Left" RestoreOnLostFocus="False" FontClass="Captions" DataBackColor="SteelBlue" BackColor="Transparent" Location="417, 91" RegionLayout="LabelLeft" ForeColor="White" TabIndex="1" DataBackColorDisabled="Transparent">
+        <property.Unit SizeRatio="0.25" ForeColor="WindowText" TextAlign="Left" Font="Microsoft Sans Serif, 8.25pt">
+          <property.Border Style="None" />
+        </property.Unit>
+        <property.DataBorder Style="None" Color1="95, 105, 110" Color2="225, 225, 230" Color3="180, 190, 200" />
+        <property.Border Style="None" />
+        <property.VWItem Name="__UNLINKED_BSTR" />
+        <property.Label ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+          <property.Text Text="Label000" TextGroup="LabelForms.FUserChange" />
+          <property.Border Style="None" />
+        </property.Label>
+      </VarIn>
+      <Shape wfml:ID="Shape1" BorderColor="White" Size="273, 4" Location="10, 45">
+        <property.FillColors>
+          <Color wfml:argument="SteelBlue" />
+        </property.FillColors>
+      </Shape>
+      <Label wfml:ID="Label2" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="332, 37" FontClass="FontTahomaVeryLargeBold" ForeColor="SteelBlue" Location="12, 12">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="NameForms" Text="FUserChange" TextOn="FLogOn" />
+      </Label>
+      <Shape wfml:ID="Shape2" BorderColor="SteelBlue" Size="735, 372" Location="0, 0">
+        <property.FillColors>
+          <Color wfml:argument="Transparent" />
+        </property.FillColors>
+      </Shape>
+    </property.Controls>
+  </SmartForm>
+</wfml>

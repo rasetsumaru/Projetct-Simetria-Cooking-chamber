@@ -1,0 +1,361 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VWNTest
+</name>
+</assembly>
+<members>
+<member name="M:HMI.FConfigTimers.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FConfigTimers.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FConfigTimers.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FConfigParameters.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FConfigParameters.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FConfigParameters.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FConfigSystem.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FConfigSystem.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FConfigSystem.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FConfigControl.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FConfigControl.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FConfigControl.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FConfigManual.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FConfigManual.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FConfigManual.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FAlphaPad.Dispose(System.Boolean)">
+	<summary>
+ Verwendete Ressourcen bereinigen.
+ </summary>
+	<param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+</member><member name="M:HMI.FAlarmHistoryFilter.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FAlarmHistoryFilter.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FAlarmHistory.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FAlarmHistory.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FAlarmHistory.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FConfigurations.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FConfigurations.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FConfigurations.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FHistoric.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FHistoric.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FHistoric.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FSynoptic.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FSynoptic.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FSynoptic.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FAlarms.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FAlarms.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FAlarms.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FProcess.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FProcess.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FProcess.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FSelectBox.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FSelectBox.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FRecipeFile.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FRecipeFile.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FRecipeFile.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FUserChange.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FUsers.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FUsers.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FLogOnChangePassword.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FLogOnChangePassword.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FLogOnChangePassword.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FSystem.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FSystem.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FSystem.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FRecipes.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FRecipes.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FRecipes.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="M:HMI.FMessageBox.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FMessageBox.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FLogOn.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FLogOn.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FCentral.#ctor">
+	<summary>
+ This method is called, when the Form is initialized.
+ </summary>
+</member><member name="M:HMI.FCentral.Dispose(System.Boolean)">
+	<summary>
+ This method is called, when the Form is unloaded.
+ Release the resources used by the Form inside this method.
+ </summary>
+	<param name="disposing">True to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+</member><member name="M:HMI.FCentral.Me_FormChanged(System.Object,VisiWinNET.Forms.FormChangedEventArgs)">
+	<summary>
+ This method is called by a form swichting.
+ Saving the name of the last activated form and setting the name of the current form ('Me.Name')
+ </summary>
+</member><member name="P:HMI.My.Resources.Resources.ResourceManager">
+	<summary>
+  Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+</summary>
+</member><member name="P:HMI.My.Resources.Resources.Culture">
+	<summary>
+  Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+  Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+</summary>
+</member><member name="T:HMI.My.Resources.Resources">
+	<summary>
+  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+</summary>
+</member><member name="M:HMI.Program.Main">
+	<summary>
+ Der Haupteinstiegspunkt für die Anwendung.
+ </summary>
+</member><member name="T:HMI.Program">
+	<summary>
+ Klasse mit dem Haupteinstiegspunkt für die Anwendung.
+ </summary>
+</member><member name="M:HMI.FStart.#ctor(System.String)">
+	<summary>
+ Erzeugt und initialisiert eine neue Instanz der Klasse.
+ </summary>
+</member><member name="M:HMI.FStart.Dispose(System.Boolean)">
+	<summary>
+ Verwendete Ressourcen bereinigen.
+ </summary>
+	<param name="disposing"> true, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls false.</param>
+</member><member name="M:HMI.FStart.OnInitReady(System.Object,VisiWinNET.Project.ProjectManagerEventArgs)">
+	<summary>
+ Wird aufgerufen, wenn die VisiWinNET-Laufzeit initialisiert wurde.
+ </summary>
+	<param name="sender"> Quelle des Ereignisses.</param>
+	<param name="e"> Stellt Informationen für das Ereignis bereit.</param>
+</member><member name="M:HMI.FStart.OnProjectShutdownFinished(System.Object,System.EventArgs)">
+	<summary>
+ Wird aufgerufen, wenn die VisiWinNET-Laufzeit beendet wurde.
+ </summary>
+	<param name="sender"> Quelle des Ereignisses.</param>
+	<param name="e"> Stellt Informationen für das Ereignis bereit.</param>
+</member><member name="T:HMI.FStart">
+	<summary>
+ Eröffnungsbild der Applikation.
+ Wird angezeigt, solange die VisiWinNET-Laufzeit und die Applikation initialisiert werden.
+ </summary>
+</member><member name="M:HMI.FStart.InitializeComponent">
+	<summary>
+ Erforderliche Methode für die Designerunterstützung. 
+ Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+ </summary>
+</member>
+</members>
+</doc>

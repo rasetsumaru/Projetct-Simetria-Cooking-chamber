@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="ReadMe" VariableActivationMode="ActivateOnShow" BackColor="White" Font="Tahoma, 8.25pt" StartPosition="Manual" FormBorderStyle="None" ClientSize="1024, 768" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBoxInfo" BackColor="255, 240, 80" Size="640, 677" Visible="False" TabIndex="126" FontClass="FontTahomaMedium" ForeColor="Black" Location="0, 0">
+        <property.Controls>
+          <Label wfml:ID="Label9" Font="Tahoma, 11.25pt" TextAlign="MiddleLeft" Size="634, 95" ForeColor="Black" Location="3, 512">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="Text" TextGroup="TemplateInstructions.Project" Text="Text16" TextOn="Text16" />
+          </Label>
+          <Label wfml:ID="Label8" Font="Tahoma, 11.25pt" TextAlign="MiddleLeft" Size="634, 80" ForeColor="Black" Location="3, 426">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="Text" TextGroup="TemplateInstructions.Project" Text="Text15" TextOn="Text15" />
+          </Label>
+          <Label wfml:ID="Label7" Font="Tahoma, 11.25pt" TextAlign="MiddleLeft" Size="634, 49" ForeColor="Black" Location="3, 613">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="Text" TextGroup="TemplateInstructions.Project" Text="Text7" TextOn="Text7" />
+          </Label>
+          <Label wfml:ID="Label6" Locked="True" Font="Tahoma, 11.25pt" TextAlign="MiddleLeft" Size="634, 60" ForeColor="Black" Location="3, 360">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="Text" TextGroup="TemplateInstructions.Project" Text="Text6" TextOn="Text6" />
+          </Label>
+          <Label wfml:ID="Label5" Locked="True" Font="Tahoma, 11.25pt" TextAlign="MiddleLeft" Size="634, 60" ForeColor="Black" Location="3, 294">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="Text" TextGroup="TemplateInstructions.Project" Text="Text5" TextOn="Text5" />
+          </Label>
+          <Label wfml:ID="Label4" Locked="True" Font="Tahoma, 11.25pt" TextAlign="MiddleLeft" Size="634, 60" ForeColor="Black" Location="3, 228">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="Text" TextGroup="TemplateInstructions.Project" Text="Text4" TextOn="Text4" />
+          </Label>
+          <Label wfml:ID="Label1" Locked="True" Font="Tahoma, 11.25pt" TextAlign="MiddleLeft" Size="634, 60" ForeColor="Black" Location="3, 30">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="Text" TextGroup="TemplateInstructions.Project" Text="Text1" TextOn="Text1" />
+          </Label>
+          <Label wfml:ID="Label2" Locked="True" Font="Tahoma, 11.25pt" TextAlign="MiddleLeft" Size="634, 60" ForeColor="Black" Location="3, 96">
+            <property.Border Style="None" Width="1" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="Text" TextGroup="TemplateInstructions.Project" Text="Text2" TextOn="Text2" />
+          </Label>
+          <Label wfml:ID="Label3" Locked="True" Font="Tahoma, 11.25pt" TextAlign="MiddleLeft" Size="634, 60" ForeColor="Black" Location="3, 162">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="Text" TextGroup="TemplateInstructions.Project" Text="Text3" TextOn="Text3" />
+          </Label>
+        </property.Controls>
+        <property.Border Style="UserDef" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+        <property.LocalizedText Text="Info" TextGroup="TemplateInstructions" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

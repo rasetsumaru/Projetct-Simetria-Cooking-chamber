@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.5.0</Version>
+    <SymbolConfigObject version="3.5.5.50" />
+    <ProjectInfo name="Cooking chamber" devicename="Device" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_REAL" size="4" swapsize="4" typeclass="Real" iecname="REAL" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeArray name="T_ARRAY__0__2__OF_REAL" size="12" nativesize="12" typeclass="Array" iecname="ARRAY [0..2] OF REAL" basetype="T_REAL">
+      <ArrayDim minrange="0" maxrange="2" />
+    </TypeArray>
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeArray name="T_ARRAY__0__2__OF_INT" size="6" nativesize="6" typeclass="Array" iecname="ARRAY [0..2] OF INT" basetype="T_INT">
+      <ArrayDim minrange="0" maxrange="2" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__2__OF_BOOL" size="3" nativesize="3" typeclass="Array" iecname="ARRAY [0..2] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="0" maxrange="2" />
+    </TypeArray>
+    <TypeSimple name="T_WORD" size="2" swapsize="2" typeclass="Word" iecname="WORD" />
+    <TypeArray name="T_ARRAY__0__2__OF_WORD" size="6" nativesize="6" typeclass="Array" iecname="ARRAY [0..2] OF WORD" basetype="T_WORD">
+      <ArrayDim minrange="0" maxrange="2" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__2__0__10__OF_BOOL" size="33" nativesize="33" typeclass="Array" iecname="ARRAY [0..2, 0..10] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="0" maxrange="2" />
+      <ArrayDim minrange="0" maxrange="10" />
+    </TypeArray>
+    <TypeSimple name="T_DATE_AND_TIME" size="4" swapsize="4" typeclass="DateAndTime" iecname="DATE_AND_TIME" />
+    <TypeArray name="T_ARRAY__0__2__OF_DATE_AND_TIME" size="12" nativesize="12" typeclass="Array" iecname="ARRAY [0..2] OF DATE_AND_TIME" basetype="T_DATE_AND_TIME">
+      <ArrayDim minrange="0" maxrange="2" />
+    </TypeArray>
+    <TypeSimple name="T_STRING" size="81" swapsize="0" typeclass="String" iecname="STRING" />
+    <TypeArray name="T_ARRAY__0__9__OF_INT" size="20" nativesize="20" typeclass="Array" iecname="ARRAY [0..9] OF INT" basetype="T_INT">
+      <ArrayDim minrange="0" maxrange="9" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__9__OF_REAL" size="40" nativesize="40" typeclass="Array" iecname="ARRAY [0..9] OF REAL" basetype="T_REAL">
+      <ArrayDim minrange="0" maxrange="9" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__9__OF_BOOL" size="10" nativesize="10" typeclass="Array" iecname="ARRAY [0..9] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="0" maxrange="9" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__2__OF_STRING" size="243" nativesize="243" typeclass="Array" iecname="ARRAY [0..2] OF STRING" basetype="T_STRING">
+      <ArrayDim minrange="0" maxrange="2" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__2__0__9__OF_INT" size="60" nativesize="60" typeclass="Array" iecname="ARRAY [0..2, 0..9] OF INT" basetype="T_INT">
+      <ArrayDim minrange="0" maxrange="2" />
+      <ArrayDim minrange="0" maxrange="9" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__2__0__9__OF_REAL" size="120" nativesize="120" typeclass="Array" iecname="ARRAY [0..2, 0..9] OF REAL" basetype="T_REAL">
+      <ArrayDim minrange="0" maxrange="2" />
+      <ArrayDim minrange="0" maxrange="9" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__2__0__9__OF_BOOL" size="30" nativesize="30" typeclass="Array" iecname="ARRAY [0..2, 0..9] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="0" maxrange="2" />
+      <ArrayDim minrange="0" maxrange="9" />
+    </TypeArray>
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="GLOBAL">
+        <Node name="Alamrs_acknowledge" type="T_BOOL" access="ReadWrite" />
+        <Node name="Alarms_activation" type="T_BOOL" access="ReadWrite" />
+        <Node name="Alarms_chambers_status" type="T_ARRAY__0__2__OF_INT" access="ReadWrite" />
+        <Node name="Beeb_activation" type="T_BOOL" access="ReadWrite" />
+        <Node name="Burner_activation" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Burner_protection" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Burner_reset" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Chamber_humidity" type="T_ARRAY__0__2__OF_INT" access="ReadWrite" />
+        <Node name="Chamber_temperature" type="T_ARRAY__0__2__OF_REAL" access="ReadWrite" />
+        <Node name="Chamber_temperature_dry_sensor" type="T_ARRAY__0__2__OF_WORD" access="ReadWrite" />
+        <Node name="Chamber_temperature_wet_sensor" type="T_ARRAY__0__2__OF_WORD" access="ReadWrite" />
+        <Node name="Chimney_activation" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Core_temperature" type="T_ARRAY__0__2__OF_REAL" access="ReadWrite" />
+        <Node name="Core_temperature_sensor" type="T_ARRAY__0__2__OF_WORD" access="ReadWrite" />
+        <Node name="Emergency_chamber" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Higher_chimney_closed" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Higher_chimney_open" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Humidification_valve_activation" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Lower_chimney_closed" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Lower_chimney_open" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Motor_activation" type="T_ARRAY__0__2__0__10__OF_BOOL" access="ReadWrite" />
+        <Node name="Motor_protection" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Program_chamber" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Program_chamber_status" type="T_ARRAY__0__2__OF_INT" access="ReadWrite" />
+        <Node name="Program_cycles" type="T_ARRAY__0__2__OF_INT" access="ReadWrite" />
+        <Node name="Program_elapsed" type="T_ARRAY__0__2__OF_INT" access="ReadWrite" />
+        <Node name="Program_estimated" type="T_ARRAY__0__2__OF_INT" access="ReadWrite" />
+        <Node name="Program_estimated_time" type="T_ARRAY__0__2__OF_DATE_AND_TIME" access="ReadWrite" />
+        <Node name="Program_process_init" type="T_ARRAY__0__2__OF_DATE_AND_TIME" access="ReadWrite" />
+        <Node name="Program_recipe_chamber" type="T_INT" access="ReadWrite" />
+        <Node name="Program_steps" type="T_ARRAY__0__2__OF_INT" access="ReadWrite" />
+        <Node name="Smokehouse_activation" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Smokehouse_protection" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Sound_activation" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+        <Node name="Steam_valve_activation" type="T_ARRAY__0__2__OF_BOOL" access="ReadWrite" />
+      </Node>
+      <Node name="RECIPES">
+        <Node name="Recipe_chamber_chimney" type="T_ARRAY__0__2__0__9__OF_BOOL" access="ReadWrite" />
+        <Node name="Recipe_chamber_humidity" type="T_ARRAY__0__2__0__9__OF_INT" access="ReadWrite" />
+        <Node name="Recipe_chamber_smokehouse" type="T_ARRAY__0__2__0__9__OF_BOOL" access="ReadWrite" />
+        <Node name="Recipe_chamber_temperature" type="T_ARRAY__0__2__0__9__OF_REAL" access="ReadWrite" />
+        <Node name="Recipe_core_temperature" type="T_ARRAY__0__2__OF_REAL" access="ReadWrite" />
+        <Node name="Recipe_cycles" type="T_ARRAY__0__2__OF_INT" access="ReadWrite" />
+        <Node name="Recipe_description" type="T_ARRAY__0__2__OF_STRING" access="ReadWrite" />
+        <Node name="Recipe_name" type="T_ARRAY__0__2__OF_STRING" access="ReadWrite" />
+        <Node name="Recipe_steps" type="T_ARRAY__0__2__OF_INT" access="ReadWrite" />
+        <Node name="Recipe_timer_step" type="T_ARRAY__0__2__0__9__OF_INT" access="ReadWrite" />
+        <Node name="Transfer_chamber_chimney" type="T_ARRAY__0__9__OF_BOOL" access="ReadWrite" />
+        <Node name="Transfer_chamber_humidity" type="T_ARRAY__0__9__OF_INT" access="ReadWrite" />
+        <Node name="Transfer_chamber_smokehouse" type="T_ARRAY__0__9__OF_BOOL" access="ReadWrite" />
+        <Node name="Transfer_chamber_temperature" type="T_ARRAY__0__9__OF_REAL" access="ReadWrite" />
+        <Node name="Transfer_core_temperature" type="T_REAL" access="ReadWrite" />
+        <Node name="Transfer_cycles" type="T_INT" access="ReadWrite" />
+        <Node name="Transfer_description" type="T_STRING" access="ReadWrite" />
+        <Node name="Transfer_name" type="T_STRING" access="ReadWrite" />
+        <Node name="Transfer_steps" type="T_INT" access="ReadWrite" />
+        <Node name="Transfer_timer_step" type="T_ARRAY__0__9__OF_INT" access="ReadWrite" />
+      </Node>
+      <Node name="SETTINGS">
+        <Node name="Chamber_humidity_offset" type="T_ARRAY__0__2__OF_INT" access="ReadWrite" />
+        <Node name="Chamber_temperature_offset" type="T_ARRAY__0__2__OF_REAL" access="ReadWrite" />
+        <Node name="Core_temperature_offset" type="T_ARRAY__0__2__OF_REAL" access="ReadWrite" />
+        <Node name="Enabled_chamber_cars" type="T_INT" access="ReadWrite" />
+        <Node name="Enabled_chambers" type="T_INT" access="ReadWrite" />
+        <Node name="Humidity_lower_hysteresis" type="T_INT" access="ReadWrite" />
+        <Node name="Humidity_upper_hysteresis" type="T_INT" access="ReadWrite" />
+        <Node name="lower_limit_humidity" type="T_INT" access="ReadWrite" />
+        <Node name="Lower_limit_temperature" type="T_REAL" access="ReadWrite" />
+        <Node name="Lower_limit_timer_cycle" type="T_INT" access="ReadWrite" />
+        <Node name="Temperature_control_system" type="T_BOOL" access="ReadWrite" />
+        <Node name="Temperature_lower_hysteresis" type="T_REAL" access="ReadWrite" />
+        <Node name="Temperature_maximum" type="T_REAL" access="ReadWrite" />
+        <Node name="Temperature_upper_hysteresis" type="T_REAL" access="ReadWrite" />
+        <Node name="Timer_activation_humidification_valve" type="T_INT" access="ReadWrite" />
+        <Node name="Timer_activation_motors" type="T_INT" access="ReadWrite" />
+        <Node name="timer_response_humidification_valve" type="T_INT" access="ReadWrite" />
+        <Node name="Upper_limit_humidity" type="T_INT" access="ReadWrite" />
+        <Node name="Upper_limit_temperature" type="T_REAL" access="ReadWrite" />
+        <Node name="Upper_limit_timer_cycle" type="T_INT" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>

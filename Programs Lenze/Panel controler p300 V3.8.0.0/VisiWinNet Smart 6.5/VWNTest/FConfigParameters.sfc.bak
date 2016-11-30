@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;System.Drawing;VisiWinNET.Forms.Commands;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FConfigParameters" Locked="True" VariableActivationMode="ActivateOnShow" Location="0, 175" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 555" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox" BackColor="White" Size="800, 600" BackgroundImage="@SFCRes:GroupBox.BackgroundImage" TabIndex="129" Location="0, -175" BackgroundImageLayout="Center">
+        <property.Controls>
+          <VarIn wfml:ID="VarInActivationValve" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="410, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="370, 456" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="198" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="60" />
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="s" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem Name="Controller.Controller.Application.SETTINGS.Timer_activation_humidification_valve" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label010" TextGroup="LabelForms.FConfigParameters" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin Value="1" />
+          </VarIn>
+          <VarIn wfml:ID="VarInActivationEngines" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="410, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="370, 381" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="197" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="60" />
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="s" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem Name="Controller.Controller.Application.SETTINGS.Timer_activation_motors" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label009" TextGroup="LabelForms.FConfigParameters" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin Value="1" />
+          </VarIn>
+          <VarIn wfml:ID="VarInAvailableCars" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="410, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="370, 256" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="196" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="10" />
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem Name="Controller.Controller.Application.SETTINGS.Enabled_chamber_cars" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label007" TextGroup="LabelForms.FConfigParameters" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin Value="1" />
+          </VarIn>
+          <VarIn wfml:ID="VarInAvailableChambers" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="410, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="370, 231" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="195" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="3" />
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem Name="Controller.Controller.Application.SETTINGS.Enabled_chambers" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label008" TextGroup="LabelForms.FConfigParameters" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin Value="1" />
+          </VarIn>
+          <Label wfml:ID="Label1" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="234, 19" FontClass="Captions" ForeColor="SteelBlue" Location="370, 206">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigParameters" Text="Label006" />
+          </Label>
+          <ComboBox wfml:ID="cboControl" Editable="False" ForeColorButton="SteelBlue" BackColorSelected="SteelBlue" BackColorButton="White" Size="153, 19" ForeColorSelected="White" Anchor="Top, Left, Right" FontClass="Captions" BackColor="White" Location="627, 206" ForeColor="SteelBlue" TabIndex="190">
+            <property.Border Style="None" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+            <property.ScrollBarProperties BackColorButton="180, 190, 200" ForeColorButton="SteelBlue" ForeColorButtonDisabled="White" BackColorThumb="180, 190, 200" Width="19" BackColor="Window" />
+          </ComboBox>
+          <VarIn wfml:ID="VarInUpperHumidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="410, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="370, 431" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="139" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="1000" VWItem="99" />
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem Name="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label005" TextGroup="LabelForms.FConfigParameters" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <VarIn wfml:ID="VarInLowerHumidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="410, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="370, 406" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="138" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="1" VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem Name="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label004" TextGroup="LabelForms.FConfigParameters" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin Value="1" />
+          </VarIn>
+          <VarIn wfml:ID="VarInUpperTimer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="410, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="370, 356" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="133" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="1000" VWItem="1000" />
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem Name="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label003" TextGroup="LabelForms.FConfigParameters" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <VarIn wfml:ID="VarInLowerTimer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="410, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="370, 331" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="132" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="1" VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem Name="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label002" TextGroup="LabelForms.FConfigParameters" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin Value="1" />
+          </VarIn>
+          <VarIn wfml:ID="VarInUpperTemperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="410, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="370, 306" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="131" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="300" VWItem="Controller.Controller.Application.SETTINGS.Temperature_maximum" />
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label001" TextGroup="LabelForms.FConfigParameters" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <VarIn wfml:ID="VarInLowerTemperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="410, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="370, 281" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="130" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.07" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+            <property.Label SizeRatio="0.75" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label000" TextGroup="LabelForms.FConfigParameters" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+          </VarIn>
+          <Shape wfml:ID="Shape1" BorderWidth="0" Size="10, 400" Location="790, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape2" BorderWidth="0" Size="10, 400" Location="0, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape3" BorderWidth="0" Size="800, 45" Location="0, 557">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <CommandButton wfml:ID="cmdReturn" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 517" ForeColor="White" BackColorDown="White" TabIndex="128">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdReturn" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowChildForm FormName="FConfigurations" OwnerForm="FSystem" FormChangeMode="ShowNewCloseActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <Shape wfml:ID="Shape4" BorderColor="SteelBlue" Size="780, 388" Location="10, 169">
+            <property.FillColors>
+              <Color wfml:argument="Transparent" />
+            </property.FillColors>
+          </Shape>
+        </property.Controls>
+        <property.Border Style="None" Width="0" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

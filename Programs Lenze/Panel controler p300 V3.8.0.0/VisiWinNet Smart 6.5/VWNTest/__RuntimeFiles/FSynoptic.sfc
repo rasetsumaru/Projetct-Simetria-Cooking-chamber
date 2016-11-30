@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;System.Drawing;VisiWinNET.Forms.Commands;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FSynoptic" Locked="True" VariableActivationMode="ActivateOnShow" Location="0, 175" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 555" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox" BackColor="White" Size="800, 600" BackgroundImage="@SFCRes:GroupBox.BackgroundImage" TabIndex="129" Location="0, -175" BackgroundImageLayout="Center">
+        <property.Controls>
+          <Shape wfml:ID="Shape1" BorderWidth="0" Size="10, 400" Location="790, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape2" BorderWidth="0" Size="10, 400" Location="0, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape3" BorderWidth="0" Size="800, 45" Location="0, 557">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <CommandButton wfml:ID="CommandButton1" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 517" ForeColor="White" BackColorDown="White" TabIndex="128">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdReturn" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowForm FormName="FSystem" FormChangeMode="ShowNewHideActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <Shape wfml:ID="Shape4" BorderColor="SteelBlue" Size="780, 388" Location="10, 169">
+            <property.FillColors>
+              <Color wfml:argument="Transparent" />
+            </property.FillColors>
+          </Shape>
+        </property.Controls>
+        <property.Border Style="None" Width="0" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

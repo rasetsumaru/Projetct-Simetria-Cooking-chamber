@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Forms.Commands;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FUsers" Locked="True" VariableActivationMode="ActivateOnShow" Location="0, 175" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 555" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Components>
+      <Timer wfml:ID="TimerDeactivated" Interval="500" TrayLocation="17, 17" />
+      <Timer wfml:ID="TimerChange" Interval="500" TrayLocation="156, 17" />
+    </property.Components>
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox" BackColor="White" Size="800, 600" BackgroundImage="@SFCRes:GroupBox.BackgroundImage" TabIndex="153" Location="0, -175" BackgroundImageLayout="Center">
+        <property.Controls>
+          <ListView wfml:ID="lvwUsers" Anchor="Top, Bottom, Left, Right" BackColorSelected="SteelBlue" ForeColorItemEven="SteelBlue" Size="590, 360" GridColor="SteelBlue" BackColorItemEven="White" ForeColorSelected="White" BackColorItemOdd="White" FontClass="Buttons" ForeColor="SteelBlue" BackColor="White" Location="20, 187" ForeColorItemOdd="SteelBlue" TabIndex="1">
+            <property.Border Style="None" Width="0" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+            <property.ScrollBarProperties BackColorButton="White" ForeColorButton="SteelBlue" ForeColorButtonDisabled="SteelBlue" BackColorThumb="White" Width="30" BackColor="White" Visibility="Vertical" />
+            <property.Header FontClass="Captions" BackColor="White" ForeColor="SteelBlue" Height="30" Resizable="False" />
+            <property.Columns>
+              <ListViewTextColumn Name="Name" Width="100" />
+              <ListViewTextColumn Name="FullName" Width="100" />
+              <ListViewTextColumn Name="Code" Width="100" />
+              <ListViewTextColumn Name="UserGroup" Width="100" />
+              <ListViewTextColumn Name="State" Width="60" />
+              <ListViewNumericalColumn Alignment="Right" Name="RemainingLogOns" Width="77" />
+              <ListViewNumericalColumn Alignment="Right" Name="RenewPassword" Width="70" />
+              <ListViewTextColumn Alignment="Right" Name="DeactivationTime" Width="100" />
+              <ListViewTextColumn Name="Comment" Width="200" />
+            </property.Columns>
+          </ListView>
+          <CommandButton wfml:ID="cmdRemove" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 445" Enabled="False" ForeColor="White" BackColorDown="White" TabIndex="152">
+            <property.Border Style="Switch" Color1="95, 105, 110" Color2="95, 105, 110" Color3="180, 190, 200" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdRemove" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdDeactivate" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 409" Enabled="False" ForeColor="White" BackColorDown="White" TabIndex="151">
+            <property.Border Style="Switch" Color1="95, 105, 110" Color2="95, 105, 110" Color3="180, 190, 200" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdDeactivate" />
+          </CommandButton>
+          <CommandButton wfml:ID="CmdActivate" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 373" Enabled="False" ForeColor="White" BackColorDown="White" TabIndex="150">
+            <property.Border Style="Switch" Color1="95, 105, 110" Color2="95, 105, 110" Color3="180, 190, 200" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdActivate" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdChange" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 337" Enabled="False" ForeColor="White" BackColorDown="White" TabIndex="149">
+            <property.Border Style="Switch" Color1="95, 105, 110" Color2="95, 105, 110" Color3="180, 190, 200" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdChange" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdAdd" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 301" Enabled="False" ForeColor="White" BackColorDown="White" TabIndex="148">
+            <property.Border Style="Switch" Color1="95, 105, 110" Color2="95, 105, 110" Color3="180, 190, 200" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdAdd" />
+            <property.Authorization Right="UserManagement" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdReturn" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 517" ForeColor="White" BackColorDown="White" TabIndex="126">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdReturn" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowForm FormName="FSystem" FormChangeMode="ShowNewCloseActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <Shape wfml:ID="Shape1" BorderWidth="0" Size="10, 400" Location="790, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape2" BorderWidth="0" Size="10, 400" Location="0, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape3" BorderWidth="0" Size="800, 45" Location="0, 557">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape4" BorderColor="SteelBlue" Size="780, 388" Location="10, 169">
+            <property.FillColors>
+              <Color wfml:argument="Transparent" />
+            </property.FillColors>
+          </Shape>
+        </property.Controls>
+        <property.Border Style="None" Width="0" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

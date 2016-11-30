@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;System.Drawing;VisiWinNET.Forms.Alarm;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="Form" Locked="True" TrayHeight="50" Text="Home" BackColor="White" ControlBox="False" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 600" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox1" BackColor="255, 240, 80" Size="456, 146" Visible="False" TabIndex="128" FontClass="FontTahomaMedium" ForeColor="Black" Location="12, 86">
+        <property.Controls>
+          <Label wfml:ID="Label2" TextAlign="MiddleLeft" Size="450, 55" ForeColor="Black" Location="3, 88">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="TextForm" TextGroup="TemplateInstructions.Project" Text="TextForm1" TextOn="TextForm1" />
+          </Label>
+          <Label wfml:ID="Label3" TextAlign="MiddleLeft" Size="450, 61" ForeColor="Black" Location="3, 21">
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.LocalizedText TextPrefix="TextForm" TextGroup="TemplateInstructions.Project" Text="TextForm0" TextOn="TextForm0" />
+          </Label>
+        </property.Controls>
+        <property.Border Style="UserDef" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+        <property.LocalizedText Text="Info" TextGroup="TemplateInstructions" />
+      </GroupBox>
+      <GroupBox wfml:ID="GroupBoxButtonLine" BackColor="White" Dock="Bottom" Size="480, 80" TabIndex="115" FontClass="FontTahomaMedium" Location="0, 192">
+        <property.Controls>
+          <CommandButton wfml:ID="CommandButtonBack" Dock="Right" Locked="True" TransparentColor="Fuchsia" Image="@SFCRes:CommandButtonBack.Image" Size="128, 80" TextAlign="BottomCenter" TabStop="False" ForeColorDown="Black" FocusOnClick="False" ImageDisabled="@SFCRes:CommandButtonBack.ImageDisabled" FocusRect="False" BackColor="180, 190, 200" Location="352, 0" ForeColor="Black" BackColorDown="White" TabIndex="31" ImageDown="@SFCRes:CommandButtonBack.ImageDown">
+            <property.Border Style="UserDef" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextPrefix="Back" TextGroup="ButtonTexts" Text="Back" TextOn="Back" />
+          </CommandButton>
+          <CommandButton wfml:ID="CommandButton2" Dock="Left" Locked="True" TransparentColor="Fuchsia" Size="128, 80" TextAlign="BottomCenter" TabStop="False" ForeColorDown="Black" FocusOnClick="False" FocusRect="False" BackColor="180, 190, 200" Location="128, 0" ForeColor="Black" BackColorDown="White" TabIndex="33">
+            <property.Border Style="UserDef" Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+          <CommandButton wfml:ID="CommandButton1" Dock="Left" Locked="True" TransparentColor="Fuchsia" Size="128, 80" TextAlign="BottomCenter" TabStop="False" ForeColorDown="Black" FocusOnClick="False" FocusRect="False" BackColor="180, 190, 200" Location="0, 0" ForeColor="Black" BackColorDown="White" TabIndex="32">
+            <property.Border Style="UserDef" Width="1" Color1="White" Color2="White" Color3="White" />
+          </CommandButton>
+        </property.Controls>
+        <property.Border Style="None" />
+      </GroupBox>
+      <GroupBox wfml:ID="GroupBoxHeader" BackColor="White" Locked="True" Dock="Top" Size="480, 80" TabIndex="108" ForeColor="ControlText" Location="0, 0">
+        <property.Controls>
+          <GroupBox wfml:ID="GroupBoxHeaderLine" BackColor="White" Locked="True" Dock="Top" Size="480, 50" TabIndex="17" ForeColor="ControlText" Location="0, 0">
+            <property.Controls>
+              <Label wfml:ID="LabelFormName" Dock="Top" Size="240, 50" FontClass="FontTahomaMedium" ForeColor="106, 117, 121" Location="120, 0">
+                <property.Border Style="None" />
+                <property.LocalizedText TextGroup="LabelForms" Text="Form" />
+                <property.PropertyBindings>
+                  <VWItemBinding VWItem="__FORMS.ACTIVEFORM" PropertyName="LocalizedText.Text" />
+                </property.PropertyBindings>
+              </Label>
+              <DateTimeOut wfml:ID="DateTimeOut" Dock="Right" Size="120, 50" TabIndex="29" FontClass="FontTahomaMedium" ForeColor="107, 116, 121" Location="360, 0">
+                <property.Border Style="None" />
+                <property.DateTimeFormat FormatDate="@ShortDate" Mode="DateCRTime" />
+              </DateTimeOut>
+              <PictureBox wfml:ID="PictureBoxLogo" Locked="True" Dock="Left" Size="120, 50" ImageSizeMode="AutoSize" Location="0, 0">
+                <property.Images>
+                  <Bitmap wfml:resource="PictureBoxLogo.Images.0" />
+                </property.Images>
+              </PictureBox>
+            </property.Controls>
+            <property.Border Style="None" />
+          </GroupBox>
+          <AlarmLine wfml:ID="AlarmLine" BackColor="0, 77, 160" Dock="Bottom" Size="480, 30" FontClass="FontTahomaMedium" Location="0, 50">
+            <property.Header Visible="False" Font="Microsoft Sans Serif, 8.25pt" />
+            <property.Columns>
+              <AlarmColumn Alignment="MiddleCenter" Width="240" AlarmProperty="ActivationTime" />
+              <AlarmColumn Width="1024" AlarmProperty="Text" />
+            </property.Columns>
+            <property.Border Style="None" />
+          </AlarmLine>
+        </property.Controls>
+        <property.Border Style="UserDef" Width="0" Color1="45, 120, 177" Color2="45, 120, 177" Color3="45, 120, 177" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Forms.Trend;System.Drawing;VisiWinNET.Forms.Commands;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FGraphic" Locked="True" VariableActivationMode="ActivateOnShow" Location="0, 175" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 555" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Components>
+      <ItemServer wfml:ID="ItemServerTrendTime" TrayLocation="17, 17">
+        <property.VWItem Name="TrendSystem.TrendTime" />
+      </ItemServer>
+    </property.Components>
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox" BackColor="White" Size="800, 600" BackgroundImage="@SFCRes:GroupBox.BackgroundImage" TabIndex="128" Location="0, -175" BackgroundImageLayout="Center">
+        <property.Controls>
+          <ExtendedSlider wfml:ID="ExtendedSliderResolution" UseItemUnit="True" Size="394, 83" SliderSize="30" Direction="Horizontal" Location="20, 428" ForeColor="SteelBlue" TabIndex="169" Font="Tahoma, 8.25pt">
+            <property.Border Style="UserDefSingle" Color1="180, 190, 200" Color2="180, 190, 200" Color3="White" />
+            <property.MinValue Value="5" />
+            <property.Scale Font="Tahoma, 12pt">
+              <property.Unit SizeRatio="0.2" Font="Microsoft Sans Serif, 8.25pt">
+                <property.Border Style="None" />
+              </property.Unit>
+              <property.AutoAlignment Enabled="True" />
+            </property.Scale>
+            <property.Label SizeRatio="0.35" Visibility="Never" FontClass="Buttons">
+              <property.Text Text="Label002" TextGroup="LabelForms.FGraphic" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.MaxValue Value="60" />
+            <property.VWItem Name="TrendSystem.Ticks" />
+          </ExtendedSlider>
+          <CommandButton wfml:ID="cmdOptions" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="474, 517" ForeColor="White" BackColorDown="White" TabIndex="167">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdOptions" TextOn="FormSwitching" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd1Day" ButtonStyle="Flat" Size="150, 30" FontClass="Buttons" ForeColorDown="SteelBlue" FocusRect="False" BackColor="SteelBlue" Location="630, 445" ForeColor="White" BackColorDown="White" TabIndex="162">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmd1day" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd1Hour" ButtonStyle="Flat" Size="150, 30" FontClass="Buttons" ForeColorDown="SteelBlue" FocusRect="False" BackColor="SteelBlue" Location="630, 409" ForeColor="White" BackColorDown="White" TabIndex="163">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmd1hour" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd5Minutes" ButtonStyle="Flat" Size="150, 30" FontClass="Buttons" ForeColorDown="SteelBlue" FocusRect="False" BackColor="SteelBlue" Location="630, 373" ForeColor="White" BackColorDown="White" TabIndex="166">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmd5minutes" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmd1Minute" ButtonStyle="Flat" Size="150, 30" FontClass="Buttons" ForeColorDown="SteelBlue" FocusRect="False" BackColor="SteelBlue" Location="630, 337" ForeColor="White" BackColorDown="White" TabIndex="161">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmd1minute" />
+          </CommandButton>
+          <ExtendedSlider wfml:ID="ExtendedSliderMax" Size="99, 210" SliderSize="30" Location="525, 301" ForeColor="SteelBlue" ScalePosition="Secondary" TabIndex="159" Font="Tahoma, 8.25pt">
+            <property.Border Style="UserDefSingle" Color1="180, 190, 200" Color2="180, 190, 200" Color3="White" />
+            <property.MinValue Value="100" />
+            <property.Scale Font="Tahoma, 12pt" TextAlign="Left">
+              <property.Unit SizeRatio="0.2" Font="Microsoft Sans Serif, 8.25pt">
+                <property.Border Style="None" />
+              </property.Unit>
+              <property.AutoAlignment Enabled="True" />
+            </property.Scale>
+            <property.Label SizeRatio="0.15" FontClass="Buttons">
+              <property.Text Text="Label001" TextGroup="LabelForms.FGraphic" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.MaxValue Value="300" />
+            <property.VWItem Name="TrendSystem.Max" />
+          </ExtendedSlider>
+          <ExtendedSlider wfml:ID="ExtendedSliderMin" Size="99, 210" SliderSize="30" Location="420, 301" LabelPosition="Secondary" ForeColor="SteelBlue" ScalePosition="Secondary" TabIndex="160" Font="Tahoma, 8.25pt">
+            <property.Border Style="UserDefSingle" Color1="180, 190, 200" Color2="180, 190, 200" Color3="White" />
+            <property.MinValue Value="-100" />
+            <property.Scale Font="Tahoma, 12pt" TextAlign="Left">
+              <property.Unit SizeRatio="0.2" Font="Microsoft Sans Serif, 8.25pt">
+                <property.Border Style="None" />
+              </property.Unit>
+              <property.AutoAlignment Enabled="True" />
+            </property.Scale>
+            <property.Label SizeRatio="0.15" FontClass="Buttons">
+              <property.Text Text="Label000" TextGroup="LabelForms.FGraphic" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.MaxValue Value="100" />
+            <property.VWItem Name="TrendSystem.Min" />
+          </ExtendedSlider>
+          <TrendChart wfml:ID="TrendChart" BackColor="White" Font="Tahoma, 8.25pt" Size="760, 245" Location="20, 266">
+            <property.TimeScale PlotAreaPitch="15" ForeColor="SteelBlue" Resolution="00:01:00" FontClass="Buttons">
+              <property.DateTimeFormat FormatDate="dd/MM/yyyy" FormatTime="HH:mm:ss" Mode="TimeCRDate" />
+              <property.AutoAlignment Enabled="True" />
+            </property.TimeScale>
+            <property.Grid ColorXMajor="SteelBlue" ColorXMinor="SteelBlue" ColorYMajor="SteelBlue" ColorYMinor="SteelBlue" />
+            <property.Marker LineColor="SteelBlue" Visible="True">
+              <property.Slider Style="Thumb" Visible="True" />
+            </property.Marker>
+            <property.Border Style="UserDef" Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+            <property.Curves>
+              <TrendCurve MaxValue="100" MinValue="0" LineColor="White">
+                <property.Scale Position="27" ForeColor="White" />
+                <property.PropertyBindings>
+                  <VWItemBinding VWItem="TrendSystem.Max" PropertyName="MaxValue" />
+                  <VWItemBinding VWItem="__TRENDSYSTEM.MIN" PropertyName="MinValue" />
+                </property.PropertyBindings>
+              </TrendCurve>
+              <TrendCurve MaxValue="100" MinValue="0" LineColor="White">
+                <property.Scale Position="52" ForeColor="White" />
+                <property.PropertyBindings>
+                  <VWItemBinding VWItem="TrendSystem.Min" PropertyName="MaxValue" />
+                  <VWItemBinding VWItem="__TRENDSYSTEM.MIN" PropertyName="MinValue" />
+                </property.PropertyBindings>
+              </TrendCurve>
+              <TrendCurve MaxValue="100" MinValue="0" LineColor="White">
+                <property.Scale Position="77" ForeColor="White" />
+              </TrendCurve>
+            </property.Curves>
+          </TrendChart>
+          <TrendLegend wfml:ID="TrendLegend" BackColorSelected="SteelBlue" ForeColorItemEven="SteelBlue" Size="487, 90" GridColor="SteelBlue" BackColorItemEven="White" ForeColorSelected="White" BackColorItemOdd="White" TrendChart="$TrendChart" FontClass="Captions" ForeColor="SteelBlue" FocusRect="False" Location="293, 170" ForeColorItemOdd="SteelBlue" TabIndex="156">
+            <property.Border Style="None" Color1="180, 190, 200" Color2="180, 190, 200" Color3="180, 190, 200" />
+            <property.ScrollBarProperties BackColorButton="White" ForeColorButton="SteelBlue" ForeColorButtonDisabled="SteelBlue" BackColorThumb="White" Width="30" BackColor="White" Visibility="Vertical" />
+            <property.Header FontClass="Captions" BackColor="White" ForeColor="SteelBlue" Height="30" Resizable="False" />
+            <property.Columns>
+              <TrendLegendColumn TrendLegendProperty="ArchiveText" Alignment="Center" Width="143" />
+              <TrendLegendColumn TrendLegendProperty="TrendText" Alignment="Center" Width="147" />
+              <TrendLegendColumn TrendLegendProperty="Color" Alignment="Center" Width="59" />
+              <TrendLegendColumn TrendLegendProperty="MarkedValue" Alignment="Center" Width="108" />
+            </property.Columns>
+          </TrendLegend>
+          <TrendTime wfml:ID="TrendTime" TrendChart="$TrendChart" Size="315, 30" SynchronizeScrollChange="True" TabIndex="131" ForeColor="SteelBlue" Location="20, 517">
+            <property.DateTimeInProperties Font="Microsoft Sans Serif, 8.25pt" ForeColor="SteelBlue" />
+            <property.Border Style="None" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.ScrollBarProperties ShowPageButtons="True" ShowEndButtons="True" />
+          </TrendTime>
+          <Shape wfml:ID="Shape4" BorderWidth="0" Size="10, 400" Location="790, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape3" BorderWidth="0" Size="10, 400" Location="0, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape2" BorderWidth="0" Size="800, 45" Location="0, 557">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <CommandButton wfml:ID="cmdReturn" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 517" ForeColor="White" BackColorDown="White" TabIndex="128">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdReturn" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowForm FormName="FSystem" FormChangeMode="ShowNewHideActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <Shape wfml:ID="Shape1" BorderColor="SteelBlue" Size="780, 388" Location="10, 169">
+            <property.FillColors>
+              <Color wfml:argument="Transparent" />
+            </property.FillColors>
+          </Shape>
+        </property.Controls>
+        <property.Border Style="None" Width="0" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

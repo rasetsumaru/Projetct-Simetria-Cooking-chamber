@@ -1,0 +1,745 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Forms.Recipe;VisiWinNET.Forms.Commands;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FRecipes" Locked="True" VariableActivationMode="ActivateOnShow" Location="0, 175" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 555" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Components>
+      <RecipeClassHandler wfml:ID="RecipeClassHandler" TrayLocation="17, 17" RecipeClass="Recipes">
+        <property.PropertyBindings>
+          <VWItemBinding VWItem="RecipeSystem.FileName" PropertyName="RecipeFile.FileName" />
+        </property.PropertyBindings>
+        <property.RecipeFile ConfirmOverwrite="False" ConfirmDelete="False" />
+      </RecipeClassHandler>
+    </property.Components>
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox" BackColor="White" Size="800, 600" BackgroundImage="@SFCRes:GroupBox.BackgroundImage" TabIndex="166" Location="0, -175" BackgroundImageLayout="Center">
+        <property.Controls>
+          <CommandButton wfml:ID="cmdChange" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 337" ForeColor="White" BackColorDown="White" TabIndex="158">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextPrefix="cmdChange" TextGroup="ButtonTexts" Text="cmdChange" TextOn="cmdChange" />
+          </CommandButton>
+          <VarOut wfml:ID="VarDescription" BackColor="Transparent" RegionLayout="LabelLeft" TextAlign="Left" Size="397, 19" FontClass="Captions" ForeColor="SteelBlue" Location="23, 212" DataBackColor="Transparent" Padding="0">
+            <property.DataBorder Style="None" Color1="White" Color2="White" Color3="White" />
+            <property.Label SizeRatio="0.3" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label015" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.25" ForeColor="White" TextAlign="Left">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="RecipeSystem.LoadRecipeDescription" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </VarOut>
+          <Label wfml:ID="LblSmokehouse" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="TopCenter" BackColorOn="Transparent" Size="102, 23" FontClass="Captions" ForeColor="SteelBlue" Location="509, 274">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label023" />
+          </Label>
+          <Label wfml:ID="LblChimney" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="TopCenter" BackColorOn="Transparent" Size="100, 23" FontClass="Captions" ForeColor="SteelBlue" Location="409, 274">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label022" />
+          </Label>
+          <Label wfml:ID="LblHumidity" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="TopCenter" BackColorOn="Transparent" Size="100, 23" FontClass="Captions" ForeColor="SteelBlue" Location="306, 274">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label021" />
+          </Label>
+          <Label wfml:ID="LblTime" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="TopCenter" BackColorOn="Transparent" Size="101, 23" FontClass="Captions" ForeColor="SteelBlue" Location="206, 274">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label020" />
+          </Label>
+          <CommandButton wfml:ID="cmdReturn" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 517" ForeColor="White" BackColorDown="White" TabIndex="126">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdReturn" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowForm FormName="FSystem" FormChangeMode="ShowNewHideActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <Label wfml:ID="LblTemperature" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="TopCenter" BackColorOn="Transparent" Size="175, 23" FontClass="Captions" ForeColor="SteelBlue" Location="23, 274">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label019" />
+          </Label>
+          <CommandButton wfml:ID="cmdLoadRecipe" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 373" ForeColor="White" BackColorDown="White" TabIndex="139">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdOpenRecipe" TextOn="cmdLoad" />
+          </CommandButton>
+          <VarIn wfml:ID="VarInSteps" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="266, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="514, 212" RegionLayout="LabelLeft" ForeColor="White" TabIndex="1" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="10" />
+            <property.Unit SizeRatio="0.15" ForeColor="White" TextAlign="Right" FontClass="Captions">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_steps" RecipeMember="True" />
+            <property.Label SizeRatio="0.8" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label018" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.LimitMin Value="1" />
+          </VarIn>
+          <CommandButton wfml:ID="cmdSaveRecipeAs" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 409" ForeColor="White" BackColorDown="White" TabIndex="140">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdSaveRecipe" TextOn="cmdSaveAs" />
+          </CommandButton>
+          <VarIn wfml:ID="VarInCycles" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="266, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="514, 187" RegionLayout="LabelLeft" ForeColor="White" TabIndex="0" DataBackColorDisabled="Transparent">
+            <property.LimitMax Value="100" />
+            <property.Unit SizeRatio="0.15" ForeColor="White" TextAlign="Right" FontClass="Captions">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_cycles" RecipeMember="True" />
+            <property.Label SizeRatio="0.8" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label017" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.LimitMin Value="1" />
+          </VarIn>
+          <CommandButton wfml:ID="cmdSetRecipe" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 445" ForeColor="White" BackColorDown="White" TabIndex="141">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdWriteRecipe" TextOn="cmdSet" />
+          </CommandButton>
+          <VarIn wfml:ID="VarInCycleCoreTemperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="266, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="514, 237" RegionLayout="LabelLeft" ForeColor="White" TabIndex="2" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.1" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_core_temperature" RecipeMember="True" />
+            <property.Label SizeRatio="0.71" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label016" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <VarIn wfml:ID="VarInCycle00Temperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="175, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="23, 303" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="3" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.15" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[0]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0.56" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label004" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <VarOut wfml:ID="varRecipename" BackColor="Transparent" RegionLayout="LabelLeft" TextAlign="Left" Size="397, 19" FontClass="Captions" ForeColor="SteelBlue" Location="23, 187" DataBackColor="Transparent" Padding="0">
+            <property.DataBorder Style="None" Color1="White" Color2="White" Color3="White" />
+            <property.Label SizeRatio="0.3" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label014" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.25" ForeColor="White" TextAlign="Left">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="RecipeSystem.LoadRecipeName" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </VarOut>
+          <VarIn wfml:ID="VarInCycle01Temperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="175, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="23, 328" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="6" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.15" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[1]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0.56" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label005" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle09Smokehouse" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="156" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="523, 528" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[9]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[9]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle02Temperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="175, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="23, 353" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="9" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.15" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[2]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0.56" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label006" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle08Smokehouse" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="156" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="523, 503" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[8]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[8]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle03Temperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="175, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="23, 378" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="12" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.15" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[3]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0.56" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label007" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle07Smokehouse" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="156" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="523, 478" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[7]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[7]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle04Temperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="175, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="23, 403" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="15" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.15" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[4]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0.56" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label008" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle06Smokehouse" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="156" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="523, 453" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[6]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[6]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle05Temperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="175, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="23, 428" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="18" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.15" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[5]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0.56" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label009" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle05Smokehouse" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="156" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="523, 428" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[5]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[5]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle06Temperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="175, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="23, 453" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="21" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.15" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[6]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0.56" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label010" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle04Smokehouse" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="156" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="523, 403" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[4]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[4]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle07Temperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="175, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="23, 478" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="24" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.15" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[7]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0.56" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label011" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle03Smokehouse" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="156" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="523, 378" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[3]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[3]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle08Temperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="175, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="23, 503" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="27" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.15" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[8]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0.56" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label012" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle02Smokehouse" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="156" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="523, 353" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[2]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[2]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle09Temperature" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="175, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="23, 528" RegionLayout="LabelLeft" ForeColor="Transparent" TabIndex="30" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_temperature" />
+            <property.Unit SizeRatio="0.15" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="ºC" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="Transparent" Color2="Transparent" Color3="Transparent" />
+            <property.VWItem DecPoint="2" Name="Controller.Controller.Application.RECIPES.Transfer_chamber_temperature&lt;[9]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0.56" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label013" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_temperature" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle01Smokehouse" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="156" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="523, 328" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[1]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[1]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle00Timer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="220, 303" RegionLayout="LabelLeft" ForeColor="White" TabIndex="4" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[0]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label004" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle00Smokehouse" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="156" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="523, 303" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[0]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_smokehouse&lt;[0]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle01Timer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="220, 328" RegionLayout="LabelLeft" ForeColor="White" TabIndex="7" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[1]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label005" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle09Chimney" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="155" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="423, 528" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[9]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label000" TextOn="Label001" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[9]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle02Timer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="220, 353" RegionLayout="LabelLeft" ForeColor="White" TabIndex="10" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[2]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label006" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle08Chimney" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="155" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="423, 503" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[8]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label000" TextOn="Label001" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[8]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle03Timer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="220, 378" RegionLayout="LabelLeft" ForeColor="White" TabIndex="13" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[3]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label007" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle07Chimney" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="155" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="423, 478" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[7]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label000" TextOn="Label001" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[7]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle04Timer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="220, 403" RegionLayout="LabelLeft" ForeColor="White" TabIndex="16" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[4]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label008" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle06Chimney" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="155" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="423, 453" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[6]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label000" TextOn="Label001" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[6]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle05Timer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="220, 428" RegionLayout="LabelLeft" ForeColor="White" TabIndex="19" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[5]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label009" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle05Chimney" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="155" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="423, 428" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[5]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label000" TextOn="Label001" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[5]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle06Timer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="220, 453" RegionLayout="LabelLeft" ForeColor="White" TabIndex="22" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[6]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label010" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle04Chimney" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="155" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="423, 403" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[4]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label000" TextOn="Label001" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[4]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle07Timer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="220, 478" RegionLayout="LabelLeft" ForeColor="White" TabIndex="25" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[7]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label011" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle03Chimney" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="155" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="423, 378" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[3]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label000" TextOn="Label001" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[3]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle08Timer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="220, 503" RegionLayout="LabelLeft" ForeColor="White" TabIndex="28" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[8]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label012" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle02Chimney" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="155" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="423, 353" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[2]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label000" TextOn="Label001" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[2]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle09Timer" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="220, 528" RegionLayout="LabelLeft" ForeColor="White" TabIndex="31" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_timer_cycle" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_timer_step&lt;[9]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label013" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.Lower_limit_timer_cycle" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle01Chimney" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="155" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="423, 328" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[1]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label000" TextOn="Label001" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[1]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle00Humidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="320, 303" RegionLayout="LabelLeft" ForeColor="White" TabIndex="5" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[0]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label004" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <Switch wfml:ID="SwitchCycle00Chimney" ButtonStyle="Flat" TransparentColor="255, 241, 214" Size="77, 19" BackColorOn="White" TabStop="False" TabIndex="155" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" BackColor="SteelBlue" Location="423, 303" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[0]&gt;" RecipeMember="True" />
+            <property.Border Style="Switch" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FRecipes" Text="Label000" TextOn="Label001" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_chimney&lt;[0]&gt;" RecipeMember="True" />
+          </Switch>
+          <VarIn wfml:ID="VarInCycle01Humidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="320, 328" RegionLayout="LabelLeft" ForeColor="White" TabIndex="8" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[1]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label005" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <VarIn wfml:ID="VarInCycle09Humidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="320, 528" RegionLayout="LabelLeft" ForeColor="White" TabIndex="32" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[9]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label013" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <VarIn wfml:ID="VarInCycle02Humidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="320, 353" RegionLayout="LabelLeft" ForeColor="White" TabIndex="11" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[2]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label006" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <VarIn wfml:ID="VarInCycle08Humidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="320, 503" RegionLayout="LabelLeft" ForeColor="White" TabIndex="29" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[8]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label012" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <VarIn wfml:ID="VarInCycle03Humidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="320, 378" RegionLayout="LabelLeft" ForeColor="White" TabIndex="14" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[3]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label007" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <VarIn wfml:ID="VarInCycle07Humidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="320, 478" RegionLayout="LabelLeft" ForeColor="White" TabIndex="26" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[7]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label011" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <VarIn wfml:ID="VarInCycle04Humidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="320, 403" RegionLayout="LabelLeft" ForeColor="White" TabIndex="17" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[4]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label008" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <VarIn wfml:ID="VarInCycle06Humidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="320, 453" RegionLayout="LabelLeft" ForeColor="White" TabIndex="23" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[6]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label010" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <VarIn wfml:ID="VarInCycle05Humidity" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="77, 19" RestoreOnLostFocus="False" FontClass="Captions" Padding="0" DataBackColor="SteelBlue" BackColor="Transparent" Location="320, 428" RegionLayout="LabelLeft" ForeColor="White" TabIndex="20" DataBackColorDisabled="Transparent">
+            <property.LimitMax VWItem="Controller.Controller.Application.SETTINGS.Upper_limit_humidity" />
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Right" FontClass="Captions">
+              <property.Text Text="%" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.Border Style="None" Width="0" Color1="White" Color2="White" Color3="White" />
+            <property.VWItem Name="Controller.Controller.Application.RECIPES.Transfer_chamber_humidity&lt;[5]&gt;" RecipeMember="True" />
+            <property.Label SizeRatio="0" ForeColor="SteelBlue" TextAlign="Left" Visibility="Never" FontClass="Captions">
+              <property.Text Text="Label009" TextGroup="LabelForms.FRecipes" />
+              <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+            </property.Label>
+            <property.LimitMin VWItem="Controller.Controller.Application.SETTINGS.lower_limit_humidity" />
+          </VarIn>
+          <Shape wfml:ID="Shape1" BorderWidth="0" Size="10, 400" Location="790, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape2" BorderWidth="0" Size="10, 400" Location="0, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape3" BorderWidth="0" Size="800, 45" Location="0, 557">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape4" BorderColor="SteelBlue" Size="780, 388" Location="10, 169">
+            <property.FillColors>
+              <Color wfml:argument="Transparent" />
+            </property.FillColors>
+          </Shape>
+        </property.Controls>
+        <property.Border Style="None" Width="0" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

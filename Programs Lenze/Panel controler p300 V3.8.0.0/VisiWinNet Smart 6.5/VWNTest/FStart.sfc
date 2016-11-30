@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <StartForm wfml:ID="FStart" FirstProjectForm="FCentral" Image="@SFCRes:FStart.Image" Project="VWNTest" ClientSize="520, 316" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    
+  </StartForm>
+</wfml>

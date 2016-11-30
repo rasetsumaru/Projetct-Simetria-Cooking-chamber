@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Forms.Commands;VisiWinNET.UserManagement.Commands;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FSystemOptions" VariableActivationMode="ActivateOnShow" Location="0, 135" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" Locked="True" ClientSize="800, 595" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <Label wfml:ID="Label000" BackColor="WhiteSmoke" TextAlign="MiddleRight" Size="468, 25" FontClass="Captions" ForeColor="ControlDarkDark" Location="307, 51">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="LabelForms.FSystemOptions" Text="Label000" />
+      </Label>
+      <CommandButton wfml:ID="cmdConfigurations" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="DarkGray" FocusOnClick="False" FocusRect="False" BackColor="DarkGray" Location="22, 377" ForeColor="White" BackColorDown="WhiteSmoke" TabIndex="137">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdConfigurations" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowChildForm FormName="FChild" OwnerForm="FCentral" FormChangeMode="ShowNewHideActive" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <CommandButton wfml:ID="cmdHistoric" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="DarkGray" FocusOnClick="False" FocusRect="False" BackColor="DarkGray" Location="22, 341" ForeColor="White" BackColorDown="WhiteSmoke" TabIndex="136">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdHistoric" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowChildForm FormName="FRecipes" OwnerForm="FCentral" FormChangeMode="ShowNewHideActive" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <CommandButton wfml:ID="cmdUsers" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="DarkGray" FocusOnClick="False" FocusRect="False" BackColor="DarkGray" Location="22, 305" ForeColor="White" BackColorDown="WhiteSmoke" TabIndex="135">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdUsers" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowChildForm FormName="FRecipes" OwnerForm="FCentral" FormChangeMode="ShowNewHideActive" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <CommandButton wfml:ID="cmdGrafics" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="DarkGray" FocusOnClick="False" FocusRect="False" BackColor="DarkGray" Location="22, 269" ForeColor="White" BackColorDown="WhiteSmoke" TabIndex="134">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdGrafic" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowChildForm FormName="FRecipes" OwnerForm="FCentral" FormChangeMode="ShowNewHideActive" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <CommandButton wfml:ID="cmdSynoptic" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="DarkGray" FocusOnClick="False" FocusRect="False" BackColor="DarkGray" Location="22, 233" ForeColor="White" BackColorDown="WhiteSmoke" TabIndex="133">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdSynoptic" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowChildForm FormName="FRecipes" OwnerForm="FCentral" FormChangeMode="ShowNewHideActive" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <CommandButton wfml:ID="cmdProcess" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="DarkGray" FocusOnClick="False" FocusRect="False" BackColor="DarkGray" Location="22, 197" ForeColor="White" BackColorDown="WhiteSmoke" TabIndex="132">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdProcesses" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowChildForm FormName="FRecipes" OwnerForm="FCentral" FormChangeMode="ShowNewHideActive" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <CommandButton wfml:ID="cmdRecipes" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="DarkGray" FocusOnClick="False" FocusRect="False" BackColor="DarkGray" Location="22, 161" ForeColor="White" BackColorDown="WhiteSmoke" TabIndex="131">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdRecipes" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowChildForm FormName="FRecipes" OwnerForm="FCentral" FormChangeMode="ShowNewHideActive" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <CommandButton wfml:ID="cmdAlarms" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="DarkGray" FocusOnClick="False" FocusRect="False" BackColor="DarkGray" Location="22, 125" ForeColor="White" BackColorDown="WhiteSmoke" TabIndex="130">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdAlarms" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <ShowChildForm FormName="FAlarms" OwnerForm="FCentral" FormChangeMode="ShowNewHideActive" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <CommandButton wfml:ID="cmdLogOff" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="DarkGray" FocusOnClick="False" FocusRect="False" BackColor="DarkGray" Location="625, 377" ForeColor="White" BackColorDown="WhiteSmoke" TabIndex="126">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdLogOff" TextOn="FormSwitching" />
+        <property.Events>
+          <ButtonControlEventAgent Event="Click">
+            <property.Commands>
+              <LogoffUser Depth="0" />
+              <CloseForm FormName="FSystemOptions" Depth="0" />
+            </property.Commands>
+          </ButtonControlEventAgent>
+        </property.Events>
+      </CommandButton>
+      <Shape wfml:ID="Shape1" BorderColor="White" Size="775, 423" Location="10, -6">
+        <property.FillColors>
+          <Color wfml:argument="WhiteSmoke" />
+        </property.FillColors>
+      </Shape>
+      <Shape wfml:ID="Shape2" BorderWidth="0" BorderColor="White" Size="775, 428" Location="15, -6">
+        <property.FillColors>
+          <Color wfml:argument="Gainsboro" />
+        </property.FillColors>
+      </Shape>
+    </property.Controls>
+  </SmartForm>
+</wfml>

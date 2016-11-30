@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FConfigManual" Locked="True" VariableActivationMode="ActivateOnShow" Location="0, 175" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 555" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox" BackColor="White" Size="800, 600" BackgroundImage="@SFCRes:GroupBox.BackgroundImage" TabIndex="129" Location="0, -175" BackgroundImageLayout="Center">
+        <property.Controls>
+          <Label wfml:ID="lblBeep" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="498, 353">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label010" />
+          </Label>
+          <Switch wfml:ID="SwitchBeep" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="174" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="703, 353" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Label wfml:ID="lblSmokehouse" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="498, 328">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label009" />
+          </Label>
+          <Switch wfml:ID="SwitchSmokehouse" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="170" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="703, 328" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Label wfml:ID="lblChimney" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="498, 303">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label008" />
+          </Label>
+          <Switch wfml:ID="SwitchChimney" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="168" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="703, 303" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Label wfml:ID="lblValveHumidification" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="498, 403">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label007" />
+          </Label>
+          <Switch wfml:ID="SwitchValveHumidification" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="150" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="703, 403" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Label wfml:ID="lblControlTemperature" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="498, 378">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Control" />
+          </Label>
+          <Switch wfml:ID="SwitchControlTemperature" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="147" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="703, 378" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Label wfml:ID="lblMotor09" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="124, 528">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Exhauster" />
+          </Label>
+          <Label wfml:ID="lblMotor08" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="124, 503">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Exhauster" />
+          </Label>
+          <Label wfml:ID="lblMotor07" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="124, 478">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Exhauster" />
+          </Label>
+          <Label wfml:ID="lblMotor06" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="124, 453">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Exhauster" />
+          </Label>
+          <Label wfml:ID="lblMotor05" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="124, 428">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Exhauster" />
+          </Label>
+          <Label wfml:ID="lblMotor04" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="124, 403">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Exhauster" />
+          </Label>
+          <Label wfml:ID="lblMotor03" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="124, 378">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Exhauster" />
+          </Label>
+          <Label wfml:ID="lblMotor02" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="124, 353">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Exhauster" />
+          </Label>
+          <Label wfml:ID="lblMotor01" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="124, 328">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Exhauster" />
+          </Label>
+          <Label wfml:ID="lblMotor00" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="199, 19" FontClass="Captions" ForeColor="SteelBlue" Location="124, 303">
+            <property.Border Style="None" />
+            <property.LocalizedText Text="Exhauster" />
+          </Label>
+          <Switch wfml:ID="SwitchMotor09" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="140" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="329, 528" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Switch wfml:ID="SwitchMotor08" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="139" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="329, 503" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Switch wfml:ID="SwitchMotor07" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="138" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="329, 478" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Switch wfml:ID="SwitchMotor06" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="137" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="329, 453" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Switch wfml:ID="SwitchMotor05" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="136" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="329, 428" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Switch wfml:ID="SwitchMotor04" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="135" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="329, 403" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Switch wfml:ID="SwitchMotor03" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="134" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="329, 378" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Switch wfml:ID="SwitchMotor02" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="133" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="329, 353" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Switch wfml:ID="SwitchMotor01" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="132" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="329, 328" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Switch wfml:ID="SwitchMotor00" ButtonStyle="Flat" Size="77, 19" BackColorOn="White" TabIndex="131" FontClass="Buttons" ForeColorDown="SteelBlue" ForeColor="White" FocusRect="False" BackColor="SteelBlue" Location="329, 303" ForeColorOn="SteelBlue" BackColorDown="White">
+            <property.VWItemMonitor Name="__UNLINKED_BOOL" />
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="LabelForms.FConfigManual" Text="Label002" TextOn="Label003" />
+            <property.MonitorLED Visible="True" ColorOn="SteelBlue" />
+            <property.VWItem Name="__UNLINKED_BOOL" />
+          </Switch>
+          <Label wfml:ID="lblChambers" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleRight" BackColorOn="Transparent" Size="468, 25" FontClass="Captions" ForeColor="SteelBlue" Location="312, 169">
+            <property.Border Style="None" />
+          </Label>
+          <Shape wfml:ID="Shape1" BorderWidth="0" Size="10, 400" Location="790, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape2" BorderWidth="0" Size="10, 400" Location="0, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape3" BorderWidth="0" Size="800, 45" Location="0, 557">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <CommandButton wfml:ID="cmdReturn" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 517" ForeColor="White" BackColorDown="White" TabIndex="128">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdReturn" TextOn="FormSwitching" />
+          </CommandButton>
+          <Shape wfml:ID="Shape4" BorderColor="SteelBlue" Size="780, 388" Location="10, 169">
+            <property.FillColors>
+              <Color wfml:argument="Transparent" />
+            </property.FillColors>
+          </Shape>
+        </property.Controls>
+        <property.Border Style="None" Width="0" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

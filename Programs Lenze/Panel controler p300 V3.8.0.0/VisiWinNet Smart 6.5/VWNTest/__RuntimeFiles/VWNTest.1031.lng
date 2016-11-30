@@ -1,0 +1,952 @@
+<VisiWinNETProjectFile>
+  <LanguageSwitching>
+    <TextSystem>
+      <Group Name="Application">
+        <Groups>
+          <Group Name="ButtonTexts">
+            <Texts>
+              <Text Name="Exit" Text="Ende" />
+              <Text Name="Back" Text="Zurück" />
+              <Text Name="FormSwitching" Text="Wechseln zum Formular 'Form'" />
+              <Text Name="ChildFormSwitching" Text="'ChildForm' Aufruf" />
+            </Texts>
+          </Group>
+          <Group Name="LabelForms">
+            <Texts>
+              <Text Name="FCentral" Text="FCentral" />
+              <Text Name="Form" Text="Füge hier den Formularnamen ein (Eigenschaft LocalizedText --&gt; Sprachumschaltung: Neuer Eintrag (Formularname) unter 'Benutzertexte\LabelForms\...')!" />
+              <Text Name="ChildForm" Text="ChildForm" />
+            </Texts>
+          </Group>
+          <Group Name="TemplateInstructions">
+            <Groups>
+              <Group Name="Project">
+                <Texts>
+                  <Text Name="Text1" Text="- Diese Projektvorlage beinhaltet eine Kopfzeile und eine Buttonleiste. Die Controls der Kopfzeile sind in der GroupBox 'GroupBoxHeader' und die Controls der Buttonleiste sind in der GroupBox 'GroupBoxButtonLine' zusammengefasst." />
+                  <Text Name="Text2" Text="- In der Buttonleiste sind einige CommandButtons vordefiniert. Der Button 'CommandButtonExit' ist rechts und alle anderen Buttons sind links angedockt. Durch Copy/Paste lassen sich weitere CommandButtons einfach hinzufügen!" />
+                  <Text Name="Text3" Text="- Die Projektvorlage beinhaltet 2 interne Variablen '__FORMS.ACTIVEFORM' und '__FORMS.LASTACTIVEFORM' zu Darstellung einer sprachabhängigen Überschrift. " />
+                  <Text Name="Text4" Text="- Die Überschriften befinden sich in der Sprachumschaltung unter den Benutzer- texten 'LabelForms'! Die Verknüpfung ist in der Eigenschaft 'PropertyBindings' des Labels 'LabelFormName' der Kopfzeile festgelegt." />
+                  <Text Name="Text5" Text="- Die Umschaltung des Textes erfolgt mit dem Ereignis 'FormChanged' des Formulars 'FCentral'. Bei einem neuen Formular muss das Ereignis 'FormChanged' des neuen Formulars selbst angelegt werden!" />
+                  <Text Name="Text7" Text="- Die gelben Info-Seiten werden im Weiteren nicht länger benötigt und können gelöscht werden!" />
+                  <Text Name="Text6" Text="- Vorlagen zu den einzelnen Modulen (Rezepte, Alarme, Benutzerverwaltung, ...) können über den Knoten 'Design' mit Hilfe des rechten Mausklicks hinzugefügt werden ('Vorlage hinzufügen')!" />
+                  <Text Name="Text8" Text="- Die Formulare werden automatisch skaliert (siehe im Source Code unter der Region 'Initialization' und im Code Module 'MGlobalSettings')!" />
+                  <Text Name="Text9" Text="- Das Projekt besteht aus einem oder mehreren Formularen zu jedem VisiWinNET-Modul (Rezepte, Alarme, Trends, Drucken, Benutzerverwaltung, ...)." />
+                  <Text Name="Text10" Text="- Bitte passen Sie die Auflösung des Formulars Ihrer bevorzugten Auflösung an ('Size'-Eigenschaft des Formulars)! Sie sehen hier ein Raster der verfügbaren Auflösungen." />
+                  <Text Name="Text11" Text="- Bitte passen Sie die Größe der Buttons der Buttonleiste an (Höhe: Eigenschaft 'Size\Height' der 'GroupBoxButtonLine' und die Breite: Eigenschaft 'Size\Width' der CommandButtons!" />
+                  <Text Name="Text12" Text="- Um dieses Formular als erste Formularseite anzuzeigen, ändern Sie bitte in FStart die Eigenschaft 'FirstProjectForm'!" />
+                  <Text Name="Text13" Text="- Beachte die Position (Eigenschaft: 'Location') und die Größe (Eigenschaft: 'Size') des Childforms!" />
+                  <Text Name="Text14" Text="- Diese Projektvorlage beinhaltet eine vollständig verknüpfte Buttonleiste. Stellen sie sicher das die verknüpften Formulare vorhande sind!" />
+                  <Text Name="Text15" Text="- Um ein benutzerdefiniertes 'TouchKeyboard' oder 'Sandglass' zu nutzen, sind die Eigenschaften der Controls 'TouchKeyboard' und 'Sandglass' (FormName/ClassName) im FCentral anzupassen! Es stehen vordefinierte Vorlagen für die TouchKeyboards ('FNumPad') und Sandglass ('FWaitCursor') zur Verfügung!" />
+                  <Text Name="Text16" Text="- Neu hinzugefügte Formulare können mit Hilfe der Eigenschaft 'LoadOnStartup' (Öffne die Eigenschaften mit rechtem Mausklick auf das Formular im Knoten 'Design' des Projektexplorers!) vorgeladen werden. Dies beschleunigt die Darstellung zur Laufzeit!" />
+                  <Text Name="TextChildForm0" Text="- Das Kindformular 'ChildForm' fügt sich ins Elternformular (hier 'FCentral') mit der Position (x = 0, y = 80) ein.  " />
+                  <Text Name="TextChildForm1" Text="- Das Kindformular 'ChildForm' hat systembedingt die Größe eines Formulars des gewählten Gerätes (Displaygröße). Es wird aber nur die Höhe des Formulars - Kopfzeilenhöhe - Buttonleistenhöhe angezeigt.  " />
+                  <Text Name="TextChildForm2" Text="- Im Code wird eine automatische Skalierung der Formulargröße durchgeführt (siehe 'Initialization')." />
+                  <Text Name="TextForm0" Text="- Das Formular 'Form' wird mit der Formulargröße des gewählten Gerätes (Displaygröße) beginnend an der Position (x = 0, y = 0) dargestellt. " />
+                  <Text Name="TextForm1" Text="- Bezogen auf die Displaygröße wird es vollflächig angezeigt." />
+                </Texts>
+              </Group>
+            </Groups>
+            <Texts>
+              <Text Name="Info" Text="Anleitung:" />
+              <Text Name="ReadMe" Text="Für detaillierte Informationen siehe Formular 'ReadMe'!" />
+              <Text Name="Translation" Text="This information is also available in English (project configuration\global\language)!" />
+            </Texts>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="Components">
+        <Groups>
+          <Group Name="AlarmLine">
+            <Texts>
+              <Text Name="AcknowledgeTime" Text="Quittierungszeit:" />
+              <Text Name="ActivationCounter" Text="Aktivierungen:" />
+              <Text Name="ActivationTime" Text="Zeit:" />
+              <Text Name="Class" Text="Klasse:" />
+              <Text Name="Count" Text="Anzahl:" />
+              <Text Name="DeactivationTime" Text="Deaktivierungszeit:" />
+              <Text Name="Group" Text="Gruppe:" />
+              <Text Name="Param1" Text="P1:" />
+              <Text Name="Param2" Text="P2:" />
+              <Text Name="Priority" Text="Priorität:" />
+              <Text Name="State" Text="Status:" />
+              <Text Name="Symbol" Text="Symbol:" />
+              <Text Name="Text" Text="Text:" />
+              <Text Name="Machine" Text="Maschine:" />
+              <Text Name="User" Text="Benutzername:" />
+            </Texts>
+          </Group>
+          <Group Name="AlarmList">
+            <Texts>
+              <Text Name="AcknowledgeTime" Text="Quittierungszeit" />
+              <Text Name="ActivationCounter" Text="Aktivierungen" />
+              <Text Name="ActivationTime" Text="Zeit" />
+              <Text Name="Class" Text="Klasse" />
+              <Text Name="Count" Text="Anzahl" />
+              <Text Name="DeactivationTime" Text="Deaktivierungszeit" />
+              <Text Name="Group" Text="Gruppe" />
+              <Text Name="Param1" Text="Parameter 1" />
+              <Text Name="Param2" Text="Parameter 2" />
+              <Text Name="Priority" Text="Priorität" />
+              <Text Name="State" Text="Status" />
+              <Text Name="Symbol" Text="Symbol" />
+              <Text Name="Text" Text="Text" />
+              <Text Name="Machine" Text="Maschine" />
+              <Text Name="User" Text="Benutzername" />
+              <Text Name="NotesCount" Text="Notizen" />
+              <Text Name="FileName" Text="Dateiname" />
+            </Texts>
+          </Group>
+          <Group Name="PopupInfo">
+            <Texts>
+              <Text Name="Caption" Text="Info zu @1s@" />
+              <Text Name="LimitMax" Text="Obergrenze" />
+              <Text Name="LimitMin" Text="Untergrenze" />
+              <Text Name="Default" Text="Vorgabe" />
+              <Text Name="Alias" Text="Alias" />
+              <Text Name="ID" Text="ID" />
+            </Texts>
+          </Group>
+          <Group Name="RecipeList">
+            <Texts>
+              <Text Name="FileName" Text="Dateiname" />
+              <Text Name="FileDescription" Text="Beschreibung" />
+              <Text Name="FileChangedBy" Text="geändert von" />
+              <Text Name="FileChangedAt" Text="Änderungsdatum" />
+              <Text Name="FileChangesCount" Text="Anzahl Änderungen" />
+              <Text Name="FileNotesCount" Text="Anzahl Notizen" />
+              <Text Name="ItemAlias" Text="Variablenalias" />
+              <Text Name="ItemText" Text="Variablentext" />
+              <Text Name="ItemValue" Text="Variablenwert" />
+              <Text Name="ItemUnit" Text="Einheit" />
+              <Text Name="ItemMinValue" Text="Minimum" />
+              <Text Name="ItemMaxValue" Text="Maximum" />
+              <Text Name="ItemDefaultValue" Text="Ersatzwert" />
+            </Texts>
+          </Group>
+          <Group Name="Time">
+            <Groups>
+              <Group Name="DateFormats">
+                <Texts>
+                  <Text Name="LongDate" Text="dd.MM.yyyy" />
+                  <Text Name="ShortDate" Text="dd.MM.yy" />
+                  <Text Name="NamedLongDate" Text="dddd, d. MMMM yyyy" />
+                  <Text Name="NamedShortDate" Text="ddd, d. MMM yy" />
+                  <Text Name="UserDefinedDate" Text="d.M.yy" />
+                </Texts>
+              </Group>
+              <Group Name="MonthName">
+                <Texts>
+                  <Text Name="1" Text="Januar" />
+                  <Text Name="2" Text="Februar" />
+                  <Text Name="3" Text="März" />
+                  <Text Name="4" Text="April" />
+                  <Text Name="5" Text="Mai" />
+                  <Text Name="6" Text="Juni" />
+                  <Text Name="7" Text="Juli" />
+                  <Text Name="8" Text="August" />
+                  <Text Name="9" Text="September" />
+                  <Text Name="10" Text="Oktober" />
+                  <Text Name="11" Text="November" />
+                  <Text Name="12" Text="Dezember" />
+                </Texts>
+              </Group>
+              <Group Name="ShortMonthName">
+                <Texts>
+                  <Text Name="1" Text="Jan" />
+                  <Text Name="2" Text="Feb" />
+                  <Text Name="3" Text="Mär" />
+                  <Text Name="4" Text="Apr" />
+                  <Text Name="5" Text="Mai" />
+                  <Text Name="6" Text="Jun" />
+                  <Text Name="7" Text="Jul" />
+                  <Text Name="8" Text="Aug" />
+                  <Text Name="9" Text="Sep" />
+                  <Text Name="10" Text="Okt" />
+                  <Text Name="11" Text="Nov" />
+                  <Text Name="12" Text="Dez" />
+                </Texts>
+              </Group>
+              <Group Name="ShortWeekdayName">
+                <Texts>
+                  <Text Name="1" Text="So" />
+                  <Text Name="2" Text="Mo" />
+                  <Text Name="3" Text="Di" />
+                  <Text Name="4" Text="Mi" />
+                  <Text Name="5" Text="Do" />
+                  <Text Name="6" Text="Fr" />
+                  <Text Name="7" Text="Sa" />
+                </Texts>
+              </Group>
+              <Group Name="TimeFormats">
+                <Texts>
+                  <Text Name="LongTime" Text="HH:mm:ss" />
+                  <Text Name="ShortTime" Text="HH:mm" />
+                  <Text Name="UserDefinedTime" Text="H:m" />
+                </Texts>
+              </Group>
+              <Group Name="WeekdayName">
+                <Texts>
+                  <Text Name="1" Text="Sonntag" />
+                  <Text Name="2" Text="Montag" />
+                  <Text Name="3" Text="Dienstag" />
+                  <Text Name="4" Text="Mittwoch" />
+                  <Text Name="5" Text="Donnerstag" />
+                  <Text Name="6" Text="Freitag" />
+                  <Text Name="7" Text="Samstag" />
+                </Texts>
+              </Group>
+            </Groups>
+            <Texts>
+              <Text Name="FirstDayOfWeek" Text="2" />
+              <Text Name="FirstWeekOfYear" Text="2" />
+              <Text Name="WeekNumberLong" Text="Kalenderwoche" />
+              <Text Name="WeekNumberShort" Text="KW" />
+            </Texts>
+          </Group>
+          <Group Name="TrendLegend">
+            <Texts>
+              <Text Name="ArchiveText" Text="Archiv" />
+              <Text Name="Color" Text="Farbe" />
+              <Text Name="ItemText" Text="Variable" />
+              <Text Name="MarkedValue" Text="Markierter Wert" />
+              <Text Name="Maximum" Text="Maximum" />
+              <Text Name="Minimum" Text="Minimum" />
+              <Text Name="Style" Text="Linienstil" />
+              <Text Name="TrendText" Text="Trend" />
+              <Text Name="Unit" Text="Einheit" />
+              <Text Name="ItemAlias" Text="Variablenname" />
+            </Texts>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="Dialogs">
+        <Groups>
+          <Group Name="Common">
+            <Texts>
+              <Text Name="cmdOK" Text="OK" />
+              <Text Name="cmdCancel" Text="Abbrechen" />
+              <Text Name="cmdClose" Text="Schließen" />
+              <Text Name="cmdYes" Text="Ja" />
+              <Text Name="cmdNo" Text="Nein" />
+              <Text Name="cmdAdd" Text="Hinzufügen ..." />
+              <Text Name="cmdRemove" Text="Entfernen" />
+              <Text Name="cmdEdit" Text="Bearbeiten ..." />
+              <Text Name="cmdChange" Text="Ändern ..." />
+              <Text Name="cmdAbort" Text="Abbrechen" />
+              <Text Name="cmdRetry" Text="Wiederholen" />
+              <Text Name="cmdIgnore" Text="Ignorieren" />
+              <Text Name="cmdActivate" Text="Aktivieren" />
+              <Text Name="cmdDeactivate" Text="Deaktivieren" />
+              <Text Name="cmdApply" Text="Übernehmen" />
+              <Text Name="cmdOpen" Text="Öffnen ..." />
+              <Text Name="cmdSave" Text="Speichern" />
+              <Text Name="cmdSaveAs" Text="Speichern unter ..." />
+              <Text Name="cmdSearch" Text="Suchen ..." />
+              <Text Name="cmdBack" Text="Zurück" />
+              <Text Name="cmdForward" Text="Vor" />
+              <Text Name="cmdLoad" Text="Laden" />
+              <Text Name="cmdDelete" Text="Löschen" />
+            </Texts>
+          </Group>
+          <Group Name="Recipe">
+            <Texts>
+              <Text Name="capLoadRecipe" Text="Rezept laden" />
+              <Text Name="capSaveRecipe" Text="Rezept speichern" />
+              <Text Name="lblFileName" Text="Rezeptname" />
+              <Text Name="lblFileDescription" Text="Beschreibung" />
+              <Text Name="lblExistingFiles" Text="Vorhandene Rezepte" />
+              <Text Name="ConfirmOverwrite" Text="Das Rezept &quot;{0}&quot; existiert bereits.\nWollen Sie es ersetzen?" />
+              <Text Name="ConfirmDelete" Text="Wollen Sie das Rezept &quot;{0}&quot; wirklich löschen?" />
+            </Texts>
+          </Group>
+          <Group Name="UserManagement">
+            <Groups>
+              <Group Name="AddGroupSuccess">
+                <Texts>
+                  <Text Name="GroupAlreadyDefined" Text="Der Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <Text Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <Text Name="WrongParam" Text="Falscher Parameter!" />
+                  <Text Name="NoName" Text="Bitte einen Namen eingeben!" />
+                  <Text Name="NoLevel" Text="Bitte eine Autorisierungsebene eingeben!" />
+                </Texts>
+              </Group>
+              <Group Name="AddRightSuccess">
+                <Texts>
+                  <Text Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <Text Name="WrongParam" Text="Falscher Parameter!" />
+                  <Text Name="NoName" Text="Bitte einen Namen eingeben!" />
+                  <Text Name="RightAlreadyDefined" Text="Der Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                </Texts>
+              </Group>
+              <Group Name="AddUserSuccess">
+                <Texts>
+                  <Text Name="ForbiddenPassword" Text="Das Passwort darf nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                  <Text Name="InvalidPassword" Text="Das Passwort ist ungültig!\nBitte wählen Sie ein anderes!" />
+                  <Text Name="InvalidPasswordLength" Text="Das Passwort ist zu kurz!" />
+                  <Text Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <Text Name="NoCharactersInPassword" Text="Das Passwort muss Buchstaben enthalten!" />
+                  <Text Name="NoNumbersInPassword" Text="Das Passwort muss Ziffern enthalten!" />
+                  <Text Name="PasswordMustContainSpecialCharacters" Text="Das Passwort muss Sonderzeichen enthalten!" />
+                  <Text Name="UnableToSaveUser" Text="Kann Benutzerdaten nicht speichern!" />
+                  <Text Name="UserExists" Text="Der Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <Text Name="NoName" Text="Bitte einen Namen eingeben!" />
+                  <Text Name="NoUserGroup" Text="Bitte Benutzergruppe auswählen!" />
+                  <Text Name="PasswordsNotEqual" Text="Die Wiederholung des Passwortes ist nicht identisch mit dem Passwort!" />
+                  <Text Name="FullUserExists" Text="Der volle Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <Text Name="MachineCodeExists" Text="Der Code existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <Text Name="NoFullName" Text="Bitte einen vollen Namen eingeben!" />
+                  <Text Name="LockedPassword" Text="Das Passwort darf zurzeit nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeGroupSuccess">
+                <Texts>
+                  <Text Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <Text Name="UnknownGroup" Text="Die Benutzergruppe ist unbekannt!" />
+                  <Text Name="DeleteNotPermitted" Text="Die Benutzergruppe darf aufgrund der Gruppeneinstellungen nicht entfernt werden!" />
+                </Texts>
+              </Group>
+              <Group Name="ChangePasswordSuccess">
+                <Texts>
+                  <Text Name="CantAccessDomainInfo" Text="Kann Benutzerdaten nicht speichern, weil kein Zugriff auf die zentrale Benutzerverwaltung besteht!" />
+                  <Text Name="ForbiddenPassword" Text="Das Passwort darf nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                  <Text Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <Text Name="NewPasswordInvalid" Text="Das neue Passwort ist ungültig!\nBitte wählen Sie ein anderes!" />
+                  <Text Name="NewPasswordInvalidLength" Text="Das neue Passwort ist zu kurz!" />
+                  <Text Name="NoCharactersInPassword" Text="Das neue Passwort muss Buchstaben enthalten!" />
+                  <Text Name="NoNumbersInPassword" Text="Das neue Passwort muss Ziffern enthalten!" />
+                  <Text Name="OldPasswordInvalid" Text="Das Passwort ist falsch!\nBitte wiederholen Sie die Eingabe!" />
+                  <Text Name="PasswordMustContainSpecialCharacters" Text="Das neue Passwort muss Sonderzeichen enthalten!" />
+                  <Text Name="UnableToSavePassword" Text="Kann Benutzerdaten nicht speichern!" />
+                  <Text Name="UnknownUser" Text="Der Benutzer ist unbekannt!" />
+                  <Text Name="NewPasswordsNotEqual" Text="Die Wiederholung des neuen Passwortes ist nicht identisch mit dem neuen Passwort!" />
+                  <Text Name="NoCurrentUser" Text="Es ist kein Benutzer angemeldet!" />
+                  <Text Name="LockedPassword" Text="Das Passwort darf zurzeit nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeRightSuccess">
+                <Texts>
+                  <Text Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <Text Name="UnableToSaveRight" Text="Kann Daten nicht speichern!" />
+                  <Text Name="UnknownRight" Text="Die Berechtigung ist unbekannt!" />
+                  <Text Name="WrongParam" Text="Falscher Parameter!" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeUserSuccess">
+                <Texts>
+                  <Text Name="ForbiddenPassword" Text="Das Passwort darf nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                  <Text Name="InvalidPassword" Text="Das Passwort ist ungültig!\nBitte wählen Sie ein anderes!" />
+                  <Text Name="InvalidPasswordLength" Text="Das Passwort ist zu kurz!" />
+                  <Text Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <Text Name="NoCharactersInPassword" Text="Das Passwort muss Buchstaben enthalten!" />
+                  <Text Name="NoNumbersInPassword" Text="Das Passwort muss Ziffern enthalten!" />
+                  <Text Name="PasswordMustContainSpecialCharacters" Text="Das Passwort muss Sonderzeichen enthalten!" />
+                  <Text Name="UnableToSaveUser" Text="Kann Benutzerdaten nicht speichern!" />
+                  <Text Name="UnknownUser" Text="Der Benutzer ist unbekannt!" />
+                  <Text Name="UnknownUserClass" Text="Die Benutzergruppe ist unbekannt!" />
+                  <Text Name="FullUserExists" Text="Der volle Name existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <Text Name="MachineCodeExists" Text="Der Code existiert bereits!\nBitte wählen Sie einen anderen!" />
+                  <Text Name="InvalidUserClass" Text="Aufgrund der Gruppeneinstellungen darf diese Benutzergruppe nicht für den Benutzer ausgewählt werden!" />
+                  <Text Name="LockedPassword" Text="Das Passwort darf zurzeit nicht verwendet werden!\nBitte wählen Sie ein anderes!" />
+                </Texts>
+              </Group>
+              <Group Name="LogOnSuccess">
+                <Texts>
+                  <Text Name="CantAccessDomainInfo" Text="Auf die zentrale Benutzerverwaltung kann nicht zugegriffen werden!\nBitte wenden Sie sich an den Systemadministrator!" />
+                  <Text Name="InvalidPassword" Text="Das Passwort ist falsch!\nBitte wiederholen Sie die Eingabe!" />
+                  <Text Name="PasswordExpired" Text="Die Gültigkeitsdauer des Passwortes ist abgelaufen!" />
+                  <Text Name="RenewPassword" Text="Das vom Administrator zugeteilte Passwort muss geändert werden!" />
+                  <Text Name="TooManyFailedLogOns" Text="Aufgrund zu vieler Anmeldefehlversuche wurde der Benutzer gesperrt!\nBitte wenden Sie sich an den Systemadministrator!" />
+                  <Text Name="UnknownUser" Text="Der Benutzer ist unbekannt!" />
+                  <Text Name="UserDeactivated" Text="Der Benutzer ist deaktiviert!\nBitte wenden Sie sich an den Systemadministrator!" />
+                  <Text Name="MethodCallFailed" Text="Leider ist ein unbekannter Fehler aufgetreten!\nBitte wenden Sie sich an den Administrator!" />
+                  <Text Name="NoCorrespondingLocalUserClass" Text="Der Benutzer kann nicht angemeldet werden, weil die Benutzergruppe der zentralen Benutzerverwaltung lokal nicht definiert ist!\nBitte wenden Sie sich an den Systemadministrator!" />
+                </Texts>
+              </Group>
+              <Group Name="UserStates">
+                <Texts>
+                  <Text Name="Deactivated" Text="Deaktiviert" />
+                  <Text Name="Active" Text="Aktiviert" />
+                  <Text Name="Invalidated" Text="Gesperrt" />
+                  <Text Name="PasswordExpired" Text="Aktiviert, beim nächsten Anmelden Passwort ändern" />
+                </Texts>
+              </Group>
+            </Groups>
+            <Texts>
+              <Text Name="capAddRight" Text="Berechtigung hinzufügen" />
+              <Text Name="capAddUser" Text="Benutzer hinzufügen" />
+              <Text Name="capAddUserGroup" Text="Benutzergruppe hinzufügen" />
+              <Text Name="capChangePassword" Text="Passwort ändern" />
+              <Text Name="capChangeRight" Text="Berechtigung ändern" />
+              <Text Name="capChangeUser" Text="Benutzer ändern" />
+              <Text Name="capChangeUserGroup" Text="Benutzergruppe ändern" />
+              <Text Name="capLogOn" Text="Benutzer anmelden" />
+              <Text Name="capRightsOverview" Text="Übersicht Berechtigungen" />
+              <Text Name="capUserGroupsOverview" Text="Übersicht Benutzergruppen" />
+              <Text Name="capUsersOverview" Text="Übersicht Benutzer" />
+              <Text Name="capVerify" Text="Benutzer verifizieren" />
+              <Text Name="chkDeactivationTimeActive" Text="Aktiv" />
+              <Text Name="chkRightActive" Text="Aktiv" />
+              <Text Name="chkUsersRemovable" Text="Benutzer dürfen entfernt werden" />
+              <Text Name="cmdLogOff" Text="Abmelden" />
+              <Text Name="cmdLogOn" Text="Anmelden" />
+              <Text Name="hdrActive" Text="Aktiv" />
+              <Text Name="hdrAutoLogOffTime" Text="Zeit bis zum automatischen Abmelden" />
+              <Text Name="hdrCode" Text="Code" />
+              <Text Name="hdrComment" Text="Kommentar" />
+              <Text Name="hdrDeactivationTime" Text="Deaktivierungs-\nzeitpunkt" />
+              <Text Name="hdrFullName" Text="Voller Name" />
+              <Text Name="hdrMaxFailedLogOns" Text="Max. erlaubte Anmelde-\nfehlversuche" />
+              <Text Name="hdrName" Text="Name" />
+              <Text Name="hdrRemainingLogOns" Text="Verbleibende Anmelde-\nversuche" />
+              <Text Name="hdrRenewPassword" Text="Passwort-\ngültigkeits-\ndauer" />
+              <Text Name="hdrRenewPasswordInterval" Text="Passwort-\nerneuerungs-\nintervall" />
+              <Text Name="hdrRights" Text="Rechte" />
+              <Text Name="hdrUserGroup" Text="Benutzergruppe" />
+              <Text Name="hdrUserGroups" Text="Benutzergruppen" />
+              <Text Name="hdrUserName" Text="Benutzername" />
+              <Text Name="hdrUsersCount" Text="Anzahl Benutzer" />
+              <Text Name="hdrUsersRemovable" Text="Benutzer entfernbar" />
+              <Text Name="hdrUserState" Text="Status" />
+              <Text Name="lblAutoLogOffTime" Text="Zeit bis zum automatischen Abmelden" />
+              <Text Name="lblComment" Text="Kommentar" />
+              <Text Name="lblDeactivation" Text="Deaktivierung" />
+              <Text Name="lblFullName" Text="Voller Name" />
+              <Text Name="lblMachineCode" Text="Code" />
+              <Text Name="lblMaxFailedLogOns" Text="Maximal erlaubte Anmeldefehlversuche" />
+              <Text Name="lblName" Text="Name" />
+              <Text Name="lblNewPassword" Text="Neues Passwort" />
+              <Text Name="lblPassword" Text="Passwort" />
+              <Text Name="lblRenewPasswordInterval" Text="Passworterneuerungsintervall" />
+              <Text Name="lblRepeatNewPassword" Text="Neues Passwort wiederholen" />
+              <Text Name="lblRepeatPassword" Text="Passwort wiederholen" />
+              <Text Name="lblState" Text="Status" />
+              <Text Name="lblUserGroup" Text="Benutzergruppe" />
+              <Text Name="lblUserName" Text="Benutzername" />
+              <Text Name="msgDeactivateUser" Text="Der Benutzer darf aufgrund der Gruppeneinstellungen nicht entfernt werden!\nSoll err stattdessen deaktiviert werden?" />
+              <Text Name="msgRemoveRight" Text="Soll die Berechtigung dauerhaft aus dem System entfernt werden?\nAchtung: Dadurch werden einige Bedienelemente ..." />
+              <Text Name="msgRemoveUser" Text="Soll der Benutzer dauerhaft aus dem System entfernt werden?" />
+              <Text Name="msgRemoveUserGroup" Text="Soll die Benutzergruppe dauerhaft aus dem System entfernt werden?\nAchtung: Dadurch werden auch alle Benutzer dieser Gruppe aus dem System entfernt!" />
+              <Text Name="rbtDeactivationDuration" Text="nach dem 1. Anmelden" />
+              <Text Name="rbtDeactivationTime" Text="zum Zeitpunkt" />
+              <Text Name="rbtNoDeactivation" Text="niemals" />
+              <Text Name="untAutoLogOffTime" Text="Minuten" />
+              <Text Name="untDays" Text="Tage" />
+              <Text Name="untHours" Text="Std." />
+              <Text Name="untMinutes" Text="Min." />
+              <Text Name="untRenewPasswordInterval" Text="Tage" />
+              <Text Name="chkChangePassword" Text="Passwort ändern" />
+              <Text Name="chkChangeMachineCode" Text="Code ändern" />
+              <Text Name="tpgStandard" Text="Standard" />
+              <Text Name="tpgExtended" Text="Erweitert" />
+              <Text Name="vinAuthorizationLevel" Text="Autorisierungsebene" />
+              <Text Name="hdrAuthorizationLevel" Text="Autori-\nsierungs-\nebene" />
+              <Text Name="capSelectRight" Text="Berechtigung auswählen" />
+            </Texts>
+          </Group>
+          <Group Name="TouchKeyboards">
+            <Groups>
+              <Group Name="AlphaPad">
+                <Texts>
+                  <Text Name="Caption" Text="Eingabe" />
+                  <Text Name="keyEsc" Text="Esc" />
+                  <Text Name="keyDel" Text="Entf" />
+                  <Text Name="keyCtrl" Text="Strg" />
+                  <Text Name="keyAltGr" Text="Alt Gr" />
+                  <Text Name="keyHome" Text="Pos1" />
+                  <Text Name="keyEnd" Text="Ende" />
+                  <Text Name="key00" Text="^°" />
+                  <Text Name="key01" Text="1!" />
+                  <Text Name="key02" Text="2&quot;²" />
+                  <Text Name="key03" Text="3§³" />
+                  <Text Name="key04" Text="4$" />
+                  <Text Name="key05" Text="5%" />
+                  <Text Name="key06" Text="6&amp;" />
+                  <Text Name="key07" Text="7/{" />
+                  <Text Name="key08" Text="8([" />
+                  <Text Name="key09" Text="9)]" />
+                  <Text Name="key010" Text="0=}" />
+                  <Text Name="key011" Text="ß?\" />
+                  <Text Name="key012" Text="´`" />
+                  <Text Name="key10" Text="qQ@" />
+                  <Text Name="key11" Text="wW" />
+                  <Text Name="key12" Text="eE€" />
+                  <Text Name="key13" Text="rR" />
+                  <Text Name="key14" Text="tT" />
+                  <Text Name="key15" Text="zZ" />
+                  <Text Name="key16" Text="uU" />
+                  <Text Name="key17" Text="iI" />
+                  <Text Name="key18" Text="oO" />
+                  <Text Name="key19" Text="pP" />
+                  <Text Name="key110" Text="üÜ" />
+                  <Text Name="key111" Text="+*~" />
+                  <Text Name="key20" Text="aA" />
+                  <Text Name="key21" Text="sS" />
+                  <Text Name="key22" Text="dD" />
+                  <Text Name="key23" Text="fF" />
+                  <Text Name="key24" Text="gG" />
+                  <Text Name="key25" Text="hH" />
+                  <Text Name="key26" Text="jJ" />
+                  <Text Name="key27" Text="kK" />
+                  <Text Name="key28" Text="lL" />
+                  <Text Name="key29" Text="öÖ" />
+                  <Text Name="key210" Text="äÄ" />
+                  <Text Name="key211" Text="#'" />
+                  <Text Name="key30" Text="&lt;&gt;|" />
+                  <Text Name="key31" Text="yY" />
+                  <Text Name="key32" Text="xX" />
+                  <Text Name="key33" Text="cC" />
+                  <Text Name="key34" Text="vV" />
+                  <Text Name="key35" Text="bB" />
+                  <Text Name="key36" Text="nN" />
+                  <Text Name="key37" Text="mM" />
+                  <Text Name="key38" Text=",;" />
+                  <Text Name="key39" Text=".:" />
+                  <Text Name="key310" Text="-_" />
+                </Texts>
+              </Group>
+              <Group Name="NumPad">
+                <Texts>
+                  <Text Name="Caption" Text="Eingabe" />
+                  <Text Name="keyDel" Text="Entf" />
+                  <Text Name="keyEnd" Text="Ende" />
+                  <Text Name="keyEsc" Text="Esc" />
+                  <Text Name="keyHome" Text="Pos1" />
+                </Texts>
+              </Group>
+              <Group Name="TinyAlphaPad">
+                <Texts>
+                  <Text Name="cmd01Caption" Text="äöüß" />
+                  <Text Name="cmd01Chars" Text="äöüß" />
+                  <Text Name="cmd01CaptionShift" Text="ÄÖÜß" />
+                  <Text Name="cmd01CharsShift" Text="ÄÖÜß" />
+                  <Text Name="cmd02Caption" Text="abc" />
+                  <Text Name="cmd02Chars" Text="abc" />
+                  <Text Name="cmd02CaptionShift" Text="ABC" />
+                  <Text Name="cmd02CharsShift" Text="ABC" />
+                  <Text Name="cmd03Caption" Text="def" />
+                  <Text Name="cmd03Chars" Text="def" />
+                  <Text Name="cmd03CaptionShift" Text="DEF" />
+                  <Text Name="cmd03CharsShift" Text="DEF" />
+                  <Text Name="cmd04Caption" Text="ghi" />
+                  <Text Name="cmd04Chars" Text="ghi" />
+                  <Text Name="cmd04CaptionShift" Text="GHI" />
+                  <Text Name="cmd04CharsShift" Text="GHI" />
+                  <Text Name="cmd05Caption" Text="jkl" />
+                  <Text Name="cmd05Chars" Text="jkl" />
+                  <Text Name="cmd05CaptionShift" Text="JKL" />
+                  <Text Name="cmd05CharsShift" Text="JKL" />
+                  <Text Name="cmd06Caption" Text="mno" />
+                  <Text Name="cmd06Chars" Text="mno" />
+                  <Text Name="cmd06CaptionShift" Text="MNO" />
+                  <Text Name="cmd06CharsShift" Text="MNO" />
+                  <Text Name="cmd07Caption" Text="pqrs" />
+                  <Text Name="cmd07Chars" Text="pqrs" />
+                  <Text Name="cmd07CaptionShift" Text="PQRS" />
+                  <Text Name="cmd07CharsShift" Text="PQRS" />
+                  <Text Name="cmd08Caption" Text="tuv" />
+                  <Text Name="cmd08Chars" Text="tuv" />
+                  <Text Name="cmd08CaptionShift" Text="TUV" />
+                  <Text Name="cmd08CharsShift" Text="TUV" />
+                  <Text Name="cmd09Caption" Text="wxyz" />
+                  <Text Name="cmd09Chars" Text="wxyz" />
+                  <Text Name="cmd09CaptionShift" Text="WXYZ" />
+                  <Text Name="cmd09CharsShift" Text="WXYZ" />
+                  <Text Name="cmd10Caption" Text="___" />
+                  <Text Name="cmd10Chars" Text=" " />
+                  <Text Name="cmd10CaptionShift" Text="___" />
+                  <Text Name="cmd10CharsShift" Text=" " />
+                  <Text Name="cmd11Caption" Text=", . ; :" />
+                  <Text Name="cmd11Chars" Text=",.;:" />
+                  <Text Name="cmd11CaptionShift" Text="! ?" />
+                  <Text Name="cmd11CharsShift" Text="!?" />
+                  <Text Name="cmd12Caption" Text="+ - */" />
+                  <Text Name="cmd12Chars" Text="+-*/" />
+                  <Text Name="cmd12CaptionShift" Text="= \ _" />
+                  <Text Name="cmd12CharsShift" Text="=\_" />
+                  <Text Name="cmd13Caption" Text="#~@€" />
+                  <Text Name="cmd13Chars" Text="#~@€" />
+                  <Text Name="cmd13CaptionShift" Text="$%&amp;§" />
+                  <Text Name="cmd13CharsShift" Text="$%&amp;§" />
+                  <Text Name="cmd14Caption" Text="&quot; ' ´ `" />
+                  <Text Name="cmd14Chars" Text="&quot;'´`" />
+                  <Text Name="cmd15Caption" Text="( )&lt;&gt;" />
+                  <Text Name="cmd15Chars" Text="()&lt;&gt;" />
+                  <Text Name="cmd15CaptionShift" Text="[ ] { }" />
+                  <Text Name="cmd15CharsShift" Text="[]{}" />
+                  <Text Name="cmd01Password" Text="1AN" />
+                  <Text Name="cmd02Password" Text="2BO" />
+                  <Text Name="cmd03Password" Text="3CP" />
+                  <Text Name="cmd04Password" Text="6FS" />
+                  <Text Name="cmd05Password" Text="7GT" />
+                  <Text Name="cmd06Password" Text="8HU" />
+                  <Text Name="cmd07Password" Text="+KX" />
+                  <Text Name="cmd08Password" Text="*LY" />
+                  <Text Name="cmd09Password" Text="#MZ" />
+                  <Text Name="cmd10Password" Text="@!" />
+                  <Text Name="cmd11Password" Text="$?" />
+                  <Text Name="cmd12Password" Text="9IV" />
+                  <Text Name="cmd13Password" Text="0JW" />
+                  <Text Name="cmd14Password" Text="4DQ" />
+                  <Text Name="cmd15Password" Text="5ER" />
+                  <Text Name="cmdShift" Text="abc\nABC\n123" />
+                  <Text Name="cmdShiftPassword" Text="123\nABC\nNOP" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="Printing">
+            <Groups>
+              <Group Name="Progress">
+                <Texts>
+                  <Text Name="Caption" Text="Drucken" />
+                  <Text Name="Ready" Text="Bereit" />
+                  <Text Name="PageNumber" Text="Seite @1n@ von @2n@" />
+                  <Text Name="Loading" Text="Lade Dokument(e)" />
+                  <Text Name="Cancelling" Text="Drucken wird abgebrochen ..." />
+                  <Text Name="Printing" Text="Drucke &quot;@1s@&quot; ..." />
+                  <Text Name="PrintScreen" Text="Drucke Bildschirm" />
+                </Texts>
+              </Group>
+              <Group Name="Settings">
+                <Texts>
+                  <Text Name="Caption" Text="Einstellungen für Standarddrucker" />
+                  <Text Name="Printer" Text="Drucker" />
+                  <Text Name="Type" Text="Typ" />
+                  <Text Name="Port" Text="Schnittstelle / Netzwerkpfad" />
+                  <Text Name="Color" Text="Farbe" />
+                  <Text Name="PageSettings" Text="Seiteneinstellungen" />
+                  <Text Name="PaperSize" Text="Papierformat" />
+                  <Text Name="Orientation" Text="Ausrichtung" />
+                  <Text Name="Portrait" Text="Hochformat" />
+                  <Text Name="Landscape" Text="Querformat" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="AlarmSystem">
+        <Groups>
+          <Group Name="Classes">
+            <Groups>
+              <Group Name="SystemAlarm" Text="Systemalarm">
+                <Texts>
+                  <Text Name="Active" Text="aktiv" />
+                  <Text Name="ActiveAck" Text="aktiv, quitt." />
+                  <Text Name="Inactive" Text="inaktiv" />
+                  <Text Name="InactiveAck" Text="quitt., inaktiv" />
+                </Texts>
+              </Group>
+              <Group Name="Alarm" Text="Alarm">
+                <Texts>
+                  <Text Name="Active" Text="aktiv" />
+                  <Text Name="ActiveAck" Text="aktiv, quitt." />
+                  <Text Name="Inactive" Text="inaktiv" />
+                  <Text Name="InactiveAck" Text="quitt., inaktiv" />
+                </Texts>
+              </Group>
+              <Group Name="Message" Text="Meldung">
+                <Texts>
+                  <Text Name="Active" Text="aktiv" />
+                  <Text Name="ActiveAck" Text="aktiv, quitt." />
+                  <Text Name="Inactive" Text="inaktiv" />
+                  <Text Name="InactiveAck" Text="quitt., inaktiv" />
+                </Texts>
+              </Group>
+              <Group Name="Hint" Text="Hinweis">
+                <Texts>
+                  <Text Name="Active" Text="aktiv" />
+                  <Text Name="ActiveAck" Text="aktiv, quitt." />
+                  <Text Name="Inactive" Text="inaktiv" />
+                  <Text Name="InactiveAck" Text="quitt., inaktiv" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="Types">
+            <Groups>
+              <Group Name="ValueAlarms" />
+              <Group Name="BitBlockAlarms" />
+            </Groups>
+          </Group>
+          <Group Name="Groups">
+            <Groups>
+              <Group Name="SystemAlarms" Text="VisiWinNET-System">
+                <Texts>
+                  <Text Name="Collective" Text="VisiWinNET Systemfehler! Details siehe Logdatei." />
+                  <Text Name="DataAccess" Text="Fehler im Variablensystem! Details siehe Logdatei." />
+                  <Text Name="LanguageSwitching" Text="Fehler in der Sprachumschaltung! Details siehe Logdatei." />
+                  <Text Name="Project" Text="Fehler in der Projektverwaltung! Details siehe Logdatei." />
+                  <Text Name="Alarm" Text="Fehler in der Alarmverwaltung! Details siehe Logdatei." />
+                  <Text Name="Recipe" Text="Fehler im Rezeptsystem! Details siehe Logdatei." />
+                  <Text Name="UserManagement" Text="Fehler in der Benutzerverwaltung! Details siehe Logdatei." />
+                  <Text Name="Trend" Text="Fehler im Trendsystem! Details siehe Logdatei." />
+                  <Text Name="Logging" Text="Fehler im Loggingsystem! Details siehe Logdatei." />
+                  <Text Name="Forms" Text="Fehler in der Formularverwaltung! Details siehe Logdatei." />
+                  <Text Name="Drivers" Text="Treiberfehler! Details siehe Logdatei." />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="ItemSystem">
+        <Groups>
+          <Group Name="Intern">
+            <Texts>
+              <Text Name="__CURRENT_USER.NAME" Text="Angemeldeter Benutzer" />
+              <Text Name="__CURRENT_USER.FULLNAME" Text="Angemeldeter Benutzer" />
+              <Text Name="__CURRENT_USER.GROUPNAME" Text="Aktuelle Benutzergruppe" />
+              <Text Name="__CURRENT_USER.GROUPTEXT" Text="Aktuelle Benutzergruppe" />
+              <Text Name="__CURRENT_USER.LEVEL" Text="Aktuelle Benutzerebene" />
+              <Text Name="__CURRENT_USER.SECONDS_TO_AUTOLOGOFF" Text="Sekunden bis zur automatischen Abmeldung" />
+              <Text Name="__PROCESS.MEMORY.AVAILABLE" Text="Verfügbarer Speicher für diese Anwendung" />
+              <Text Name="__PROCESS.MEMORY.ESTIMATEDMANAGED" Text="Geschätzter verwalteter Speicher dieser Anwendung" />
+              <Text Name="__PROCESS.MEMORY.USED" Text="Verwendeter Speicher dieser Anwendung" />
+              <Text Name="__SYSTEM.MEMORY.PERCENTLOAD" Text="Prozentuale Speicherauslastung" />
+              <Text Name="__SYSTEM.MEMORY.PHYSICAL" Text="Freier physikalischer Speicher" />
+              <Text Name="__SYSTEM.TIME" Text="Aktuelle Systemzeit" />
+              <Text Name="__SYSTEM_ERRORS.COLLECTIVE" Text="Systemfehler: Sammelmeldung" />
+              <Text Name="__SYSTEM_ERRORS.DATA_ACCESS" Text="Systemfehler: Variablen" />
+              <Text Name="__SYSTEM_ERRORS.LANGUAGE_SWITCHING" Text="Systemfehler: Sprachumschaltung" />
+              <Text Name="__SYSTEM_ERRORS.PROJECT" Text="Systemfehler: Projekt" />
+              <Text Name="__SYSTEM_ERRORS.ALARM" Text="Systemfehler: Alarme" />
+              <Text Name="__SYSTEM_ERRORS.RECIPE" Text="Systemfehler: Rezepte" />
+              <Text Name="__SYSTEM_ERRORS.USER_MANAGEMENT" Text="Systemfehler: Benutzerverwaltung" />
+              <Text Name="__SYSTEM_ERRORS.TREND" Text="Systemfehler: Trendaufzeichnung" />
+              <Text Name="__SYSTEM_ERRORS.LOGGING" Text="Systemfehler: Protokollierung" />
+              <Text Name="__SYSTEM_ERRORS.FORMS" Text="Systemfehler: Formulare und Steuerelemente" />
+              <Text Name="__SYSTEM_ERRORS.DRIVERS" Text="Systemfehler: Treiber" />
+            </Texts>
+          </Group>
+          <Group Name="Structures" />
+          <Group Name="Ch1" />
+        </Groups>
+      </Group>
+      <Group Name="UserSystem">
+        <Groups>
+          <Group Name="UserGroups" />
+          <Group Name="Rights" />
+        </Groups>
+      </Group>
+      <Group Name="ArchiveSystem" />
+      <Group Name="LoggingSystem">
+        <Groups>
+          <Group Name="Project" Text="Projektverwaltung">
+            <Groups>
+              <Group Name="Start" Text="Systemstart">
+                <Texts>
+                  <Text Name="LogText" Text="VisiWinNET mit Projekt @1s@ gestartet! Erfolg: @2n@" />
+                  <Text Name="ProjectName" Text="Projektname" />
+                  <Text Name="Success" Text="Erfolg" />
+                </Texts>
+              </Group>
+              <Group Name="Stop" Text="Systemstopp">
+                <Texts>
+                  <Text Name="LogText" Text="Projekt @1s@ beendet" />
+                  <Text Name="ProjectName" Text="Projektname" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="UserSystem" Text="Benutzerverwaltung">
+            <Groups>
+              <Group Name="LogOn" Text="Benutzer angemeldet">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzer angemeldet (Name: @1s@, Gruppe: @4s@)" />
+                  <Text Name="User" Text="Benutzername" />
+                  <Text Name="FullName" Text="Vollständiger Name" />
+                  <Text Name="GroupName" Text="Gruppenobjektname" />
+                  <Text Name="GroupText" Text="Gruppenname" />
+                </Texts>
+              </Group>
+              <Group Name="LogOff" Text="Benutzer abgemeldet">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzer abgemeldet (Name: @1s@)" />
+                  <Text Name="User" Text="Benutzername" />
+                  <Text Name="FullName" Text="Vollständiger Name" />
+                </Texts>
+              </Group>
+              <Group Name="AutoLogOff" Text="Benutzer automatisch abgemeldet">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzer automatisch abgemeldet (Name: @1s@)" />
+                  <Text Name="User" Text="Benutzername" />
+                  <Text Name="FullName" Text="Vollständiger Name" />
+                </Texts>
+              </Group>
+              <Group Name="VerifyUser" Text="Benutzer verifiziert">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzer verifiziert (Name: @1s@, Gruppe: @4s@)" />
+                  <Text Name="User" Text="Benutzername" />
+                  <Text Name="FullName" Text="Vollständiger Name" />
+                  <Text Name="GroupName" Text="Gruppenobjektname" />
+                  <Text Name="GroupText" Text="Gruppenname" />
+                </Texts>
+              </Group>
+              <Group Name="AddUser" Text="Benutzer hinzugefügt">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzer hinzugefügt (Name: @1s@, Gruppe: @4s@)" />
+                  <Text Name="User" Text="Benutzername" />
+                  <Text Name="FullName" Text="Vollständiger Name" />
+                  <Text Name="GroupName" Text="Gruppenobjektname" />
+                  <Text Name="GroupText" Text="Gruppenname" />
+                </Texts>
+              </Group>
+              <Group Name="RemoveUser" Text="Benutzer gelöscht">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzer gelöscht (Name: @1s@)" />
+                  <Text Name="User" Text="Benutzername" />
+                  <Text Name="FullName" Text="Vollständiger Name" />
+                  <Text Name="GroupName" Text="Gruppenobjektname" />
+                  <Text Name="GroupText" Text="Gruppenname" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeUser" Text="Benutzer in andere Gruppe verschoben">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzer in andere Gruppe verschoben (Name: @1s@, Gruppe bisher: @4s@, neu: @6s@)" />
+                  <Text Name="User" Text="Benutzername" />
+                  <Text Name="FullName" Text="Vollständiger Name" />
+                  <Text Name="PrevGroupName" Text="Bisher: Gruppenobjektname" />
+                  <Text Name="PrevGroupText" Text="Bisher: Gruppenname" />
+                  <Text Name="NewGroupName" Text="Neu: Gruppenobjektname" />
+                  <Text Name="NewGroupText" Text="Neu: Gruppenname" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeUserState" Text="Benutzerstatus geändert">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzerstatus geändert (Name: @1s@, Status bisher: @5s@, neu: @6s@)" />
+                  <Text Name="User" Text="Benutzername" />
+                  <Text Name="FullName" Text="Vollständiger Name" />
+                  <Text Name="PreviousState" Text="Bisher: Status (Kennung)" />
+                  <Text Name="NewState" Text="Neu: Status (Kennung)" />
+                  <Text Name="PreviousStateText" Text="Bisher: Status (Text)" />
+                  <Text Name="NewStateText" Text="Neu: Status (Text)" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeUserPolicy" Text="Benutzerrichtlinien geändert">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzerrichtlinien geändert" />
+                  <Text Name="PrevMinimumLength" Text="Bisher: Minimale Länge" />
+                  <Text Name="NewMinimumLength" Text="Neu: Minimale Länge" />
+                  <Text Name="PrevMaximumLength" Text="Bisher: Maximale Länge" />
+                  <Text Name="NewMaximumLength" Text="Neu: Maximale Länge" />
+                </Texts>
+              </Group>
+              <Group Name="ChangePassword" Text="Passwort geändert">
+                <Texts>
+                  <Text Name="LogText" Text="Passwort geändert (Benutzername: @1s@)" />
+                  <Text Name="User" Text="Benutzername" />
+                  <Text Name="FullName" Text="Vollständiger Name" />
+                </Texts>
+              </Group>
+              <Group Name="ChangePasswordPolicy" Text="Passwortrichtlinien geändert">
+                <Texts>
+                  <Text Name="LogText" Text="Passwortrichtlinien geändert" />
+                  <Text Name="PrevMinimumLength" Text="Bisher: Minimale Länge" />
+                  <Text Name="NewMinimumLength" Text="Neu: Minimale Länge" />
+                  <Text Name="PrevMaximumLength" Text="Bisher: Maximale Länge" />
+                  <Text Name="NewMaximumLength" Text="Neu: Maximale Länge" />
+                  <Text Name="NewMustContainLetters" Text="Neu: Muss Buchstaben enthalten" />
+                  <Text Name="NewMustContainDigits" Text="Neu: Muss Ziffern enthalten" />
+                  <Text Name="NewMustContainSpecialCharacters" Text="Neu: Muss Sonderzeichen enthalten" />
+                  <Text Name="NewMustContainUpperandLowerCase" Text="Neu: Muss Groß- und Kleinschreibung enthalten" />
+                  <Text Name="PrevMaximumSubsequentEqualChars" Text="Bisher: Maximal gleiche aufeinanderfolgende Zeichen" />
+                  <Text Name="NewMaximumSubsequentEqualChars" Text="Neu: Maximal gleiche aufeinanderfolgende Zeichen" />
+                  <Text Name="PrevMinimumDifferentChars" Text="Bisher: Minimal unterschiedliche Zeichen" />
+                  <Text Name="NewMinimumDifferentChars" Text="Neu: Minimal unterschiedliche Zeichen" />
+                  <Text Name="PrevMinimumDiffCharsToPriorPW" Text="Bisher: Minimal unterschiedliche Zeichen zum alten Passwort" />
+                  <Text Name="NewMinimumDiffCharsToPriorPW" Text="Neu: Minimal unterschiedliche Zeichen zum alten Passwort" />
+                  <Text Name="PrevPasswordAgingCount" Text="Bisher: Anzahl Wechsel bis Passwort wiederverwendbar" />
+                  <Text Name="NewPasswordAgingCount" Text="Neu: Anzahl Wechsel bis Passwort wiederverwendbar" />
+                  <Text Name="PrevPasswordAgingTime" Text="Bisher: Zeit bis Passwort wiederverwendbar" />
+                  <Text Name="NewPasswordAgingTime" Text="New: Zeit bis Passwort wiederverwendbar" />
+                  <Text Name="PrevForbiddenPasswords" Text="Bisher: Verbotene Passwörter" />
+                  <Text Name="NewForbiddenPasswords" Text="Neu: Verbotene Passwörter" />
+                  <Text Name="NewUserNameUnequalPassword" Text="Neu: Passwort ungleich Benutzername" />
+                </Texts>
+              </Group>
+              <Group Name="AddGroup" Text="Benutzergruppe hinzugefügt">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzergruppe hinzugefügt (Name: @2s@, Berechtigungen: @3s@)" />
+                  <Text Name="GroupName" Text="Gruppenobjektname" />
+                  <Text Name="GroupText" Text="Gruppenname" />
+                  <Text Name="Rights" Text="Rechte" />
+                  <Text Name="UsersRemovable" Text="Benutzer löschbar" />
+                  <Text Name="AutoLogOffTime" Text="Zeit bis automatischer Abmeldung" />
+                  <Text Name="RenewPasswordInterval" Text="Gültigkeitsdauer für Passwort" />
+                  <Text Name="RenewPasswordHintTime" Text="Hinweiszeit bevor Passwort ungültig wird" />
+                  <Text Name="MaxFailedLogOns" Text="Maximale Anmeldefehlversuche" />
+                  <Text Name="UserExclusionTime" Text="Zeit für Benutzersperre" />
+                  <Text Name="ExcludeInactiveUserTime" Text="Zeit bis Ausschluss eines nicht verwendeten Benutzers" />
+                  <Text Name="ProposeLastUserTime" Text="Zeit für Vorschlag des letzten Benutzers" />
+                  <Text Name="MinimumPasswordAge" Text="Minimales Passwortalter" />
+                </Texts>
+              </Group>
+              <Group Name="ChangeGroup" Text="Benutzergruppe geändert">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzergruppe geändert (Name: @2s@, Berechtigungen neu: @4s@)" />
+                  <Text Name="GroupName" Text="Gruppenobjektname" />
+                  <Text Name="GroupText" Text="Gruppenname" />
+                  <Text Name="PrevRights" Text="Bisher: Rechte" />
+                  <Text Name="NewRights" Text="Neu: Rechte" />
+                  <Text Name="NewUsersRemovable" Text="Neu: Benutzer löschbar" />
+                  <Text Name="PrevAutoLogOffTime" Text="Bisher: Zeit bis automatischer Abmeldung" />
+                  <Text Name="NewAutoLogOffTime" Text="Neu: Zeit bis automatischer Abmeldung" />
+                  <Text Name="PrevRenewPasswordInterval" Text="Bisher: Gültigkeitsdauer für Passwort" />
+                  <Text Name="NewRenewPasswordInterval" Text="Neu: Gültigkeitsdauer für Passwort" />
+                  <Text Name="PrevRenewPasswordHintTime" Text="Bisher: Hinweiszeit bevor Passwort ungültig wird" />
+                  <Text Name="NewRenewPasswordHintTime" Text="Neu: Hinweiszeit bevor Passwort ungültig wird" />
+                  <Text Name="PrevMaxFailedLogOns" Text="Bisher: Maximale Anmeldefehlversuche" />
+                  <Text Name="NewMaxFailedLogOns" Text="Neu: Maximale Anmeldefehlversuche" />
+                  <Text Name="PrevUserExclusionTime" Text="Bisher: Zeit für Benutzersperre" />
+                  <Text Name="NewUserExclusionTime" Text="Neu: Zeit für Benutzersperre" />
+                  <Text Name="PrevExcludeInactiveUserTime" Text="Bisher: Zeit bis Ausschluss eines nicht verwendeten Benutzers" />
+                  <Text Name="NewExcludeInactiveUserTime" Text="Neu: Zeit bis Ausschluss eines nicht verwendeten Benutzers" />
+                  <Text Name="PrevProposeLastUserTime" Text="Bisher: Zeit für Vorschlag des letzten Benutzers" />
+                  <Text Name="NewProposeLastUserTime" Text="Neu: Zeit für Vorschlag des letzten Benutzers" />
+                  <Text Name="PrevMinimumPasswordAge" Text="Bisher: Minimales Passwortalter" />
+                  <Text Name="NewMinimumPasswordAge" Text="Neu: Minimales Passwortalter" />
+                </Texts>
+              </Group>
+              <Group Name="RemoveGroup" Text="Benutzergruppe gelöscht">
+                <Texts>
+                  <Text Name="LogText" Text="Benutzergruppe gelöscht (Name: @2s@)" />
+                  <Text Name="GroupName" Text="Gruppenobjektname" />
+                  <Text Name="GroupText" Text="Gruppenname" />
+                </Texts>
+              </Group>
+              <Group Name="AddRight" Text="Recht hinzugefügt">
+                <Texts>
+                  <Text Name="LogText" Text="Recht hinzugefügt (Name: @2s@)" />
+                  <Text Name="RightName" Text="Rechtobjektname" />
+                  <Text Name="RightText" Text="Rechtname" />
+                </Texts>
+              </Group>
+              <Group Name="RemoveRight" Text="Recht gelöscht">
+                <Texts>
+                  <Text Name="LogText" Text="Recht gelöscht (Name: @2s@)" />
+                  <Text Name="RightName" Text="Rechtobjektname" />
+                  <Text Name="RightText" Text="Rechtname" />
+                </Texts>
+              </Group>
+              <Group Name="ActivateRight" Text="Recht aktiviert">
+                <Texts>
+                  <Text Name="LogText" Text="Recht aktiviert (Name: @2s@)" />
+                  <Text Name="RightName" Text="Rechtobjektname" />
+                  <Text Name="RightText" Text="Rechtname" />
+                </Texts>
+              </Group>
+              <Group Name="DeactivateRight" Text="Recht deaktiviert">
+                <Texts>
+                  <Text Name="LogText" Text="Recht deaktiviert (Name: @2s@)" />
+                  <Text Name="RightName" Text="Rechtobjektname" />
+                  <Text Name="RightText" Text="Rechtname" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+        </Groups>
+      </Group>
+    </TextSystem>
+  </LanguageSwitching>
+</VisiWinNETProjectFile>

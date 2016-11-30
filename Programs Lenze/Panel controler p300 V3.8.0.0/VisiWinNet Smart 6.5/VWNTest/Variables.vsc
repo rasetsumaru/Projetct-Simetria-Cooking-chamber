@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--VisiWinNET Compact Variable Simulator configuration file-->
+<VariableSimulator>
+  <Variables>
+    <Variable Name="Controller.Controller.Application.GLOBAL.Program_chamber_status&lt;[0]&gt;" SetValue="0" SetValueOnLoad="False" />
+    <Variable Name="Controller.Controller.Application.GLOBAL.Program_chamber&lt;[0]&gt;" SetValue="False" SetValueOnLoad="False" />
+    <Variable Name="Controller.Controller.Application.SETTINGS.Enabled_chambers" SetValue="02" SetValueOnLoad="False" />
+    <Variable Name="Controller.Controller.Application.SETTINGS.Temperature_control_system" SetValue="False" SetValueOnLoad="False" />
+  </Variables>
+</VariableSimulator>

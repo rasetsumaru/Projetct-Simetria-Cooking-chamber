@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Commands;VisiWinNET.Forms.Commands;VisiWinNET.Alarm.Commands;VisiWinNET.Forms.Alarm;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FAlarmHistory" Locked="True" VariableActivationMode="ActivateOnShow" Location="0, 175" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 555" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Components>
+      <ItemServer wfml:ID="UpdateListTrigger" TrayLocation="17, 17">
+        <property.Events>
+          <ItemEventAgent Event="Change">
+            <property.Commands>
+              <IfCondition LeftOperand="@AlarmManagement.AlarmHistory.UpdateListTrigger" RightOperand="1" Depth="0" />
+              <SetVariable Name="AlarmManagement.AlarmHistory.UpdateListTrigger" Depth="1" />
+              <UpdateList Depth="1" />
+              <EndCondition Depth="0" />
+            </property.Commands>
+          </ItemEventAgent>
+        </property.Events>
+        <property.VWItem Name="AlarmManagement.AlarmHistory.UpdateListTrigger" />
+      </ItemServer>
+    </property.Components>
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox" BackColor="White" Size="800, 600" BackgroundImage="@SFCRes:GroupBox.BackgroundImage" TabIndex="133" Location="0, -175" BackgroundImageLayout="Center">
+        <property.Controls>
+          <CommandButton wfml:ID="cmdUpdate" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 409" ForeColor="White" BackColorDown="White" TabIndex="136">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdUpdate" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <SetVariable Name="AlarmManagement.AlarmHistory.UpdateListTrigger" Value="1" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <CommandButton wfml:ID="cmdAlarmHistoryFilter" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 445" ForeColor="White" BackColorDown="White" TabIndex="135">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdFilterAlarmHistory" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowDialog FormName="FAlarmHistoryFilter" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <HistoricalAlarmList wfml:ID="HistoricalAlarmList" TransparentColor="Fuchsia" Size="590, 360" ForeColorItemEven="SteelBlue" ForeColorItemOdd="SteelBlue" GridColor="SteelBlue" Location="20, 187" StateColoring="False" SuspendLayoutOnUpdateList="True" ForeColor="SteelBlue" ForeColorSelected="White" FontClass="Buttons" BackColorItemOdd="White" BackColor="White" BackColorItemEven="White" BackColorSelected="SteelBlue" FocusRect="False" TabIndex="134">
+            <property.PropertyBindings>
+              <VWItemBinding VWItem="AlarmManagement.AlarmHistory.Filter.MinTime" PropertyName="Filter.MinTime" />
+              <VWItemBinding VWItem="AlarmManagement.AlarmHistory.Filter.MaxTime" PropertyName="Filter.MaxTime" />
+            </property.PropertyBindings>
+            <property.Filter MinTime="" MaxTime="" DesiredGroups="ProcessAlarms;SystemAlarms" />
+            <property.Columns>
+              <HistoricalAlarmListColumn HistoricalAlarmProperty="ActivationTime" Width="135" />
+              <HistoricalAlarmListColumn HistoricalAlarmProperty="AcknowledgeTime" Width="135" />
+              <HistoricalAlarmListColumn HistoricalAlarmProperty="Text" Width="190" />
+              <HistoricalAlarmListColumn HistoricalAlarmProperty="User" Width="100" />
+            </property.Columns>
+            <property.Header FontClass="Captions" BackColor="White" ForeColor="SteelBlue" Height="30" />
+            <property.Border Style="None" Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+            <property.ScrollBarProperties ShowPageButtons="True" BackColorButton="White" ForeColorButton="SteelBlue" ForeColorButtonDisabled="SteelBlue" BackColorThumb="White" Width="30" BackColor="White" />
+          </HistoricalAlarmList>
+          <Shape wfml:ID="Shape1" BorderWidth="0" Size="10, 400" Location="790, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape2" BorderWidth="0" Size="10, 400" Location="0, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape3" BorderWidth="0" Size="800, 45" Location="0, 557">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <CommandButton wfml:ID="cmdReturn" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 517" ForeColor="White" BackColorDown="White" TabIndex="128">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdReturn" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowChildForm FormName="FAlarms" OwnerForm="FSystem" FormChangeMode="ShowNewHideActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <Shape wfml:ID="Shape4" BorderColor="SteelBlue" Size="780, 388" Location="10, 169">
+            <property.FillColors>
+              <Color wfml:argument="Transparent" />
+            </property.FillColors>
+          </Shape>
+        </property.Controls>
+        <property.Border Style="None" Width="0" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

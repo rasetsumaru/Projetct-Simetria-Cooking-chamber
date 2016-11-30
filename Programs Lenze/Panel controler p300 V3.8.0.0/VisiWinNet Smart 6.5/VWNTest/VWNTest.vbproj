@@ -1,0 +1,462 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9761CA5A-10BF-46C6-90B9-B5D1708CAF97}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>HMI</RootNamespace>
+    <AssemblyName>VWNTest</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <MyType>WindowsForms</MyType>
+    <DeployDirSuffix>VWNTest</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>LenzeAppSampleCE_BasisProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>LenzeAppSampleCE_BasisProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisiWinNET.CF">
+      <CopyLocal>True</CopyLocal>
+    </Reference>
+    <Reference Include="VisiWinNET.Compact.Systems">
+      <CopyLocal>True</CopyLocal>
+    </Reference>
+    <Reference Include="VisiWinNET.Compact.Forms">
+      <CopyLocal>True</CopyLocal>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FStart.Designer.vb">
+      <DependentUpon>FStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FCentral.vb">
+      <DependentUpon>FCentral.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FCentral.Designer.vb">
+      <DependentUpon>FCentral.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FLogOn.vb">
+      <DependentUpon>FLogOn.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FLogOn.Designer.vb">
+      <DependentUpon>FLogOn.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FMessageBox.vb">
+      <DependentUpon>FMessageBox.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FMessageBox.Designer.vb">
+      <DependentUpon>FMessageBox.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FRecipes.vb">
+      <DependentUpon>FRecipes.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FRecipes.Designer.vb">
+      <DependentUpon>FRecipes.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FSystem.vb">
+      <DependentUpon>FSystem.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FSystem.Designer.vb">
+      <DependentUpon>FSystem.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FLogOnChangePassword.vb">
+      <DependentUpon>FLogOnChangePassword.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FLogOnChangePassword.Designer.vb">
+      <DependentUpon>FLogOnChangePassword.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="MFunctions.vb" />
+    <Compile Include="FUsers.vb">
+      <DependentUpon>FUsers.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FUsers.Designer.vb">
+      <DependentUpon>FUsers.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FUserChange.vb">
+      <DependentUpon>FUserChange.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FUserChange.Designer.vb">
+      <DependentUpon>FUserChange.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FRecipeFile.vb">
+      <DependentUpon>FRecipeFile.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FRecipeFile.Designer.vb">
+      <DependentUpon>FRecipeFile.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FSelectBox.vb">
+      <DependentUpon>FSelectBox.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FSelectBox.Designer.vb">
+      <DependentUpon>FSelectBox.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FProcess.vb">
+      <DependentUpon>FProcess.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FProcess.Designer.vb">
+      <DependentUpon>FProcess.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FAlarms.vb">
+      <DependentUpon>FAlarms.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FAlarms.Designer.vb">
+      <DependentUpon>FAlarms.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FSynoptic.vb">
+      <DependentUpon>FSynoptic.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FSynoptic.Designer.vb">
+      <DependentUpon>FSynoptic.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FGraphic.vb">
+      <DependentUpon>FGraphic.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FGraphic.Designer.vb">
+      <DependentUpon>FGraphic.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FHistoric.vb">
+      <DependentUpon>FHistoric.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FHistoric.Designer.vb">
+      <DependentUpon>FHistoric.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigurations.vb">
+      <DependentUpon>FConfigurations.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigurations.Designer.vb">
+      <DependentUpon>FConfigurations.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FAlarmHistory.vb">
+      <DependentUpon>FAlarmHistory.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FAlarmHistory.Designer.vb">
+      <DependentUpon>FAlarmHistory.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FAlarmHistoryFilter.vb">
+      <DependentUpon>FAlarmHistoryFilter.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FAlarmHistoryFilter.Designer.vb">
+      <DependentUpon>FAlarmHistoryFilter.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FAlphaPad.vb">
+      <DependentUpon>FAlphaPad.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FAlphaPad.Designer.vb">
+      <DependentUpon>FAlphaPad.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FNumPad.vb">
+      <DependentUpon>FNumPad.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FNumPad.Designer.vb">
+      <DependentUpon>FNumPad.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigManual.vb">
+      <DependentUpon>FConfigManual.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigManual.Designer.vb">
+      <DependentUpon>FConfigManual.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigControl.vb">
+      <DependentUpon>FConfigControl.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigControl.Designer.vb">
+      <DependentUpon>FConfigControl.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigSystem.vb">
+      <DependentUpon>FConfigSystem.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigSystem.Designer.vb">
+      <DependentUpon>FConfigSystem.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigParameters.vb">
+      <DependentUpon>FConfigParameters.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigParameters.Designer.vb">
+      <DependentUpon>FConfigParameters.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigTimers.vb">
+      <DependentUpon>FConfigTimers.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FConfigTimers.Designer.vb">
+      <DependentUpon>FConfigTimers.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FGraphicSelect.vb">
+      <DependentUpon>FGraphicSelect.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FGraphicSelect.Designer.vb">
+      <DependentUpon>FGraphicSelect.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FColorSelect.vb">
+      <DependentUpon>FColorSelect.sfc</DependentUpon>
+    </Compile>
+    <Compile Include="FColorSelect.Designer.vb">
+      <DependentUpon>FColorSelect.sfc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Content Include="FStart.sfc">
+      <SubType>SmartForm</SubType>
+    </Content>
+    <Content Include="FStart.resources">
+      <DependentUpon>FStart.sfc</DependentUpon>
+    </Content>
+    <Content Include="FCentral.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FCentral.resources">
+      <DependentUpon>FCentral.sfc</DependentUpon>
+    </Content>
+    <Content Include="FLogOn.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FMessageBox.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FRecipes.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FSystem.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FSystem.resources">
+      <DependentUpon>FSystem.sfc</DependentUpon>
+    </Content>
+    <Content Include="FLogOnChangePassword.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FUsers.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FUserChange.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FRecipeFile.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FSelectBox.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FProcess.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FAlarms.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FSynoptic.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FGraphic.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FHistoric.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FConfigurations.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FAlarmHistory.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FAlarmHistoryFilter.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FAlphaPad.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FAlphaPad.resources">
+      <DependentUpon>FAlphaPad.sfc</DependentUpon>
+    </Content>
+    <Content Include="FNumPad.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FNumPad.resources">
+      <DependentUpon>FNumPad.sfc</DependentUpon>
+    </Content>
+    <Content Include="FMessageBox.resources">
+      <DependentUpon>FMessageBox.sfc</DependentUpon>
+    </Content>
+    <Content Include="FSelectBox.resources">
+      <DependentUpon>FSelectBox.sfc</DependentUpon>
+    </Content>
+    <Content Include="FLogOn.resources">
+      <DependentUpon>FLogOn.sfc</DependentUpon>
+    </Content>
+    <Content Include="FLogOnChangePassword.resources">
+      <DependentUpon>FLogOnChangePassword.sfc</DependentUpon>
+    </Content>
+    <Content Include="FAlarmHistoryFilter.resources">
+      <DependentUpon>FAlarmHistoryFilter.sfc</DependentUpon>
+    </Content>
+    <Content Include="FUserChange.resources">
+      <DependentUpon>FUserChange.sfc</DependentUpon>
+    </Content>
+    <Content Include="FRecipeFile.resources">
+      <DependentUpon>FRecipeFile.sfc</DependentUpon>
+    </Content>
+    <Content Include="FConfigurations.resources">
+      <DependentUpon>FConfigurations.sfc</DependentUpon>
+    </Content>
+    <Content Include="FGraphic.resources">
+      <DependentUpon>FGraphic.sfc</DependentUpon>
+    </Content>
+    <Content Include="FSynoptic.resources">
+      <DependentUpon>FSynoptic.sfc</DependentUpon>
+    </Content>
+    <Content Include="FAlarmHistory.resources">
+      <DependentUpon>FAlarmHistory.sfc</DependentUpon>
+    </Content>
+    <Content Include="FAlarms.resources">
+      <DependentUpon>FAlarms.sfc</DependentUpon>
+    </Content>
+    <Content Include="FProcess.resources">
+      <DependentUpon>FProcess.sfc</DependentUpon>
+    </Content>
+    <Content Include="FUsers.resources">
+      <DependentUpon>FUsers.sfc</DependentUpon>
+    </Content>
+    <Content Include="FRecipes.resources">
+      <DependentUpon>FRecipes.sfc</DependentUpon>
+    </Content>
+    <Content Include="FHistoric.resources">
+      <DependentUpon>FHistoric.sfc</DependentUpon>
+    </Content>
+    <Content Include="FConfigManual.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FConfigManual.resources">
+      <DependentUpon>FConfigManual.sfc</DependentUpon>
+    </Content>
+    <Content Include="FConfigControl.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FConfigControl.resources">
+      <DependentUpon>FConfigControl.sfc</DependentUpon>
+    </Content>
+    <Content Include="FConfigSystem.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FConfigSystem.resources">
+      <DependentUpon>FConfigSystem.sfc</DependentUpon>
+    </Content>
+    <Content Include="FConfigParameters.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FConfigParameters.resources">
+      <DependentUpon>FConfigParameters.sfc</DependentUpon>
+    </Content>
+    <Content Include="FConfigTimers.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FConfigTimers.resources">
+      <DependentUpon>FConfigTimers.sfc</DependentUpon>
+    </Content>
+    <Content Include="FGraphicSelect.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FGraphicSelect.resources">
+      <DependentUpon>FGraphicSelect.sfc</DependentUpon>
+    </Content>
+    <Content Include="FColorSelect.sfc">
+      <SubType>SmartForm</SubType>
+      <ExecuteCode>True</ExecuteCode>
+    </Content>
+    <Content Include="FColorSelect.resources">
+      <DependentUpon>FColorSelect.sfc</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+      <UserProperties VisiWinNETProjectName="VWNTest" VisiWinNETVersion="6.5" VisiWinNETRuntimeType="Compact" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

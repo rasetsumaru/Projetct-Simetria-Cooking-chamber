@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;VisiWinNET.Forms.Commands;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FProcess" Locked="True" VariableActivationMode="ActivateOnShow" Location="0, 175" BackColor="White" Font="Tahoma, 12pt" StartPosition="Manual" ForeColor="Black" FormBorderStyle="None" ClientSize="800, 555" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Components>
+      <Timer wfml:ID="RearmTimer" Interval="200" TrayLocation="17, 17" />
+    </property.Components>
+    <property.Controls>
+      <GroupBox wfml:ID="GroupBox" BackColor="White" Size="800, 600" BackgroundImage="@SFCRes:GroupBox.BackgroundImage" TabIndex="161" Location="0, -175" BackgroundImageLayout="Center">
+        <property.Controls>
+          <Label wfml:ID="Label001" BackColor="Transparent" ForeColorOn="SteelBlue" BackColorOn="Transparent" Size="23, 19" FontClass="Captions" ForeColor="SteelBlue" Location="371, 338">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FProcess" Text="Label005" />
+          </Label>
+          <VarOut wfml:ID="VarOutEstimatedTime" BackColor="Transparent" RegionLayout="LabelLeft" Size="426, 19" FontClass="Captions" ForeColor="SteelBlue" Location="91, 388" DataBackColor="Transparent" Padding="0">
+            <property.DataBorder Style="None" Color1="White" Color2="White" Color3="White" />
+            <property.Label SizeRatio="0.53" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label007" TextGroup="LabelForms.FProcess" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Left">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="__UNLINKED_I2" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </VarOut>
+          <VarOut wfml:ID="VarOutNumberSteps" BackColor="Transparent" RegionLayout="LabelLeft" Size="49, 19" FontClass="Captions" ForeColor="SteelBlue" Location="400, 363" DataBackColor="Transparent" Padding="0">
+            <property.DataBorder Style="None" Color1="White" Color2="White" Color3="White" />
+            <property.Label SizeRatio="0.3" BackColor="White" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.25" ForeColor="White" TextAlign="Left">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="__UNLINKED_I2" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </VarOut>
+          <Label wfml:ID="Label004" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="222, 19" FontClass="Captions" ForeColor="SteelBlue" Location="91, 463">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FProcess" Text="Label010" />
+          </Label>
+          <DateTimeOut wfml:ID="DateTimeOutEstimated" BackColor="Transparent" TextAlign="MiddleLeft" Size="206, 19" Mode="Value" TabIndex="149" FontClass="Captions" ForeColor="SteelBlue" Location="323, 463">
+            <property.VWItem Name="__UNLINKED_DATE" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </DateTimeOut>
+          <CommandButton wfml:ID="cmdStart" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 373" ForeColor="White" BackColorDown="White" TabIndex="131">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdStart" TextOn="FormSwitching" />
+          </CommandButton>
+          <Label wfml:ID="Label002" BackColor="Transparent" ForeColorOn="SteelBlue" BackColorOn="Transparent" Size="23, 19" FontClass="Captions" ForeColor="SteelBlue" Location="371, 363">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FProcess" Text="Label005" />
+          </Label>
+          <VarOut wfml:ID="VarOutSteps" BackColor="Transparent" RegionLayout="LabelLeft" Size="274, 19" FontClass="Captions" ForeColor="SteelBlue" Location="91, 363" DataBackColor="Transparent" Padding="0">
+            <property.DataBorder Style="None" Color1="White" Color2="White" Color3="White" />
+            <property.Label SizeRatio="0.53" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label004" TextGroup="LabelForms.FProcess" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.25" ForeColor="White" TextAlign="Left">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="__UNLINKED_I2" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </VarOut>
+          <Label wfml:ID="Label003" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="137, 19" FontClass="Captions" ForeColor="SteelBlue" Location="91, 438">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FProcess" Text="Label006" />
+          </Label>
+          <CommandButton wfml:ID="cmdReturn" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 517" ForeColor="White" BackColorDown="White" TabIndex="126">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdReturn" TextOn="FormSwitching" />
+            <property.Events>
+              <ButtonControlEventAgent Event="Click">
+                <property.Commands>
+                  <ShowForm FormName="FSystem" FormChangeMode="ShowNewCloseActive" Depth="0" />
+                </property.Commands>
+              </ButtonControlEventAgent>
+            </property.Events>
+          </CommandButton>
+          <DateTimeOut wfml:ID="DateTimeOutInitProcess" BackColor="Transparent" TextAlign="MiddleLeft" Size="206, 19" Mode="Value" TabIndex="134" FontClass="Captions" ForeColor="SteelBlue" Location="323, 438">
+            <property.VWItem Name="__UNLINKED_DATE" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </DateTimeOut>
+          <Label wfml:ID="lblChambers" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleRight" BackColorOn="Transparent" Size="468, 25" FontClass="Captions" ForeColor="SteelBlue" Location="312, 169">
+            <property.Border Style="None" />
+          </Label>
+          <VarOut wfml:ID="VarOutNumberCycles" BackColor="Transparent" RegionLayout="LabelLeft" Size="49, 19" FontClass="Captions" ForeColor="SteelBlue" Location="400, 338" DataBackColor="Transparent" Padding="0">
+            <property.DataBorder Style="None" Color1="White" Color2="White" Color3="White" />
+            <property.Label SizeRatio="0.3" BackColor="White" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.25" ForeColor="White" TextAlign="Left">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="__UNLINKED_I2" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </VarOut>
+          <CommandButton wfml:ID="cmdPause" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 409" ForeColor="White" BackColorDown="White" TabIndex="128">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdPause" TextOn="FormSwitching" />
+          </CommandButton>
+          <VarOut wfml:ID="VarOutElapsedTime" BackColor="Transparent" RegionLayout="LabelLeft" Size="426, 19" FontClass="Captions" ForeColor="SteelBlue" Location="91, 413" DataBackColor="Transparent" Padding="0">
+            <property.DataBorder Style="None" Color1="White" Color2="White" Color3="White" />
+            <property.Label SizeRatio="0.53" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label008" TextGroup="LabelForms.FProcess" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.35" ForeColor="SteelBlue" TextAlign="Left">
+              <property.Text Text="m" />
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="__UNLINKED_I2" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </VarOut>
+          <CommandButton wfml:ID="cmdStop" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="630, 445" ForeColor="White" BackColorDown="White" TabIndex="129">
+            <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+            <property.LocalizedText TextGroup="ButtonTexts" Text="cmdStop" TextOn="FormSwitching" />
+          </CommandButton>
+          <VarOut wfml:ID="VarOutCycles" BackColor="Transparent" RegionLayout="LabelLeft" Size="274, 19" FontClass="Captions" ForeColor="SteelBlue" Location="91, 338" DataBackColor="Transparent" Padding="0">
+            <property.DataBorder Style="None" Color1="White" Color2="White" Color3="White" />
+            <property.Label SizeRatio="0.53" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label003" TextGroup="LabelForms.FProcess" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.25" ForeColor="White" TextAlign="Left">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="__UNLINKED_I2" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </VarOut>
+          <Label wfml:ID="lblStatus" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="468, 25" FontClass="Captions" ForeColor="SteelBlue" Location="20, 200">
+            <property.VWItem Mode="Value" Range="9" Name="__UNLINKED_I2" />
+            <property.Border Style="None" />
+            <property.LocalizedText TextPrefix="Label00" TextGroup="LabelForms.FProcess.Status" UseTextOn="False" />
+          </Label>
+          <VarOut wfml:ID="VarOutRecipeDescription" BackColor="Transparent" RegionLayout="LabelLeft" TextAlign="Left" Size="438, 19" FontClass="Captions" ForeColor="SteelBlue" Location="91, 313" DataBackColor="Transparent" Padding="0">
+            <property.DataBorder Style="None" Color1="White" Color2="White" Color3="White" />
+            <property.Label SizeRatio="0.53" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label009" TextGroup="LabelForms.FProcess" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.25" ForeColor="White" TextAlign="Left">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="__UNLINKED_BSTR" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </VarOut>
+          <VarOut wfml:ID="VarOutProgrammedRecipe" BackColor="Transparent" RegionLayout="LabelLeft" TextAlign="Left" Size="438, 19" FontClass="Captions" ForeColor="SteelBlue" Location="91, 288" DataBackColor="Transparent" Padding="0">
+            <property.DataBorder Style="None" Color1="White" Color2="White" Color3="White" />
+            <property.Label SizeRatio="0.53" ForeColor="SteelBlue" TextAlign="Left" FontClass="Captions">
+              <property.Text Text="Label002" TextGroup="LabelForms.FProcess" />
+              <property.Border Style="None" />
+            </property.Label>
+            <property.Unit SizeRatio="0.25" ForeColor="White" TextAlign="Left">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.VWItem Name="__UNLINKED_BSTR" />
+            <property.Border Style="None" Color1="White" Color2="White" Color3="White" />
+          </VarOut>
+          <Label wfml:ID="Label000" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="468, 25" FontClass="Captions" ForeColor="SteelBlue" Location="59, 257">
+            <property.Border Style="None" />
+            <property.LocalizedText TextGroup="LabelForms.FProcess" Text="Label004" />
+          </Label>
+          <Shape wfml:ID="Shape1" BorderWidth="0" Size="10, 400" Location="790, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape2" BorderWidth="0" Size="10, 400" Location="0, 170">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape3" BorderWidth="0" Size="800, 45" Location="0, 557">
+            <property.FillColors>
+              <Color wfml:argument="White" />
+            </property.FillColors>
+          </Shape>
+          <Shape wfml:ID="Shape4" BorderColor="SteelBlue" Size="780, 388" Location="10, 169">
+            <property.FillColors>
+              <Color wfml:argument="Transparent" />
+            </property.FillColors>
+          </Shape>
+        </property.Controls>
+        <property.Border Style="None" Width="0" />
+      </GroupBox>
+    </property.Controls>
+  </SmartForm>
+</wfml>

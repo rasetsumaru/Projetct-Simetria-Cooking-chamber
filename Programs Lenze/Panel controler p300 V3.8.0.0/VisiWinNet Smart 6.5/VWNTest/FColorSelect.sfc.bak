@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;System.Drawing;VisiWinNET.Forms.Commands;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FColorSelect" Locked="True" BackgroundImageLayout="Center" VariableActivationMode="ActivateOnShow" BackColor="White" MaximizeBox="False" ControlBox="False" Font="Tahoma, 8.25pt" StartPosition="CenterScreen" BackgroundImage="@SFCRes:FColorSelect.BackgroundImage" MinimizeBox="False" FormBorderStyle="None" ClientSize="498, 387" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <Shape wfml:ID="Shape1" BorderColor="White" Size="273, 4" Location="10, 45">
+        <property.FillColors>
+          <Color wfml:argument="SteelBlue" />
+        </property.FillColors>
+      </Shape>
+      <GroupBox wfml:ID="grp" BackColor="White" Font="Arial, 10pt" Size="478, 307" TabIndex="0" Location="12, 69">
+        <property.Controls>
+          <VarIn wfml:ID="vinBlue" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="30, 45" TextAlign="Center" FontClass="Inputs" DataBackColor="White" Location="440, 253" ForeColor="SteelBlue" TabIndex="3" DataBackColorDisabled="White">
+            <property.LimitMax Value="255" />
+            <property.Unit SizeRatio="0.25" ForeColor="WindowText" TextAlign="Left" Font="Microsoft Sans Serif, 8.25pt, style=Bold">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="UserDef" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.Border Style="None" />
+            <property.VWItem Name="__UNLINKED_UI1" />
+            <property.Label SizeRatio="0.25" Visibility="Always" FontClass="Labels">
+              <property.Text Text="B" />
+              <property.Border Style="None" />
+            </property.Label>
+          </VarIn>
+          <VarIn wfml:ID="vinGreen" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="30, 45" TextAlign="Center" FontClass="Inputs" DataBackColor="White" Location="404, 253" ForeColor="SteelBlue" TabIndex="2" DataBackColorDisabled="White">
+            <property.LimitMax Value="255" />
+            <property.Unit SizeRatio="0.25" ForeColor="WindowText" TextAlign="Left" Font="Microsoft Sans Serif, 8.25pt, style=Bold">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="UserDef" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.Border Style="None" />
+            <property.VWItem Name="__UNLINKED_UI1" />
+            <property.Label SizeRatio="0.25" Visibility="Always" FontClass="Labels">
+              <property.Text Text="G" />
+              <property.Border Style="None" />
+            </property.Label>
+          </VarIn>
+          <VarIn wfml:ID="vinRed" LimitCheck="OnEnter" ForeColorDisabled="SteelBlue" Size="30, 45" TextAlign="Center" FontClass="Inputs" DataBackColor="White" Location="368, 253" ForeColor="SteelBlue" TabIndex="1" DataBackColorDisabled="White">
+            <property.LimitMax Value="255" />
+            <property.Unit SizeRatio="0.25" ForeColor="WindowText" TextAlign="Left" Font="Microsoft Sans Serif, 8.25pt, style=Bold">
+              <property.Border Style="None" />
+            </property.Unit>
+            <property.DataBorder Style="UserDef" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.Border Style="None" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+            <property.VWItem Name="__UNLINKED_UI1" />
+            <property.Label SizeRatio="0.25" Visibility="Always" FontClass="Labels">
+              <property.Text Text="R" />
+              <property.Border Style="None" />
+            </property.Label>
+          </VarIn>
+          <CommandButton wfml:ID="cmdColor1" Size="30, 30" DialogResult="OK" BackColor="255, 192, 192" Location="8, 10" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor2" Size="30, 30" DialogResult="OK" BackColor="192, 255, 192" Location="44, 10" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor3" Size="30, 30" DialogResult="OK" BackColor="192, 192, 255" Location="80, 10" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor4" Size="30, 30" DialogResult="OK" BackColor="255, 255, 192" Location="116, 10" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor5" Size="30, 30" DialogResult="OK" BackColor="192, 255, 255" Location="152, 10" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor6" Size="30, 30" DialogResult="OK" BackColor="255, 192, 255" Location="188, 10" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor7" Size="30, 30" DialogResult="OK" BackColor="240, 240, 240" Location="224, 10" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor8" Size="30, 30" DialogResult="OK" BackColor="White" Location="404, 10" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor9" Size="30, 30" DialogResult="OK" BackColor="Black" Location="440, 10" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor10" Size="30, 30" DialogResult="OK" BackColor="255, 128, 128" Location="8, 46" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor11" Size="30, 30" DialogResult="OK" BackColor="128, 255, 128" Location="44, 46" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor12" Size="30, 30" DialogResult="OK" BackColor="128, 128, 255" Location="80, 46" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor13" Size="30, 30" DialogResult="OK" BackColor="255, 255, 128" Location="116, 46" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor14" Size="30, 30" DialogResult="OK" BackColor="128, 255, 255" Location="152, 46" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor15" Size="30, 30" DialogResult="OK" BackColor="255, 128, 255" Location="188, 46" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor16" Size="30, 30" DialogResult="OK" BackColor="224, 224, 224" Location="224, 46" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor17" Size="30, 30" DialogResult="OK" BackColor="255, 192, 128" Location="260, 46" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor18" Size="30, 30" DialogResult="OK" BackColor="192, 255, 128" Location="296, 46" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor19" Size="30, 30" DialogResult="OK" BackColor="192, 128, 255" Location="332, 46" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor20" Size="30, 30" DialogResult="OK" BackColor="255, 64, 64" Location="8, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor21" Size="30, 30" DialogResult="OK" BackColor="64, 255, 64" Location="44, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor22" Size="30, 30" DialogResult="OK" BackColor="64, 64, 255" Location="80, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor23" Size="30, 30" DialogResult="OK" BackColor="255, 255, 64" Location="116, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor24" Size="30, 30" DialogResult="OK" BackColor="64, 255, 255" Location="152, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor25" Size="30, 30" DialogResult="OK" BackColor="255, 64, 255" Location="188, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor26" Size="30, 30" DialogResult="OK" BackColor="Silver" Location="224, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor27" Size="30, 30" DialogResult="OK" BackColor="255, 128, 0" Location="260, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor28" Size="30, 30" DialogResult="OK" BackColor="128, 255, 0" Location="296, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor29" Size="30, 30" DialogResult="OK" BackColor="128, 0, 255" Location="332, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor30" Size="30, 30" DialogResult="OK" BackColor="192, 192, 128" Location="368, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor31" Size="30, 30" DialogResult="OK" BackColor="128, 192, 192" Location="404, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor32" Size="30, 30" DialogResult="OK" BackColor="192, 128, 192" Location="440, 82" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor33" Size="30, 30" DialogResult="OK" BackColor="Red" Location="8, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor34" Size="30, 30" DialogResult="OK" BackColor="Lime" Location="44, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor35" Size="30, 30" DialogResult="OK" BackColor="Blue" Location="80, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor36" Size="30, 30" DialogResult="OK" BackColor="Yellow" Location="116, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor37" Size="30, 30" DialogResult="OK" BackColor="Cyan" Location="152, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor38" Size="30, 30" DialogResult="OK" BackColor="Magenta" Location="188, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor39" Size="30, 30" DialogResult="OK" BackColor="160, 160, 160" Location="224, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor40" Size="30, 30" DialogResult="OK" BackColor="192, 128, 128" Location="260, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor41" Size="30, 30" DialogResult="OK" BackColor="128, 192, 128" Location="296, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor42" Size="30, 30" DialogResult="OK" BackColor="128, 128, 192" Location="332, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor43" Size="30, 30" DialogResult="OK" BackColor="192, 192, 64" Location="368, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor44" Size="30, 30" DialogResult="OK" BackColor="64, 192, 192" Location="404, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor45" Size="30, 30" DialogResult="OK" BackColor="192, 64, 192" Location="440, 118" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor46" Size="30, 30" DialogResult="OK" BackColor="192, 0, 0" Location="8, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor47" Size="30, 30" DialogResult="OK" BackColor="0, 192, 0" Location="44, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor48" Size="30, 30" DialogResult="OK" BackColor="0, 0, 192" Location="80, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor49" Size="30, 30" DialogResult="OK" BackColor="192, 192, 0" Location="116, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor50" Size="30, 30" DialogResult="OK" BackColor="0, 192, 192" Location="152, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor51" Size="30, 30" DialogResult="OK" BackColor="192, 0, 192" Location="188, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor52" Size="30, 30" DialogResult="OK" BackColor="Gray" Location="224, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor53" Size="30, 30" DialogResult="OK" BackColor="255, 128, 192" Location="260, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor54" Size="30, 30" DialogResult="OK" BackColor="128, 255, 192" Location="296, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor55" Size="30, 30" DialogResult="OK" BackColor="128, 192, 255" Location="332, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor56" Size="30, 30" DialogResult="OK" BackColor="128, 128, 64" Location="368, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor57" Size="30, 30" DialogResult="OK" BackColor="64, 128, 128" Location="404, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor58" Size="30, 30" DialogResult="OK" BackColor="128, 64, 128" Location="440, 154" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor59" Size="30, 30" DialogResult="OK" BackColor="Maroon" Location="8, 190" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor60" Size="30, 30" DialogResult="OK" BackColor="Green" Location="44, 190" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor61" Size="30, 30" DialogResult="OK" BackColor="Navy" Location="80, 190" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor62" Size="30, 30" DialogResult="OK" BackColor="Olive" Location="116, 190" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor63" Size="30, 30" DialogResult="OK" BackColor="Teal" Location="152, 190" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor64" Size="30, 30" DialogResult="OK" BackColor="Purple" Location="188, 190" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor65" Size="30, 30" DialogResult="OK" BackColor="96, 96, 96" Location="224, 190" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor66" Size="30, 30" DialogResult="OK" BackColor="255, 0, 128" Location="260, 190" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor67" Size="30, 30" DialogResult="OK" BackColor="0, 255, 128" Location="296, 190" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor68" Size="30, 30" DialogResult="OK" BackColor="0, 128, 255" Location="332, 190" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor69" Size="30, 30" DialogResult="OK" BackColor="64, 0, 0" Location="8, 226" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor70" Size="30, 30" DialogResult="OK" BackColor="0, 64, 0" Location="44, 226" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor71" Size="30, 30" DialogResult="OK" BackColor="0, 0, 64" Location="80, 226" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor72" Size="30, 30" DialogResult="OK" BackColor="64, 64, 0" Location="116, 226" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor73" Size="30, 30" DialogResult="OK" BackColor="0, 64, 64" Location="152, 226" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor74" Size="30, 30" DialogResult="OK" BackColor="64, 0, 64" Location="188, 226" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdColor75" Size="30, 30" DialogResult="OK" BackColor="64, 64, 64" Location="224, 226" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <CommandButton wfml:ID="cmdIndividualColor" Size="30, 30" DialogResult="OK" Location="332, 267" BackColorDown="White" TabIndex="6" Font="Arial, 10pt">
+            <property.Border Style="UserDef" Width="0" />
+          </CommandButton>
+          <PictureBox wfml:ID="pbxSelection" BackColor="Transparent" Size="38, 38" Location="4, 6">
+            <property.Border Style="UserDef" Width="4" Color1="95, 105, 110" Color2="95, 105, 110" Color3="95, 105, 110" />
+          </PictureBox>
+        </property.Controls>
+        <property.Border Style="UserDef" Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+      </GroupBox>
+      <Label wfml:ID="Label1" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="332, 37" FontClass="FontTahomaVeryLargeBold" ForeColor="SteelBlue" Location="12, 12">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="NameForms" Text="FColorSelect" TextOn="FLogOn" />
+      </Label>
+      <Shape wfml:ID="Shape2" BorderColor="SteelBlue" Size="498, 387" Location="0, 0">
+        <property.FillColors>
+          <Color wfml:argument="Transparent" />
+        </property.FillColors>
+      </Shape>
+    </property.Controls>
+    <property.Events>
+      <FormEventAgent Event="FormChanged">
+        <property.Commands>
+          <SetVariable Name="__FORMS.LASTACTIVEFORM" Value="@__FORMS.ACTIVEFORM" Depth="0" />
+          <SetVariable Name="__FORMS.ACTIVEFORM" Value="FColorSelect" Depth="0" />
+        </property.Commands>
+      </FormEventAgent>
+    </property.Events>
+  </SmartForm>
+</wfml>

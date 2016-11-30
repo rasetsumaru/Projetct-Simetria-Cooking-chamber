@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FGraphicSelect" Locked="True" BackgroundImageLayout="Stretch" VariableActivationMode="ActivateOnShow" BackColor="White" Font="Tahoma, 12pt" StartPosition="CenterScreen" BackgroundImage="@SFCRes:FGraphicSelect.BackgroundImage" ForeColor="Black" FormBorderStyle="None" ClientSize="735, 310" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Controls>
+      <Label wfml:ID="lblArchives" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="130, 19" Visible="False" FontClass="Captions" ForeColor="SteelBlue" Location="12, 72">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="LabelForms.FGraphicSelect" Text="Label000" />
+      </Label>
+      <CommandButton wfml:ID="cmdChangeColor" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="179, 268" ForeColor="White" BackColorDown="White" TabIndex="188">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdChangeColor" TextOn="cmdChangeColor" />
+      </CommandButton>
+      <CommandButton wfml:ID="cmdRemoveAll" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="179, 232" ForeColor="White" BackColorDown="White" TabIndex="187">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdRemoveAll" />
+      </CommandButton>
+      <CommandButton wfml:ID="cmdRemove" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="179, 196" ForeColor="White" BackColorDown="White" TabIndex="186">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdRemove" />
+      </CommandButton>
+      <CommandButton wfml:ID="cmdAddAll" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="179, 160" ForeColor="White" BackColorDown="White" TabIndex="185">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdAddAll" />
+      </CommandButton>
+      <CommandButton wfml:ID="cmdAdd" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="179, 124" ForeColor="White" BackColorDown="White" TabIndex="184">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdAdd" />
+      </CommandButton>
+      <ListBox wfml:ID="lstAvailableTrends" BackColorSelected="SteelBlue" Size="155, 178" ForeColorSelected="White" FontClass="Captions" TabIndex="183" BackColor="White" Location="12, 120" ForeColor="SteelBlue">
+        <property.Border Style="UserDef" Width="1" Color1="SteelBlue" Color2="SteelBlue" Color3="SteelBlue" />
+        <property.ScrollBarProperties Width="40" BackColor="Window" />
+      </ListBox>
+      <ComboBox wfml:ID="cmbArchives" Editable="False" ForeColorButton="SteelBlue" BackColorSelected="SteelBlue" BackColorButton="White" Visible="False" Size="153, 19" ForeColorSelected="White" FontClass="Captions" FocusRect="True" BackColor="White" Location="176, 72" ForeColor="SteelBlue" TabIndex="182">
+        <property.Border Style="None" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.ScrollBarProperties BackColorButton="180, 190, 200" ForeColorButton="SteelBlue" ForeColorButtonDisabled="White" BackColorThumb="180, 190, 200" Width="19" BackColor="Window" />
+      </ComboBox>
+      <ListView wfml:ID="lvwSelectedTrends" BackColorSelected="SteelBlue" ForeColorItemEven="SteelBlue" Size="382, 216" GridColor="SteelBlue" BackColorItemEven="White" ForeColorSelected="White" BackColorItemOdd="White" FontClass="Captions" ForeColor="SteelBlue" FocusRect="False" BackColor="White" Location="341, 46" ForeColorItemOdd="SteelBlue" TabIndex="181">
+        <property.Border Style="None" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.ScrollBarProperties BackColorButton="White" ForeColorButton="SteelBlue" ForeColorButtonDisabled="SteelBlue" BackColorThumb="White" Width="30" BackColor="White" Visibility="Vertical" />
+        <property.Header FontClass="Captions" BackColor="White" ForeColor="SteelBlue" Height="30" Resizable="False" />
+        <property.Columns>
+          <ListViewCheckBoxColumn CheckSize="36" Editable="True" Alignment="Center" Name="colScaleVisible" Width="67">
+            <property.LocalizedHeaderText Text="Label002" TextGroup="LabelForms.FGraphicSelect" />
+          </ListViewCheckBoxColumn>
+          <ListViewImageColumn ImageAlignment="MiddleCenter" Name="colColor" Width="56">
+            <property.LocalizedHeaderText Text="Label003" TextGroup="LabelForms.FGraphicSelect" />
+          </ListViewImageColumn>
+          <ListViewTextColumn Alignment="Center" Name="colArchive" Width="111">
+            <property.LocalizedHeaderText Text="Label004" TextGroup="LabelForms.FGraphicSelect" />
+          </ListViewTextColumn>
+          <ListViewTextColumn Alignment="Center" Name="colTrend" Width="117">
+            <property.LocalizedHeaderText Text="Label005" TextGroup="LabelForms.FGraphicSelect" />
+          </ListViewTextColumn>
+        </property.Columns>
+      </ListView>
+      <Label wfml:ID="Label1" TextAlign="MiddleLeft" Size="311, 16" FontClass="FontTahomaNormal" Location="337, -23">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="FTrends.FTrendSelect" Text="lblSelectedTrends" />
+      </Label>
+      <Label wfml:ID="Label3" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="216, 16" FontClass="Captions" ForeColor="SteelBlue" Location="12, 97">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="LabelForms.FGraphicSelect" Text="Label001" />
+      </Label>
+      <Label wfml:ID="Label4" TextAlign="MiddleLeft" Size="216, 16" FontClass="FontTahomaNormal" Location="64, -23">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="FTrends.FTrendSelect" Text="lblArchives" />
+      </Label>
+      <CommandButton wfml:ID="cmdOk" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="417, 268" ForeColor="White" BackColorDown="White" TabIndex="174">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdOk" TextOn="FormSwitching" />
+        <property.Authorization Mode="Invisible" />
+      </CommandButton>
+      <CommandButton wfml:ID="cmdCancel" ButtonStyle="Flat" TransparentColor="Fuchsia" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="573, 268" ForeColor="White" BackColorDown="White" TabIndex="169">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextGroup="ButtonTexts" Text="cmdCancel" TextOn="FormSwitching" />
+      </CommandButton>
+      <Shape wfml:ID="Shape1" BorderColor="White" Size="273, 4" Location="10, 45">
+        <property.FillColors>
+          <Color wfml:argument="SteelBlue" />
+        </property.FillColors>
+      </Shape>
+      <Label wfml:ID="Label2" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="332, 37" FontClass="FontTahomaVeryLargeBold" ForeColor="SteelBlue" Location="12, 12">
+        <property.Border Style="None" />
+        <property.LocalizedText TextGroup="NameForms" Text="FGraphicSelect" TextOn="FLogOn" />
+      </Label>
+      <Shape wfml:ID="Shape2" BorderColor="SteelBlue" Size="735, 310" Location="0, 0">
+        <property.FillColors>
+          <Color wfml:argument="Transparent" />
+        </property.FillColors>
+      </Shape>
+    </property.Controls>
+  </SmartForm>
+</wfml>

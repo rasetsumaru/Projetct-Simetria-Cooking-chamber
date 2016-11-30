@@ -1,0 +1,770 @@
+<VisiWinNETProjectFile>
+  <LanguageSwitching>
+    <TextSystem>
+      <Group Name="Application">
+        <Groups>
+          <Group Name="ButtonTexts">
+            <Texts>
+              <Text Name="cmdAlarms" Text="Alarmes" />
+              <Text Name="cmdRecipes" Text="Receiras" />
+              <Text Name="cmdProcess" Text="Processo" />
+              <Text Name="cmdSynoptic" Text="Sinópticos" />
+              <Text Name="cmdGrafic" Text="Gráfico" />
+              <Text Name="cmdUsers" Text="Usuários" />
+              <Text Name="cmdHistoric" Text="Históricos" />
+              <Text Name="cmdConfigurations" Text="Configurações" />
+              <Text Name="cmdReturn" Text="Retornar" />
+              <Text Name="cmdOk" Text="OK" />
+              <Text Name="cmdCancel" Text="Cancelar" />
+              <Text Name="cmdAdd" Text="Adicionar" />
+              <Text Name="cmdChange" Text="Alterar" />
+              <Text Name="cmdActivate" Text="Ativar" />
+              <Text Name="cmdDeactivate" Text="Desativar" />
+              <Text Name="cmdRemove" Text="Remover" />
+              <Text Name="cmdOpenRecipe" Text="Abrir" />
+              <Text Name="cmdSaveRecipe" Text="Salvar" />
+              <Text Name="cmdWriteRecipe" Text="Programar" />
+              <Text Name="cmdDeleteRecie" Text="Apagar" />
+              <Text Name="cmdLoadRecipe" Text="Carregar" />
+              <Text Name="cmdStart" Text="Iniciar" />
+              <Text Name="cmdPause" Text="Pausar" />
+              <Text Name="cmdStop" Text="Parar" />
+              <Text Name="cmdAcknowledgeAll" Text="Reconhecer todos" />
+              <Text Name="cmdAcknowledgeSelect" Text="Recenhecer selecionado" />
+              <Text Name="cmdAlarmHistory" Text="Histórico de alarmes" />
+              <Text Name="cmdUpdate" Text="Atualizar" />
+              <Text Name="cmdFilterAlarmHistory" Text="Filtar histórico de alarmes" />
+              <Text Name="cmdConfigParameters" Text="Parametros" />
+              <Text Name="cmdConfigControl" Text="Controle" />
+              <Text Name="cmdConfigSystem" Text="Sistema" />
+              <Text Name="cmdConfigManual" Text="Manual" />
+              <Text Name="cmdConfigTimers" Text="Temporizadores" />
+              <Text Name="cmdOptions" Text="Opções" />
+              <Text Name="cmdAddAll" Text="Adicionar todos" />
+              <Text Name="cmdRemoveAll" Text="Remover todos" />
+              <Text Name="cmdChangeColor" Text="Alterar cor" />
+              <Text Name="cmd1minute" Text="01 minuto" />
+              <Text Name="cmd5minutes" Text="05 minutos" />
+              <Text Name="cmd1hour" Text="01 hora" />
+              <Text Name="cmd1day" Text="01 dia" />
+            </Texts>
+          </Group>
+          <Group Name="NameForms">
+            <Texts>
+              <Text Name="FCentral" Text="Opções do sistema" />
+              <Text Name="FAlarms" Text="Alarmes" />
+              <Text Name="FRecipes" Text="Receitas" />
+              <Text Name="FSystem" Text="Opções do sistema" />
+              <Text Name="FLogOn" Text="Log on" />
+              <Text Name="FLogOnChangePassword" Text="Alterar senha" />
+              <Text Name="FUsers" Text="Usuários" />
+              <Text Name="FUserChange" Text="Alterarar usuário" />
+              <Text Name="FRecipeFile" Text="Arquivos de receita" />
+              <Text Name="FProcess" Text="Controle do processo" />
+              <Text Name="FSynoptic" Text="Sinóptico" />
+              <Text Name="FGraphic" Text="Gráfico" />
+              <Text Name="FHistoric" Text="Histórico" />
+              <Text Name="FConfigurations" Text="Configurações" />
+              <Text Name="FAlarmHistory" Text="Histórico de alarmes" />
+              <Text Name="FAlarmHistoryFilter" Text="Filtrar histórico" />
+              <Text Name="FConfigManual" Text="Manual" />
+              <Text Name="FConfigControl" Text="Controle" />
+              <Text Name="FConfigSystem" Text="Sistema" />
+              <Text Name="FConfigParameters" Text="Parametros" />
+              <Text Name="FConfigTimers" Text="Temporizadores" />
+              <Text Name="FColorSelect" Text="Selecionar cor" />
+              <Text Name="FGraphicSelect" Text="Selecionar gráfico" />
+            </Texts>
+          </Group>
+          <Group Name="LabelForms">
+            <Groups>
+              <Group Name="FCentral">
+                <Texts>
+                  <Text Name="Label000" Text="Informações" />
+                  <Text Name="Label001" Text="www.simetriamg.com.br" />
+                </Texts>
+              </Group>
+              <Group Name="FLogOn">
+              </Group>
+              <Group Name="FMessageBox">
+                <Groups>
+                  <Group Name="ButtonTexts">
+                    <Texts>
+                      <Text Name="cmdAbort" Text="Abortar" />
+                      <Text Name="cmdRetry" Text="Tentar" />
+                      <Text Name="cmdIgnore" Text="Ignorar" />
+                      <Text Name="cmdOK" Text="OK" />
+                      <Text Name="cmdCancel" Text="Cancelar" />
+                      <Text Name="cmdYes" Text="Sim" />
+                      <Text Name="cmdNo" Text="Náo" />
+                    </Texts>
+                  </Group>
+                  <Group Name="Captions">
+                    <Texts>
+                      <Text Name="Caption000" Text="Informação" />
+                      <Text Name="Caption001" Text="Atenção" />
+                      <Text Name="Caption002" Text="Questão" />
+                      <Text Name="Caption003" Text="Exclamação" />
+                    </Texts>
+                  </Group>
+                  <Group Name="Messages">
+                    <Texts>
+                      <Text Name="Message000" Text="Login efetuado com sucesso!" />
+                      <Text Name="Message001" Text="A senha está errada! Por favor, digite novamente!" />
+                      <Text Name="Message002" Text="Usuário desconhecido!" />
+                      <Text Name="Message003" Text="A validade da senha expirou!" />
+                      <Text Name="Message004" Text="Devido a muitas tentativas, o usuário foi suspenso!\nPor favor, contate o administrador do sistema!" />
+                      <Text Name="Message005" Text="Não foi possível salvar os dados do usuário, pois não há acesso ao sistema de gerenciamento de usuários central!" />
+                      <Text Name="Message006" Text="Esta senha não pode ser usada! Selecione outra!" />
+                      <Text Name="Message007" Text="A senha está errada! Por favor, digite a senha novamente!" />
+                      <Text Name="Message008" Text="A nova senha repetida não é idêntica com a nova senha!" />
+                      <Text Name="Message009" Text="Password alterado com sucesso!" />
+                      <Text Name="Message010" Text="Auto logoff executado." />
+                      <Text Name="Message012" Text="Não é permitido para remover o usuário selecionado por causa das configurações do grupo! \ nDeseja desativar o usuário selecionado em vez disso?" />
+                      <Text Name="Message011" Text="Você quer remover o usuário selecionado permanentemente do sistema?" />
+                      <Text Name="Message013" Text="Estado do usuário modificado." />
+                      <Text Name="Message014" Text="Não é possível remover este usuário, pois ele esta logado neste momento." />
+                      <Text Name="Message017" Text="Por favor, introduza um nome!" />
+                      <Text Name="Message018" Text="Por favor, selecione um grupo!" />
+                      <Text Name="Message024" Text="Você quer entrar no modo de alteração?" />
+                      <Text Name="Message026" Text="Os parametros da receita foram programados na camara" />
+                      <Text Name="Message034" Text="Atenção! Não existe receita programada." />
+                      <Text Name="Message035" Text="Atenção! Não existe receita programada para este processo." />
+                      <Text Name="Message036" Text="Você quer iniciar o processo?" />
+                      <Text Name="Message037" Text="Você quer interromper o processo?" />
+                      <Text Name="Message038" Text="Você quer finalizar o processo?" />
+                      <Text Name="Message039" Text="A programação não pode ser realizada.\nJá existe um processo iniciado na câmara" />
+                      <Text Name="Message040" Text="Você quer continuar o processo interrompido?" />
+                      <Text Name="Message041" Text="O processo da câmara 0" />
+                      <Text Name="Message042" Text="\nfoi finalizado pela temperatura do núcleo atingida." />
+                      <Text Name="Message043" Text="\nfoi finalizado pelo tempo programado." />
+                      <Text Name="Message044" Text="\nfoi finalizado pela intervenção do usuário." />
+                      <Text Name="Message046" Text="Os controles manuais da camara 0" />
+                      <Text Name="Message047" Text="\nestão desabilitados durante o andamento do processo." />
+                      <Text Name="Message048" Text="Os controles manuais estão desabilitados durante o andamento do processo." />
+                      <Text Name="Message049" Text="Para retornar do controle manual é necessário que todos os acionamentos estejam desligados.\nDeseja desligar os controles para continuar?" />
+                      <Text Name="Message045" Text="\nfoi finalizado por falha." />
+                      <Text Name="Message050" Text="O processo foi finalizado pela temperatura do núclo atingida." />
+                      <Text Name="Message051" Text="O processo foi finalizado pela tempo programado." />
+                      <Text Name="Message052" Text="O processo foi finalizado pela intervenção do usuário." />
+                      <Text Name="Message053" Text="O processo foi finalizado por falha." />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="FLogOnChangePassword">
+              </Group>
+              <Group Name="FUsers">
+                <Groups>
+                  <Group Name="ListView">
+                    <Texts>
+                      <Text Name="Label000" Text="Nome" />
+                      <Text Name="Label001" Text="Nome completo" />
+                      <Text Name="Label002" Text="Grupo de usuário" />
+                      <Text Name="Label003" Text="Estado" />
+                      <Text Name="Label004" Text="Comentário" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="FUserChange">
+              </Group>
+              <Group Name="FRecipeFile">
+                <Texts>
+                  <Text Name="Label000" Text="Nome da receita:" />
+                  <Text Name="Label001" Text="Descrição:" />
+                </Texts>
+              </Group>
+              <Group Name="FRecipes">
+                <Texts>
+                  <Text Name="Label000" Text="Close" />
+                  <Text Name="Label001" Text="Open" />
+                  <Text Name="Label002" Text="Off" />
+                  <Text Name="Label003" Text="On" />
+                  <Text Name="Label004" Text="Passo 01:" />
+                  <Text Name="Label005" Text="Passo 02:" />
+                  <Text Name="Label006" Text="Passo 03:" />
+                  <Text Name="Label007" Text="Passo 04:" />
+                  <Text Name="Label008" Text="Passo 05:" />
+                  <Text Name="Label009" Text="Passo 06:" />
+                  <Text Name="Label010" Text="Passo 07:" />
+                  <Text Name="Label011" Text="Passo 08:" />
+                  <Text Name="Label012" Text="Passo 09:" />
+                  <Text Name="Label013" Text="Passo 10:" />
+                  <Text Name="Label014" Text="Nome da receita:" />
+                  <Text Name="Label015" Text="Descrição:" />
+                  <Text Name="Label016" Text="Temperatura do núcelo:" />
+                  <Text Name="Label017" Text="Número de ciclos:" />
+                  <Text Name="Label018" Text="Passos habilitados:" />
+                  <Text Name="Label019" Text="Temperatura" />
+                  <Text Name="Label020" Text="Tempo" />
+                  <Text Name="Label021" Text="Humidade" />
+                  <Text Name="Label022" Text="Chaminé" />
+                  <Text Name="Label023" Text="Defumador" />
+                </Texts>
+              </Group>
+              <Group Name="FSelectBox">
+                <Texts>
+                  <Text Name="Label000" Text="Selecione uma câmara" />
+                  <Text Name="Label001" Text="Câmara" />
+                </Texts>
+                <Groups>
+                  <Group Name="Labels">
+                    <Texts>
+                      <Text Name="Label000" Text="Selecione uma câmara para programar:" />
+                      <Text Name="Label001" Text="Selecionar o processo da câmara:" />
+                      <Text Name="Label002" Text="Selecione o sinóptico da câmara:" />
+                      <Text Name="Label003" Text="Selecione o gráfico da câmara:" />
+                      <Text Name="Label004" Text="Selecione uma câmara para controlar:" />
+                      <Text Name="Label005" Text="Selecione uma câmara para configurar:" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="FProcess">
+                <Texts>
+                  <Text Name="Label000" Text="Câmara" />
+                  <Text Name="Label001" Text="Informações do processo" />
+                  <Text Name="Label002" Text="Receita programada:" />
+                  <Text Name="Label003" Text="Número de ciclos:" />
+                  <Text Name="Label004" Text="Número de passos:" />
+                  <Text Name="Label005" Text="de" />
+                  <Text Name="Label006" Text="Processo iníciado em:" />
+                  <Text Name="Label007" Text="Tempo estimado:" />
+                  <Text Name="Label008" Text="Tempo de corrido:" />
+                  <Text Name="Label009" Text="Descrição:" />
+                  <Text Name="Label010" Text="O prcesso será finalizado em:" />
+                </Texts>
+                <Groups>
+                  <Group Name="Status">
+                    <Texts>
+                      <Text Name="Label000" Text="Aguardando o início do processo" />
+                      <Text Name="Label001" Text="Inicializando o processo" />
+                      <Text Name="Label002" Text="Processo habilitado" />
+                      <Text Name="Label003" Text="Processo paralisado" />
+                      <Text Name="Label004" Text="Processo finalizado pela temperatura do núcleo" />
+                      <Text Name="Label005" Text="Processo finalizado pelo tempo" />
+                      <Text Name="Label006" Text="Processo finalizado pelo usuário" />
+                      <Text Name="Label007" Text="Processo finalizado por falha" />
+                      <Text Name="Label008" Text="Câmara em falha" />
+                      <Text Name="Label009" Text="Continuando o processo" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="FAlarmHistoryFilter">
+                <Texts>
+                  <Text Name="Label000" Text="De:" />
+                  <Text Name="Label001" Text="Para:" />
+                  <Text Name="Label002" Text="Todos" />
+                  <Text Name="Label003" Text="12 Horas" />
+                  <Text Name="Label004" Text="24 Horas" />
+                  <Text Name="Label005" Text="2 Dias" />
+                  <Text Name="Label006" Text="1 Semana" />
+                </Texts>
+              </Group>
+              <Group Name="FConfigParameters">
+                <Texts>
+                  <Text Name="Label006" Text="Sistema de controle de temperatura:" />
+                  <Text Name="Label007" Text="Número de carros disponíveis:" />
+                  <Text Name="Label008" Text="Número de câmaras disponíveis:" />
+                  <Text Name="Label009" Text="Tempo de ativação dos motores:" />
+                  <Text Name="Label010" Text="Tempo de ativação da válvula de umidificação:" />
+                </Texts>
+                <Groups>
+                  <Group Name="ControlSystem">
+                    <Texts>
+                      <Text Name="Label000" Text="Vapor" />
+                      <Text Name="Label001" Text="Queimador" />
+                    </Texts>
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="FConfigControl">
+                <Texts>
+                  <Text Name="Label000" Text="Temperatura máxima da câmara:" />
+                  <Text Name="Label001" Text="Histerese superior de temperatura:" />
+                  <Text Name="Label002" Text="Histerese inferior de temperatura:" />
+                  <Text Name="Label003" Text="Histerese superior de umidade:" />
+                  <Text Name="Label004" Text="Histerese inferior de umidade:" />
+                </Texts>
+              </Group>
+              <Group Name="FConfigurations">
+                <Texts>
+                  <Text Name="Label000" Text="Ajustar relógio:" />
+                  <Text Name="Label001" Text="Memória disponível para este processo:" />
+                  <Text Name="Label002" Text="Selecionar língua:" />
+                  <Text Name="Label003" Text="Memória utilizada:" />
+                </Texts>
+              </Group>
+              <Group Name="FConfigSystem">
+                <Texts>
+                  <Text Name="Label000" Text="Offset para calibração da temperatura do núcleo do produto:" />
+                  <Text Name="Label001" Text="Offset para calibração da temperatura da câmara:" />
+                  <Text Name="Label002" Text="Offset para calibração da umidade da câmara:" />
+                </Texts>
+              </Group>
+              <Group Name="FConfigTimers">
+                <Texts>
+                  <Text Name="Label000" Text="Tempo de ativação dos motores:" />
+                  <Text Name="Label001" Text="Tempo de ativação da válvula de umidificação:" />
+                  <Text Name="Label002" Text="Tempo de ativação do sinal sonoro:" />
+                  <Text Name="Label003" Text="Tempo de resposta da válvula de umidificação:" />
+                </Texts>
+              </Group>
+              <Group Name="FConfigManual">
+                <Texts>
+                  <Text Name="Label000" Text="Close" />
+                  <Text Name="Label001" Text="Open" />
+                  <Text Name="Label002" Text="Off" />
+                  <Text Name="Label003" Text="On" />
+                  <Text Name="Label004" Text="Exaustor" />
+                  <Text Name="Label005" Text="Válvula de vapor:" />
+                  <Text Name="Label006" Text="Queimador:" />
+                  <Text Name="Label007" Text="Válvula de umidificação:" />
+                  <Text Name="Label008" Text="Chaminé:" />
+                  <Text Name="Label009" Text="Defumador:" />
+                  <Text Name="Label010" Text="Alarme sonoro:" />
+                </Texts>
+              </Group>
+              <Group Name="FGraphicSelect">
+                <Texts>
+                  <Text Name="Label000" Text="Câmaras:" />
+                  <Text Name="Label001" Text="Gráficos disponíveis:" />
+                  <Text Name="Label002" Text="Visível" />
+                  <Text Name="Label003" Text="    Cor" />
+                  <Text Name="Label004" Text="Câmara" />
+                  <Text Name="Label005" Text="Gráfico" />
+                </Texts>
+              </Group>
+              <Group Name="FGraphic">
+                <Texts>
+                  <Text Name="Label000" Text="Escala mín" />
+                  <Text Name="Label001" Text="Escala máx" />
+                  <Text Name="Label002" Text="Segundos" />
+                </Texts>
+              </Group>
+              <Group Name="FSystem">
+                <Texts>
+                  <Text Name="Label000" Text="Máquinas para processamento de carnes" />
+                  <Text Name="Label001" Text="www.simetriamg.com.br" />
+                  <Text Name="Label005" Text="Selecione uma das opções do sistema ao lado" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="TouchKeyboards">
+            <Groups>
+              <Group Name="AlphaPad">
+                <Texts>
+                  <Text Name="Caption" Text="Input" />
+                  <Text Name="cmd00" Text="`~" />
+                  <Text Name="cmd01" Text="1!" />
+                  <Text Name="cmd02" Text="2@" />
+                  <Text Name="cmd03" Text="3#" />
+                  <Text Name="cmd04" Text="4$" />
+                  <Text Name="cmd05" Text="5%" />
+                  <Text Name="cmd06" Text="6^" />
+                  <Text Name="cmd07" Text="7&amp;" />
+                  <Text Name="cmd08" Text="8*" />
+                  <Text Name="cmd09" Text="9(" />
+                  <Text Name="cmd010" Text="0)" />
+                  <Text Name="cmd011" Text="-_" />
+                  <Text Name="cmd012" Text="=+" />
+                  <Text Name="cmd10" Text="qQ" />
+                  <Text Name="cmd11" Text="wW" />
+                  <Text Name="cmd12" Text="eE" />
+                  <Text Name="cmd13" Text="rR" />
+                  <Text Name="cmd14" Text="tT" />
+                  <Text Name="cmd15" Text="yY" />
+                  <Text Name="cmd16" Text="uU" />
+                  <Text Name="cmd17" Text="iI" />
+                  <Text Name="cmd18" Text="oO" />
+                  <Text Name="cmd19" Text="pP" />
+                  <Text Name="cmd110" Text="[{" />
+                  <Text Name="cmd111" Text="]}" />
+                  <Text Name="cmd20" Text="aA" />
+                  <Text Name="cmd21" Text="sS" />
+                  <Text Name="cmd22" Text="dD" />
+                  <Text Name="cmd23" Text="fF" />
+                  <Text Name="cmd24" Text="gG" />
+                  <Text Name="cmd25" Text="hH" />
+                  <Text Name="cmd26" Text="jJ" />
+                  <Text Name="cmd27" Text="kK" />
+                  <Text Name="cmd28" Text="lL" />
+                  <Text Name="cmd29" Text=";:" />
+                  <Text Name="cmd210" Text="'&quot;" />
+                  <Text Name="cmd211" Text="\|" />
+                  <Text Name="cmd30" Text="\|" />
+                  <Text Name="cmd31" Text="zZ" />
+                  <Text Name="cmd32" Text="xX" />
+                  <Text Name="cmd33" Text="cC" />
+                  <Text Name="cmd34" Text="vV" />
+                  <Text Name="cmd35" Text="bB" />
+                  <Text Name="cmd36" Text="nN" />
+                  <Text Name="cmd37" Text="mM" />
+                  <Text Name="cmd38" Text=",&lt;" />
+                  <Text Name="cmd39" Text=".&gt;" />
+                  <Text Name="cmd310" Text="/?" />
+                  <Text Name="cmdCtrl" Text="Ctrl" />
+                  <Text Name="cmdAltGr" Text="Alt Gr" />
+                  <Text Name="cmdSpace" Text=" " />
+                  <Text Name="keyEsc" Text="Esc" />
+                  <Text Name="keyDel" Text="Del" />
+                  <Text Name="keyCtrl" Text="Ctrl" />
+                  <Text Name="keyAltGr" Text="Alt Gr" />
+                  <Text Name="keyHome" Text="Pos1" />
+                  <Text Name="keyEnd" Text="End" />
+                  <Text Name="key00" Text="`~" />
+                  <Text Name="key01" Text="1!" />
+                  <Text Name="key02" Text="2@" />
+                  <Text Name="key03" Text="3#" />
+                  <Text Name="key04" Text="4$" />
+                  <Text Name="key05" Text="5%" />
+                  <Text Name="key06" Text="6^" />
+                  <Text Name="key07" Text="7&amp;" />
+                  <Text Name="key08" Text="8*" />
+                  <Text Name="key09" Text="9(" />
+                  <Text Name="key010" Text="0)" />
+                  <Text Name="key011" Text="-_" />
+                  <Text Name="key012" Text="=+" />
+                  <Text Name="key10" Text="qQ" />
+                  <Text Name="key11" Text="wW" />
+                  <Text Name="key12" Text="eE" />
+                  <Text Name="key13" Text="rR" />
+                  <Text Name="key14" Text="tT" />
+                  <Text Name="key15" Text="yY" />
+                  <Text Name="key16" Text="uU" />
+                  <Text Name="key17" Text="iI" />
+                  <Text Name="key18" Text="oO" />
+                  <Text Name="key19" Text="pP" />
+                  <Text Name="key110" Text="[{" />
+                  <Text Name="key111" Text="]}" />
+                  <Text Name="key20" Text="aA" />
+                  <Text Name="key21" Text="sS" />
+                  <Text Name="key22" Text="dD" />
+                  <Text Name="key23" Text="fF" />
+                  <Text Name="key24" Text="gG" />
+                  <Text Name="key25" Text="hH" />
+                  <Text Name="key26" Text="jJ" />
+                  <Text Name="key27" Text="kK" />
+                  <Text Name="key28" Text="lL" />
+                  <Text Name="key29" Text=";:" />
+                  <Text Name="key211" Text="\|" />
+                  <Text Name="key30" Text="\|" />
+                  <Text Name="key31" Text="zZ" />
+                  <Text Name="key32" Text="xX" />
+                  <Text Name="key33" Text="cC" />
+                  <Text Name="key34" Text="vV" />
+                  <Text Name="key35" Text="bB" />
+                  <Text Name="key36" Text="nN" />
+                  <Text Name="key37" Text="mM" />
+                  <Text Name="key38" Text=",&lt;" />
+                  <Text Name="key39" Text=".&gt;" />
+                  <Text Name="key310" Text="/?" />
+                </Texts>
+              </Group>
+              <Group Name="NumPad">
+                <Texts>
+                  <Text Name="Caption" Text="Input" />
+                  <Text Name="keyDel" Text="Del" />
+                  <Text Name="keyEnd" Text="End" />
+                  <Text Name="keyEsc" Text="Esc" />
+                  <Text Name="keyHome" Text="Pos1" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="Components">
+        <Groups>
+          <Group Name="AlarmLine">
+          </Group>
+          <Group Name="AlarmList">
+            <Texts>
+              <Text Name="AcknowledgeTime" Text="Reconhecimento" />
+              <Text Name="ActivationTime" Text="Horário" />
+              <Text Name="Text" Text="Texto" />
+            </Texts>
+          </Group>
+          <Group Name="PopupInfo">
+          </Group>
+          <Group Name="RecipeList">
+          </Group>
+          <Group Name="Time">
+            <Groups>
+              <Group Name="DateFormats">
+                <Texts>
+                  <Text Name="LongDate" Text="dd/MM/yyyy" />
+                  <Text Name="ShortDate" Text="dd/MM/yy" />
+                  <Text Name="NamedLongDate" Text="dddd, d MMMM, yyyy" />
+                  <Text Name="NamedShortDate" Text="ddd, d MMM, yy" />
+                  <Text Name="UserDefinedDate" Text="d/M/yy" />
+                </Texts>
+              </Group>
+              <Group Name="MonthName">
+                <Texts>
+                  <Text Name="1" Text="Janeiro" />
+                  <Text Name="2" Text="Fevereiro" />
+                  <Text Name="3" Text="Março" />
+                  <Text Name="4" Text="Abril" />
+                  <Text Name="5" Text="Maio" />
+                  <Text Name="6" Text="Junho" />
+                  <Text Name="7" Text="Julho" />
+                  <Text Name="8" Text="Agosto" />
+                  <Text Name="9" Text="Setembro" />
+                  <Text Name="10" Text="Outubro" />
+                  <Text Name="11" Text="Novembro" />
+                  <Text Name="12" Text="Dezembro" />
+                </Texts>
+              </Group>
+              <Group Name="ShortMonthName">
+                <Texts>
+                  <Text Name="1" Text="Jan" />
+                  <Text Name="2" Text="Fev" />
+                  <Text Name="3" Text="Mar" />
+                  <Text Name="4" Text="Abr" />
+                  <Text Name="5" Text="Mai" />
+                  <Text Name="6" Text="Jun" />
+                  <Text Name="7" Text="Jul" />
+                  <Text Name="8" Text="Ago" />
+                  <Text Name="9" Text="Set" />
+                  <Text Name="10" Text="Out" />
+                  <Text Name="11" Text="Nov" />
+                  <Text Name="12" Text="Dez" />
+                </Texts>
+              </Group>
+              <Group Name="ShortWeekdayName">
+                <Texts>
+                  <Text Name="1" Text="Dom" />
+                  <Text Name="2" Text="Seg" />
+                  <Text Name="3" Text="Ter" />
+                  <Text Name="4" Text="Qua" />
+                  <Text Name="5" Text="Qui" />
+                  <Text Name="6" Text="Sex" />
+                  <Text Name="7" Text="Sab" />
+                </Texts>
+              </Group>
+              <Group Name="TimeFormats">
+                <Texts>
+                  <Text Name="LongTime" Text="hh:mm:ss tt" />
+                  <Text Name="ShortTime" Text="hh:mm tt" />
+                  <Text Name="UserDefinedTime" Text="h:m t" />
+                </Texts>
+              </Group>
+              <Group Name="WeekdayName">
+                <Texts>
+                  <Text Name="1" Text="Domingo" />
+                  <Text Name="2" Text="Segunda-feira" />
+                  <Text Name="3" Text="Terça-feira" />
+                  <Text Name="4" Text="Quarta-feira" />
+                  <Text Name="5" Text="Quinta-feira" />
+                  <Text Name="6" Text="Sexta-feira" />
+                  <Text Name="7" Text="Sábado" />
+                </Texts>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="TrendLegend">
+            <Texts>
+              <Text Name="ArchiveText" Text="Câmara" />
+              <Text Name="Color" Text="Cor" />
+              <Text Name="ItemText" Text="Item" />
+              <Text Name="MarkedValue" Text="Valor marcado" />
+              <Text Name="Maximum" Text="Máximo" />
+              <Text Name="Minimum" Text="Mínimo" />
+              <Text Name="Style" Text="Estilo da linha" />
+              <Text Name="TrendText" Text="Gráfico" />
+              <Text Name="Unit" Text="Unidade" />
+              <Text Name="ItemAlias" Text="Nome da variável" />
+            </Texts>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="Dialogs">
+        <Groups>
+          <Group Name="Common">
+          </Group>
+          <Group Name="Recipe">
+          </Group>
+          <Group Name="UserManagement">
+            <Groups>
+              <Group Name="AddGroupSuccess">
+              </Group>
+              <Group Name="AddRightSuccess">
+              </Group>
+              <Group Name="AddUserSuccess">
+              </Group>
+              <Group Name="ChangeGroupSuccess">
+              </Group>
+              <Group Name="ChangePasswordSuccess">
+              </Group>
+              <Group Name="ChangeRightSuccess">
+              </Group>
+              <Group Name="ChangeUserSuccess">
+              </Group>
+              <Group Name="LogOnSuccess">
+              </Group>
+              <Group Name="UserStates">
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="TouchKeyboards">
+            <Groups>
+              <Group Name="AlphaPad">
+              </Group>
+              <Group Name="NumPad">
+              </Group>
+              <Group Name="TinyAlphaPad">
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="Printing">
+            <Groups>
+              <Group Name="Progress">
+              </Group>
+              <Group Name="Settings">
+              </Group>
+            </Groups>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="AlarmSystem">
+        <Groups>
+          <Group Name="Classes">
+            <Groups>
+              <Group Name="SystemAlarm">
+              </Group>
+              <Group Name="Alarm">
+              </Group>
+              <Group Name="Message">
+              </Group>
+              <Group Name="Hint">
+              </Group>
+              <Group Name="LogBook">
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="Types">
+            <Groups>
+              <Group Name="ValueAlarms">
+                <Groups>
+                  <Group Name="StatusChamber">
+                  </Group>
+                </Groups>
+              </Group>
+              <Group Name="BitBlockAlarms">
+                <Groups>
+                  <Group Name="AlarmsChamber">
+                  </Group>
+                </Groups>
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="Groups">
+            <Groups>
+              <Group Name="SystemAlarms">
+              </Group>
+              <Group Name="ProcessAlarms">
+              </Group>
+              <Group Name="ProcessLogBook">
+              </Group>
+            </Groups>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="ItemSystem">
+        <Groups>
+          <Group Name="Intern">
+          </Group>
+          <Group Name="Structures" />
+          <Group Name="Controller">
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="UserSystem">
+        <Groups>
+          <Group Name="UserGroups">
+          </Group>
+          <Group Name="Rights">
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="ArchiveSystem">
+        <Groups>
+          <Group Name="Chamber00" Text="Câmara 01">
+            <Texts>
+              <Text Name="TemperatureChamber" Text="Câmara" />
+              <Text Name="TemperatureCore" Text="Núcleo" />
+            </Texts>
+          </Group>
+          <Group Name="Chamber01" Text="Câmara 02">
+            <Texts>
+              <Text Name="TemperatureChamber" Text="Câmara" />
+              <Text Name="TemperatureCore" Text="Núcleo" />
+            </Texts>
+          </Group>
+          <Group Name="Chamber02" Text="Câmara 03">
+            <Texts>
+              <Text Name="TemperatureChamber" Text="Câmara" />
+              <Text Name="TemperatureCore" Text="Núcleo" />
+            </Texts>
+          </Group>
+        </Groups>
+      </Group>
+      <Group Name="LoggingSystem">
+        <Groups>
+          <Group Name="Project">
+            <Groups>
+              <Group Name="Start">
+              </Group>
+              <Group Name="Stop">
+              </Group>
+            </Groups>
+          </Group>
+          <Group Name="UserSystem">
+            <Groups>
+              <Group Name="LogOn">
+              </Group>
+              <Group Name="LogOff">
+              </Group>
+              <Group Name="AutoLogOff">
+              </Group>
+              <Group Name="VerifyUser">
+              </Group>
+              <Group Name="AddUser">
+              </Group>
+              <Group Name="RemoveUser">
+              </Group>
+              <Group Name="ChangeUser">
+              </Group>
+              <Group Name="ChangeUserState">
+              </Group>
+              <Group Name="ChangeUserPolicy">
+              </Group>
+              <Group Name="ChangePassword">
+              </Group>
+              <Group Name="ChangePasswordPolicy">
+              </Group>
+              <Group Name="AddGroup">
+              </Group>
+              <Group Name="ChangeGroup">
+              </Group>
+              <Group Name="RemoveGroup">
+              </Group>
+              <Group Name="AddRight">
+              </Group>
+              <Group Name="RemoveRight">
+              </Group>
+              <Group Name="ActivateRight">
+              </Group>
+              <Group Name="DeactivateRight">
+              </Group>
+            </Groups>
+          </Group>
+        </Groups>
+      </Group>
+    </TextSystem>
+  </LanguageSwitching>
+</VisiWinNETProjectFile>

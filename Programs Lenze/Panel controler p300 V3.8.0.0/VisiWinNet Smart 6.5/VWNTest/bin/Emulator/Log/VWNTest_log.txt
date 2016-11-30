@@ -1,0 +1,72 @@
+﻿VisiWinNET Compact V6.5.3.63 System Log
+
+> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > >
+Speicher Report
+Global: Max. Progr.: 1365092 kB, Prozent belegt: 67 %
+Applikation: Max. gesamt: 2097024 kB, verwendet: 231116 kB, frei: 1865908 kB, verwaltet: 700 kB
+Info in Eintraegen: (A:frei in kB M:verwaltet in kB)
+
+2016-11-17 00:08:23	(A:1914676kB M:1426kB)	[Info]	<Projektverwaltung>
+Projekt VWNTest wird gestartet! Projektdatei: D:\Projetct Simetria, Cooking chamber\Programs Lenze\Panel controler p300 V3.8.0.0\VisiWinNet Smart 6.5\VWNTest\VWNTest.vwn
+
+
+2016-11-17 00:08:32	(A:1861924kB M:1307kB)	[Info]	<Projektverwaltung>
+Es wurde keine Lizenz gefunden! Das Programm laeuft eine Stunde als Demo!
+
+2016-11-17 00:08:32	(A:1861924kB M:1323kB)	[Info]	<Sprachumschaltung>
+System gestartet!
+
+2016-11-17 00:08:32	(A:1859960kB M:1437kB)	[Info]	<Treiber  an Kanal Controller>
+System (Version: Core 1.0.1.10 Protokoll Undefined Version ) gestartet!
+
+2016-11-17 00:08:32	(A:1859832kB M:1628kB)	[Info]	<Prozessdatenbank und OPC>
+System gestartet!
+
+2016-11-17 00:08:32	(A:1859832kB M:1660kB)	[Info]	<Alarmverwaltung>
+System gestartet!
+
+2016-11-17 00:08:32	(A:1859832kB M:1676kB)	[Info]	<Benutzerverwaltung>
+System gestartet!
+
+2016-11-17 00:08:32	(A:1858476kB M:1892kB)	[Info]	<Trend Aufzeichnungssystem>
+System gestartet!
+
+2016-11-17 00:08:32	(A:1858476kB M:1916kB)	[Info]	<Rezeptsystem>
+System gestartet!
+
+2016-11-17 00:08:32	(A:1857184kB M:1932kB)	[Info]	<Prozessdatenbank und OPC>
+Interne Treiberkommunikation gestartet.
+
+2016-11-17 00:08:33	(A:1857196kB M:1948kB)	[Info]	<Projektverwaltung>
+Projektinitialisierung erfolgreich!
+
++ + + + + + + + + + + + + + + + + +
+
+
+- - - - - - - - - - - - - - - - - -
+
+2016-11-17 00:11:33	(A:1732536kB M:7197kB)	[Info]	<Projektverwaltung>
+Beenden der Applikation angefordert!
+
+2016-11-17 00:11:33	(A:1732536kB M:7205kB)	[Info]	<Rezeptsystem>
+System beendet!
+
+2016-11-17 00:11:33	(A:1732536kB M:7261kB)	[Info]	<Trend Aufzeichnungssystem>
+System beendet!
+
+2016-11-17 00:11:33	(A:1733828kB M:7277kB)	[Info]	<Benutzerverwaltung>
+System beendet!
+
+2016-11-17 00:11:33	(A:1733828kB M:7285kB)	[Info]	<Alarmverwaltung>
+System beendet!
+
+2016-11-17 00:11:34	(A:1735056kB M:7301kB)	[Info]	<Treiber  an Kanal Controller>
+System beendet!
+
+2016-11-17 00:11:34	(A:1735056kB M:7309kB)	[Info]	<Prozessdatenbank und OPC>
+System beendet!
+
+2016-11-17 00:11:34	(A:1735056kB M:7325kB)	[Info]	<Sprachumschaltung>
+System beendet!
+
+< < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <

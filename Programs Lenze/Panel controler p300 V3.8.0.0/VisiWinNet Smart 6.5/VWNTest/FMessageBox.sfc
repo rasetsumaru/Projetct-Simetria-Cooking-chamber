@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?mapping xmlns="http://www.inosoft.com/DTD/SmartForms" namespace="VisiWinNET.Forms;System.Drawing;"?>
+<wfml xmlns="http://www.inosoft.com/DTD/SmartForms" xmlns:wfml="http://www.inosoft.com/DTD/WFML">
+  <SmartForm wfml:ID="FMessageBox" BackgroundImageLayout="Stretch" VariableActivationMode="ActivateOnShow" TransparentColor="White" BackColor="White" ControlBox="False" Font="Tahoma, 12pt" StartPosition="CenterScreen" BackgroundImage="@SFCRes:FMessageBox.BackgroundImage" ForeColor="Black" FormBorderStyle="None" ClientSize="645, 198" xmlns="http://www.inosoft.com/DTD/SmartForms">
+    <property.Components>
+      <Timer wfml:ID="TimerClose" Interval="500" TrayLocation="17, 17" />
+    </property.Components>
+    <property.Controls>
+      <Label wfml:ID="lblMessage" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleRight" BackColorOn="Transparent" Size="459, 95" FontClass="Captions" ForeColor="SteelBlue" Location="171, 55">
+        <property.Border Style="None" />
+        <property.LocalizedText Text="Label2" />
+      </Label>
+      <Shape wfml:ID="Shape2" BorderColor="White" Size="273, 4" Location="10, 45">
+        <property.FillColors>
+          <Color wfml:argument="SteelBlue" />
+        </property.FillColors>
+      </Shape>
+      <Label wfml:ID="lblCaption" BackColor="Transparent" ForeColorOn="SteelBlue" TextAlign="MiddleLeft" BackColorOn="Transparent" Size="332, 37" FontClass="FontTahomaVeryLargeBold" ForeColor="SteelBlue" Location="12, 12">
+        <property.Border Style="None" />
+      </Label>
+      <CommandButton wfml:ID="cmdButton002" ButtonStyle="Flat" TransparentColor="Fuchsia" Visible="False" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="171, 156" ForeColor="White" BackColorDown="White" TabIndex="186">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextOn="FormSwitching" />
+        <property.Authorization Right="UserManagement" Mode="Invisible" />
+      </CommandButton>
+      <CommandButton wfml:ID="cmdButton001" ButtonStyle="Flat" TransparentColor="Fuchsia" Visible="False" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="327, 156" ForeColor="White" BackColorDown="White" TabIndex="185">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextOn="FormSwitching" />
+        <property.Authorization Right="UserManagement" Mode="Invisible" />
+      </CommandButton>
+      <CommandButton wfml:ID="cmdButton000" ButtonStyle="Flat" TransparentColor="Fuchsia" Visible="False" Size="150, 30" TabStop="False" FontClass="Buttons" ForeColorDown="SteelBlue" FocusOnClick="False" FocusRect="False" BackColor="SteelBlue" Location="483, 156" ForeColor="White" BackColorDown="White" TabIndex="184">
+        <property.Border Style="Switch" Width="1" Color1="White" Color2="White" Color3="White" />
+        <property.LocalizedText TextOn="FormSwitching" />
+        <property.Authorization Right="UserManagement" Mode="Invisible" />
+      </CommandButton>
+      <Shape wfml:ID="Shape1" BorderColor="SteelBlue" Size="645, 198" Location="0, 0">
+        <property.FillColors>
+          <Color wfml:argument="Transparent" />
+        </property.FillColors>
+      </Shape>
+    </property.Controls>
+  </SmartForm>
+</wfml>
